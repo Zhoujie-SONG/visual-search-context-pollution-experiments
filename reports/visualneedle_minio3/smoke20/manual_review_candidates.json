@@ -1,0 +1,44 @@
+{
+  "A_most_crops": [
+    "TPROMPT11712e5ce7e5",
+    "TPROMPT17518843f8cc",
+    "TPROMPT176f197b8403"
+  ],
+  "B_never_hit_gt": [
+    "TPROMPTb85097d0357f",
+    "TPROMPT4636b72ec2d0",
+    "TPROMPTcc36d493e6fa"
+  ],
+  "C_most_crops_after_gt_hit": [
+    "TPROMPT11712e5ce7e5",
+    "TPROMPT17518843f8cc",
+    "TPROMPT176f197b8403"
+  ],
+  "D_highest_crop_overlap": [
+    "TPROMPT11712e5ce7e5",
+    "TPROMPT17518843f8cc",
+    "TPROMPT176f197b8403"
+  ],
+  "E_hit_gt_but_no_final_answer": [
+    "TPROMPT17518843f8cc",
+    "TPROMPT65ab072c3b73",
+    "TPROMPT433eb7d38409",
+    "TPROMPT11712e5ce7e5",
+    "TPROMPT6a35efbe56dd",
+    "TPROMPT70cc4aa9b0ad",
+    "TPROMPT176f197b8403"
+  ],
+  "F_early_hit_but_normalized_answer_wrong": [
+    "TPROMPT17518843f8cc",
+    "TPROMPT88dc50778928",
+    "TPROMPT65ab072c3b73",
+    "TPROMPT5e284ebedfca",
+    "TPROMPT3b824b5818d8",
+    "TPROMPT13b616f8c9dc",
+    "TPROMPT11712e5ce7e5",
+    "TPROMPT28c29c1db01e",
+    "TPROMPT70cc4aa9b0ad",
+    "TPROMPTf75544649373",
+    "TPROMPT176f197b8403"
+  ]
+}

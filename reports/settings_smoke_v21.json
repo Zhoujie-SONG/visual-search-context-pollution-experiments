@@ -1,0 +1,15 @@
+{
+  "min_pixels": 200704,
+  "max_pixels": 1003520,
+  "crop_long_side": 448,
+  "max_new_tokens": 64,
+  "attn_implementation": "sdpa",
+  "dtype": "bfloat16",
+  "device": "cuda:0",
+  "seed": 42,
+  "conditions": [
+    "original_only",
+    "gt_crop_only",
+    "gt_plus_8_irrelevant"
+  ]
+}

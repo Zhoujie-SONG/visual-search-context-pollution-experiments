@@ -1,0 +1,49 @@
+sample_id,category,turn_id,raw_model_output,parsed_action_type,parsed_answer_letter,bbox_display,bbox_original,bbox_valid,crop_path,crop_width,crop_height,input_token_count,output_token_count,finish_reason,generation_time_sec,error_message
+GPT4V-hard/0,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[500,320,537,369]}}",invalid,,,,,,,,1194,28,eos,1.2063,
+GPT4V-hard/0,GPT4V-hard,2,<answer>B</answer>,answer,B,,,,,,,1253,7,eos,0.7150,
+GPT4V-hard/1,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[537,95,548,118]}}
+
+{""name"":""crop"",""arguments"":{""bbox"":[-1,0,1036,504]}}",invalid,,,,,,,,1001,56,eos,1.7259,
+GPT4V-hard/1,GPT4V-hard,2,<answer>A</answer>,answer,A,,,,,,,1082,7,eos,0.6166,
+GPT4V-hard/10,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[542,233,579,308]}}",invalid,,,,,,,,1013,28,eos,1.0884,
+GPT4V-hard/10,GPT4V-hard,2,<answer>D</answer>,answer,D,,,,,,,1072,7,eos,0.6306,
+GPT4V-hard/12,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[637,172,665,203]}}",invalid,,,,,,,,1188,28,eos,1.2063,
+GPT4V-hard/12,GPT4V-hard,2,<answer>D</answer>,answer,D,,,,,,,1247,7,eos,0.7217,
+GPT4V-hard/13,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[459,386,506,516]}}
+
+ addCriterion
+The player who is shooting is wearing jersey number 8. Therefore, the correct answer is:
+
+<answer>D</answer>",answer,D,,,,,,,1321,60,eos,2.0436,
+GPT4V-hard/14,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"": [249,337,320,370]}}",invalid,,,,,,,,1349,29,eos,1.3035,
+GPT4V-hard/14,GPT4V-hard,2,<answer>B</answer>,answer,B,,,,,,,1409,7,eos,0.8145,
+GPT4V-hard/15,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[507,301,540,359]}}",invalid,,,,,,,,1202,28,eos,1.2084,
+GPT4V-hard/15,GPT4V-hard,2,<answer>A</answer>,answer,A,,,,,,,1261,7,eos,0.7114,
+GPT4V-hard/16,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[337,39,510,166]}}",invalid,,,,,,,,1167,27,eos,1.1743,
+GPT4V-hard/16,GPT4V-hard,2,<answer>B</answer>,answer,B,,,,,,,1225,7,eos,0.7065,
+GPT4V-hard/17,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[539,373,564,382]}}",invalid,,,,,,,,1280,28,eos,1.2581,
+GPT4V-hard/17,GPT4V-hard,2,<answer>D</answer>,answer,D,,,,,,,1339,7,eos,0.7652,
+GPT4V-hard/18,GPT4V-hard,1,"There is no dog visible in the image. Therefore, it's not possible to determine the color of a dog from this image.
+
+<answer>A</answer>",answer,A,,,,,,,1299,33,eos,1.3961,
+GPT4V-hard/19,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[513,329,547,383]}}",invalid,,,,,,,,1186,28,eos,1.2144,
+GPT4V-hard/19,GPT4V-hard,2,<answer>B</answer>,answer,B,,,,,,,1245,7,eos,0.7118,
+GPT4V-hard/2,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[583,311,634,350]}}",invalid,,,,,,,,1087,28,eos,1.1599,
+GPT4V-hard/2,GPT4V-hard,2,<answer>A</answer>,answer,A,,,,,,,1146,7,eos,0.6685,
+GPT4V-hard/21,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[590,627,645,672]}}",invalid,,,,,,,,1224,28,eos,1.2111,
+GPT4V-hard/21,GPT4V-hard,2,<answer>A</answer>,answer,A,,,,,,,1283,7,eos,0.7234,
+GPT4V-hard/4,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[529,352,572,373]}}",invalid,,,,,,,,1203,28,eos,1.2109,
+GPT4V-hard/4,GPT4V-hard,2,<answer>A</answer>,answer,A,,,,,,,1262,7,eos,0.7135,
+GPT4V-hard/5,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[530,354,601,420]}}",invalid,,,,,,,,1232,28,eos,1.2354,
+GPT4V-hard/5,GPT4V-hard,2,<answer>A</answer>,answer,A,,,,,,,1291,7,eos,0.7611,
+GPT4V-hard/7,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[395,558,410,585]}}",invalid,,,,,,,,1316,28,eos,1.2821,
+GPT4V-hard/7,GPT4V-hard,2,<answer>B</answer>,answer,B,,,,,,,1375,7,eos,0.7835,
+GPT4V-hard/8,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[953,474,1032,581]}}",invalid,,,,,,,,1565,29,eos,1.4938,
+GPT4V-hard/8,GPT4V-hard,2,<answer>A</answer>,answer,A,,,,,,,1625,7,eos,0.9628,
+OCR/sa_17012,OCR,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[337,835,425,946]}}",invalid,,,,,,,,1192,28,eos,1.2144,
+OCR/sa_17012,OCR,2,<answer>A</answer>,answer,A,,,,,,,1251,7,eos,0.7115,
+OCR/sa_17063,OCR,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[435,337,445,350]}}",invalid,,,,,,,,1200,28,eos,1.2128,
+OCR/sa_17063,OCR,2,<answer>A</answer>,answer,A,,,,,,,1259,7,eos,0.7113,
+OCR/sa_18172,OCR,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[435,427,452,440]}}
+{""name"":""crop"",""arguments"":{""bbox"":[459,428,476,440]}}",invalid,,,,,,,,1202,57,eos,1.9054,
+OCR/sa_18172,OCR,2,<answer>A</answer>,answer,A,,,,,,,1287,7,eos,0.7226,

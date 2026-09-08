@@ -1,0 +1,66 @@
+/home/songzhoujie/miniconda3/envs/cvpr2027/lib/python3.10/site-packages/transformers/utils/hub.py:105: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Frozen smoke settings:
+{
+  "min_pixels": 200704,
+  "max_pixels": 1003520,
+  "crop_long_side": 448,
+  "max_new_tokens": 64,
+  "attn_implementation": "sdpa",
+  "dtype": "bfloat16",
+  "device": "cuda:0",
+  "seed": 42,
+  "conditions": [
+    "original_only",
+    "gt_crop_only",
+    "gt_plus_8_irrelevant"
+  ]
+}
+Full-run fixed settings:
+{
+  "model": "/home/songzhoujie/cvpr27/Qwen2.5-VL-7B-Instruct",
+  "dtype": "bfloat16",
+  "attn_implementation": "sdpa",
+  "min_pixels": 200704,
+  "max_pixels": 1003520,
+  "crop_long_side": 448,
+  "max_new_tokens": 64,
+  "do_sample": false,
+  "system_prompt": "You are a visual assistant that can examine zoomed-in crops of an image.",
+  "assistant_tool_template": "I will examine this region more closely.\n<tool_call>{\"name\":\"crop\",\"arguments\":{\"bbox\":[%d,%d,%d,%d]}}</tool_call>",
+  "final_user_prompt": "Based on the original image and all examined regions, answer the question.\nOutput only a single option letter: A, B, C, or D. Do not explain."
+}
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:09,  2.38s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.65s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:04<00:02,  1.41s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:05<00:01,  1.27s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.19s/it]
+/home/songzhoujie/miniconda3/envs/cvpr2027/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `1e-06` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+[seed 43 shard 7/8] [1/29] GPT4V-hard/16
+[seed 43 shard 7/8] [2/29] GPT4V-hard/7
+[seed 43 shard 7/8] [3/29] OCR/sa_39432
+[seed 43 shard 7/8] [4/29] OCR/sa_47747
+[seed 43 shard 7/8] [5/29] OCR/sa_82003
+[seed 43 shard 7/8] [6/29] direct_attributes/sa_10033
+[seed 43 shard 7/8] [7/29] direct_attributes/sa_10919
+[seed 43 shard 7/8] [8/29] direct_attributes/sa_16306
+[seed 43 shard 7/8] [9/29] direct_attributes/sa_23893
+[seed 43 shard 7/8] [10/29] direct_attributes/sa_28073
+[seed 43 shard 7/8] [11/29] direct_attributes/sa_31451
+[seed 43 shard 7/8] [12/29] direct_attributes/sa_38155
+[seed 43 shard 7/8] [13/29] direct_attributes/sa_41908
+[seed 43 shard 7/8] [14/29] direct_attributes/sa_4690
+[seed 43 shard 7/8] [15/29] direct_attributes/sa_5346
+[seed 43 shard 7/8] [16/29] direct_attributes/sa_59482
+[seed 43 shard 7/8] [17/29] direct_attributes/sa_66471
+[seed 43 shard 7/8] [18/29] direct_attributes/sa_7081
+[seed 43 shard 7/8] [19/29] direct_attributes/sa_79105
+[seed 43 shard 7/8] [20/29] direct_attributes/sa_9611
+[seed 43 shard 7/8] [21/29] relative_position/sa_23575
+[seed 43 shard 7/8] [22/29] relative_position/sa_30441
+[seed 43 shard 7/8] [23/29] relative_position/sa_34291
+[seed 43 shard 7/8] [24/29] relative_position/sa_41869
+[seed 43 shard 7/8] [25/29] relative_position/sa_52228
+[seed 43 shard 7/8] [26/29] relative_position/sa_57960
+[seed 43 shard 7/8] [27/29] relative_position/sa_64142
+[seed 43 shard 7/8] [28/29] relative_position/sa_69634
+[seed 43 shard 7/8] [29/29] relative_position/sa_78272
+wrote shard CSV: outputs/v21_full_seed43_shard7.csv

@@ -1,0 +1,3 @@
+sample_id,category,turn_id,raw_model_output,parsed_action_type,parsed_answer_letter,bbox_display,bbox_original,bbox_valid,crop_path,crop_width,crop_height,input_token_count,output_token_count,finish_reason,generation_time_sec,error_message
+GPT4V-hard/0,GPT4V-hard,1,"<tool_call>{""name"":""crop"",""arguments"":{""bbox"":[500,320,537,369]}}",invalid,,,,,,,,1194,28,eos,1.1995,
+GPT4V-hard/0,GPT4V-hard,2,<answer>B</answer>,answer,B,,,,,,,1253,7,eos,0.7085,

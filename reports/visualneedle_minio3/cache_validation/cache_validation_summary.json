@@ -1,0 +1,111 @@
+{
+  "total_samples": 20,
+  "exact_trajectory_match": 6,
+  "semantic_trajectory_match": 0,
+  "trajectory_divergence": 14,
+  "final_answer_exact_consistency": 0.65,
+  "final_answer_normalized_consistency": 0.65,
+  "old_normalized_accuracy": 0.05,
+  "new_normalized_accuracy": 0.05,
+  "accuracy_identical": true,
+  "old_runtime": {
+    "episode_runtime_seconds": {
+      "mean": 1515.1060304064304,
+      "median": 1350.0412758421153,
+      "min": 159.77792263403535,
+      "max": 3508.1333808843046
+    },
+    "mean_runtime_per_turn_seconds": 216.06862655315282,
+    "median_runtime_per_turn_seconds": 185.5147088393569,
+    "approximate_8_shard_wall_clock_seconds_excluding_load_and_merge": 5500.896583341062,
+    "shard_runtime_totals_seconds": [
+      4550.240847518668,
+      3489.8854574114084,
+      3459.1353125367314,
+      5500.896583341062,
+      4021.091416729614,
+      4991.055081874132,
+      1446.3960907217115,
+      2843.41981799528
+    ],
+    "peak_gpu_memory_mb": {
+      "mean": 16853.89289550781,
+      "median": 16637.729736328125,
+      "min": 16286.02978515625,
+      "max": 19471.22314453125
+    }
+  },
+  "new_runtime": {
+    "episode_runtime_seconds": {
+      "mean": 38.81848968109116,
+      "median": 24.0298701710999,
+      "min": 7.295568225905299,
+      "max": 114.86912848427892
+    },
+    "mean_runtime_per_turn_seconds": 5.13756713562512,
+    "median_runtime_per_turn_seconds": 4.491536105982959,
+    "approximate_8_shard_wall_clock_seconds_excluding_load_and_merge": 174.48328225500882,
+    "shard_runtime_totals_seconds": [
+      86.58416009694338,
+      88.51523016579449,
+      88.54839973337948,
+      105.37334254197776,
+      118.22786162234843,
+      174.48328225500882,
+      48.0597403421998,
+      66.57777686417103
+    ],
+    "peak_gpu_memory_mb": {
+      "mean": 17232.179736328126,
+      "median": 16777.12353515625,
+      "min": 16386.47412109375,
+      "max": 21701.90625
+    }
+  },
+  "runtime_speedup_distribution": {
+    "mean": 44.4463774771952,
+    "median": 35.538081945353916,
+    "min": 12.635684846185944,
+    "max": 175.8837304783487
+  },
+  "aggregate_runtime_speedup": 39.0305249599768,
+  "mean_peak_gpu_memory_delta_mb": 378.2868408203125,
+  "median_peak_gpu_memory_delta_mb": 218.32275390625,
+  "special_sample": {
+    "sample_id": "TPROMPT65ab072c3b73",
+    "category": "Color Recognition",
+    "consistency_level": "EXACT_TRAJECTORY_MATCH",
+    "first_divergence_turn": "",
+    "first_divergence_fields": "[]",
+    "all_difference_fields": "[]",
+    "old_final_answer": "",
+    "new_final_answer": "",
+    "final_answer_exact_match_between_runs": true,
+    "final_answer_normalized_match_between_runs": true,
+    "old_normalized_final_answer": "",
+    "new_normalized_final_answer": "",
+    "old_accuracy": false,
+    "new_accuracy": false,
+    "old_produced_final_answer": false,
+    "new_produced_final_answer": false,
+    "old_num_rounds": 12,
+    "new_num_rounds": 12,
+    "old_num_crops": 11,
+    "new_num_crops": 11,
+    "old_stop_reason": "image_or_turn_cap",
+    "new_stop_reason": "image_or_turn_cap",
+    "old_status": "completed",
+    "new_status": "completed",
+    "old_runtime_seconds": 3467.47946456261,
+    "new_runtime_seconds": 71.18047197908163,
+    "runtime_speedup": 48.713915040934616,
+    "old_peak_gpu_memory_mb": 16955.08203125,
+    "new_peak_gpu_memory_mb": 17329.27734375,
+    "peak_gpu_memory_delta_mb": 374.1953125
+  },
+  "baseline_file_hashes": {
+    "trajectories.jsonl": "acb06749c1f9d3b4802a0096afe19b6b11693c80acfa84766bbb43d77e7b4ed8",
+    "crop_records.csv": "ec4c0b9a287bf0d079678616d00948723379fc372380eef0a0843740f4c7ae47",
+    "episode_summary.csv": "9df30c6afb1e0c1ce2eb3767a24d1ae6964459688e7fc13c0623e53651c8c012"
+  }
+}

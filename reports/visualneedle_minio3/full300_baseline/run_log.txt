@@ -1,0 +1,423 @@
+===== shard 0 =====
+shard=0/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT9ee217718764', 'TPROMPTd76926eae1e4', 'TPROMPTd71e0ba6af48', 'TPROMPTe4c8f54e012c', 'TPROMPTe12124092983', 'TPROMPT26086032b3a7', 'TPROMPT9dad8fb37323', 'TPROMPTd02bc74ad0a8', 'TPROMPT459e6815b3ad', 'TPROMPT75c2356f5e0f', 'TPROMPT6252c375dad4', 'TPROMPT2da7609a0e4b', 'TPROMPT37318e20e89a', 'TPROMPT937d576541c5', 'TPROMPT42678aebd195', 'TPROMPT6ce215638c57', 'TPROMPTe0cbbf2620d3', 'TPROMPT9cb8bd6915b4', 'TPROMPTf580f92c43df', 'TPROMPTc8991bac3ee9', 'TPROMPTb85097d0357f', 'TPROMPT827cb614e2d9', 'TPROMPTef9011c29ddb', 'TPROMPT8b7f32c7243b', 'TPROMPT6f5246e7919d', 'TPROMPT48df9787dcba', 'TPROMPT92ccc3e205b9', 'TPROMPTf5f6e669b005', 'TPROMPT266023b2027b', 'TPROMPT790db35716bc', 'TPROMPTf06acbe8b51e', 'TPROMPT176f197b8403', 'TPROMPT7dfcef906dff', 'TPROMPT70cc4aa9b0ad', 'TPROMPT5aefd2ab4c87', 'TPROMPTe1922b8f0404', 'TPROMPT42a1f591e921', 'TPROMPT6eca86c3bd8c']
+resume_skip 1/38 TPROMPT9ee217718764
+resume_skip 2/38 TPROMPTd76926eae1e4
+resume_skip 3/38 TPROMPTd71e0ba6af48
+resume_skip 4/38 TPROMPTe4c8f54e012c
+resume_skip 5/38 TPROMPTe12124092983
+resume_skip 6/38 TPROMPT26086032b3a7
+resume_skip 7/38 TPROMPT9dad8fb37323
+resume_skip 8/38 TPROMPTd02bc74ad0a8
+resume_skip 9/38 TPROMPT459e6815b3ad
+resume_skip 10/38 TPROMPT75c2356f5e0f
+resume_skip 11/38 TPROMPT6252c375dad4
+resume_skip 12/38 TPROMPT2da7609a0e4b
+resume_skip 13/38 TPROMPT37318e20e89a
+resume_skip 14/38 TPROMPT937d576541c5
+resume_skip 15/38 TPROMPT42678aebd195
+resume_skip 16/38 TPROMPT6ce215638c57
+resume_skip 17/38 TPROMPTe0cbbf2620d3
+resume_skip 18/38 TPROMPT9cb8bd6915b4
+resume_skip 19/38 TPROMPTf580f92c43df
+resume_skip 20/38 TPROMPTc8991bac3ee9
+resume_skip 21/38 TPROMPTb85097d0357f
+resume_skip 22/38 TPROMPT827cb614e2d9
+resume_skip 23/38 TPROMPTef9011c29ddb
+resume_skip 24/38 TPROMPT8b7f32c7243b
+start 25/38 TPROMPT6f5246e7919d 2026-09-07 20:49:35
+done TPROMPT6f5246e7919d status=oom rounds=11 crops=10 final=False runtime=125.5s
+start 26/38 TPROMPT48df9787dcba 2026-09-07 20:51:40
+done TPROMPT48df9787dcba status=completed rounds=6 crops=5 final=True runtime=36.3s
+start 27/38 TPROMPT92ccc3e205b9 2026-09-07 20:52:16
+done TPROMPT92ccc3e205b9 status=completed rounds=5 crops=4 final=True runtime=34.1s
+start 28/38 TPROMPTf5f6e669b005 2026-09-07 20:52:50
+done TPROMPTf5f6e669b005 status=completed rounds=12 crops=11 final=False runtime=48.4s
+start 29/38 TPROMPT266023b2027b 2026-09-07 20:53:39
+done TPROMPT266023b2027b status=completed rounds=12 crops=11 final=False runtime=103.9s
+start 30/38 TPROMPT790db35716bc 2026-09-07 20:55:23
+done TPROMPT790db35716bc status=completed rounds=4 crops=3 final=True runtime=19.4s
+start 31/38 TPROMPTf06acbe8b51e 2026-09-07 20:55:42
+done TPROMPTf06acbe8b51e status=completed rounds=3 crops=2 final=True runtime=11.4s
+start 32/38 TPROMPT176f197b8403 2026-09-07 20:55:54
+done TPROMPT176f197b8403 status=completed rounds=12 crops=11 final=False runtime=47.8s
+start 33/38 TPROMPT7dfcef906dff 2026-09-07 20:56:41
+done TPROMPT7dfcef906dff status=completed rounds=4 crops=3 final=True runtime=14.2s
+start 34/38 TPROMPT70cc4aa9b0ad 2026-09-07 20:56:56
+done TPROMPT70cc4aa9b0ad status=oom rounds=12 crops=11 final=False runtime=137.0s
+start 35/38 TPROMPT5aefd2ab4c87 2026-09-07 20:59:13
+done TPROMPT5aefd2ab4c87 status=completed rounds=12 crops=11 final=False runtime=80.6s
+start 36/38 TPROMPTe1922b8f0404 2026-09-07 21:00:33
+done TPROMPTe1922b8f0404 status=completed rounds=12 crops=11 final=False runtime=51.7s
+start 37/38 TPROMPT42a1f591e921 2026-09-07 21:01:25
+done TPROMPT42a1f591e921 status=completed rounds=4 crops=3 final=True runtime=17.8s
+start 38/38 TPROMPT6eca86c3bd8c 2026-09-07 21:01:43
+done TPROMPT6eca86c3bd8c status=completed rounds=12 crops=11 final=False runtime=68.5s
+
+===== shard 1 =====
+shard=1/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT5c23986e354f', 'TPROMPTff54c94f8c78', 'TPROMPTcc462aeedebc', 'TPROMPTa57c2e299fb8', 'TPROMPT44a5713acb48', 'TPROMPT3e4fe0e13a53', 'TPROMPT8f1a37f85a7b', 'TPROMPT5e89eb1273e1', 'TPROMPT65ab072c3b73', 'TPROMPT8cdd00c71c72', 'TPROMPT59bd48963daf', 'TPROMPT3b3c80ecf389', 'TPROMPT55742422545b', 'TPROMPT2fa94160c13d', 'TPROMPTc93f870ffad3', 'TPROMPT3b824b5818d8', 'TPROMPTee601cf57b9c', 'TPROMPT642beb76b8d9', 'TPROMPTe2d55a4fcc6f', 'TPROMPTa9dc32957495', 'TPROMPTc7c603ad3a9e', 'TPROMPTbcd9c95a3af1', 'TPROMPT76d13ba158b2', 'TPROMPT776fb7077320', 'TPROMPTbf126167495a', 'TPROMPTa3f0d7e22800', 'TPROMPT2704cc287a78', 'TPROMPTc602c59d4cf3', 'TPROMPT2300c13c0671', 'TPROMPT3cc2cc870796', 'TPROMPT256ca214751e', 'TPROMPT8628d17ba98b', 'TPROMPT86f9fc4b4507', 'TPROMPTf6a13a535901', 'TPROMPT67850947f5da', 'TPROMPT1774720d97d9', 'TPROMPTb8db929c9dcd', 'TPROMPT08c724f096a1']
+resume_skip 1/38 TPROMPT5c23986e354f
+resume_skip 2/38 TPROMPTff54c94f8c78
+resume_skip 3/38 TPROMPTcc462aeedebc
+resume_skip 4/38 TPROMPTa57c2e299fb8
+resume_skip 5/38 TPROMPT44a5713acb48
+resume_skip 6/38 TPROMPT3e4fe0e13a53
+resume_skip 7/38 TPROMPT8f1a37f85a7b
+resume_skip 8/38 TPROMPT5e89eb1273e1
+resume_skip 9/38 TPROMPT65ab072c3b73
+resume_skip 10/38 TPROMPT8cdd00c71c72
+resume_skip 11/38 TPROMPT59bd48963daf
+resume_skip 12/38 TPROMPT3b3c80ecf389
+resume_skip 13/38 TPROMPT55742422545b
+resume_skip 14/38 TPROMPT2fa94160c13d
+resume_skip 15/38 TPROMPTc93f870ffad3
+resume_skip 16/38 TPROMPT3b824b5818d8
+resume_skip 17/38 TPROMPTee601cf57b9c
+resume_skip 18/38 TPROMPT642beb76b8d9
+resume_skip 19/38 TPROMPTe2d55a4fcc6f
+resume_skip 20/38 TPROMPTa9dc32957495
+resume_skip 21/38 TPROMPTc7c603ad3a9e
+resume_skip 22/38 TPROMPTbcd9c95a3af1
+resume_skip 23/38 TPROMPT76d13ba158b2
+resume_skip 24/38 TPROMPT776fb7077320
+resume_skip 25/38 TPROMPTbf126167495a
+resume_skip 26/38 TPROMPTa3f0d7e22800
+resume_skip 27/38 TPROMPT2704cc287a78
+resume_skip 28/38 TPROMPTc602c59d4cf3
+resume_skip 29/38 TPROMPT2300c13c0671
+resume_skip 30/38 TPROMPT3cc2cc870796
+resume_skip 31/38 TPROMPT256ca214751e
+resume_skip 32/38 TPROMPT8628d17ba98b
+resume_skip 33/38 TPROMPT86f9fc4b4507
+start 34/38 TPROMPTf6a13a535901 2026-09-07 20:49:33
+done TPROMPTf6a13a535901 status=completed rounds=5 crops=4 final=True runtime=29.1s
+start 35/38 TPROMPT67850947f5da 2026-09-07 20:50:03
+done TPROMPT67850947f5da status=completed rounds=5 crops=4 final=True runtime=28.1s
+start 36/38 TPROMPT1774720d97d9 2026-09-07 20:50:31
+done TPROMPT1774720d97d9 status=completed rounds=12 crops=11 final=False runtime=48.4s
+start 37/38 TPROMPTb8db929c9dcd 2026-09-07 20:51:19
+done TPROMPTb8db929c9dcd status=completed rounds=12 crops=11 final=False runtime=44.4s
+start 38/38 TPROMPT08c724f096a1 2026-09-07 20:52:04
+done TPROMPT08c724f096a1 status=completed rounds=12 crops=11 final=False runtime=60.9s
+
+===== shard 2 =====
+shard=2/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT9ed3a153f248', 'TPROMPTb732c7fab386', 'TPROMPTeb0a3413facb', 'TPROMPT4332e08930fe', 'TPROMPT2d2649c0df2e', 'TPROMPT35849bcca74c', 'TPROMPTf9789aa0279c', 'TPROMPT6e8ebd25acae', 'TPROMPT4827f5bac79f', 'TPROMPT384c8f33e4cc', 'TPROMPT98301a2c2575', 'TPROMPT31999fa85408', 'TPROMPTd1210081d050', 'TPROMPT099f36d398c1', 'TPROMPTaf2003853447', 'TPROMPT98d34d3f2f7e', 'TPROMPTb5a4994265ab', 'TPROMPT4e84c67324b4', 'TPROMPT762efc0e8ba7', 'TPROMPT31205a3f0a8d', 'TPROMPTdcc8e5320bb5', 'TPROMPTbbf9cdc186ad', 'TPROMPT684691f534ff', 'TPROMPT14874df56003', 'TPROMPT082e2ab8ca3f', 'TPROMPT47ffd9aff6a5', 'TPROMPT3548aa15300e', 'TPROMPT48a9328fd3f6', 'TPROMPT46edefc49059', 'TPROMPT397cfabc5668', 'TPROMPT294532df0b70', 'TPROMPT433eb7d38409', 'TPROMPT14acb1f8302e', 'TPROMPT88392d5bae9d', 'TPROMPT378b8f698c05', 'TPROMPT8f6f95bc1628', 'TPROMPT892be3409102', 'TPROMPT6760aafeebfb']
+resume_skip 1/38 TPROMPT9ed3a153f248
+resume_skip 2/38 TPROMPTb732c7fab386
+resume_skip 3/38 TPROMPTeb0a3413facb
+resume_skip 4/38 TPROMPT4332e08930fe
+resume_skip 5/38 TPROMPT2d2649c0df2e
+resume_skip 6/38 TPROMPT35849bcca74c
+resume_skip 7/38 TPROMPTf9789aa0279c
+resume_skip 8/38 TPROMPT6e8ebd25acae
+resume_skip 9/38 TPROMPT4827f5bac79f
+resume_skip 10/38 TPROMPT384c8f33e4cc
+resume_skip 11/38 TPROMPT98301a2c2575
+resume_skip 12/38 TPROMPT31999fa85408
+resume_skip 13/38 TPROMPTd1210081d050
+resume_skip 14/38 TPROMPT099f36d398c1
+resume_skip 15/38 TPROMPTaf2003853447
+resume_skip 16/38 TPROMPT98d34d3f2f7e
+resume_skip 17/38 TPROMPTb5a4994265ab
+resume_skip 18/38 TPROMPT4e84c67324b4
+resume_skip 19/38 TPROMPT762efc0e8ba7
+resume_skip 20/38 TPROMPT31205a3f0a8d
+resume_skip 21/38 TPROMPTdcc8e5320bb5
+resume_skip 22/38 TPROMPTbbf9cdc186ad
+resume_skip 23/38 TPROMPT684691f534ff
+resume_skip 24/38 TPROMPT14874df56003
+resume_skip 25/38 TPROMPT082e2ab8ca3f
+start 26/38 TPROMPT47ffd9aff6a5 2026-09-07 20:49:34
+done TPROMPT47ffd9aff6a5 status=completed rounds=12 crops=11 final=False runtime=89.7s
+start 27/38 TPROMPT3548aa15300e 2026-09-07 20:51:03
+done TPROMPT3548aa15300e status=completed rounds=7 crops=6 final=True runtime=44.1s
+start 28/38 TPROMPT48a9328fd3f6 2026-09-07 20:51:48
+done TPROMPT48a9328fd3f6 status=completed rounds=6 crops=5 final=True runtime=24.7s
+start 29/38 TPROMPT46edefc49059 2026-09-07 20:52:12
+done TPROMPT46edefc49059 status=invalid rounds=6 crops=5 final=False runtime=80.2s
+start 30/38 TPROMPT397cfabc5668 2026-09-07 20:53:32
+done TPROMPT397cfabc5668 status=completed rounds=12 crops=11 final=False runtime=52.5s
+start 31/38 TPROMPT294532df0b70 2026-09-07 20:54:25
+done TPROMPT294532df0b70 status=completed rounds=12 crops=11 final=False runtime=56.1s
+start 32/38 TPROMPT433eb7d38409 2026-09-07 20:55:21
+done TPROMPT433eb7d38409 status=completed rounds=12 crops=11 final=False runtime=59.0s
+start 33/38 TPROMPT14acb1f8302e 2026-09-07 20:56:20
+done TPROMPT14acb1f8302e status=completed rounds=12 crops=11 final=False runtime=63.5s
+start 34/38 TPROMPT88392d5bae9d 2026-09-07 20:57:23
+done TPROMPT88392d5bae9d status=invalid rounds=5 crops=4 final=False runtime=72.7s
+start 35/38 TPROMPT378b8f698c05 2026-09-07 20:58:36
+done TPROMPT378b8f698c05 status=completed rounds=12 crops=11 final=False runtime=60.9s
+start 36/38 TPROMPT8f6f95bc1628 2026-09-07 20:59:37
+done TPROMPT8f6f95bc1628 status=completed rounds=5 crops=4 final=True runtime=19.9s
+start 37/38 TPROMPT892be3409102 2026-09-07 20:59:57
+done TPROMPT892be3409102 status=completed rounds=12 crops=11 final=False runtime=58.5s
+start 38/38 TPROMPT6760aafeebfb 2026-09-07 21:00:55
+done TPROMPT6760aafeebfb status=completed rounds=12 crops=11 final=False runtime=60.5s
+
+===== shard 3 =====
+shard=3/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT7e7a67fa1b6a', 'TPROMPT11712e5ce7e5', 'TPROMPT373af397f515', 'TPROMPT385ec69248ec', 'TPROMPTf44ca1b5cfe5', 'TPROMPTc0529c3ff153', 'TPROMPT5c4cd9457ec6', 'TPROMPTe56ffa2da97d', 'TPROMPT3d04f493f1e1', 'TPROMPT11157b3d113c', 'TPROMPTfd9e662a5271', 'TPROMPTeb5d2ac29103', 'TPROMPTb81e20c2db71', 'TPROMPT825bccada2da', 'TPROMPT8c50710e0cce', 'TPROMPT8e6275084324', 'TPROMPT0ac61557657c', 'TPROMPT3091df45580c', 'TPROMPTffcbc8ce570f', 'TPROMPTf693f06204f0', 'TPROMPT91b74119b23b', 'TPROMPT5f31b3a5e452', 'TPROMPT110d99998616', 'TPROMPT61640b7174a0', 'TPROMPTce33bd920c2d', 'TPROMPT2f7b35f34328', 'TPROMPT59892e5d6946', 'TPROMPTe2ae8879903b', 'TPROMPT2f6ab630f960', 'TPROMPT3e12bdceaf5f', 'TPROMPTf1708d393345', 'TPROMPTb597efb6724c', 'TPROMPTfb3db478a89d', 'TPROMPT4db4a1e6a431', 'TPROMPTf33ce6bcff4e', 'TPROMPT727f619343da', 'TPROMPTa2697c72db83', 'TPROMPT4636b72ec2d0']
+resume_skip 1/38 TPROMPT7e7a67fa1b6a
+resume_skip 2/38 TPROMPT11712e5ce7e5
+resume_skip 3/38 TPROMPT373af397f515
+resume_skip 4/38 TPROMPT385ec69248ec
+resume_skip 5/38 TPROMPTf44ca1b5cfe5
+resume_skip 6/38 TPROMPTc0529c3ff153
+resume_skip 7/38 TPROMPT5c4cd9457ec6
+resume_skip 8/38 TPROMPTe56ffa2da97d
+resume_skip 9/38 TPROMPT3d04f493f1e1
+resume_skip 10/38 TPROMPT11157b3d113c
+resume_skip 11/38 TPROMPTfd9e662a5271
+resume_skip 12/38 TPROMPTeb5d2ac29103
+resume_skip 13/38 TPROMPTb81e20c2db71
+resume_skip 14/38 TPROMPT825bccada2da
+resume_skip 15/38 TPROMPT8c50710e0cce
+resume_skip 16/38 TPROMPT8e6275084324
+resume_skip 17/38 TPROMPT0ac61557657c
+resume_skip 18/38 TPROMPT3091df45580c
+resume_skip 19/38 TPROMPTffcbc8ce570f
+resume_skip 20/38 TPROMPTf693f06204f0
+resume_skip 21/38 TPROMPT91b74119b23b
+resume_skip 22/38 TPROMPT5f31b3a5e452
+resume_skip 23/38 TPROMPT110d99998616
+resume_skip 24/38 TPROMPT61640b7174a0
+resume_skip 25/38 TPROMPTce33bd920c2d
+start 26/38 TPROMPT2f7b35f34328 2026-09-07 20:49:34
+done TPROMPT2f7b35f34328 status=completed rounds=8 crops=7 final=True runtime=67.9s
+start 27/38 TPROMPT59892e5d6946 2026-09-07 20:50:42
+done TPROMPT59892e5d6946 status=completed rounds=12 crops=11 final=False runtime=71.1s
+start 28/38 TPROMPTe2ae8879903b 2026-09-07 20:51:53
+done TPROMPTe2ae8879903b status=completed rounds=12 crops=11 final=False runtime=78.2s
+start 29/38 TPROMPT2f6ab630f960 2026-09-07 20:53:11
+done TPROMPT2f6ab630f960 status=completed rounds=12 crops=11 final=False runtime=146.6s
+start 30/38 TPROMPT3e12bdceaf5f 2026-09-07 20:55:38
+done TPROMPT3e12bdceaf5f status=completed rounds=12 crops=11 final=False runtime=64.7s
+start 31/38 TPROMPTf1708d393345 2026-09-07 20:56:42
+done TPROMPTf1708d393345 status=completed rounds=5 crops=4 final=True runtime=17.2s
+start 32/38 TPROMPTb597efb6724c 2026-09-07 20:56:59
+done TPROMPTb597efb6724c status=completed rounds=12 crops=11 final=False runtime=57.7s
+start 33/38 TPROMPTfb3db478a89d 2026-09-07 20:57:57
+done TPROMPTfb3db478a89d status=completed rounds=4 crops=3 final=True runtime=25.8s
+start 34/38 TPROMPT4db4a1e6a431 2026-09-07 20:58:23
+done TPROMPT4db4a1e6a431 status=completed rounds=12 crops=11 final=False runtime=63.5s
+start 35/38 TPROMPTf33ce6bcff4e 2026-09-07 20:59:26
+done TPROMPTf33ce6bcff4e status=completed rounds=6 crops=5 final=True runtime=35.8s
+start 36/38 TPROMPT727f619343da 2026-09-07 21:00:02
+done TPROMPT727f619343da status=completed rounds=5 crops=4 final=True runtime=20.0s
+start 37/38 TPROMPTa2697c72db83 2026-09-07 21:00:22
+done TPROMPTa2697c72db83 status=completed rounds=3 crops=2 final=True runtime=10.5s
+start 38/38 TPROMPT4636b72ec2d0 2026-09-07 21:00:33
+done TPROMPT4636b72ec2d0 status=completed rounds=12 crops=11 final=False runtime=55.3s
+
+===== shard 4 =====
+shard=4/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT21c31e94e6ef', 'TPROMPT3b0fc700b6ba', 'TPROMPT3a4863b95c2a', 'TPROMPT13b616f8c9dc', 'TPROMPT1490498cee1f', 'TPROMPT2adad2f7f441', 'TPROMPTd707edeba9f3', 'TPROMPTde7c9d8b1fa1', 'TPROMPTcb89849b96c2', 'TPROMPT94339f80b50d', 'TPROMPTa8d1a6f74ac4', 'TPROMPT5f09e97ce2c9', 'TPROMPT6f68b40581ba', 'TPROMPT9de5a57bb05d', 'TPROMPT0bfb8770708e', 'TPROMPTe31648324dbb', 'TPROMPTe057ae3a7d46', 'TPROMPT44008887cd0a', 'TPROMPTd27b2a205b7d', 'TPROMPT7a75636a3b9d', 'TPROMPTd79d39cab392', 'TPROMPT72757d5fd7cc', 'TPROMPT6064c9a5c9cc', 'TPROMPT143eb4f78ae5', 'TPROMPTbf5dc4466ea8', 'TPROMPTecc803d3a795', 'TPROMPT9309f58a65aa', 'TPROMPTfdeca2460585', 'TPROMPT10fc1db354a2', 'TPROMPTa959e892eec9', 'TPROMPTb3612e8d6d1e', 'TPROMPT4ebc8e5a4604', 'TPROMPTf6d2b9edb7b2', 'TPROMPTd8cea30a3f40', 'TPROMPTc04e48bbc232', 'TPROMPTf8a94a9faedf', 'TPROMPT0000ab2db273']
+resume_skip 1/37 TPROMPT21c31e94e6ef
+resume_skip 2/37 TPROMPT3b0fc700b6ba
+resume_skip 3/37 TPROMPT3a4863b95c2a
+resume_skip 4/37 TPROMPT13b616f8c9dc
+resume_skip 5/37 TPROMPT1490498cee1f
+resume_skip 6/37 TPROMPT2adad2f7f441
+resume_skip 7/37 TPROMPTd707edeba9f3
+resume_skip 8/37 TPROMPTde7c9d8b1fa1
+resume_skip 9/37 TPROMPTcb89849b96c2
+resume_skip 10/37 TPROMPT94339f80b50d
+resume_skip 11/37 TPROMPTa8d1a6f74ac4
+resume_skip 12/37 TPROMPT5f09e97ce2c9
+resume_skip 13/37 TPROMPT6f68b40581ba
+resume_skip 14/37 TPROMPT9de5a57bb05d
+resume_skip 15/37 TPROMPT0bfb8770708e
+resume_skip 16/37 TPROMPTe31648324dbb
+resume_skip 17/37 TPROMPTe057ae3a7d46
+resume_skip 18/37 TPROMPT44008887cd0a
+resume_skip 19/37 TPROMPTd27b2a205b7d
+resume_skip 20/37 TPROMPT7a75636a3b9d
+resume_skip 21/37 TPROMPTd79d39cab392
+resume_skip 22/37 TPROMPT72757d5fd7cc
+resume_skip 23/37 TPROMPT6064c9a5c9cc
+resume_skip 24/37 TPROMPT143eb4f78ae5
+resume_skip 25/37 TPROMPTbf5dc4466ea8
+resume_skip 26/37 TPROMPTecc803d3a795
+start 27/37 TPROMPT9309f58a65aa 2026-09-07 20:49:35
+done TPROMPT9309f58a65aa status=completed rounds=12 crops=11 final=False runtime=57.8s
+start 28/37 TPROMPTfdeca2460585 2026-09-07 20:50:33
+done TPROMPTfdeca2460585 status=completed rounds=2 crops=1 final=True runtime=6.2s
+start 29/37 TPROMPT10fc1db354a2 2026-09-07 20:50:39
+done TPROMPT10fc1db354a2 status=invalid rounds=6 crops=5 final=False runtime=69.8s
+start 30/37 TPROMPTa959e892eec9 2026-09-07 20:51:49
+done TPROMPTa959e892eec9 status=oom rounds=12 crops=11 final=False runtime=152.6s
+start 31/37 TPROMPTb3612e8d6d1e 2026-09-07 20:54:21
+done TPROMPTb3612e8d6d1e status=completed rounds=12 crops=11 final=False runtime=53.8s
+start 32/37 TPROMPT4ebc8e5a4604 2026-09-07 20:55:15
+done TPROMPT4ebc8e5a4604 status=completed rounds=12 crops=11 final=False runtime=47.5s
+start 33/37 TPROMPTf6d2b9edb7b2 2026-09-07 20:56:02
+done TPROMPTf6d2b9edb7b2 status=completed rounds=4 crops=3 final=True runtime=29.3s
+start 34/37 TPROMPTd8cea30a3f40 2026-09-07 20:56:32
+done TPROMPTd8cea30a3f40 status=completed rounds=12 crops=11 final=False runtime=71.0s
+start 35/37 TPROMPTc04e48bbc232 2026-09-07 20:57:43
+done TPROMPTc04e48bbc232 status=completed rounds=4 crops=3 final=True runtime=19.8s
+start 36/37 TPROMPTf8a94a9faedf 2026-09-07 20:58:02
+done TPROMPTf8a94a9faedf status=completed rounds=12 crops=11 final=False runtime=59.7s
+start 37/37 TPROMPT0000ab2db273 2026-09-07 20:59:02
+done TPROMPT0000ab2db273 status=completed rounds=12 crops=11 final=False runtime=49.0s
+
+===== shard 5 =====
+shard=5/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPTd9dea78fc2c2', 'TPROMPTe1671ded862f', 'TPROMPTa4c5c9ce4d5e', 'TPROMPT2d3a530d79de', 'TPROMPT07c19ee8daef', 'TPROMPT00e974d39841', 'TPROMPT9f45ab1d66fe', 'TPROMPT0a24f2bbb0a8', 'TPROMPT922f3a55568b', 'TPROMPTbf160f4c535d', 'TPROMPT1e5ff2942b29', 'TPROMPT68ca2fe097b9', 'TPROMPT96da9834dbc1', 'TPROMPT84ed52046338', 'TPROMPT312e2d4924ab', 'TPROMPT590724952722', 'TPROMPT6a40e4600d95', 'TPROMPTc15623bda4f1', 'TPROMPT3876cff94d32', 'TPROMPT4d38369995c3', 'TPROMPT038b4987f2c1', 'TPROMPTa9fc22a7914a', 'TPROMPT947d23b267c1', 'TPROMPTd83b61a6a489', 'TPROMPTc8292fc01cf4', 'TPROMPTcf704e168a0c', 'TPROMPT31a0621e1bbc', 'TPROMPT290bead25899', 'TPROMPT4e789f57d216', 'TPROMPT473e38c1eb2d', 'TPROMPT33ad5c10157a', 'TPROMPT1ba66b77a6b0', 'TPROMPT303869e65fa6', 'TPROMPT77a09000c1fe', 'TPROMPT9fae2cd40e06', 'TPROMPTfcde76eaeb49', 'TPROMPT15c77d450686']
+resume_skip 1/37 TPROMPTd9dea78fc2c2
+resume_skip 2/37 TPROMPTe1671ded862f
+resume_skip 3/37 TPROMPTa4c5c9ce4d5e
+resume_skip 4/37 TPROMPT2d3a530d79de
+resume_skip 5/37 TPROMPT07c19ee8daef
+resume_skip 6/37 TPROMPT00e974d39841
+resume_skip 7/37 TPROMPT9f45ab1d66fe
+resume_skip 8/37 TPROMPT0a24f2bbb0a8
+resume_skip 9/37 TPROMPT922f3a55568b
+resume_skip 10/37 TPROMPTbf160f4c535d
+resume_skip 11/37 TPROMPT1e5ff2942b29
+resume_skip 12/37 TPROMPT68ca2fe097b9
+resume_skip 13/37 TPROMPT96da9834dbc1
+resume_skip 14/37 TPROMPT84ed52046338
+resume_skip 15/37 TPROMPT312e2d4924ab
+resume_skip 16/37 TPROMPT590724952722
+resume_skip 17/37 TPROMPT6a40e4600d95
+resume_skip 18/37 TPROMPTc15623bda4f1
+resume_skip 19/37 TPROMPT3876cff94d32
+resume_skip 20/37 TPROMPT4d38369995c3
+resume_skip 21/37 TPROMPT038b4987f2c1
+start 22/37 TPROMPTa9fc22a7914a 2026-09-07 20:49:34
+done TPROMPTa9fc22a7914a status=completed rounds=12 crops=11 final=False runtime=62.8s
+start 23/37 TPROMPT947d23b267c1 2026-09-07 20:50:36
+done TPROMPT947d23b267c1 status=completed rounds=12 crops=11 final=False runtime=65.1s
+start 24/37 TPROMPTd83b61a6a489 2026-09-07 20:51:42
+done TPROMPTd83b61a6a489 status=oom rounds=11 crops=10 final=False runtime=134.4s
+start 25/37 TPROMPTc8292fc01cf4 2026-09-07 20:53:56
+done TPROMPTc8292fc01cf4 status=completed rounds=4 crops=3 final=True runtime=19.0s
+start 26/37 TPROMPTcf704e168a0c 2026-09-07 20:54:15
+done TPROMPTcf704e168a0c status=completed rounds=4 crops=3 final=True runtime=21.1s
+start 27/37 TPROMPT31a0621e1bbc 2026-09-07 20:54:36
+done TPROMPT31a0621e1bbc status=completed rounds=3 crops=2 final=True runtime=15.8s
+start 28/37 TPROMPT290bead25899 2026-09-07 20:54:52
+done TPROMPT290bead25899 status=completed rounds=12 crops=11 final=False runtime=59.7s
+start 29/37 TPROMPT4e789f57d216 2026-09-07 20:55:52
+done TPROMPT4e789f57d216 status=completed rounds=2 crops=1 final=True runtime=8.6s
+start 30/37 TPROMPT473e38c1eb2d 2026-09-07 20:56:00
+done TPROMPT473e38c1eb2d status=completed rounds=6 crops=5 final=True runtime=35.3s
+start 31/37 TPROMPT33ad5c10157a 2026-09-07 20:56:36
+done TPROMPT33ad5c10157a status=invalid rounds=5 crops=4 final=False runtime=64.5s
+start 32/37 TPROMPT1ba66b77a6b0 2026-09-07 20:57:40
+done TPROMPT1ba66b77a6b0 status=completed rounds=4 crops=3 final=True runtime=10.8s
+start 33/37 TPROMPT303869e65fa6 2026-09-07 20:57:51
+done TPROMPT303869e65fa6 status=completed rounds=3 crops=2 final=True runtime=17.0s
+start 34/37 TPROMPT77a09000c1fe 2026-09-07 20:58:08
+done TPROMPT77a09000c1fe status=completed rounds=12 crops=11 final=False runtime=126.9s
+start 35/37 TPROMPT9fae2cd40e06 2026-09-07 21:00:15
+done TPROMPT9fae2cd40e06 status=completed rounds=12 crops=11 final=False runtime=53.9s
+start 36/37 TPROMPTfcde76eaeb49 2026-09-07 21:01:09
+done TPROMPTfcde76eaeb49 status=completed rounds=7 crops=6 final=True runtime=26.6s
+start 37/37 TPROMPT15c77d450686 2026-09-07 21:01:35
+done TPROMPT15c77d450686 status=completed rounds=4 crops=3 final=True runtime=13.4s
+
+===== shard 6 =====
+shard=6/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT76c2790d4a2b', 'TPROMPT7497e337e5af', 'TPROMPT4b58392e9fa0', 'TPROMPTe93c0e257ee2', 'TPROMPT6a3fb0bb1b31', 'TPROMPT17518843f8cc', 'TPROMPTa3ae8e428218', 'TPROMPTcbf5caf2f74a', 'TPROMPT977be29c0aae', 'TPROMPTa6afff2f9bd6', 'TPROMPT5a17ec0898d7', 'TPROMPT5bdfa8b4b56f', 'TPROMPT9cfcac6766a6', 'TPROMPTacb5e1f84110', 'TPROMPTa10064d97f46', 'TPROMPT5e284ebedfca', 'TPROMPTb7d16105e70e', 'TPROMPTddb07117b5a0', 'TPROMPTdaf58fe2a41d', 'TPROMPT67091f5462b7', 'TPROMPTcc36d493e6fa', 'TPROMPTfa444cc289b4', 'TPROMPT4d9300e23732', 'TPROMPTe6d5d67c90a4', 'TPROMPTf84357322ce5', 'TPROMPTf0701c9a52c1', 'TPROMPT5f40e3f3825d', 'TPROMPTdfea3431f2e2', 'TPROMPTf03553c35e90', 'TPROMPT275ea85d1748', 'TPROMPT8dd640832c5f', 'TPROMPT1c4e65857519', 'TPROMPT3af283993b4f', 'TPROMPTcf226d5030b8', 'TPROMPT5013d9f0a3b0', 'TPROMPTe1d8627867cc', 'TPROMPT9404003b799f']
+resume_skip 1/37 TPROMPT76c2790d4a2b
+resume_skip 2/37 TPROMPT7497e337e5af
+resume_skip 3/37 TPROMPT4b58392e9fa0
+resume_skip 4/37 TPROMPTe93c0e257ee2
+resume_skip 5/37 TPROMPT6a3fb0bb1b31
+resume_skip 6/37 TPROMPT17518843f8cc
+resume_skip 7/37 TPROMPTa3ae8e428218
+resume_skip 8/37 TPROMPTcbf5caf2f74a
+resume_skip 9/37 TPROMPT977be29c0aae
+resume_skip 10/37 TPROMPTa6afff2f9bd6
+resume_skip 11/37 TPROMPT5a17ec0898d7
+resume_skip 12/37 TPROMPT5bdfa8b4b56f
+resume_skip 13/37 TPROMPT9cfcac6766a6
+resume_skip 14/37 TPROMPTacb5e1f84110
+resume_skip 15/37 TPROMPTa10064d97f46
+resume_skip 16/37 TPROMPT5e284ebedfca
+resume_skip 17/37 TPROMPTb7d16105e70e
+resume_skip 18/37 TPROMPTddb07117b5a0
+resume_skip 19/37 TPROMPTdaf58fe2a41d
+resume_skip 20/37 TPROMPT67091f5462b7
+resume_skip 21/37 TPROMPTcc36d493e6fa
+resume_skip 22/37 TPROMPTfa444cc289b4
+resume_skip 23/37 TPROMPT4d9300e23732
+resume_skip 24/37 TPROMPTe6d5d67c90a4
+resume_skip 25/37 TPROMPTf84357322ce5
+resume_skip 26/37 TPROMPTf0701c9a52c1
+resume_skip 27/37 TPROMPT5f40e3f3825d
+resume_skip 28/37 TPROMPTdfea3431f2e2
+start 29/37 TPROMPTf03553c35e90 2026-09-07 20:49:35
+done TPROMPTf03553c35e90 status=completed rounds=12 crops=11 final=False runtime=99.9s
+start 30/37 TPROMPT275ea85d1748 2026-09-07 20:51:15
+done TPROMPT275ea85d1748 status=completed rounds=12 crops=11 final=False runtime=67.3s
+start 31/37 TPROMPT8dd640832c5f 2026-09-07 20:52:22
+done TPROMPT8dd640832c5f status=completed rounds=3 crops=2 final=True runtime=12.2s
+start 32/37 TPROMPT1c4e65857519 2026-09-07 20:52:34
+done TPROMPT1c4e65857519 status=completed rounds=5 crops=4 final=True runtime=17.9s
+start 33/37 TPROMPT3af283993b4f 2026-09-07 20:52:52
+done TPROMPT3af283993b4f status=completed rounds=7 crops=6 final=True runtime=55.4s
+start 34/37 TPROMPTcf226d5030b8 2026-09-07 20:53:48
+done TPROMPTcf226d5030b8 status=completed rounds=4 crops=3 final=True runtime=27.1s
+start 35/37 TPROMPT5013d9f0a3b0 2026-09-07 20:54:15
+done TPROMPT5013d9f0a3b0 status=completed rounds=12 crops=11 final=False runtime=72.8s
+start 36/37 TPROMPTe1d8627867cc 2026-09-07 20:55:28
+done TPROMPTe1d8627867cc status=completed rounds=12 crops=11 final=False runtime=47.2s
+start 37/37 TPROMPT9404003b799f 2026-09-07 20:56:15
+done TPROMPT9404003b799f status=completed rounds=12 crops=11 final=False runtime=67.7s
+
+===== shard 7 =====
+shard=7/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPTa3781b14212b', 'TPROMPT2369f049b80b', 'TPROMPT87f194a501d8', 'TPROMPTbb4183eb9aa6', 'TPROMPT28c29c1db01e', 'TPROMPT8dd79a19623f', 'TPROMPT88dc50778928', 'TPROMPT4315b27969c0', 'TPROMPT5d1d907d375f', 'TPROMPT632f637e4902', 'TPROMPTe63efe3eef16', 'TPROMPT6acc555002b3', 'TPROMPT4fbb99de6505', 'TPROMPT331ec7b1c71f', 'TPROMPT35255b0e44f6', 'TPROMPTa720ecb7da24', 'TPROMPT6a75d7f11f8c', 'TPROMPT91f41b6832c0', 'TPROMPT3c99cee2ee15', 'TPROMPTbb4cf0cc7859', 'TPROMPT38ac7fbf9141', 'TPROMPT9c0f30434600', 'TPROMPT732a4ca03c30', 'TPROMPT4163826dc1ac', 'TPROMPT1f1fba410196', 'TPROMPT93014e1d8303', 'TPROMPT19d01b3ff8c1', 'TPROMPT4436defccde7', 'TPROMPTce2940009b7b', 'TPROMPTcb887313e74d', 'TPROMPTf75544649373', 'TPROMPT9676e8a997c3', 'TPROMPTf0730a4d99d6', 'TPROMPT6a35efbe56dd', 'TPROMPTdd3cd69fde68', 'TPROMPTe98c57cad61b', 'TPROMPTb47e9914e0a5']
+resume_skip 1/37 TPROMPTa3781b14212b
+resume_skip 2/37 TPROMPT2369f049b80b
+resume_skip 3/37 TPROMPT87f194a501d8
+resume_skip 4/37 TPROMPTbb4183eb9aa6
+resume_skip 5/37 TPROMPT28c29c1db01e
+resume_skip 6/37 TPROMPT8dd79a19623f
+resume_skip 7/37 TPROMPT88dc50778928
+resume_skip 8/37 TPROMPT4315b27969c0
+resume_skip 9/37 TPROMPT5d1d907d375f
+resume_skip 10/37 TPROMPT632f637e4902
+resume_skip 11/37 TPROMPTe63efe3eef16
+resume_skip 12/37 TPROMPT6acc555002b3
+resume_skip 13/37 TPROMPT4fbb99de6505
+resume_skip 14/37 TPROMPT331ec7b1c71f
+resume_skip 15/37 TPROMPT35255b0e44f6
+resume_skip 16/37 TPROMPTa720ecb7da24
+resume_skip 17/37 TPROMPT6a75d7f11f8c
+resume_skip 18/37 TPROMPT91f41b6832c0
+resume_skip 19/37 TPROMPT3c99cee2ee15
+resume_skip 20/37 TPROMPTbb4cf0cc7859
+resume_skip 21/37 TPROMPT38ac7fbf9141
+resume_skip 22/37 TPROMPT9c0f30434600
+resume_skip 23/37 TPROMPT732a4ca03c30
+resume_skip 24/37 TPROMPT4163826dc1ac
+resume_skip 25/37 TPROMPT1f1fba410196
+resume_skip 26/37 TPROMPT93014e1d8303
+resume_skip 27/37 TPROMPT19d01b3ff8c1
+resume_skip 28/37 TPROMPT4436defccde7
+resume_skip 29/37 TPROMPTce2940009b7b
+resume_skip 30/37 TPROMPTcb887313e74d
+resume_skip 31/37 TPROMPTf75544649373
+resume_skip 32/37 TPROMPT9676e8a997c3
+resume_skip 33/37 TPROMPTf0730a4d99d6
+resume_skip 34/37 TPROMPT6a35efbe56dd
+resume_skip 35/37 TPROMPTdd3cd69fde68
+start 36/37 TPROMPTe98c57cad61b 2026-09-07 20:49:34
+done TPROMPTe98c57cad61b status=completed rounds=12 crops=11 final=False runtime=51.0s
+start 37/37 TPROMPTb47e9914e0a5 2026-09-07 20:50:25
+done TPROMPTb47e9914e0a5 status=completed rounds=12 crops=11 final=False runtime=64.8s
+

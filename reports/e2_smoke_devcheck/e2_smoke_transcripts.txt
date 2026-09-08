@@ -1,0 +1,4 @@
+=== GPT4V-hard/0 ===
+final=B gt=A correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[500,320,537,369]}}
+[turn 2 answer] <answer>B</answer>

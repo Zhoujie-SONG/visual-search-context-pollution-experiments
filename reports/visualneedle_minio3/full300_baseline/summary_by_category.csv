@@ -1,0 +1,6 @@
+category,total_episodes,completed_episodes,final_answer_episodes,no_final_answer_episodes,total_crops,mean_crops_per_episode,median_crops_per_episode,max_crops_per_episode,gt_center_hit_episodes,gt_center_hit_rate,geometrically_irrelevant_crops,geometrically_irrelevant_crop_ratio,episodes_with_irrelevant_crop,high_overlap_crop_count,parse_failures,preprocessing_failures,oom_count
+Color Recognition,73,71,50,23,380,5.205479452054795,4,11,40,0.547945205479452,254,0.6684210526315789,54,112,4,0,2
+Entity Recognition,64,63,33,31,442,6.90625,5.0,11,37,0.578125,292,0.6606334841628959,48,149,2,0,1
+OCR Recognition,71,69,33,38,528,7.436619718309859,11,11,47,0.6619718309859155,310,0.5871212121212122,46,229,0,0,2
+Occluded Object Recognition,34,33,16,18,229,6.735294117647059,5.0,11,26,0.7647058823529411,114,0.4978165938864629,24,83,3,0,1
+Spatial Relationship,58,58,19,39,490,8.448275862068966,11.0,11,39,0.6724137931034483,352,0.7183673469387755,49,181,1,0,0

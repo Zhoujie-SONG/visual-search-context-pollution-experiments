@@ -1,0 +1,21 @@
+{
+  "sample_id": "TPROMPT65ab072c3b73",
+  "model_path": "/mnt/data2/szj/models/Mini-o3-7B-v1-complete",
+  "model_config_use_cache": null,
+  "model_text_config_use_cache": false,
+  "generation_config_use_cache": false,
+  "model_config_attn_implementation": "sdpa",
+  "torch_version": "2.5.1",
+  "transformers_version": "5.13.0",
+  "cuda_device_name": "NVIDIA GeForce RTX 3090",
+  "cuda_visible_devices": "0",
+  "model_dtype": "torch.bfloat16",
+  "processor_min_pixels": 40000,
+  "processor_max_pixels": 2000000,
+  "system_prompt": "You are a helpful assistant. Answer the user's question based on the image provided. Output your thinking process within the <think> and </think> tags. Whenever you find anything unclear, you can zoom in a specific region in the given image to see more clearly by outputing <grounding>{\"bbox_2d\": [x0, y0, x1, y1], \"source\": \"original_image\"}</grounding>, where (x0, y0) and (x1, y1) are the top-left and bottom-right coordinates of the region that you want to zoom in, respectively (suppose the width and height of the image are 1.0), and 'source' refers to the image that you zoom in and could be either 'original_image' or 'observation_i'. Once the final answer is confirmed, put it within <answer> and </answer>.",
+  "do_sample": false,
+  "max_new_tokens": 128,
+  "max_time_seconds": 600,
+  "question": "What is the color of the bag in the hand of the woman to the left of the person making a phone call gesture in the image?",
+  "image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT65ab072c3b73.png"
+}

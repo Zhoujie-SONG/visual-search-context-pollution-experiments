@@ -1,0 +1,41 @@
+sample_id,category,condition,k_irrelevant,valid,suspicious,diagnosis,gt_answer_letter,pred_answer_letter,raw_output_token_count,output_near_max_new_tokens,total_model_input_length,estimated_visual_token_count,question,model_raw_output
+OCR/sa_42566,OCR,gt_plus_1_irrelevant,1,False,True,likely_truncation,D,,8,True,1354,5292,Tell me the number on the traffic light screen.,The traffic light screen in the image shows
+OCR/sa_42566,OCR,gt_plus_8_irrelevant,8,False,True,likely_truncation,D,,8,True,1597,6264,Tell me the number on the traffic light screen.,The number on the traffic light screen in
+direct_attributes/sa_16854,direct_attributes,gt_crop_only,0,False,True,likely_truncation,B,,8,True,1352,5292,What is the color of the watch?,The image does not provide enough detail to
+direct_attributes/sa_16854,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,B,,8,True,1595,6264,What is the color of the watch?,The image does not provide enough detail to
+direct_attributes/sa_16854,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,B,,8,True,1595,6264,What is the color of the watch?,The image does not provide enough detail to
+direct_attributes/sa_24546,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,D,,8,True,1595,6264,What is the color of the suitcase?,The image provided does not contain any visible
+direct_attributes/sa_24546,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,D,,8,True,1595,6264,What is the color of the suitcase?,The image provided does not contain any visible
+direct_attributes/sa_25212,direct_attributes,original_only,0,False,True,likely_truncation,D,,8,True,1082,4212,What is the color of the helmet?,"The image does not contain any helmets,"
+direct_attributes/sa_25212,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,D,,8,True,1595,6264,What is the color of the helmet?,The image provided does not contain any helmets
+direct_attributes/sa_25212,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,D,,8,True,1595,6264,What is the color of the helmet?,The image provided does not contain any helmets
+direct_attributes/sa_25219,direct_attributes,gt_plus_8_irrelevant,8,True,True,likely_abstention,D,A,8,True,1595,6264,What is the color of the flag?,"The image does not contain a flag,"
+direct_attributes/sa_28392,direct_attributes,gt_plus_1_irrelevant,1,False,True,likely_truncation,B,,8,True,1352,5292,What is the color of the backpack?,The image does not provide enough detail to
+direct_attributes/sa_29744,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,B,,8,True,1596,6264,What is the color of the plastic stool?,The image provided does not contain any visible
+direct_attributes/sa_29744,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,B,,8,True,1596,6264,What is the color of the plastic stool?,The image provided does not contain any visible
+direct_attributes/sa_30179,direct_attributes,original_only,0,False,True,likely_truncation,B,,8,True,1082,4212,What is the color of the bicycle?,The image does not provide enough detail to
+direct_attributes/sa_30411,direct_attributes,gt_plus_1_irrelevant,1,False,True,likely_truncation,B,,8,True,1354,5292,What is the color of the man's cap?,None of the options provided are correct as
+direct_attributes/sa_30411,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,B,,8,True,1597,6264,What is the color of the man's cap?,The image provided does not contain any visible
+direct_attributes/sa_30411,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,B,,8,True,1597,6264,What is the color of the man's cap?,The image provided does not contain any visible
+direct_attributes/sa_31451,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,C,,8,True,1595,6264,What is the color of the hat?,The image provided does not contain any information
+direct_attributes/sa_35748,direct_attributes,gt_plus_8_irrelevant,8,True,True,likely_abstention,D,A,8,True,1595,6264,What is the color of the scooter?,"The image does not contain a scooter,"
+direct_attributes/sa_38155,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,D,,8,True,1595,6264,What is the color of the car?,"The image does not contain any cars,"
+direct_attributes/sa_39518,direct_attributes,gt_crop_only,0,False,True,likely_truncation,B,,8,True,1353,5292,What is the color of the tissue box?,The image provided does not contain any tissue
+direct_attributes/sa_39518,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,B,,8,True,1596,6264,What is the color of the tissue box?,The image provided does not contain any tissue
+direct_attributes/sa_39678,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,A,,8,True,1595,6264,What is the color of the helmet?,The image provided does not contain any helmets
+direct_attributes/sa_39678,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,A,,8,True,1595,6264,What is the color of the helmet?,The image provided does not contain any helmets
+direct_attributes/sa_41908,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,B,,8,True,1597,6264,What is the color of the guard's glove?,The image provided does not contain any guards
+direct_attributes/sa_41908,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,B,,8,True,1597,6264,What is the color of the guard's glove?,The image provided does not contain any guards
+direct_attributes/sa_55722,direct_attributes,gt_crop_only,0,False,True,likely_truncation,C,,8,True,1352,5292,What is the color of the flute?,The image provided does not contain any visible
+direct_attributes/sa_55722,direct_attributes,gt_plus_1_irrelevant,1,False,True,likely_truncation,C,,8,True,1352,5292,What is the color of the flute?,The image provided does not contain any visible
+direct_attributes/sa_55722,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,C,,8,True,1595,6264,What is the color of the flute?,The image does not provide enough detail to
+direct_attributes/sa_55722,direct_attributes,gt_plus_8_irrelevant,8,True,True,likely_abstention,C,A,8,True,1595,6264,What is the color of the flute?,"The image does not contain a flute,"
+direct_attributes/sa_58805,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,C,,8,True,1596,6264,What is the color of the tablecloth?,The image provided does not contain any information
+direct_attributes/sa_60786,direct_attributes,gt_crop_only,0,False,True,likely_truncation,D,,8,True,1352,5292,What is the color of the umbrella?,"The image does not contain an umbrella,"
+direct_attributes/sa_60786,direct_attributes,gt_plus_1_irrelevant,1,False,True,likely_truncation,D,,8,True,1352,5292,What is the color of the umbrella?,"The image does not contain an umbrella,"
+direct_attributes/sa_60786,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,D,,8,True,1595,6264,What is the color of the umbrella?,"The image does not contain an umbrella,"
+direct_attributes/sa_60786,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,D,,8,True,1595,6264,What is the color of the umbrella?,"The image does not contain an umbrella,"
+direct_attributes/sa_66657,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,C,,8,True,1596,6264,What is the color of the soda can?,The image provided does not contain any soda
+direct_attributes/sa_66657,direct_attributes,gt_plus_8_irrelevant,8,False,True,likely_truncation,C,,8,True,1596,6264,What is the color of the soda can?,The image provided does not contain any soda
+direct_attributes/sa_68625,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,B,,8,True,1595,6264,What is the color of the straw?,The image does not provide enough detail to
+direct_attributes/sa_6965,direct_attributes,gt_plus_4_irrelevant,4,False,True,likely_truncation,D,,8,True,1597,6264,What is the color of the man's cap?,The image provided does not contain any visible

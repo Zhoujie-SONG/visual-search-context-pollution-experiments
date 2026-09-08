@@ -1,0 +1,6 @@
+category,num_samples,exact_correct,exact_accuracy,normalized_correct,normalized_accuracy,official_final_correct,official_final_accuracy,official_judge_pending,official_final_complete
+Color Recognition,73,0,0.0,2,0.0273972602739726,7,0.0958904109589041,0,True
+Entity Recognition,64,0,0.0,0,0.0,5,0.078125,0,True
+OCR Recognition,71,6,0.08450704225352113,7,0.09859154929577464,9,0.1267605633802817,0,True
+Occluded Object Recognition,34,0,0.0,1,0.029411764705882353,4,0.11764705882352941,0,True
+Spatial Relationship,58,3,0.05172413793103448,3,0.05172413793103448,4,0.06896551724137931,0,True

@@ -1,0 +1,19 @@
+{
+  "model": "/mnt/data2/szj/models/Mini-o3-7B-v1-complete",
+  "model_id": "Mini-o3/Mini-o3-7B-v1",
+  "model_revision": "e82da9a10cca125a1e26c27760ef80840c0fbcd1",
+  "repo_url": "https://github.com/Mini-o3/Mini-o3",
+  "repo_commit": "2c5a0dedb5279eff2c0e6049aac05de97bf7a2b3",
+  "min_pixels": 40000,
+  "max_pixels": 2000000,
+  "max_generation_round": 12,
+  "limit_image_num": 12,
+  "round_max_new_tokens_hf_deviation": 2048,
+  "val_n": 1,
+  "val_do_sample": false,
+  "use_relative_coordinates": true,
+  "env_name": "venv_e2m",
+  "python_executable": "/mnt/data2/szj/envs/venv_e2m/bin/python",
+  "official_demo_data_available": false,
+  "protocol_sanity_source": "vbench_first_smoke_sample"
+}

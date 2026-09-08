@@ -1,0 +1,80 @@
+===== shard 0 =====
+shard=0/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT3548aa15300e', 'TPROMPTc0529c3ff153', 'TPROMPTb85097d0357f']
+start 1/3 TPROMPT3548aa15300e 2026-09-07 15:01:22
+done TPROMPT3548aa15300e status=completed rounds=7 crops=6 final=True runtime=2144.6s
+start 2/3 TPROMPTc0529c3ff153 2026-09-07 15:37:07
+done TPROMPTc0529c3ff153 status=completed rounds=4 crops=3 final=True runtime=371.9s
+start 3/3 TPROMPTb85097d0357f 2026-09-07 15:43:18
+done TPROMPTb85097d0357f status=completed rounds=12 crops=11 final=False runtime=2033.7s
+
+===== shard 1 =====
+shard=1/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT17518843f8cc', 'TPROMPT13b616f8c9dc', 'TPROMPT4636b72ec2d0']
+start 1/3 TPROMPT17518843f8cc 2026-09-07 15:01:22
+done TPROMPT17518843f8cc status=completed rounds=12 crops=11 final=False runtime=2015.3s
+start 2/3 TPROMPT13b616f8c9dc 2026-09-07 15:34:57
+done TPROMPT13b616f8c9dc status=completed rounds=5 crops=4 final=True runtime=764.1s
+start 3/3 TPROMPT4636b72ec2d0 2026-09-07 15:47:41
+done TPROMPT4636b72ec2d0 status=completed rounds=6 crops=5 final=True runtime=710.6s
+
+===== shard 2 =====
+shard=2/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT88dc50778928', 'TPROMPT11712e5ce7e5', 'TPROMPTdcc8e5320bb5']
+start 1/3 TPROMPT88dc50778928 2026-09-07 15:01:22
+done TPROMPT88dc50778928 status=completed rounds=2 crops=1 final=True runtime=159.8s
+start 2/3 TPROMPT11712e5ce7e5 2026-09-07 15:04:02
+done TPROMPT11712e5ce7e5 status=completed rounds=12 crops=11 final=False runtime=2950.4s
+start 3/3 TPROMPTdcc8e5320bb5 2026-09-07 15:53:12
+done TPROMPTdcc8e5320bb5 status=completed rounds=3 crops=2 final=True runtime=348.9s
+
+===== shard 3 =====
+shard=3/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT65ab072c3b73', 'TPROMPT28c29c1db01e', 'TPROMPTcc36d493e6fa']
+start 1/3 TPROMPT65ab072c3b73 2026-09-07 15:01:18
+done TPROMPT65ab072c3b73 status=completed rounds=12 crops=11 final=False runtime=3467.5s
+start 2/3 TPROMPT28c29c1db01e 2026-09-07 15:59:05
+done TPROMPT28c29c1db01e status=completed rounds=3 crops=2 final=True runtime=423.9s
+start 3/3 TPROMPTcc36d493e6fa 2026-09-07 16:06:09
+done TPROMPTcc36d493e6fa status=invalid rounds=6 crops=5 final=False runtime=1609.5s
+
+===== shard 4 =====
+shard=4/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT5e284ebedfca', 'TPROMPT6a35efbe56dd']
+start 1/2 TPROMPT5e284ebedfca 2026-09-07 15:01:22
+done TPROMPT5e284ebedfca status=completed rounds=4 crops=3 final=True runtime=513.0s
+start 2/2 TPROMPT6a35efbe56dd 2026-09-07 15:09:55
+done TPROMPT6a35efbe56dd status=invalid rounds=8 crops=7 final=False runtime=3508.1s
+
+===== shard 5 =====
+shard=5/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT433eb7d38409', 'TPROMPT70cc4aa9b0ad']
+start 1/2 TPROMPT433eb7d38409 2026-09-07 15:01:22
+done TPROMPT433eb7d38409 status=completed rounds=12 crops=11 final=False runtime=2302.5s
+start 2/2 TPROMPT70cc4aa9b0ad 2026-09-07 15:39:44
+done TPROMPT70cc4aa9b0ad status=invalid rounds=7 crops=6 final=False runtime=2688.5s
+
+===== shard 6 =====
+shard=6/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT3b824b5818d8', 'TPROMPTf75544649373']
+start 1/2 TPROMPT3b824b5818d8 2026-09-07 15:01:22
+done TPROMPT3b824b5818d8 status=completed rounds=6 crops=5 final=True runtime=1090.6s
+start 2/2 TPROMPTf75544649373 2026-09-07 15:19:33
+done TPROMPTf75544649373 status=completed rounds=3 crops=2 final=True runtime=355.8s
+
+===== shard 7 =====
+shard=7/8
+gpu=NVIDIA GeForce RTX 3090
+assigned=['TPROMPT37318e20e89a', 'TPROMPT176f197b8403']
+start 1/2 TPROMPT37318e20e89a 2026-09-07 15:01:22
+done TPROMPT37318e20e89a status=completed rounds=4 crops=3 final=True runtime=491.9s
+start 2/2 TPROMPT176f197b8403 2026-09-07 15:09:34
+done TPROMPT176f197b8403 status=completed rounds=12 crops=11 final=False runtime=2351.5s
+

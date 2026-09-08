@@ -1,0 +1,4 @@
+condition,n,oom_count,oom_rate,invalid_count,invalid_rate_excluding_oom,accuracy_invalid_as_wrong_excluding_oom,valid_only_accuracy,mean_input_token_count
+original_only,20,0,0.0,0,0.0,0.7,0.7,1373.25
+gt_crop_only,20,0,0.0,0,0.0,0.95,0.95,1703.85
+gt_plus_8_irrelevant,20,0,0.0,0,0.0,0.9,0.9,4310.25

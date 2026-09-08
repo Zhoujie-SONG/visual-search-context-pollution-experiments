@@ -1,0 +1,107 @@
+=== GPT4V-hard/0 ===
+final=B gt=A correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[500,320,537,369]}}
+[turn 2 answer] <answer>B</answer>
+
+=== GPT4V-hard/1 ===
+final=A gt=D correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[537,95,548,118]}}
+
+{"name":"crop","arguments":{"bbox":[-1,0,1036,504]}}
+[turn 2 answer] <answer>A</answer>
+
+=== GPT4V-hard/10 ===
+final=D gt=D correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[542,233,579,308]}}
+[turn 2 answer] <answer>D</answer>
+
+=== GPT4V-hard/12 ===
+final=D gt=D correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[637,172,665,203]}}
+[turn 2 answer] <answer>D</answer>
+
+=== GPT4V-hard/13 ===
+final=D gt=D correct=True
+[turn 1 answer] <tool_call>{"name":"crop","arguments":{"bbox":[459,386,506,516]}}
+
+ addCriterion
+The player who is shooting is wearing jersey number 8. Therefore, the correct answer is:
+
+<answer>D</answer>
+
+=== GPT4V-hard/14 ===
+final=B gt=A correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox": [249,337,320,370]}}
+[turn 2 answer] <answer>B</answer>
+
+=== GPT4V-hard/15 ===
+final=A gt=A correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[507,301,540,359]}}
+[turn 2 answer] <answer>A</answer>
+
+=== GPT4V-hard/16 ===
+final=B gt=C correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[337,39,510,166]}}
+[turn 2 answer] <answer>B</answer>
+
+=== GPT4V-hard/17 ===
+final=D gt=D correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[539,373,564,382]}}
+[turn 2 answer] <answer>D</answer>
+
+=== GPT4V-hard/18 ===
+final=A gt=D correct=False
+[turn 1 answer] There is no dog visible in the image. Therefore, it's not possible to determine the color of a dog from this image.
+
+<answer>A</answer>
+
+=== GPT4V-hard/19 ===
+final=B gt=A correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[513,329,547,383]}}
+[turn 2 answer] <answer>B</answer>
+
+=== GPT4V-hard/2 ===
+final=A gt=A correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[583,311,634,350]}}
+[turn 2 answer] <answer>A</answer>
+
+=== GPT4V-hard/21 ===
+final=A gt=A correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[590,627,645,672]}}
+[turn 2 answer] <answer>A</answer>
+
+=== GPT4V-hard/4 ===
+final=A gt=D correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[529,352,572,373]}}
+[turn 2 answer] <answer>A</answer>
+
+=== GPT4V-hard/5 ===
+final=A gt=B correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[530,354,601,420]}}
+[turn 2 answer] <answer>A</answer>
+
+=== GPT4V-hard/7 ===
+final=B gt=D correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[395,558,410,585]}}
+[turn 2 answer] <answer>B</answer>
+
+=== GPT4V-hard/8 ===
+final=A gt=C correct=False
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[953,474,1032,581]}}
+[turn 2 answer] <answer>A</answer>
+
+=== OCR/sa_17012 ===
+final=A gt=A correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[337,835,425,946]}}
+[turn 2 answer] <answer>A</answer>
+
+=== OCR/sa_17063 ===
+final=A gt=A correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[435,337,445,350]}}
+[turn 2 answer] <answer>A</answer>
+
+=== OCR/sa_18172 ===
+final=A gt=A correct=True
+[turn 1 invalid] <tool_call>{"name":"crop","arguments":{"bbox":[435,427,452,440]}}
+{"name":"crop","arguments":{"bbox":[459,428,476,440]}}
+[turn 2 answer] <answer>A</answer>

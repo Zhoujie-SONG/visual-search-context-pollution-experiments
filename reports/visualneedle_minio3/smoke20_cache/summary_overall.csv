@@ -1,0 +1,2 @@
+category,total_episodes,completed_episodes,final_answer_episodes,no_final_answer_episodes,total_crops,mean_crops_per_episode,median_crops_per_episode,max_crops_per_episode,gt_center_hit_episodes,gt_center_hit_rate,geometrically_irrelevant_crops,geometrically_irrelevant_crop_ratio,episodes_with_irrelevant_crop,high_overlap_crop_count,parse_failures,preprocessing_failures,oom_count
+OVERALL,20,19,13,7,120,6,4.5,11,14,0.7,54,0.45,12,44,0,0,1

@@ -1,0 +1,1 @@
+sample_id,category,turn_id,crop_label,iou_with_gt,contains_gt_center,gt_bbox,bbox_original,crop_path

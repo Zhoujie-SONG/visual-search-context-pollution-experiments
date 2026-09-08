@@ -1,0 +1,37 @@
+experiment_id,section,condition_or_slice,n,metric,value,unit,baseline,delta_pp,ci95_low_pp,ci95_high_pp,p_two_sided,interpretation,source_file
+E1_v2.1p,overall,original_only,238,accuracy_seed_mean,74.7899,percent,gt_crop_only,9.6639,,,,Original-image baseline,outputs/summary_context_pollution_full_v21p.csv
+E1_v2.1p,overall,gt_crop_only,238,accuracy_seed_mean,84.4538,percent,gt_crop_only,0.0000,,,,Best controlled-evidence baseline,outputs/summary_context_pollution_full_v21p.csv
+E1_v2.1p,overall,gt_plus_1_irrelevant,238,accuracy_seed_mean,82.9132,percent,gt_crop_only,1.5406,-0.2801,3.6415,0.1116,Small non-significant degradation,outputs/bootstrap_context_pollution_full_v21p.csv
+E1_v2.1p,overall,gt_plus_4_irrelevant,238,accuracy_seed_mean,81.3725,percent,gt_crop_only,3.0812,0.7003,5.7423,0.0114,Significant degradation,outputs/bootstrap_context_pollution_full_v21p.csv
+E1_v2.1p,overall,gt_plus_8_irrelevant,238,accuracy_seed_mean,80.2521,percent,gt_crop_only,4.2017,0.9804,7.5630,0.0136,Significant degradation,outputs/bootstrap_context_pollution_full_v21p.csv
+E1_v2.1p,category,GPT4V-hard_gt_only,17,accuracy_seed_mean,94.1176,percent,,,,,,Category baseline,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,category,GPT4V-hard_plus_8,17,accuracy_seed_mean,88.2353,percent,GPT4V-hard_gt_only,5.8824,,,,Moderate sensitivity,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,category,OCR_gt_only,30,accuracy_seed_mean,100.0000,percent,,,,,,Category baseline,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,category,OCR_plus_8,30,accuracy_seed_mean,100.0000,percent,OCR_gt_only,0.0000,,,,No observed degradation,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,category,direct_attributes_gt_only,115,accuracy_seed_mean,86.9565,percent,,,,,,Category baseline,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,category,direct_attributes_plus_8,115,accuracy_seed_mean,78.2609,percent,direct_attributes_gt_only,8.6957,,,,Largest category degradation,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,category,relative_position_gt_only,76,accuracy_seed_mean,72.3684,percent,,,,,,Category baseline,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,category,relative_position_plus_8,76,accuracy_seed_mean,73.6842,percent,relative_position_gt_only,-1.3158,,,,No degradation in corrected experiment,outputs/summary_context_pollution_full_v21p_by_category.csv
+E1_v2.1p,integrity,all_rows,3570,unique_complete_rows,3570,count,,,,,,No duplicate or missing rows,outputs/results_context_pollution_full_v21_all_seeds.csv
+E1_v2.1p,integrity,all_conditions,3570,oom_rate,0,percent,,,,,,No OOM,outputs/summary_context_pollution_full_v21p.csv
+E1_v2.1p,integrity,all_conditions,3570,invalid_rate,0,percent,,,,,,No invalid generations after recovery,outputs/summary_context_pollution_full_v21p.csv
+E2M_VisualNeedle_100,trajectory,all,100,semantic_accuracy_reviewed,7,percent,,,,,,Primary E2-M accuracy,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,trajectory,answered_only,51,semantic_accuracy_reviewed,13.7255,percent,,,,,,Excludes 49 no-answer episodes,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,trajectory,all,100,no_answer_rate,49,percent,,,,,,Main failure mode,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,trajectory,all,100,target_center_hit_rate,62,percent,,,,,,Geometric center-hit criterion,/mnt/data2/szj/experiments/e2m_needle_smoke/category_summary.csv
+E2M_VisualNeedle_100,trajectory,all,100,mean_crops,5.36,count,,,,,,Average search length,/mnt/data2/szj/experiments/e2m_needle_smoke/category_summary.csv
+E2M_VisualNeedle_100,trajectory,all,100,turn_cap_rate,47,percent,,,,,,Nearly half fail to terminate naturally,/mnt/data2/szj/experiments/e2m_needle_smoke/category_summary.csv
+E2M_VisualNeedle_100,trajectory,all,100,oom_rate,0,percent,,,,,,Failure is behavioral rather than memory-related,/mnt/data2/szj/experiments/e2m_needle_smoke/category_summary.csv
+E2M_VisualNeedle_100,category,Color Recognition,20,semantic_accuracy_reviewed,10,percent,,,,,,2 correct,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,category,Entity Recognition,20,semantic_accuracy_reviewed,15,percent,,,,,,3 correct; best category,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,category,OCR Recognition,20,semantic_accuracy_reviewed,5,percent,,,,,,1 correct,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,category,Occluded Object Recognition,20,semantic_accuracy_reviewed,0,percent,,,,,,0 correct,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,category,Spatial Relationship,20,semantic_accuracy_reviewed,5,percent,,,,,,1 correct,/mnt/data2/szj/experiments/e2m_needle_smoke/semantic_rescore_100/semantic_summary_reviewed.csv
+E2M_VisualNeedle_100,crop,all_crops,536,total_crops,536,count,,,,,,All search crops,/mnt/data2/szj/experiments/e2m_needle_smoke/crop_check_100_per_turn.csv
+E2M_VisualNeedle_100,crop,geometrically_irrelevant,347,share_of_all_crops,64.7388,percent,,,,,,Target coverage below 10%,/mnt/data2/szj/experiments/e2m_needle_smoke/crop_and_accuracy_summary_100.csv
+E2M_VisualNeedle_100,crop,MISLEADING,47,share_of_irrelevant_crops,13.5447,percent,,,,,,Could plausibly induce a wrong answer,/mnt/data2/szj/experiments/e2m_needle_smoke/irrelevant_crop_classification_100/classification_summary.csv
+E2M_VisualNeedle_100,crop,EXPLORATION,18,share_of_irrelevant_crops,5.1873,percent,,,,,,Reasonable exploratory step,/mnt/data2/szj/experiments/e2m_needle_smoke/irrelevant_crop_classification_100/classification_summary.csv
+E2M_VisualNeedle_100,crop,REDUNDANT,223,share_of_irrelevant_crops,64.2651,percent,,,,,,Dominant irrelevant-crop class,/mnt/data2/szj/experiments/e2m_needle_smoke/irrelevant_crop_classification_100/classification_summary.csv
+E2M_VisualNeedle_100,crop,NEAR_MISS,59,share_of_irrelevant_crops,17.0029,percent,,,,,,Near target but missing needed evidence,/mnt/data2/szj/experiments/e2m_needle_smoke/irrelevant_crop_classification_100/classification_summary.csv
+E2M_VisualNeedle_100,association,episodes_with_irrelevant_crop,79,semantic_accuracy_reviewed,2.5316,percent,,,,,,Observational association only,/mnt/data2/szj/experiments/e2m_needle_smoke/crop_type_accuracy_association_100.csv
+E2M_VisualNeedle_100,association,episodes_without_irrelevant_crop,21,semantic_accuracy_reviewed,23.8095,percent,,,,,,Observational association only,/mnt/data2/szj/experiments/e2m_needle_smoke/crop_type_accuracy_association_100.csv
