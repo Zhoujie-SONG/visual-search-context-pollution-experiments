@@ -1,0 +1,5 @@
+subgroup,condition,mode,num_samples,valid_answers,answer_rate,final_correct,final_scored,final_accuracy,accuracy_among_answered,grounding_present,protocol_violation_rate,judge_pending,oom,error,mean_input_tokens,mean_visual_tokens,mean_output_tokens,mean_runtime_seconds
+all,F_full_direct,lenient,2,0,0.0,0,2,0.0,,2,1.0,0,0,0,4562.5,3098.5,110.0,4.345602751709521
+all,O_oracle_top2_direct,lenient,2,0,0.0,0,2,0.0,,2,1.0,0,0,0,4018.0,2526.0,110.0,3.7669856753200293
+all,R_recent_top2_direct,lenient,2,0,0.0,0,2,0.0,,2,1.0,0,0,0,3761.0,2269.0,110.0,3.655664773657918
+all,X_random_top2_direct,lenient,2,0,0.0,0,2,0.0,,2,1.0,0,0,0,3773.5,2281.5,110.0,3.671165551058948

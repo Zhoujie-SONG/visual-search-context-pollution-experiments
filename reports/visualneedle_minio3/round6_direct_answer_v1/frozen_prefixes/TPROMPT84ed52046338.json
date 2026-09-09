@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT84ed52046338",
+  "question": "Please find the clock in the room. On the countertop of the cabinet to the left of the clock, what is the second item when counting from left to right?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT84ed52046338.jpg",
+  "original_width": 4928,
+  "original_height": 3264,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 779,
+  "turns": [
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 1,
+      "question": "Please find the clock in the room. On the countertop of the cabinet to the left of the clock, what is the second item when counting from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the clock in the room and then identify the second item on the countertop of the cabinet to its left. I can see a round object that looks like a clock on the wall in the upper right section of the image. I will first zoom in on that area to get a better view of the clock and the surrounding objects. </think><grounding>{\"bbox_2d\": [0.5,0.2,1.0,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        2462.8519164786344,
+        652.3042565941204,
+        4925.703832957269,
+        1956.912769782361
+      ],
+      "predicted_bbox_clipped": [
+        2462,
+        652,
+        4926,
+        1957
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        868.5,
+        230.0,
+        1737.0,
+        690.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        2462.8519164786344,
+        652.3042565941204,
+        4925.703832957269,
+        1956.912769782361
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2773,
+      "output_tokens": 115,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.613078037276864,
+      "tokens_per_second": 31.828817095429855,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2464,
+      "original_crop_height": 1305,
+      "processed_width": 1943,
+      "processed_height": 1029,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 2,
+      "question": "Please find the clock in the room. On the countertop of the cabinet to the left of the clock, what is the second item when counting from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the clock in the room and then identify the second item on the countertop of the cabinet to its left. In observation 1, I can clearly see a digital clock on the wall. The clock is located on a shelf. The cabinet to the left of the clock seems to be a wooden drawer unit. I need to zoom in on this area to see the items on the countertop of that cabinet more clearly. </think><grounding>{\"bbox_2d\": [0.3,0.2,0.8,0.7], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3201.2,
+        913.0,
+        4433.200000000001,
+        1565.5
+      ],
+      "predicted_bbox_clipped": [
+        3201,
+        913,
+        4434,
+        1566
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        582.9,
+        205.8,
+        1554.4,
+        720.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        739.2,
+        261.00000000000006,
+        1971.2000000000003,
+        913.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5469,
+      "output_tokens": 134,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.179510353133082,
+      "tokens_per_second": 25.871171377993964,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          72,
+          138
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1233,
+      "original_crop_height": 653,
+      "processed_width": 1233,
+      "processed_height": 653,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 3,
+      "question": "Please find the clock in the room. On the countertop of the cabinet to the left of the clock, what is the second item when counting from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the second item from the left on the countertop of the cabinet to the left of the clock. In observation 2, I can see the clock on the wall. The cabinet to the left of the clock is a wooden shelf unit. I need to zoom in on the countertop of this cabinet to see the items more clearly. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.6,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.6,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        3201.0,
+        913.0,
+        3940.8,
+        1239.5
+      ],
+      "predicted_bbox_clipped": [
+        3201,
+        913,
+        3941,
+        1240
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        739.8,
+        326.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        739.8,
+        326.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6712,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.36756150983274,
+      "tokens_per_second": 21.797607681937095,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          72,
+          138
+        ],
+        [
+          1,
+          46,
+          88
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 740,
+      "original_crop_height": 327,
+      "processed_width": 740,
+      "processed_height": 327,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 4,
+      "question": "Please find the clock in the room. On the countertop of the cabinet to the left of the clock, what is the second item when counting from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the second item from the left on the countertop of the cabinet to the left of the clock. In observation 3, I can see the top shelf of the cabinet. There are several items on this shelf. The first item from the left is a white bucket. The second item from the left appears to be another white bucket or container. I will zoom in on this area to get a better view and confirm the item. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.9,0.6], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.9,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        3349.0,
+        945.7,
+        3867.0,
+        1109.2
+      ],
+      "predicted_bbox_clipped": [
+        3349,
+        945,
+        3867,
+        1110
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        148.0,
+        32.7,
+        666.0,
+        196.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        148.0,
+        32.7,
+        666.0,
+        196.2
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7238,
+      "output_tokens": 136,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.871823912486434,
+      "tokens_per_second": 23.161457500589552,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          72,
+          138
+        ],
+        [
+          1,
+          46,
+          88
+        ],
+        [
+          1,
+          24,
+          52
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 518,
+      "original_crop_height": 165,
+      "processed_width": 518,
+      "processed_height": 165,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 5,
+      "question": "Please find the clock in the room. On the countertop of the cabinet to the left of the clock, what is the second item when counting from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the second item from the left on the countertop of the cabinet to the left of the clock. In observation 4, I can see the top shelf of the cabinet. The first item from the left is a black container with a white lid. The second item from the left is another black container, also with a white lid. I will zoom in on the second item to get a better look and confirm what it is. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.7,0.9], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3504.4,
+        961.5,
+        3711.6,
+        1093.5
+      ],
+      "predicted_bbox_clipped": [
+        3504,
+        961,
+        3712,
+        1094
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        155.4,
+        16.5,
+        362.59999999999997,
+        148.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        155.4,
+        16.5,
+        362.59999999999997,
+        148.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7579,
+      "output_tokens": 136,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.036663027480245,
+      "tokens_per_second": 22.529003090100854,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          72,
+          138
+        ],
+        [
+          1,
+          46,
+          88
+        ],
+        [
+          1,
+          24,
+          52
+        ],
+        [
+          1,
+          12,
+          36
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 208,
+      "original_crop_height": 133,
+      "processed_width": 250,
+      "processed_height": 160,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 6,
+      "question": "Please find the clock in the room. On the countertop of the cabinet to the left of the clock, what is the second item when counting from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the second item from the left on the countertop of the cabinet to the left of the clock. In observation 5, I can see two black containers. The first one is closer to the left edge, and the second one is next to it. The second item from the left is another black container. I can see it more clearly now. It looks like a can or a jar. I will zoom in one more time to be more certain. </think><grounding>{\"bbox_2d\": [0.1,0.1,0.6,0.9], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3524.8,
+        974.3,
+        3628.8,
+        1080.7
+      ],
+      "predicted_bbox_clipped": [
+        3524,
+        974,
+        3629,
+        1081
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        25.0,
+        16.0,
+        150.0,
+        144.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        20.8,
+        13.3,
+        124.80000000000001,
+        119.7
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7866,
+      "output_tokens": 141,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.193176439031959,
+      "tokens_per_second": 22.766992251562495,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          72,
+          138
+        ],
+        [
+          1,
+          46,
+          88
+        ],
+        [
+          1,
+          24,
+          52
+        ],
+        [
+          1,
+          12,
+          36
+        ],
+        [
+          1,
+          12,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 105,
+      "original_crop_height": 107,
+      "processed_width": 198,
+      "processed_height": 202,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        2462.8519164786344,
+        652.3042565941204,
+        4925.703832957269,
+        1956.912769782361
+      ],
+      "predicted_bbox_clipped": [
+        2462,
+        652,
+        4926,
+        1957
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        868.5,
+        230.0,
+        1737.0,
+        690.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        2462.8519164786344,
+        652.3042565941204,
+        4925.703832957269,
+        1956.912769782361
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_01_processed.png",
+      "original_crop_width": 2464,
+      "original_crop_height": 1305,
+      "processed_width": 1943,
+      "processed_height": 1029,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7885551948051948,
+      "preprocess_scale_y": 0.7885057471264367
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3201.2,
+        913.0,
+        4433.200000000001,
+        1565.5
+      ],
+      "predicted_bbox_clipped": [
+        3201,
+        913,
+        4434,
+        1566
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        582.9,
+        205.8,
+        1554.4,
+        720.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        739.2,
+        261.00000000000006,
+        1971.2000000000003,
+        913.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_02_processed.png",
+      "original_crop_width": 1233,
+      "original_crop_height": 653,
+      "processed_width": 1233,
+      "processed_height": 653,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.6,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        3201.0,
+        913.0,
+        3940.8,
+        1239.5
+      ],
+      "predicted_bbox_clipped": [
+        3201,
+        913,
+        3941,
+        1240
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        739.8,
+        326.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        739.8,
+        326.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_03_processed.png",
+      "original_crop_width": 740,
+      "original_crop_height": 327,
+      "processed_width": 740,
+      "processed_height": 327,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.9,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        3349.0,
+        945.7,
+        3867.0,
+        1109.2
+      ],
+      "predicted_bbox_clipped": [
+        3349,
+        945,
+        3867,
+        1110
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        148.0,
+        32.7,
+        666.0,
+        196.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        148.0,
+        32.7,
+        666.0,
+        196.2
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_04_processed.png",
+      "original_crop_width": 518,
+      "original_crop_height": 165,
+      "processed_width": 518,
+      "processed_height": 165,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3504.4,
+        961.5,
+        3711.6,
+        1093.5
+      ],
+      "predicted_bbox_clipped": [
+        3504,
+        961,
+        3712,
+        1094
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        155.4,
+        16.5,
+        362.59999999999997,
+        148.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        155.4,
+        16.5,
+        362.59999999999997,
+        148.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_05_processed.png",
+      "original_crop_width": 208,
+      "original_crop_height": 133,
+      "processed_width": 250,
+      "processed_height": 160,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.2019230769230769,
+      "preprocess_scale_y": 1.2030075187969924
+    },
+    {
+      "sample_id": "TPROMPT84ed52046338",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3524.8,
+        974.3,
+        3628.8,
+        1080.7
+      ],
+      "predicted_bbox_clipped": [
+        3524,
+        974,
+        3629,
+        1081
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        25.0,
+        16.0,
+        150.0,
+        144.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        20.8,
+        13.3,
+        124.80000000000001,
+        119.7
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT84ed52046338/turn_06_processed.png",
+      "original_crop_width": 105,
+      "original_crop_height": 107,
+      "processed_width": 198,
+      "processed_height": 202,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.8857142857142857,
+      "preprocess_scale_y": 1.8878504672897196
+    }
+  ],
+  "original_image_sha256": "5e12aea75fe294c31c26729871398016925394b216746f6cdff9b428c24f70f0",
+  "crop_image_sha256": [
+    "2579d023f36bf8f248766b5a607fcb154b72792f9b0bc08d9e36c8261d284576",
+    "725afebdb88a6a57970e126f75172f67c7e588d074b9bd4fcb2be3fd7da9d4d7",
+    "7e73d9e27782444be259f6483b8e3bd4b1bd3abd5c37f986537806c5fadbbac7",
+    "e9a0f0064d7bf304348088ae014ffb104d7a039ffef4fb6b34fccf8c8291f3c6",
+    "c7dcae7fa56c691c9a3bf73bf7aca9bedd271ba34c0fdfd17a2ec9f3793abb0e",
+    "898782be5eb8dc09ba480d10413fdb72144a5fc8422f927c2101663f8930b699"
+  ],
+  "raw_crop_image_sha256": [
+    "cbc0f8ae44d2e727a260c65b8d41d43b162f101d0cc242263c960bef75b78c7e",
+    "725afebdb88a6a57970e126f75172f67c7e588d074b9bd4fcb2be3fd7da9d4d7",
+    "7e73d9e27782444be259f6483b8e3bd4b1bd3abd5c37f986537806c5fadbbac7",
+    "e9a0f0064d7bf304348088ae014ffb104d7a039ffef4fb6b34fccf8c8291f3c6",
+    "6ebe37744cf786b402577587b631ee457b50c0937e992d9682bd0ea1c7128614",
+    "b175e1c74906f9769568c6b41d2578ac027928bddce13d99fa979a646ab3fbaf"
+  ],
+  "assistant_text_sha256": "6a05a84e89b26b4b6e1b76105aaced94d229b856a9155cb5e8d37dc4a83eafc7"
+}

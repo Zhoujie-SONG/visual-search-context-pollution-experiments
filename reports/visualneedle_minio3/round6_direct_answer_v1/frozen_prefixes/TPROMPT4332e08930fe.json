@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT4332e08930fe",
+  "question": "What are the two large characters written on the sign to the left of the shop sign below '酷秀KTV' in the picture?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT4332e08930fe.png",
+  "original_width": 2048,
+  "original_height": 3010,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 748,
+  "turns": [
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 1,
+      "question": "What are the two large characters written on the sign to the left of the shop sign below '酷秀KTV' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the two large characters on the sign to the left of the shop sign below '酷秀KTV'. First, I need to locate the sign '酷秀KTV' in the original image. I can see a blue sign in the upper middle part of the image, which seems to have some text on it. I will zoom into that area to get a better view. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.7,0.35], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.7,
+        0.35
+      ],
+      "predicted_bbox_pixel": [
+        409.2733641592544,
+        300.84228591648474,
+        1432.4567745573902,
+        1052.9480007076966
+      ],
+      "predicted_bbox_clipped": [
+        409,
+        300,
+        1433,
+        1053
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        233.20000000000002,
+        171.3,
+        816.1999999999999,
+        599.55
+      ],
+      "predicted_bbox_source_content_pixel": [
+        409.2733641592544,
+        300.84228591648474,
+        1432.4567745573902,
+        1052.9480007076966
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2726,
+      "output_tokens": 125,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.016091637313366,
+      "tokens_per_second": 31.124787800813458,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          122,
+          82
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 753,
+      "processed_width": 1024,
+      "processed_height": 753,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 2,
+      "question": "What are the two large characters written on the sign to the left of the shop sign below '酷秀KTV' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the two large characters on the sign to the left of the '酷秀KTV' sign. In observation 1, I can see the '酷秀KTV' sign. To its left, there is another sign. I need to zoom in on that sign to read the characters. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.7,0.7], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        613.8,
+        601.2,
+        1125.8,
+        827.1
+      ],
+      "predicted_bbox_clipped": [
+        613,
+        601,
+        1126,
+        828
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        204.8,
+        301.2,
+        716.8,
+        527.1
+      ],
+      "predicted_bbox_source_content_pixel": [
+        204.8,
+        301.2,
+        716.8,
+        527.1
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3947,
+      "output_tokens": 108,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.936660910025239,
+      "tokens_per_second": 27.434417763786414,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          122,
+          82
+        ],
+        [
+          1,
+          54,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 513,
+      "original_crop_height": 227,
+      "processed_width": 513,
+      "processed_height": 227,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 3,
+      "question": "What are the two large characters written on the sign to the left of the shop sign below '酷秀KTV' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the two large characters on the sign to the left of the '酷秀KTV' sign. In observation 2, I can see the '酷秀KTV' sign, but the sign to its left is not fully visible. I need to adjust the bounding box to see the sign more clearly. I will go back to observation 1 and select a wider bounding box to include the sign to the left of '酷秀KTV'. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.6,0.8], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        409.0,
+        601.2,
+        1023.4,
+        902.4
+      ],
+      "predicted_bbox_clipped": [
+        409,
+        601,
+        1024,
+        903
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        301.2,
+        614.4,
+        602.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        301.2,
+        614.4,
+        602.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_03_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4296,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.0739286951720715,
+      "tokens_per_second": 27.394945485193915,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          122,
+          82
+        ],
+        [
+          1,
+          54,
+          74
+        ],
+        [
+          1,
+          16,
+          36
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 615,
+      "original_crop_height": 302,
+      "processed_width": 615,
+      "processed_height": 302,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 4,
+      "question": "What are the two large characters written on the sign to the left of the shop sign below '酷秀KTV' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the two large characters on the sign to the left of the '酷秀KTV' sign. In observation 3, I can see the '酷秀KTV' sign, but the sign to its left is still not fully visible. I need to adjust the bounding box again to see the sign more clearly. I will go back to the original image and select a wider bounding box to include the sign to the left of '酷秀KTV'. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.6,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        409.2733641592544,
+        601.6845718329695,
+        1227.8200924777632,
+        1504.2114295824238
+      ],
+      "predicted_bbox_clipped": [
+        409,
+        601,
+        1228,
+        1505
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        233.20000000000002,
+        342.6,
+        699.6,
+        856.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        409.2733641592544,
+        601.6845718329695,
+        1227.8200924777632,
+        1504.2114295824238
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4774,
+      "output_tokens": 140,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.941420719027519,
+      "tokens_per_second": 28.33193285099437,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          122,
+          82
+        ],
+        [
+          1,
+          54,
+          74
+        ],
+        [
+          1,
+          16,
+          36
+        ],
+        [
+          1,
+          22,
+          44
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 819,
+      "original_crop_height": 904,
+      "processed_width": 819,
+      "processed_height": 904,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 5,
+      "question": "What are the two large characters written on the sign to the left of the shop sign below '酷秀KTV' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the two large characters on the sign to the left of the '酷秀KTV' sign. In observation 4, I can see the '酷秀KTV' sign. To its left, there is a red sign with some characters on it. I will zoom in on that sign to read the characters. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.5,0.6], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        572.8,
+        872.2,
+        818.5,
+        1143.4
+      ],
+      "predicted_bbox_clipped": [
+        572,
+        872,
+        819,
+        1144
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        163.8,
+        271.2,
+        409.5,
+        542.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        163.8,
+        271.2,
+        409.5,
+        542.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5939,
+      "output_tokens": 113,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.1046108566224575,
+      "tokens_per_second": 22.13684905155888,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          122,
+          82
+        ],
+        [
+          1,
+          54,
+          74
+        ],
+        [
+          1,
+          16,
+          36
+        ],
+        [
+          1,
+          22,
+          44
+        ],
+        [
+          1,
+          64,
+          58
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 247,
+      "original_crop_height": 272,
+      "processed_width": 247,
+      "processed_height": 272,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 6,
+      "question": "What are the two large characters written on the sign to the left of the shop sign below '酷秀KTV' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the two large characters on the sign to the left of the '酷秀KTV' sign. In observation 5, I can see a sign with some characters, but it's not clear enough. I need to go back to observation 4 and select a better bounding box to get a clearer view of the sign to the left of '酷秀KTV'. </think><grounding>{\"bbox_2d\": [0.1,0.2,0.5,0.7], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        490.9,
+        781.8,
+        818.5,
+        1233.8
+      ],
+      "predicted_bbox_clipped": [
+        490,
+        781,
+        819,
+        1234
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        81.9,
+        180.8,
+        409.5,
+        632.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        81.9,
+        180.8,
+        409.5,
+        632.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_06_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6239,
+      "output_tokens": 123,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.12655346095562,
+      "tokens_per_second": 23.992727460423687,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          122,
+          82
+        ],
+        [
+          1,
+          54,
+          74
+        ],
+        [
+          1,
+          16,
+          36
+        ],
+        [
+          1,
+          22,
+          44
+        ],
+        [
+          1,
+          64,
+          58
+        ],
+        [
+          1,
+          20,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 329,
+      "original_crop_height": 453,
+      "processed_width": 329,
+      "processed_height": 453,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.7,
+        0.35
+      ],
+      "predicted_bbox_pixel": [
+        409.2733641592544,
+        300.84228591648474,
+        1432.4567745573902,
+        1052.9480007076966
+      ],
+      "predicted_bbox_clipped": [
+        409,
+        300,
+        1433,
+        1053
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        233.20000000000002,
+        171.3,
+        816.1999999999999,
+        599.55
+      ],
+      "predicted_bbox_source_content_pixel": [
+        409.2733641592544,
+        300.84228591648474,
+        1432.4567745573902,
+        1052.9480007076966
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_01_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 753,
+      "processed_width": 1024,
+      "processed_height": 753,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        613.8,
+        601.2,
+        1125.8,
+        827.1
+      ],
+      "predicted_bbox_clipped": [
+        613,
+        601,
+        1126,
+        828
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        204.8,
+        301.2,
+        716.8,
+        527.1
+      ],
+      "predicted_bbox_source_content_pixel": [
+        204.8,
+        301.2,
+        716.8,
+        527.1
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_02_processed.png",
+      "original_crop_width": 513,
+      "original_crop_height": 227,
+      "processed_width": 513,
+      "processed_height": 227,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        409.0,
+        601.2,
+        1023.4,
+        902.4
+      ],
+      "predicted_bbox_clipped": [
+        409,
+        601,
+        1024,
+        903
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        301.2,
+        614.4,
+        602.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        301.2,
+        614.4,
+        602.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_03_processed.png",
+      "original_crop_width": 615,
+      "original_crop_height": 302,
+      "processed_width": 615,
+      "processed_height": 302,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        409.2733641592544,
+        601.6845718329695,
+        1227.8200924777632,
+        1504.2114295824238
+      ],
+      "predicted_bbox_clipped": [
+        409,
+        601,
+        1228,
+        1505
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        233.20000000000002,
+        342.6,
+        699.6,
+        856.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        409.2733641592544,
+        601.6845718329695,
+        1227.8200924777632,
+        1504.2114295824238
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_04_processed.png",
+      "original_crop_width": 819,
+      "original_crop_height": 904,
+      "processed_width": 819,
+      "processed_height": 904,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        572.8,
+        872.2,
+        818.5,
+        1143.4
+      ],
+      "predicted_bbox_clipped": [
+        572,
+        872,
+        819,
+        1144
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        163.8,
+        271.2,
+        409.5,
+        542.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        163.8,
+        271.2,
+        409.5,
+        542.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_05_processed.png",
+      "original_crop_width": 247,
+      "original_crop_height": 272,
+      "processed_width": 247,
+      "processed_height": 272,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4332e08930fe",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        490.9,
+        781.8,
+        818.5,
+        1233.8
+      ],
+      "predicted_bbox_clipped": [
+        490,
+        781,
+        819,
+        1234
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        81.9,
+        180.8,
+        409.5,
+        632.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        81.9,
+        180.8,
+        409.5,
+        632.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4332e08930fe/turn_06_processed.png",
+      "original_crop_width": 329,
+      "original_crop_height": 453,
+      "processed_width": 329,
+      "processed_height": 453,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "00780462d7bf8f4295e21e6f09f21fb172be5242f7224672f54f51d9cea95d0c",
+  "crop_image_sha256": [
+    "1b14f00ceea7cc65927e7c21fea350f12a93b4be4f9546d45d980bcd7470a353",
+    "2d9cfe082ef3fbf6082b187c3e2dd7608ac98375b28649ec3928702e5936da62",
+    "fd91f7ea9efc5e511f8d1585c7204b8664426429f5899d399c3c603ee8b5544a",
+    "b589364f09bae935617b7fc9a5f38630386f83e1a085d481db2f3842ed2e45b1",
+    "ad7a8138616caa7d21728bf4b2a13effa89f84bf186710a6c87cdc639db77970",
+    "768eb058b147ebcdce9b1d9c753e41dcecafd4c4a23d3aae510f45f0a3b44861"
+  ],
+  "raw_crop_image_sha256": [
+    "1b14f00ceea7cc65927e7c21fea350f12a93b4be4f9546d45d980bcd7470a353",
+    "2d9cfe082ef3fbf6082b187c3e2dd7608ac98375b28649ec3928702e5936da62",
+    "fd91f7ea9efc5e511f8d1585c7204b8664426429f5899d399c3c603ee8b5544a",
+    "b589364f09bae935617b7fc9a5f38630386f83e1a085d481db2f3842ed2e45b1",
+    "ad7a8138616caa7d21728bf4b2a13effa89f84bf186710a6c87cdc639db77970",
+    "768eb058b147ebcdce9b1d9c753e41dcecafd4c4a23d3aae510f45f0a3b44861"
+  ],
+  "assistant_text_sha256": "7fab00179e7465cfae88373e6b4c3b0b115c8db35a793165ede3f6ea4b426768"
+}

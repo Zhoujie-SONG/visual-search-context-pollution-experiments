@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTce33bd920c2d",
+  "question": "In this picture, what color are the clothes worn by the black Eggy character?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTce33bd920c2d.jpg",
+  "original_width": 1440,
+  "original_height": 1920,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 628,
+  "turns": [
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 1,
+      "question": "In this picture, what color are the clothes worn by the black Eggy character?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the color of the clothes worn by the black Eggy character. I need to first locate the black Eggy character in the image. I can see a character that looks like a black egg on the left side of the image, below a green mask. I will zoom in on that area to get a better view and identify the color of its clothes. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.4,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.4,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        383.80562281874825,
+        575.590942710933,
+        959.5140570468706
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        383,
+        576,
+        960
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        489.6,
+        816.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        383.80562281874825,
+        575.590942710933,
+        959.5140570468706
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2708,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7034842241555452,
+      "tokens_per_second": 32.13190411986538,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 576,
+      "original_crop_height": 577,
+      "processed_width": 576,
+      "processed_height": 577,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 2,
+      "question": "In this picture, what color are the clothes worn by the black Eggy character?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the clothes worn by the black Eggy character. In observation 1, I can see a character that looks like a black egg in the middle of the image, below a Hello Kitty card. I will zoom in on this character to see its clothes more clearly. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.9], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        172.79999999999998,
+        671.5,
+        403.2,
+        902.3000000000001
+      ],
+      "predicted_bbox_clipped": [
+        172,
+        671,
+        404,
+        903
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        172.79999999999998,
+        288.5,
+        403.2,
+        519.3000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        172.79999999999998,
+        288.5,
+        403.2,
+        519.3000000000001
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3365,
+      "output_tokens": 105,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.963922617956996,
+      "tokens_per_second": 26.48891265544355,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          42,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 232,
+      "original_crop_height": 232,
+      "processed_width": 232,
+      "processed_height": 232,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 3,
+      "question": "In this picture, what color are the clothes worn by the black Eggy character?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the clothes worn by the black Eggy character. In observation 2, I can see a character that looks like a black egg in the upper right corner of the image. I will zoom in on this character to see its clothes more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3631,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.6242912504822016,
+      "tokens_per_second": 27.86751754196417,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          42,
+          42
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 4,
+      "question": "In this picture, what color are the clothes worn by the black Eggy character?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the clothes worn by the black Eggy character. In observation 3, I can see a character that looks like a black egg in the upper right corner of the image. I will zoom in on this character to see its clothes more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_04_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3893,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.693350836634636,
+      "tokens_per_second": 27.346440797926128,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          42,
+          42
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 5,
+      "question": "In this picture, what color are the clothes worn by the black Eggy character?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the clothes worn by the black Eggy character. In observation 4, I can see a character that looks like a black egg in the upper right corner of the image. I will zoom in on this character to see its clothes more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_05_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4155,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7601401526480913,
+      "tokens_per_second": 26.86070090469112,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          42,
+          42
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 6,
+      "question": "In this picture, what color are the clothes worn by the black Eggy character?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the clothes worn by the black Eggy character. In observation 5, I can see a character that looks like a black egg in the upper right corner of the image. I will zoom in on this character to see its clothes more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_06_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4417,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.845858274027705,
+      "tokens_per_second": 26.26201820334485,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          42,
+          42
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.4,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        383.80562281874825,
+        575.590942710933,
+        959.5140570468706
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        383,
+        576,
+        960
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        489.6,
+        816.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        383.80562281874825,
+        575.590942710933,
+        959.5140570468706
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_01_processed.png",
+      "original_crop_width": 576,
+      "original_crop_height": 577,
+      "processed_width": 576,
+      "processed_height": 577,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        172.79999999999998,
+        671.5,
+        403.2,
+        902.3000000000001
+      ],
+      "predicted_bbox_clipped": [
+        172,
+        671,
+        404,
+        903
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        172.79999999999998,
+        288.5,
+        403.2,
+        519.3000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        172.79999999999998,
+        288.5,
+        403.2,
+        519.3000000000001
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_02_processed.png",
+      "original_crop_width": 232,
+      "original_crop_height": 232,
+      "processed_width": 232,
+      "processed_height": 232,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_03_processed.png",
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.7241379310344827,
+      "preprocess_scale_y": 1.7241379310344827
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_04_processed.png",
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.7241379310344827,
+      "preprocess_scale_y": 1.7241379310344827
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_05_processed.png",
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.7241379310344827,
+      "preprocess_scale_y": 1.7241379310344827
+    },
+    {
+      "sample_id": "TPROMPTce33bd920c2d",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        288.0,
+        671.0,
+        404.0,
+        787.0
+      ],
+      "predicted_bbox_clipped": [
+        288,
+        671,
+        404,
+        787
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        116.0,
+        0.0,
+        232.0,
+        116.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTce33bd920c2d/turn_06_processed.png",
+      "original_crop_width": 116,
+      "original_crop_height": 116,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.7241379310344827,
+      "preprocess_scale_y": 1.7241379310344827
+    }
+  ],
+  "original_image_sha256": "da13e978e38aad4d6d82fae40ce4a16c26bb1f85a71bd946e2fd5679514dc6ed",
+  "crop_image_sha256": [
+    "068b66e0140818664c1074502a59ed46215748f3ade4a5b10ba3f3c29df1ba59",
+    "e1bc562f872992dd149f01d1d2bb84e416faa62df05cbd0ba32d95bf57f9efc7",
+    "11a9069172c411aa661693114e51cfa6e08c548541349358f95e2d06155df69a",
+    "11a9069172c411aa661693114e51cfa6e08c548541349358f95e2d06155df69a",
+    "11a9069172c411aa661693114e51cfa6e08c548541349358f95e2d06155df69a",
+    "11a9069172c411aa661693114e51cfa6e08c548541349358f95e2d06155df69a"
+  ],
+  "raw_crop_image_sha256": [
+    "068b66e0140818664c1074502a59ed46215748f3ade4a5b10ba3f3c29df1ba59",
+    "e1bc562f872992dd149f01d1d2bb84e416faa62df05cbd0ba32d95bf57f9efc7",
+    "5fb3bce82bc59273b60f953b806ce1df2bcb14545c72f23f7e3be8981a38856c",
+    "5fb3bce82bc59273b60f953b806ce1df2bcb14545c72f23f7e3be8981a38856c",
+    "5fb3bce82bc59273b60f953b806ce1df2bcb14545c72f23f7e3be8981a38856c",
+    "5fb3bce82bc59273b60f953b806ce1df2bcb14545c72f23f7e3be8981a38856c"
+  ],
+  "assistant_text_sha256": "d475a74d6b02fbafaeffff0a600dc6cc3e370ae775381940f0af395024eb3af3"
+}

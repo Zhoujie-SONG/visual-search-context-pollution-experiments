@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT433eb7d38409",
+  "question": "What shop is located downstairs from the room with the clothes drying pole in the picture?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT433eb7d38409.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 787,
+  "turns": [
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 1,
+      "question": "What shop is located downstairs from the room with the clothes drying pole in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the shop located downstairs from the room with the clothes drying pole. First, I need to locate the room with the clothes drying pole in the image. I can see a balcony in the upper-left part of the image where clothes are hanging. The shop downstairs from that balcony seems to be a small shop with a blue sign. I will zoom into that area to get a better view of the shop's sign and details. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        288.0,
+        540.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        288,
+        540,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        288.0,
+        540.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        288.0,
+        540.0,
+        864.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2203,
+      "output_tokens": 133,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.8263839054852724,
+      "tokens_per_second": 34.75866595856711,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 2,
+      "question": "What shop is located downstairs from the room with the clothes drying pole in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shop located downstairs from the room with the clothes drying pole. In observation 1, I can see the balcony with clothes drying. Downstairs from this balcony, there is a shop. I need to get a closer look at the shop's sign to read what it is. I will zoom into the area of the shop downstairs. </think><grounding>{\"bbox_2d\": [0.2,0.6,0.9,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.9,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        633.5999999999999,
+        486.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        633,
+        486,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        345.59999999999997,
+        486.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        345.59999999999997,
+        486.0,
+        576.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2832,
+      "output_tokens": 116,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.649299433454871,
+      "tokens_per_second": 31.78692297392003,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 378,
+      "original_crop_height": 231,
+      "processed_width": 378,
+      "processed_height": 231,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 3,
+      "question": "What shop is located downstairs from the room with the clothes drying pole in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shop located downstairs from the room with the clothes drying pole. In observation 2, I can see the air conditioner and part of the building, but the shop is not clearly visible. I need to go back to the original image and select a better bounding box to get a clearer view of the shop downstairs. The previous bounding box was too low and didn't capture the shop clearly. I will select a bounding box that is higher up and more focused on the area with the shop. </think><grounding>{\"bbox_2d\": [0.0,0.5,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        720.0,
+        1080.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        720,
+        1080,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        720.0,
+        1080.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        720.0,
+        1080.0,
+        1440.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3157,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.435243288055062,
+      "tokens_per_second": 32.91814913360113,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          16,
+          28
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1080,
+      "original_crop_height": 720,
+      "processed_width": 1080,
+      "processed_height": 720,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 4,
+      "question": "What shop is located downstairs from the room with the clothes drying pole in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shop located downstairs from the room with the clothes drying pole. In observation 3, I can see the area with the clothes drying pole on the upper floor. Downstairs from that area, there is a row of shops. I need to get a closer look at the shop that is directly below the balcony with the clothes. I will zoom into the area of the shop directly below the balcony with the clothes. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.7,0.9], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        1008.0,
+        756.0,
+        1368.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        1008,
+        756,
+        1368
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        288.0,
+        756.0,
+        648.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        288.0,
+        756.0,
+        648.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4414,
+      "output_tokens": 132,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.594289040192962,
+      "tokens_per_second": 28.73132248432849,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          16,
+          28
+        ],
+        [
+          1,
+          52,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 360,
+      "processed_width": 540,
+      "processed_height": 360,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 5,
+      "question": "What shop is located downstairs from the room with the clothes drying pole in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shop located downstairs from the room with the clothes drying pole. In observation 4, I can see a shop with a brown sign, but the text on the sign is not clear. I need to get a closer look at the sign to read what the shop is. I will zoom into the sign to read the text. </think><grounding>{\"bbox_2d\": [0.3,0.0,0.7,0.4], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.0,
+        0.7,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        378.0,
+        1008.0,
+        594.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        378,
+        1008,
+        594,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        0.0,
+        378.0,
+        144.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        0.0,
+        378.0,
+        144.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4890,
+      "output_tokens": 115,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.4433221109211445,
+      "tokens_per_second": 25.881535735917954,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          16,
+          28
+        ],
+        [
+          1,
+          52,
+          78
+        ],
+        [
+          1,
+          26,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 216,
+      "original_crop_height": 144,
+      "processed_width": 245,
+      "processed_height": 163,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 6,
+      "question": "What shop is located downstairs from the room with the clothes drying pole in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shop located downstairs from the room with the clothes drying pole. In observation 5, I can see a part of the sign, but it's still not clear enough to read the text. I need to go back to observation 3 and select a better bounding box to get a clearer view of the shop's sign. The previous bounding box was too high and didn't capture the full sign. I will select a bounding box that is lower and more focused on the sign. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.7,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        936.0,
+        756.0,
+        1224.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        936,
+        756,
+        1224
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        216.0,
+        756.0,
+        503.99999999999994
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        216.0,
+        756.0,
+        503.99999999999994
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_06_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5156,
+      "output_tokens": 145,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.13542696647346,
+      "tokens_per_second": 28.235237487871956,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          16,
+          28
+        ],
+        [
+          1,
+          52,
+          78
+        ],
+        [
+          1,
+          26,
+          38
+        ],
+        [
+          1,
+          12,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 288,
+      "processed_width": 540,
+      "processed_height": 288,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        288.0,
+        540.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        288,
+        540,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        288.0,
+        540.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        288.0,
+        540.0,
+        864.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_01_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.9,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        633.5999999999999,
+        486.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        633,
+        486,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        345.59999999999997,
+        486.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        345.59999999999997,
+        486.0,
+        576.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_02_processed.png",
+      "original_crop_width": 378,
+      "original_crop_height": 231,
+      "processed_width": 378,
+      "processed_height": 231,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        720.0,
+        1080.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        720,
+        1080,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        720.0,
+        1080.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        720.0,
+        1080.0,
+        1440.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_03_processed.png",
+      "original_crop_width": 1080,
+      "original_crop_height": 720,
+      "processed_width": 1080,
+      "processed_height": 720,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        1008.0,
+        756.0,
+        1368.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        1008,
+        756,
+        1368
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        288.0,
+        756.0,
+        648.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        288.0,
+        756.0,
+        648.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_04_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 360,
+      "processed_width": 540,
+      "processed_height": 360,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.3,
+        0.0,
+        0.7,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        378.0,
+        1008.0,
+        594.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        378,
+        1008,
+        594,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        0.0,
+        378.0,
+        144.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        0.0,
+        378.0,
+        144.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_05_processed.png",
+      "original_crop_width": 216,
+      "original_crop_height": 144,
+      "processed_width": 245,
+      "processed_height": 163,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1342592592592593,
+      "preprocess_scale_y": 1.1319444444444444
+    },
+    {
+      "sample_id": "TPROMPT433eb7d38409",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        936.0,
+        756.0,
+        1224.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        936,
+        756,
+        1224
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        216.0,
+        756.0,
+        503.99999999999994
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        216.0,
+        756.0,
+        503.99999999999994
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT433eb7d38409/turn_06_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 288,
+      "processed_width": 540,
+      "processed_height": 288,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "973be1850084fd8902531a77fbd5e2e8b8e6928463639cb66741631f54b66c53",
+  "crop_image_sha256": [
+    "e2dd55255b5182e9c9f1e191f8332428b5ebe660c76e872b165f7920f2d72914",
+    "e8fe672e907ac5c96ce1cb4208e98a565812012e96a42346aa75e85b78c57524",
+    "24017719a35d667328a03d11be027f035f9b5dbb02e57b2e9dd322398c1776cc",
+    "22abc869b260d99578db22b752450bf595c872dc88e215a7c3dcfab9fa0d9b29",
+    "e320f1e8dfc9be3f3de4876b09a7b23e8448b641500b5ab6b619d09e2c0954a1",
+    "67683039a1b60ee547af9bad0da6a63df4840c800b05861c6c373656e62937b6"
+  ],
+  "raw_crop_image_sha256": [
+    "e2dd55255b5182e9c9f1e191f8332428b5ebe660c76e872b165f7920f2d72914",
+    "e8fe672e907ac5c96ce1cb4208e98a565812012e96a42346aa75e85b78c57524",
+    "24017719a35d667328a03d11be027f035f9b5dbb02e57b2e9dd322398c1776cc",
+    "22abc869b260d99578db22b752450bf595c872dc88e215a7c3dcfab9fa0d9b29",
+    "099423211d52c44dd8f12dde34104fb626e461d110c31befefe1a89f41404eb9",
+    "67683039a1b60ee547af9bad0da6a63df4840c800b05861c6c373656e62937b6"
+  ],
+  "assistant_text_sha256": "e3760ae058eeb9d6bac67756821a9267f512f0c991bb89d77cd767f2b88ef33b"
+}

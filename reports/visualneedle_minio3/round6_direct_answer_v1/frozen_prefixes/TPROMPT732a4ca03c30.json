@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT732a4ca03c30",
+  "question": "Can you tell me what is on the red sign to the right of the 'CHEESE' sign?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT732a4ca03c30.png",
+  "original_width": 6000,
+  "original_height": 4000,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 1034,
+  "turns": [
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 1,
+      "question": "Can you tell me what is on the red sign to the right of the 'CHEESE' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the text on a red sign to the right of a sign that says 'CHEESE'. I need to first locate the 'CHEESE' sign in the image. I can see a yellow sign that says 'GOTHAM EAT' and another sign that seems to have the word 'CHEESE' on it. I will zoom into the area with the signs to read them more clearly. I will start by cropping the left side of the image where most of the signs are visible. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        399.69963718443375,
+        2998.612679367919,
+        2398.1978231066023
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        399,
+        2999,
+        2399
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        115.4,
+        865.5,
+        692.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        399.69963718443375,
+        2998.612679367919,
+        2398.1978231066023
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2761,
+      "output_tokens": 149,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.440075293183327,
+      "tokens_per_second": 33.55798948471749,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2999,
+      "original_crop_height": 2000,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 2,
+      "question": "Can you tell me what is on the red sign to the right of the 'CHEESE' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is on the red sign to the right of the 'CHEESE' sign. In observation 1, I can see a red sign that says 'DINER' but I don't see a sign with the word 'CHEESE'. I need to go back to the original image and look for the 'CHEESE' sign. I can see a yellow sign that says 'GOTHAM EAT' and another sign that seems to have the word 'CHEESE' on it. I will zoom into the area with the signs to read them more clearly. I will try to crop the area with more signs. </think><grounding>{\"bbox_2d\": [0.3,0.2,0.7,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1799.1676076207514,
+        799.3992743688675,
+        4198.057751115086,
+        2797.8974602910357
+      ],
+      "predicted_bbox_clipped": [
+        1799,
+        799,
+        4199,
+        2798
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        230.8,
+        1211.6999999999998,
+        807.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1799.1676076207514,
+        799.3992743688675,
+        4198.057751115086,
+        2797.8974602910357
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5549,
+      "output_tokens": 177,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.236931309103966,
+      "tokens_per_second": 28.379340933518932,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 1999,
+      "processed_width": 1549,
+      "processed_height": 1290,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 3,
+      "question": "Can you tell me what is on the red sign to the right of the 'CHEESE' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is on the red sign to the right of the 'CHEESE' sign. In observation 2, I can see a red sign that says 'DINER' but I don't see a sign with the word 'CHEESE'. I need to go back to the original image and look for the 'CHEESE' sign. I can see a yellow sign that says 'GOTHAM EAT' and another sign that seems to have the word 'CHEESE' on it. I will zoom into the area with the signs to read them more clearly. I will try to crop the area with more signs. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3597.296734659904
+      ],
+      "predicted_bbox_clipped": [
+        1799,
+        1598,
+        4199,
+        3598
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        461.6,
+        1211.6999999999998,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3597.296734659904
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8353,
+      "output_tokens": 177,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.458072083070874,
+      "tokens_per_second": 23.732674882798925,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          92,
+          110
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 2000,
+      "processed_width": 1549,
+      "processed_height": 1291,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 4,
+      "question": "Can you tell me what is on the red sign to the right of the 'CHEESE' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is on the red sign to the right of the 'CHEESE' sign. In observation 3, I can see a red sign that says 'DINER' but I don't see a sign with the word 'CHEESE'. I need to go back to the original image and look for the 'CHEESE' sign. I can see a yellow sign that says 'GOTHAM EAT' and another sign that seems to have the word 'CHEESE' on it. I will zoom into the area with the signs to read them more clearly. I will try to crop the area with more signs. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.5,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1199.4450717471677,
+        1598.798548737735,
+        2998.612679367919,
+        3197.59709747547
+      ],
+      "predicted_bbox_clipped": [
+        1199,
+        1598,
+        2999,
+        3198
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        346.20000000000005,
+        461.6,
+        865.5,
+        923.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471677,
+        1598.798548737735,
+        2998.612679367919,
+        3197.59709747547
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 11157,
+      "output_tokens": 177,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.739513436332345,
+      "tokens_per_second": 20.252843741182055,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          92,
+          110
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1800,
+      "original_crop_height": 1600,
+      "processed_width": 1500,
+      "processed_height": 1333,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 5,
+      "question": "Can you tell me what is on the red sign to the right of the 'CHEESE' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is on the red sign to the right of the 'CHEESE' sign. In observation 4, I can see a red sign that says 'DINER' but I don't see a sign with the word 'CHEESE'. I need to go back to the original image and look for the 'CHEESE' sign. I can see a yellow sign that says 'GOTHAM EAT' and another sign that seems to have the word 'CHEESE' on it. I will zoom into the area with the signs to read them more clearly. I will try to crop the area with more signs. </think><grounding>{\"bbox_2d\": [0.2,0.5,0.6,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1199.4450717471677,
+        1998.4981859221687,
+        3598.3352152415027,
+        3597.296734659904
+      ],
+      "predicted_bbox_clipped": [
+        1199,
+        1998,
+        3599,
+        3598
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        346.20000000000005,
+        577.0,
+        1038.6,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471677,
+        1998.4981859221687,
+        3598.3352152415027,
+        3597.296734659904
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 13922,
+      "output_tokens": 177,
+      "finish_reason": "eos",
+      "runtime_seconds": 9.998709253966808,
+      "tokens_per_second": 17.702284915403297,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          94,
+          106
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 1600,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 6,
+      "question": "Can you tell me what is on the red sign to the right of the 'CHEESE' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is on the red sign to the right of the 'CHEESE' sign. In observation 5, I can see a red sign that says 'DINER' but I don't see a sign with the word 'CHEESE'. I need to go back to the original image and look for the 'CHEESE' sign. I can see a yellow sign that says 'GOTHAM EAT' and another sign that seems to have the word 'CHEESE' on it. I will zoom into the area with the signs to read them more clearly. I will try to crop the area with more signs. </think><grounding>{\"bbox_2d\": [0.2,0.6,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1199.4450717471677,
+        2398.1978231066023,
+        2998.612679367919,
+        3996.9963718443373
+      ],
+      "predicted_bbox_clipped": [
+        1199,
+        2398,
+        2999,
+        3997
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        346.20000000000005,
+        692.4,
+        865.5,
+        1154.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471677,
+        2398.1978231066023,
+        2998.612679367919,
+        3996.9963718443373
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 16738,
+      "output_tokens": 177,
+      "finish_reason": "eos",
+      "runtime_seconds": 11.526306852698326,
+      "tokens_per_second": 15.356176289768307,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          94,
+          106
+        ],
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1800,
+      "original_crop_height": 1599,
+      "processed_width": 1500,
+      "processed_height": 1333,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        399.69963718443375,
+        2998.612679367919,
+        2398.1978231066023
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        399,
+        2999,
+        2399
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        115.4,
+        865.5,
+        692.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        399.69963718443375,
+        2998.612679367919,
+        2398.1978231066023
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_01_processed.png",
+      "original_crop_width": 2999,
+      "original_crop_height": 2000,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.5774594379299653,
+      "preprocess_scale_y": 0.577433598953961
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1799.1676076207514,
+        799.3992743688675,
+        4198.057751115086,
+        2797.8974602910357
+      ],
+      "predicted_bbox_clipped": [
+        1799,
+        799,
+        4199,
+        2798
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        230.8,
+        1211.6999999999998,
+        807.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1799.1676076207514,
+        799.3992743688675,
+        4198.057751115086,
+        2797.8974602910357
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_02_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 1999,
+      "processed_width": 1549,
+      "processed_height": 1290,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.645663868807072,
+      "preprocess_scale_y": 0.6456534496641327
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3597.296734659904
+      ],
+      "predicted_bbox_clipped": [
+        1799,
+        1598,
+        4199,
+        3598
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        461.6,
+        1211.6999999999998,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3597.296734659904
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_03_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 2000,
+      "processed_width": 1549,
+      "processed_height": 1291,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.6454166666666666,
+      "preprocess_scale_y": 0.6455
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1199.4450717471677,
+        1598.798548737735,
+        2998.612679367919,
+        3197.59709747547
+      ],
+      "predicted_bbox_clipped": [
+        1199,
+        1598,
+        2999,
+        3198
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        346.20000000000005,
+        461.6,
+        865.5,
+        923.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471677,
+        1598.798548737735,
+        2998.612679367919,
+        3197.59709747547
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_04_processed.png",
+      "original_crop_width": 1800,
+      "original_crop_height": 1600,
+      "processed_width": 1500,
+      "processed_height": 1333,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8333333333333334,
+      "preprocess_scale_y": 0.833125
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1199.4450717471677,
+        1998.4981859221687,
+        3598.3352152415027,
+        3597.296734659904
+      ],
+      "predicted_bbox_clipped": [
+        1199,
+        1998,
+        3599,
+        3598
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        346.20000000000005,
+        577.0,
+        1038.6,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471677,
+        1998.4981859221687,
+        3598.3352152415027,
+        3597.296734659904
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_05_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 1600,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7215836893133192,
+      "preprocess_scale_y": 0.7217919986924513
+    },
+    {
+      "sample_id": "TPROMPT732a4ca03c30",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1199.4450717471677,
+        2398.1978231066023,
+        2998.612679367919,
+        3996.9963718443373
+      ],
+      "predicted_bbox_clipped": [
+        1199,
+        2398,
+        2999,
+        3997
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        346.20000000000005,
+        692.4,
+        865.5,
+        1154.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471677,
+        2398.1978231066023,
+        2998.612679367919,
+        3996.9963718443373
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT732a4ca03c30/turn_06_processed.png",
+      "original_crop_width": 1800,
+      "original_crop_height": 1599,
+      "processed_width": 1500,
+      "processed_height": 1333,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8333333333333334,
+      "preprocess_scale_y": 0.83364602876798
+    }
+  ],
+  "original_image_sha256": "85245f1fc15fe84bc56ef00d8deed51822c42624faaa245ba99e32d771564e21",
+  "crop_image_sha256": [
+    "acd39f09a2eb968ec4de5546d4f61895b2507ca2a38725e166285d2cd07f785a",
+    "bf5387e481843597b96db99e35fbaa93ff98fcca0c96430741cff33cbe169a37",
+    "6f92dea23e5aed6b8c3398d50ba69ce581eb76667d8f1fa1a9e3717d5e4fc14f",
+    "1187da6647af936f578ef192651271360854e4ca62c3c51b3f9e2be635cc8bad",
+    "5efbe6a448a2078cc50372d89bc1831a941c21f4ba8b84b43f6ed9cb420a32bf",
+    "23d79c7d005135257a24a7f7fbfcb0fcad88193ca27414bc4fc670c4ade2fe7d"
+  ],
+  "raw_crop_image_sha256": [
+    "30da8de647342e1b16caf86c69b5c45a6d0aa9e1f85d091ec634da1915e8b6bd",
+    "0a0beb852b0c4c38210ca4909cc81a77f74d1132b0b948b09afe0fa6f32b3d82",
+    "bd321327be5b88b4dfc38f8ed3c192e70d66bd5d681cd1c2e49171deeed4b541",
+    "98251531316f4a4db0399669c6c5221b42dc647e920005c9231ae75149ebb57b",
+    "4a47aca5ff064435b8c25a407ed0e4fce7536dc7b5e773f1dad4cdfc383dca6e",
+    "6019ee474f3d68e08c6d412263e54e176a0334b0ad6b481bf0ba3c09d870e645"
+  ],
+  "assistant_text_sha256": "accc716ff82c666548d336777a1af2fba9be435cacd37b5f427f26535b87908e"
+}

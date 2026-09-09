@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTb47e9914e0a5",
+  "question": "What is written below '优格'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTb47e9914e0a5.jpg",
+  "original_width": 1440,
+  "original_height": 1080,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 754,
+  "turns": [
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 1,
+      "question": "What is written below '优格'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the text written below '优格'. I need to first locate the text '优格' in the image. I can see a sign with Chinese characters on the left side of the image. I will zoom into that area to read the text on the sign. </think><grounding>{\"bbox_2d\": [0.0,0.3,0.4,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.3,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        324.0,
+        576.0,
+        756.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        324,
+        576,
+        756
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        324.0,
+        576.0,
+        756.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        324.0,
+        576.0,
+        756.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2194,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.176776012405753,
+      "tokens_per_second": 31.79323931104394,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 2,
+      "question": "What is written below '优格'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written below '优格'. I have zoomed into the left side of the original image, but I cannot see the text '优格' in this view. I need to go back to the original image and search for the text '优格' in a different area. I will try to search for it in the central part of the image. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        432.0,
+        1007.9999999999999,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        432,
+        1008,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        432.0,
+        1007.9999999999999,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        432.0,
+        1007.9999999999999,
+        864.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2707,
+      "output_tokens": 121,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7039111759513617,
+      "tokens_per_second": 32.66817001056208,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 3,
+      "question": "What is written below '优格'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written below '优格'. I have zoomed into the central part of the original image, but I still cannot see the text '优格' in this view. I need to go back to the original image and search for the text '优格' in a different area. I will try to search for it in the right side of the image. </think><grounding>{\"bbox_2d\": [0.6,0.4,1.0,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.6,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        864.0,
+        432.0,
+        1440.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        864,
+        432,
+        1440,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        864.0,
+        432.0,
+        1440.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        864.0,
+        432.0,
+        1440.0,
+        864.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3240,
+      "output_tokens": 122,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.893613390624523,
+      "tokens_per_second": 31.333362550520608,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          30,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 4,
+      "question": "What is written below '优格'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written below '优格'. I have tried searching for the text '优格' in different parts of the image, but I haven't found it yet. I will go back to the original image and search for the text '优格' again. I will try to search for it in the lower part of the image, as there are many signs and text. </think><grounding>{\"bbox_2d\": [0.0,0.7,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.7,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        756.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        756,
+        720,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        756.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        756.0,
+        720.0,
+        1080.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3774,
+      "output_tokens": 124,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.148073706775904,
+      "tokens_per_second": 29.893393600370516,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          30,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 720,
+      "original_crop_height": 324,
+      "processed_width": 720,
+      "processed_height": 324,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 5,
+      "question": "What is written below '优格'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written below '优格'. I have tried searching for the text '优格' in different parts of the image, but I haven't found it yet. I will go back to the original image and search for the text '优格' again. I will try to search for it in the lower part of the image, as there are many signs and text. I will try to zoom into the area with more signs to find the text '优格'. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.5,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        972.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        540,
+        720,
+        972
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        972.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        972.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4307,
+      "output_tokens": 143,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.8443576246500015,
+      "tokens_per_second": 29.51887764692673,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          24,
+          52
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 720,
+      "original_crop_height": 432,
+      "processed_width": 720,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 6,
+      "question": "What is written below '优格'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written below '优格'. I have tried searching for the text '优格' in different parts of the image, but I haven't found it yet. I will go back to the original image and search for the text '优格' again. I will try to search for it in the lower part of the image, as there are many signs and text. I will try to zoom into the area with more signs to find the text '优格'. </think><grounding>{\"bbox_2d\": [0.5,0.5,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        720.0,
+        540.0,
+        1440.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        720,
+        540,
+        1440,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        720.0,
+        540.0,
+        1440.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        720.0,
+        540.0,
+        1440.0,
+        1080.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4937,
+      "output_tokens": 143,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.979882886633277,
+      "tokens_per_second": 28.715534733524077,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          24,
+          52
+        ],
+        [
+          1,
+          30,
+          52
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 720,
+      "original_crop_height": 540,
+      "processed_width": 720,
+      "processed_height": 540,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.3,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        324.0,
+        576.0,
+        756.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        324,
+        576,
+        756
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        324.0,
+        576.0,
+        756.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        324.0,
+        576.0,
+        756.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_01_processed.png",
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        432.0,
+        1007.9999999999999,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        432,
+        1008,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        432.0,
+        1007.9999999999999,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        432.0,
+        1007.9999999999999,
+        864.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_02_processed.png",
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.6,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        864.0,
+        432.0,
+        1440.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        864,
+        432,
+        1440,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        864.0,
+        432.0,
+        1440.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        864.0,
+        432.0,
+        1440.0,
+        864.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_03_processed.png",
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.7,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        756.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        756,
+        720,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        756.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        756.0,
+        720.0,
+        1080.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_04_processed.png",
+      "original_crop_width": 720,
+      "original_crop_height": 324,
+      "processed_width": 720,
+      "processed_height": 324,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        972.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        540,
+        720,
+        972
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        972.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        972.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_05_processed.png",
+      "original_crop_width": 720,
+      "original_crop_height": 432,
+      "processed_width": 720,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb47e9914e0a5",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        720.0,
+        540.0,
+        1440.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        720,
+        540,
+        1440,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        720.0,
+        540.0,
+        1440.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        720.0,
+        540.0,
+        1440.0,
+        1080.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb47e9914e0a5/turn_06_processed.png",
+      "original_crop_width": 720,
+      "original_crop_height": 540,
+      "processed_width": 720,
+      "processed_height": 540,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "f5ecd1867ae40a1c71c55031b56e3a6e36aa5c0e985d55127eafb66dcd9003d9",
+  "crop_image_sha256": [
+    "146d42bfde3dfc3c860673020283a10a9b0b1c65e88cd4aa704bbe8bc0c3e666",
+    "09cfddb68352ea8b4982d4a9028be64be3c53308b893851d4fbacb478d0fc2f8",
+    "a6c6a85f150ea0da769fdd66e8f531f7e20fe8d2545461c32f1857ceded8a504",
+    "b2dfb6f7ce3303406b8ddd5328bf09d5d94c6e73a3ec1e152070dea090eeefcf",
+    "49866fa8b433662ed040703e1dae260d8335f8a2f8254048d0c1dfa0e9362cd9",
+    "dfea049e9b342efc90ec86c229bccf289ec2a8af6fe94d3a511780ca9016780a"
+  ],
+  "raw_crop_image_sha256": [
+    "146d42bfde3dfc3c860673020283a10a9b0b1c65e88cd4aa704bbe8bc0c3e666",
+    "09cfddb68352ea8b4982d4a9028be64be3c53308b893851d4fbacb478d0fc2f8",
+    "a6c6a85f150ea0da769fdd66e8f531f7e20fe8d2545461c32f1857ceded8a504",
+    "b2dfb6f7ce3303406b8ddd5328bf09d5d94c6e73a3ec1e152070dea090eeefcf",
+    "49866fa8b433662ed040703e1dae260d8335f8a2f8254048d0c1dfa0e9362cd9",
+    "dfea049e9b342efc90ec86c229bccf289ec2a8af6fe94d3a511780ca9016780a"
+  ],
+  "assistant_text_sha256": "ecedd4b5da29f97100da8ec6b67dc3b26df8ae1be33a95c7279810229aaa0db5"
+}

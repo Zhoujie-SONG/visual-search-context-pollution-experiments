@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT9cb8bd6915b4",
+  "question": "What is the logo on the sign below the sign that says '典韵阁'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT9cb8bd6915b4.jpg",
+  "original_width": 4000,
+  "original_height": 2256,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 789,
+  "turns": [
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 1,
+      "question": "What is the logo on the sign below the sign that says '典韵阁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the logo on the sign below the sign that says '典韵阁'. I need to first locate the sign with the text '典韵阁' in the image. I can see a building in the middle of the image with some signs. I will zoom into that area to read the signs more clearly. I'll start by cropping the central part of the image where the building with the signs is visible. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.8,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        800.0,
+        676.7999999999998,
+        3200.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        800,
+        676,
+        3200,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        376.6,
+        318.59999999999997,
+        1506.4,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        800.0,
+        676.7999999999998,
+        3200.0,
+        1579.1999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2760,
+      "output_tokens": 130,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.090339886024594,
+      "tokens_per_second": 31.782199920395158,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 904,
+      "processed_width": 2304,
+      "processed_height": 868,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 2,
+      "question": "What is the logo on the sign below the sign that says '典韵阁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the logo on the sign below the sign that says '典韵阁'. In observation 1, I can see a sign with some Chinese characters on the left side of the image. I will zoom in on that area to read the text and see the logo below it. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.5,0.6], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        800.0,
+        766.4,
+        2000.0,
+        1218.4
+      ],
+      "predicted_bbox_clipped": [
+        800,
+        766,
+        2000,
+        1219
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        86.80000000000001,
+        1152.0,
+        520.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        90.4,
+        1200.0,
+        542.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5529,
+      "output_tokens": 104,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.496550694108009,
+      "tokens_per_second": 23.128839653976303,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          62,
+          164
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1200,
+      "original_crop_height": 453,
+      "processed_width": 1200,
+      "processed_height": 453,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 3,
+      "question": "What is the logo on the sign below the sign that says '典韵阁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the logo on the sign below the sign that says '典韵阁'. In observation 2, I can see a sign with some Chinese characters, but I cannot clearly read the text '典韵阁'. I need to go back to the original image and try a different bounding box to find the sign with the text '典韵阁'. I will try a wider bounding box to capture more of the building and its signs. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.6,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        225.6,
+        2400.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        225,
+        2400,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        106.2,
+        1129.8,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        225.6,
+        2400.0,
+        1579.1999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6418,
+      "output_tokens": 134,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.540808171033859,
+      "tokens_per_second": 24.18419765920121,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          62,
+          164
+        ],
+        [
+          1,
+          32,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 1355,
+      "processed_width": 1881,
+      "processed_height": 1062,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 4,
+      "question": "What is the logo on the sign below the sign that says '典韵阁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the logo on the sign below the sign that says '典韵阁'. In observation 3, I can see a sign with some Chinese characters, but I still cannot clearly read the text '典韵阁'. I need to go back to the original image and try a different bounding box to find the sign with the text '典韵阁'. I will try a wider bounding box to capture more of the building and its signs. </think><grounding>{\"bbox_2d\": [0.1,0.2,0.7,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        400,
+        451,
+        2800,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        188.3,
+        212.4,
+        1318.1,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 9195,
+      "output_tokens": 135,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.825390819460154,
+      "tokens_per_second": 19.779087171843102,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          62,
+          164
+        ],
+        [
+          1,
+          32,
+          86
+        ],
+        [
+          1,
+          76,
+          134
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 1129,
+      "processed_width": 2061,
+      "processed_height": 969,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 5,
+      "question": "What is the logo on the sign below the sign that says '典韵阁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the logo on the sign below the sign that says '典韵阁'. In observation 4, I can see a sign with some Chinese characters, but I still cannot clearly read the text '典韵阁'. I need to go back to the original image and try a different bounding box to find the sign with the text '典韵阁'. I will try a wider bounding box to capture more of the building and its signs. </think><grounding>{\"bbox_2d\": [0.1,0.2,0.7,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        400,
+        451,
+        2800,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        188.3,
+        212.4,
+        1318.1,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 11909,
+      "output_tokens": 135,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.9663310665637255,
+      "tokens_per_second": 16.946320567396683,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          62,
+          164
+        ],
+        [
+          1,
+          32,
+          86
+        ],
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          68,
+          146
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 1129,
+      "processed_width": 2061,
+      "processed_height": 969,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 6,
+      "question": "What is the logo on the sign below the sign that says '典韵阁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the logo on the sign below the sign that says '典韵阁'. I have tried several bounding boxes and still cannot clearly see the sign with the text '典韵阁'. I need to go back to the original image and try a different approach. I will try to zoom in on the central part of the image again, but this time I will try a different bounding box to get a better view of the signs. I will try a bounding box that is more focused on the central building with the signs. </think><grounding>{\"bbox_2d\": [0.3,0.3,0.7,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1200.0,
+        676.7999999999998,
+        2800.0,
+        1353.5999999999997
+      ],
+      "predicted_bbox_clipped": [
+        1200,
+        676,
+        2800,
+        1354
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        564.9,
+        318.59999999999997,
+        1318.1,
+        637.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1200.0,
+        676.7999999999998,
+        2800.0,
+        1353.5999999999997
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 14623,
+      "output_tokens": 151,
+      "finish_reason": "eos",
+      "runtime_seconds": 9.714195497334003,
+      "tokens_per_second": 15.54426200722859,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          62,
+          164
+        ],
+        [
+          1,
+          32,
+          86
+        ],
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          68,
+          146
+        ],
+        [
+          1,
+          68,
+          146
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1600,
+      "original_crop_height": 678,
+      "processed_width": 1600,
+      "processed_height": 678,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        800.0,
+        676.7999999999998,
+        3200.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        800,
+        676,
+        3200,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        376.6,
+        318.59999999999997,
+        1506.4,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        800.0,
+        676.7999999999998,
+        3200.0,
+        1579.1999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_01_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 904,
+      "processed_width": 2304,
+      "processed_height": 868,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.96,
+      "preprocess_scale_y": 0.9601769911504425
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        800.0,
+        766.4,
+        2000.0,
+        1218.4
+      ],
+      "predicted_bbox_clipped": [
+        800,
+        766,
+        2000,
+        1219
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        86.80000000000001,
+        1152.0,
+        520.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        90.4,
+        1200.0,
+        542.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_02_processed.png",
+      "original_crop_width": 1200,
+      "original_crop_height": 453,
+      "processed_width": 1200,
+      "processed_height": 453,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        225.6,
+        2400.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        225,
+        2400,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        106.2,
+        1129.8,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        225.6,
+        2400.0,
+        1579.1999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_03_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 1355,
+      "processed_width": 1881,
+      "processed_height": 1062,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7840557306289522,
+      "preprocess_scale_y": 0.784390861563063
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        400,
+        451,
+        2800,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        188.3,
+        212.4,
+        1318.1,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_04_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 1129,
+      "processed_width": 2061,
+      "processed_height": 969,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8591365974119599,
+      "preprocess_scale_y": 0.8591373355024544
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "predicted_bbox_clipped": [
+        400,
+        451,
+        2800,
+        1580
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        188.3,
+        212.4,
+        1318.1,
+        743.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        400.0,
+        451.2,
+        2800.0,
+        1579.1999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_05_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 1129,
+      "processed_width": 2061,
+      "processed_height": 969,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8591365974119599,
+      "preprocess_scale_y": 0.8591373355024544
+    },
+    {
+      "sample_id": "TPROMPT9cb8bd6915b4",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1200.0,
+        676.7999999999998,
+        2800.0,
+        1353.5999999999997
+      ],
+      "predicted_bbox_clipped": [
+        1200,
+        676,
+        2800,
+        1354
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        564.9,
+        318.59999999999997,
+        1318.1,
+        637.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1200.0,
+        676.7999999999998,
+        2800.0,
+        1353.5999999999997
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9cb8bd6915b4/turn_06_processed.png",
+      "original_crop_width": 1600,
+      "original_crop_height": 678,
+      "processed_width": 1600,
+      "processed_height": 678,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "ad02c80ed69a2bbe97074e0dec7d446f621e48a530e1ffe645b8deea3888e6d3",
+  "crop_image_sha256": [
+    "92a1ad138aa6d0489e1f5fcb9c58afdab94b7dfbda5bd979aab63710041a36e8",
+    "d97833da33124b21f06851aafba8958eaedd5d29832730ccddeffcedf062f6e2",
+    "16610a0c059db564f150066d821996c29b2506f2e4240a830c6669005c6a5e96",
+    "0cf483268fc3d7a8c484dd0e8cac735a917f9e9fa25103ed8297666113b7ed9e",
+    "0cf483268fc3d7a8c484dd0e8cac735a917f9e9fa25103ed8297666113b7ed9e",
+    "10c01b82d9444965cad72eeac5e7161ddc18e07c170872c0397b9cebc5912ede"
+  ],
+  "raw_crop_image_sha256": [
+    "63253451c1fcb6800bac8773c3a5f4ad642277cb90c867a226f9a13fff98eeae",
+    "d97833da33124b21f06851aafba8958eaedd5d29832730ccddeffcedf062f6e2",
+    "0f7eb07cc855fe91b214965e85f35898fc594503d1e74e13753576fc40a03ec3",
+    "ca1ba7e5164e12947d3c56477b4944ca27e2dc1ca1345edc17ccf1f905ccdb56",
+    "ca1ba7e5164e12947d3c56477b4944ca27e2dc1ca1345edc17ccf1f905ccdb56",
+    "10c01b82d9444965cad72eeac5e7161ddc18e07c170872c0397b9cebc5912ede"
+  ],
+  "assistant_text_sha256": "468dd454d343c7a569d8028cd32120d10a49b45ee3fa9b9817b81636a1464a80"
+}

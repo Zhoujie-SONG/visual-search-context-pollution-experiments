@@ -1,0 +1,16 @@
+{
+  "sample_id": "TPROMPTd79d39cab392",
+  "condition": "X_random_top2_direct",
+  "retained_crop_indices": [
+    4,
+    5
+  ],
+  "evicted_crop_indices": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "prefix_snapshot_sha256": "da0e71fec1ae540a55338dcaa2025031eeb7f06d8d84904759f28f870e9b2438",
+  "direct_instruction_sha256": "a543cccfafb88d00e1d87d37dd602b8b91144e06db29343e05dfdb70c16cb399"
+}

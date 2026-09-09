@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT14acb1f8302e",
+  "question": "Look, on the second-floor balcony, what is the object partially obscured by the railings and flower pots?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT14acb1f8302e.jpg",
+  "original_width": 2832,
+  "original_height": 4256,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 725,
+  "turns": [
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 1,
+      "question": "Look, on the second-floor balcony, what is the object partially obscured by the railings and flower pots?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify an object on the second-floor balcony that is partially obscured. First, I need to locate the second-floor balcony in the image. I can see a balcony on the second floor of the central building. I will zoom into that area to get a better view of the objects on the balcony. </think><grounding>{\"bbox_2d\": [0.3,0.3,0.7,0.55], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.7,
+        0.55
+      ],
+      "predicted_bbox_pixel": [
+        849.0836054175119,
+        1276.3941255213026,
+        1981.1950793075275,
+        2340.055896789055
+      ],
+      "predicted_bbox_clipped": [
+        849,
+        1276,
+        1982,
+        2341
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        345.9,
+        519.9,
+        807.0999999999999,
+        953.1500000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        849.0836054175119,
+        1276.3941255213026,
+        1981.1950793075275,
+        2340.055896789055
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2761,
+      "output_tokens": 108,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.472913356497884,
+      "tokens_per_second": 31.097810084415162,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1133,
+      "original_crop_height": 1065,
+      "processed_width": 1133,
+      "processed_height": 1065,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 2,
+      "question": "Look, on the second-floor balcony, what is the object partially obscured by the railings and flower pots?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify an object on the second-floor balcony that is partially obscured. In observation 1, I can see a balcony on the right side of the image. There are some objects on the balcony, but they are still a bit far and partially obscured. I need to zoom in on the balcony to see the object more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.6,1.0,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.6,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1415.5,
+        1915.0,
+        1982.0,
+        2341.0
+      ],
+      "predicted_bbox_clipped": [
+        1415,
+        1915,
+        1982,
+        2341
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        566.5,
+        639.0,
+        1133.0,
+        1065.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        566.5,
+        639.0,
+        1133.0,
+        1065.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4486,
+      "output_tokens": 113,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.299397997558117,
+      "tokens_per_second": 26.282749367278722,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          76,
+          80
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 567,
+      "original_crop_height": 426,
+      "processed_width": 567,
+      "processed_height": 426,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 3,
+      "question": "Look, on the second-floor balcony, what is the object partially obscured by the railings and flower pots?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object on the second-floor balcony that is partially obscured. In observation 2, I can see a balcony with some objects on it. There are some flower pots and plants. I can see a white object that seems to be partially obscured by the railings and flower pots. It looks like a white figure or object. I need to zoom in further to identify it more clearly. </think><grounding>{\"bbox_2d\": [0.4,0.5,1.0,1.0], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1641.8,
+        2128.0,
+        1982.0,
+        2341.0
+      ],
+      "predicted_bbox_clipped": [
+        1641,
+        2128,
+        1982,
+        2341
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        226.8,
+        213.0,
+        567.0,
+        426.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        226.8,
+        213.0,
+        567.0,
+        426.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4996,
+      "output_tokens": 126,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.770873166620731,
+      "tokens_per_second": 26.41025984122889,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          76,
+          80
+        ],
+        [
+          1,
+          30,
+          40
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 341,
+      "original_crop_height": 213,
+      "processed_width": 341,
+      "processed_height": 213,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 4,
+      "question": "Look, on the second-floor balcony, what is the object partially obscured by the railings and flower pots?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object on the second-floor balcony that is partially obscured. In observation 3, I can see a white object behind the railings and flower pots. It looks like a white cat or some other white animal. It's partially obscured, but I can see its shape. I think I can identify it as a cat. I will zoom in one more time to be more certain. </think><grounding>{\"bbox_2d\": [0.4,0.2,0.9,0.8], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1777.4,
+        2170.6,
+        1947.9,
+        2298.4
+      ],
+      "predicted_bbox_clipped": [
+        1777,
+        2170,
+        1948,
+        2299
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5315,
+      "output_tokens": 126,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.257957372814417,
+      "tokens_per_second": 23.963678490713253,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          76,
+          80
+        ],
+        [
+          1,
+          30,
+          40
+        ],
+        [
+          1,
+          16,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 171,
+      "original_crop_height": 129,
+      "processed_width": 230,
+      "processed_height": 174,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 5,
+      "question": "Look, on the second-floor balcony, what is the object partially obscured by the railings and flower pots?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object on the second-floor balcony that is partially obscured. In observation 4, I can see a white object behind the railings and flower pots. It looks like a white cat or some other white animal. It's partially obscured, but I can see its shape. I think I can identify it as a cat. I will zoom in one more time to be more certain. </think><grounding>{\"bbox_2d\": [0.4,0.2,0.9,0.8], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1777.4,
+        2170.6,
+        1947.9,
+        2298.4
+      ],
+      "predicted_bbox_clipped": [
+        1777,
+        2170,
+        1948,
+        2299
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_05_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5601,
+      "output_tokens": 126,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.082237455993891,
+      "tokens_per_second": 24.792230015029716,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          76,
+          80
+        ],
+        [
+          1,
+          30,
+          40
+        ],
+        [
+          1,
+          16,
+          24
+        ],
+        [
+          1,
+          14,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 171,
+      "original_crop_height": 129,
+      "processed_width": 230,
+      "processed_height": 174,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 6,
+      "question": "Look, on the second-floor balcony, what is the object partially obscured by the railings and flower pots?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object on the second-floor balcony that is partially obscured. In observation 5, I can see a white object behind the railings and flower pots. It looks like a white cat or some other white animal. It's partially obscured, but I can see its shape. I think I can identify it as a cat. I will zoom in one more time to be more certain. </think><grounding>{\"bbox_2d\": [0.4,0.2,0.9,0.8], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1777.4,
+        2170.6,
+        1947.9,
+        2298.4
+      ],
+      "predicted_bbox_clipped": [
+        1777,
+        2170,
+        1948,
+        2299
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_06_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5887,
+      "output_tokens": 126,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.138788325712085,
+      "tokens_per_second": 24.519398740274074,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          76,
+          80
+        ],
+        [
+          1,
+          30,
+          40
+        ],
+        [
+          1,
+          16,
+          24
+        ],
+        [
+          1,
+          14,
+          18
+        ],
+        [
+          1,
+          14,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 171,
+      "original_crop_height": 129,
+      "processed_width": 230,
+      "processed_height": 174,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.7,
+        0.55
+      ],
+      "predicted_bbox_pixel": [
+        849.0836054175119,
+        1276.3941255213026,
+        1981.1950793075275,
+        2340.055896789055
+      ],
+      "predicted_bbox_clipped": [
+        849,
+        1276,
+        1982,
+        2341
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        345.9,
+        519.9,
+        807.0999999999999,
+        953.1500000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        849.0836054175119,
+        1276.3941255213026,
+        1981.1950793075275,
+        2340.055896789055
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_01_processed.png",
+      "original_crop_width": 1133,
+      "original_crop_height": 1065,
+      "processed_width": 1133,
+      "processed_height": 1065,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.5,
+        0.6,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1415.5,
+        1915.0,
+        1982.0,
+        2341.0
+      ],
+      "predicted_bbox_clipped": [
+        1415,
+        1915,
+        1982,
+        2341
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        566.5,
+        639.0,
+        1133.0,
+        1065.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        566.5,
+        639.0,
+        1133.0,
+        1065.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_02_processed.png",
+      "original_crop_width": 567,
+      "original_crop_height": 426,
+      "processed_width": 567,
+      "processed_height": 426,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1641.8,
+        2128.0,
+        1982.0,
+        2341.0
+      ],
+      "predicted_bbox_clipped": [
+        1641,
+        2128,
+        1982,
+        2341
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        226.8,
+        213.0,
+        567.0,
+        426.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        226.8,
+        213.0,
+        567.0,
+        426.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_03_processed.png",
+      "original_crop_width": 341,
+      "original_crop_height": 213,
+      "processed_width": 341,
+      "processed_height": 213,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1777.4,
+        2170.6,
+        1947.9,
+        2298.4
+      ],
+      "predicted_bbox_clipped": [
+        1777,
+        2170,
+        1948,
+        2299
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_04_processed.png",
+      "original_crop_width": 171,
+      "original_crop_height": 129,
+      "processed_width": 230,
+      "processed_height": 174,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.345029239766082,
+      "preprocess_scale_y": 1.3488372093023255
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1777.4,
+        2170.6,
+        1947.9,
+        2298.4
+      ],
+      "predicted_bbox_clipped": [
+        1777,
+        2170,
+        1948,
+        2299
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_05_processed.png",
+      "original_crop_width": 171,
+      "original_crop_height": 129,
+      "processed_width": 230,
+      "processed_height": 174,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.345029239766082,
+      "preprocess_scale_y": 1.3488372093023255
+    },
+    {
+      "sample_id": "TPROMPT14acb1f8302e",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1777.4,
+        2170.6,
+        1947.9,
+        2298.4
+      ],
+      "predicted_bbox_clipped": [
+        1777,
+        2170,
+        1948,
+        2299
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        136.4,
+        42.6,
+        306.90000000000003,
+        170.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT14acb1f8302e/turn_06_processed.png",
+      "original_crop_width": 171,
+      "original_crop_height": 129,
+      "processed_width": 230,
+      "processed_height": 174,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.345029239766082,
+      "preprocess_scale_y": 1.3488372093023255
+    }
+  ],
+  "original_image_sha256": "f097a35bd1a6f2d6251a3144db238dc951a3dff51b604175e5dbd328b6e3da29",
+  "crop_image_sha256": [
+    "ed6d85bac8561ca29531ac6e7e141a8e1fc11b03f962e01921c7f5987c63af30",
+    "b28a5d1afb4cc0d9af7ad3bd01bdf61199c5dd6bdf9627c9d1716c8dddd38f39",
+    "74262b48259a389888a2177ec05cca39904aef75bc45aa7092545e22126a53eb",
+    "3e344ea71ec894d278ae5e5c77dc400ab84ea92e74d3960a86b0c9816b95ac21",
+    "3e344ea71ec894d278ae5e5c77dc400ab84ea92e74d3960a86b0c9816b95ac21",
+    "3e344ea71ec894d278ae5e5c77dc400ab84ea92e74d3960a86b0c9816b95ac21"
+  ],
+  "raw_crop_image_sha256": [
+    "ed6d85bac8561ca29531ac6e7e141a8e1fc11b03f962e01921c7f5987c63af30",
+    "b28a5d1afb4cc0d9af7ad3bd01bdf61199c5dd6bdf9627c9d1716c8dddd38f39",
+    "74262b48259a389888a2177ec05cca39904aef75bc45aa7092545e22126a53eb",
+    "259513581deee9b45000cd0e13b27b2cece8c9d2162f3138c95593500d96d3b8",
+    "259513581deee9b45000cd0e13b27b2cece8c9d2162f3138c95593500d96d3b8",
+    "259513581deee9b45000cd0e13b27b2cece8c9d2162f3138c95593500d96d3b8"
+  ],
+  "assistant_text_sha256": "cf357e55b9116b275f6c527b1a61c9cf01d2f1b7261e7f72e023208733e694f5"
+}

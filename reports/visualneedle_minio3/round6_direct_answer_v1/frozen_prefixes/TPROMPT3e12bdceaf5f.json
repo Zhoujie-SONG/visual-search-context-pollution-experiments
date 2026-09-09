@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT3e12bdceaf5f",
+  "question": "Did you notice, what is the horse with white hair on its head carrying on its back?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT3e12bdceaf5f.jpg",
+  "original_width": 3072,
+  "original_height": 4096,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 796,
+  "turns": [
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 1,
+      "question": "Did you notice, what is the horse with white hair on its head carrying on its back?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about an object on the back of a horse with white hair. I need to first locate this specific object in the image. I can see a desk area in the middle of the image, and on the wall behind the desk, there are several keychains and small items. I will zoom into the area with the keychains to see if I can find the horse with white hair. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        920.9455083374927,
+        1637.5706573599925,
+        2148.8728527874828,
+        2456.3559860399882
+      ],
+      "predicted_bbox_clipped": [
+        920,
+        1637,
+        2149,
+        2457
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        367.2,
+        652.8000000000001,
+        856.8,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        920.9455083374927,
+        1637.5706573599925,
+        2148.8728527874828,
+        2456.3559860399882
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2710,
+      "output_tokens": 124,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.8221329879015684,
+      "tokens_per_second": 32.442617876590056,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1229,
+      "original_crop_height": 820,
+      "processed_width": 1229,
+      "processed_height": 820,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 2,
+      "question": "Did you notice, what is the horse with white hair on its head carrying on its back?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about what is on the back of a horse with white hair. In observation 1, I can see a keychain that looks like a horse with white hair. I will zoom in on that specific keychain to see what it's carrying on its back. </think><grounding>{\"bbox_2d\": [0.6,0.3,0.9,0.6], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.6,
+        0.3,
+        0.9,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1657.4,
+        1883.0,
+        2026.1000000000001,
+        2129.0
+      ],
+      "predicted_bbox_clipped": [
+        1657,
+        1883,
+        2027,
+        2129
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        737.4,
+        246.0,
+        1106.1000000000001,
+        492.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        737.4,
+        246.0,
+        1106.1000000000001,
+        492.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4207,
+      "output_tokens": 100,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.8190425280481577,
+      "tokens_per_second": 26.184573558836004,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          58,
+          88
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 3,
+      "question": "Did you notice, what is the horse with white hair on its head carrying on its back?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking what is on the back of a horse with white hair. In observation 2, I can see a keychain that looks like a horse with white hair, but it seems to be carrying a hot dog on its back, not what I was expecting. I need to go back and find the correct object. I will go back to observation 1 and look for another keychain. I see another keychain that might be what the user is asking about. It's a small horse figure. I will zoom in on that one. </think><grounding>{\"bbox_2d\": [0.7,0.5,1.0,0.8], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.7,
+        0.5,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1780.3,
+        2047.0,
+        2149.0,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1780,
+        2047,
+        2149,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        860.3,
+        410.0,
+        1229.0,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        860.3,
+        410.0,
+        1229.0,
+        656.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_03_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4521,
+      "output_tokens": 155,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.233885318040848,
+      "tokens_per_second": 29.614710789654772,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          58,
+          88
+        ],
+        [
+          1,
+          18,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 369,
+      "original_crop_height": 246,
+      "processed_width": 369,
+      "processed_height": 246,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 4,
+      "question": "Did you notice, what is the horse with white hair on its head carrying on its back?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking what is on the back of a horse with white hair. In observation 3, I can see a small horse figure, but it doesn't seem to have any white hair. I need to go back and find another object. I will go back to observation 1 and look for another keychain. I see another keychain that might be what the user is asking about. It's a small horse figure. I will zoom in on that one. </think><grounding>{\"bbox_2d\": [0.5,0.5,0.8,0.8], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.5,
+        2047.0,
+        1903.2,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2047,
+        1904,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_04_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4890,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.962757524102926,
+      "tokens_per_second": 28.008622086594045,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          58,
+          88
+        ],
+        [
+          1,
+          18,
+          26
+        ],
+        [
+          1,
+          18,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 5,
+      "question": "Did you notice, what is the horse with white hair on its head carrying on its back?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking what is on the back of a horse with white hair. In observation 4, I can see a small horse figure, but it doesn't seem to have any white hair. I need to go back and find another object. I will go back to observation 1 and look for another keychain. I see another keychain that might be what the user is asking about. It's a small horse figure. I will zoom in on that one. </think><grounding>{\"bbox_2d\": [0.5,0.5,0.8,0.8], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.5,
+        2047.0,
+        1903.2,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2047,
+        1904,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_05_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5243,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.0305047035217285,
+      "tokens_per_second": 27.63142233078316,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          58,
+          88
+        ],
+        [
+          1,
+          18,
+          26
+        ],
+        [
+          1,
+          18,
+          26
+        ],
+        [
+          1,
+          18,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 6,
+      "question": "Did you notice, what is the horse with white hair on its head carrying on its back?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking what is on the back of a horse with white hair. In observation 5, I can see a small horse figure, but it doesn't seem to have any white hair. I need to go back and find another object. I will go back to observation 1 and look for another keychain. I see another keychain that might be what the user is asking about. It's a small horse figure. I will zoom in on that one. </think><grounding>{\"bbox_2d\": [0.5,0.5,0.8,0.8], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.5,
+        2047.0,
+        1903.2,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2047,
+        1904,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_06_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5596,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.207922860980034,
+      "tokens_per_second": 26.690103465519226,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          58,
+          88
+        ],
+        [
+          1,
+          18,
+          26
+        ],
+        [
+          1,
+          18,
+          26
+        ],
+        [
+          1,
+          18,
+          26
+        ],
+        [
+          1,
+          18,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        920.9455083374927,
+        1637.5706573599925,
+        2148.8728527874828,
+        2456.3559860399882
+      ],
+      "predicted_bbox_clipped": [
+        920,
+        1637,
+        2149,
+        2457
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        367.2,
+        652.8000000000001,
+        856.8,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        920.9455083374927,
+        1637.5706573599925,
+        2148.8728527874828,
+        2456.3559860399882
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_01_processed.png",
+      "original_crop_width": 1229,
+      "original_crop_height": 820,
+      "processed_width": 1229,
+      "processed_height": 820,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.6,
+        0.3,
+        0.9,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1657.4,
+        1883.0,
+        2026.1000000000001,
+        2129.0
+      ],
+      "predicted_bbox_clipped": [
+        1657,
+        1883,
+        2027,
+        2129
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        737.4,
+        246.0,
+        1106.1000000000001,
+        492.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        737.4,
+        246.0,
+        1106.1000000000001,
+        492.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_02_processed.png",
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.7,
+        0.5,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1780.3,
+        2047.0,
+        2149.0,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1780,
+        2047,
+        2149,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        860.3,
+        410.0,
+        1229.0,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        860.3,
+        410.0,
+        1229.0,
+        656.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_03_processed.png",
+      "original_crop_width": 369,
+      "original_crop_height": 246,
+      "processed_width": 369,
+      "processed_height": 246,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.5,
+        2047.0,
+        1903.2,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2047,
+        1904,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_04_processed.png",
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.5,
+        2047.0,
+        1903.2,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2047,
+        1904,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_05_processed.png",
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT3e12bdceaf5f",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.5,
+        2047.0,
+        1903.2,
+        2293.0
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2047,
+        1904,
+        2293
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        614.5,
+        410.0,
+        983.2,
+        656.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT3e12bdceaf5f/turn_06_processed.png",
+      "original_crop_width": 370,
+      "original_crop_height": 246,
+      "processed_width": 370,
+      "processed_height": 246,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "0399b1821c5f581495454cc90c2f6693daeae431b1a1d3ca425b5b5698fce2df",
+  "crop_image_sha256": [
+    "34f92f3b64b850cdc2722d5aa3819e7ec7e5015d7611b9e3c74c09e19dcd5d4c",
+    "474d120535f0b086b9bd0baba54a7e9f82d17d840d19a4f04b5cfa61fb9d2720",
+    "ce89c16feec357c00ea2342428e4a354c072947fefe8f3b4132aab5f75aa74c7",
+    "61c1e2d6077615acb965ac0072c71b71d4995d5db536932bd77e013505817621",
+    "61c1e2d6077615acb965ac0072c71b71d4995d5db536932bd77e013505817621",
+    "61c1e2d6077615acb965ac0072c71b71d4995d5db536932bd77e013505817621"
+  ],
+  "raw_crop_image_sha256": [
+    "34f92f3b64b850cdc2722d5aa3819e7ec7e5015d7611b9e3c74c09e19dcd5d4c",
+    "474d120535f0b086b9bd0baba54a7e9f82d17d840d19a4f04b5cfa61fb9d2720",
+    "ce89c16feec357c00ea2342428e4a354c072947fefe8f3b4132aab5f75aa74c7",
+    "61c1e2d6077615acb965ac0072c71b71d4995d5db536932bd77e013505817621",
+    "61c1e2d6077615acb965ac0072c71b71d4995d5db536932bd77e013505817621",
+    "61c1e2d6077615acb965ac0072c71b71d4995d5db536932bd77e013505817621"
+  ],
+  "assistant_text_sha256": "30eb8bb32e549813dd177963444c535d66187ba6c2a0488c6d80f90d78750da7"
+}

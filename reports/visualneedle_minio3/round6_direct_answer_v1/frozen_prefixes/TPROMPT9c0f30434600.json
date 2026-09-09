@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT9c0f30434600",
+  "question": "The four characters following the small text '精品服装' are blurry, please help me identify them.",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT9c0f30434600.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 842,
+  "turns": [
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 1,
+      "question": "The four characters following the small text '精品服装' are blurry, please help me identify them.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the four characters that follow the text '精品服装' in the image. I need to first locate this text in the image. I can see a sign with some text on the right side of the image, on a building. I will zoom into that area to get a better view of the text. I'll select a bounding box that covers the signs on the right side of the image to get a clearer view. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2206,
+      "output_tokens": 133,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.264795349910855,
+      "tokens_per_second": 31.185552667323186,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 720,
+      "processed_width": 540,
+      "processed_height": 720,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 2,
+      "question": "The four characters following the small text '精品服装' are blurry, please help me identify them.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the four characters following the small text '精品服装' in the image. I have zoomed into the right side of the image, but I don't see the text '精品服装' in this view. I need to go back to the original image and search for the text in a different area. I will try to look for the text in the central area of the image, as it seems to have more signs and text. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        576.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        576,
+        756,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        576.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        576.0,
+        756.0,
+        1152.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2930,
+      "output_tokens": 136,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.10352991707623,
+      "tokens_per_second": 33.14219775370863,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          52,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 3,
+      "question": "The four characters following the small text '精品服装' are blurry, please help me identify them.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the four characters following the small text '精品服装' in the image. I have tried two times and failed to find the text. I will try to look for the text in the original image again, but this time I will focus on a different area. I will try to look for the text in the upper part of the image, as it seems to have more signs and text. </think><grounding>{\"bbox_2d\": [0.2,0.0,0.6,0.4], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.0,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        0.0,
+        648.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        0,
+        648,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        0.0,
+        648.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        0.0,
+        648.0,
+        576.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3478,
+      "output_tokens": 127,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.440396830439568,
+      "tokens_per_second": 28.60104734995676,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 4,
+      "question": "The four characters following the small text '精品服装' are blurry, please help me identify them.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the four characters following the small text '精品服装' in the image. I have tried three times and failed to find the text. I will try to look for the text in the original image again, but this time I will focus on a different area. I will try to look for the text in the central area of the image, but lower down, as there seems to be a lot of text and signs there. </think><grounding>{\"bbox_2d\": [0.3,0.6,0.7,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1440.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4017,
+      "output_tokens": 134,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.4452138766646385,
+      "tokens_per_second": 30.144781267654942,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 5,
+      "question": "The four characters following the small text '精品服装' are blurry, please help me identify them.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the four characters following the small text '精品服装' in the image. I have tried four times and failed to find the text. I will try to look for the text in the original image again, but this time I will focus on a different area. I will try to look for the text in the central area of the image, but lower down, as there seems to be a lot of text and signs there. I will try to zoom into the central area of the image, specifically the area with many signs and text. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4563,
+      "output_tokens": 156,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.160134663805366,
+      "tokens_per_second": 30.23176916180654,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 6,
+      "question": "The four characters following the small text '精品服装' are blurry, please help me identify them.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the four characters following the small text '精品服装' in the image. I have tried several times and failed to find the text. I will try to look for the text in the original image again, but this time I will focus on a different area. I will try to look for the text in the central area of the image, but lower down, as there seems to be a lot of text and signs there. I will try to zoom into the central area of the image, specifically the area with many signs and text. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5131,
+      "output_tokens": 156,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.080226002261043,
+      "tokens_per_second": 25.65694103179529,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_01_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 720,
+      "processed_width": 540,
+      "processed_height": 720,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        576.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        576,
+        756,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        576.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        576.0,
+        756.0,
+        1152.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_02_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.0,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        0.0,
+        648.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        0,
+        648,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        0.0,
+        648.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        0.0,
+        648.0,
+        576.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_03_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1440.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_04_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_05_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT9c0f30434600",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT9c0f30434600/turn_06_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "114bb4b716678be8de37619b9a2ed86c2dad9a9c4886aa737419324f07bcd2a6",
+  "crop_image_sha256": [
+    "887af1b3ac05e0df32f5763b2ae5cc9e04548db94e7d587634830f198bc9cc6e",
+    "e3bf44321f6f4918efc00ec9b2269510395d91ca52f9cc675e439a84552809d2",
+    "3dd5c269cd51ad2dcf3ba56b8676088cd70e98ffee4df837ff2563c07dc7c1c8",
+    "b68b55199c63971e1019d54bed3c47dbe762f1907be1d124d63ae6fd0af92661",
+    "59e92d40988807fc6937a8cac784f694f97bcdcd8c02811e0a270714aa3b327a",
+    "59e92d40988807fc6937a8cac784f694f97bcdcd8c02811e0a270714aa3b327a"
+  ],
+  "raw_crop_image_sha256": [
+    "887af1b3ac05e0df32f5763b2ae5cc9e04548db94e7d587634830f198bc9cc6e",
+    "e3bf44321f6f4918efc00ec9b2269510395d91ca52f9cc675e439a84552809d2",
+    "3dd5c269cd51ad2dcf3ba56b8676088cd70e98ffee4df837ff2563c07dc7c1c8",
+    "b68b55199c63971e1019d54bed3c47dbe762f1907be1d124d63ae6fd0af92661",
+    "59e92d40988807fc6937a8cac784f694f97bcdcd8c02811e0a270714aa3b327a",
+    "59e92d40988807fc6937a8cac784f694f97bcdcd8c02811e0a270714aa3b327a"
+  ],
+  "assistant_text_sha256": "7af2c180c6cf3e43adac073d25726fe90eb58aee3cce3b1fe539502bcba1e237"
+}

@@ -1,0 +1,16 @@
+{
+  "sample_id": "TPROMPT5013d9f0a3b0",
+  "condition": "R_recent_top2_direct",
+  "retained_crop_indices": [
+    5,
+    6
+  ],
+  "evicted_crop_indices": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "prefix_snapshot_sha256": "b39c0ac8fdd6b44cdc67309faa49e6dd57ade54111994b76eafb28a51d955014",
+  "direct_instruction_sha256": "a543cccfafb88d00e1d87d37dd602b8b91144e06db29343e05dfdb70c16cb399"
+}

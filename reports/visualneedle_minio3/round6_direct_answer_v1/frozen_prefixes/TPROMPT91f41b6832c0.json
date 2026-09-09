@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT91f41b6832c0",
+  "question": "What is the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries)?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT91f41b6832c0.jpg",
+  "original_width": 1706,
+  "original_height": 1280,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 1044,
+  "turns": [
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 1,
+      "question": "What is the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries). First, I need to locate the '蓝莓干' on the shelves. I can see a shelf with many snacks. I'll scan the shelves from right to left to find the '蓝莓干'. I see a green package with some text on it that might be '蓝莓干'. I will zoom into that area to read the text. The area seems to be in the middle of the image, on the right side. I will try cropping the region from `[0.5, 0.4, 1.0, 0.7]` to get a closer look at the snacks on the right side of the shelf. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        852.5682194385215,
+        511.63639352082924,
+        1705.136438877043,
+        895.3636886614511
+      ],
+      "predicted_bbox_clipped": [
+        852,
+        511,
+        1706,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        816.0,
+        489.6,
+        1632.0,
+        856.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        852.5682194385215,
+        511.63639352082924,
+        1705.136438877043,
+        895.3636886614511
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2717,
+      "output_tokens": 204,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.618162751197815,
+      "tokens_per_second": 36.31080284324379,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 854,
+      "original_crop_height": 385,
+      "processed_width": 854,
+      "processed_height": 385,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 2,
+      "question": "What is the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the fifth snack to the left of the '蓝莓干' (dried blueberries). In observation 1, I can clearly see a package of '蓝莓干' (dried blueberries). Now I need to count the snacks to its left. The snacks from left to right are: 1. 溜溜梅, 2. 果不其然, 3. 三只松鼠, 4. 综合蔬果干, 5. 芝麻球. The fifth snack to the left of '蓝莓干' is '芝麻球'. I will zoom in on this area to get a clearer view and confirm the name. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.6,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        852.0,
+        665.0,
+        1364.4,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        852,
+        665,
+        1365,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        154.0,
+        512.4,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        154.0,
+        512.4,
+        385.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3438,
+      "output_tokens": 193,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.645686957985163,
+      "tokens_per_second": 34.185388144311496,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          28,
+          60
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 513,
+      "original_crop_height": 231,
+      "processed_width": 513,
+      "processed_height": 231,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 3,
+      "question": "What is the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the fifth snack to the left of the '蓝莓干' (dried blueberries). In observation 2, I can see the package of '蓝莓干' (dried blueberries) on the right side of the image. Counting from the left, the snacks are: 1. 果不其然, 2. 溜溜梅, 3. 三只松鼠, 4. 综合蔬果干, 5. 芝麻球. The fifth snack to the left of '蓝莓干' is '芝麻球'. I will zoom in on the area containing the fifth snack to get a clearer view of its name. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.5,1.0], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        852.0,
+        757.4,
+        1108.5,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        852,
+        757,
+        1109,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        92.4,
+        256.5,
+        231.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        92.4,
+        256.5,
+        231.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3872,
+      "output_tokens": 194,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.792003443464637,
+      "tokens_per_second": 33.49445522497029,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          28,
+          60
+        ],
+        [
+          1,
+          16,
+          36
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 257,
+      "original_crop_height": 139,
+      "processed_width": 272,
+      "processed_height": 147,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 4,
+      "question": "What is the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the fifth snack to the left of the '蓝莓干' (dried blueberries). In observation 3, I can see the fourth and fifth snacks from the left. The fourth snack is '果不其然' and the fifth snack is '芝麻球'. The image is still a bit blurry, and I want a clearer view of the fifth snack to be certain. I will go back to observation 1 and select a better bounding box to focus specifically on the fifth snack. </think><grounding>{\"bbox_2d\": [0.2,0.5,0.5,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1022.8,
+        703.5,
+        1279.0,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        1022,
+        703,
+        1279,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_04_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4223,
+      "output_tokens": 151,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.887396816164255,
+      "tokens_per_second": 30.89579293021441,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          28,
+          60
+        ],
+        [
+          1,
+          16,
+          36
+        ],
+        [
+          1,
+          12,
+          20
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 257,
+      "original_crop_height": 193,
+      "processed_width": 257,
+      "processed_height": 193,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 5,
+      "question": "What is the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the fifth snack to the left of the '蓝莓干' (dried blueberries). In observation 4, I can see the fourth and fifth snacks from the left. The fourth snack is '三只松鼠' and the fifth snack is '芝麻球'. The image is still a bit blurry, and I want a clearer view of the fifth snack to be certain. I will go back to observation 1 and select a better bounding box to focus specifically on the fifth snack. </think><grounding>{\"bbox_2d\": [0.2,0.5,0.5,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1022.8,
+        703.5,
+        1279.0,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        1022,
+        703,
+        1279,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_05_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4534,
+      "output_tokens": 151,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.3347014132887125,
+      "tokens_per_second": 28.30523928178245,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          28,
+          60
+        ],
+        [
+          1,
+          16,
+          36
+        ],
+        [
+          1,
+          12,
+          20
+        ],
+        [
+          1,
+          14,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 257,
+      "original_crop_height": 193,
+      "processed_width": 257,
+      "processed_height": 193,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 6,
+      "question": "What is the name of the fifth individually packaged snack to the left of the '蓝莓干' (dried blueberries)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the fifth snack to the left of the '蓝莓干' (dried blueberries). In observation 5, I can see the fourth and fifth snacks from the left. The fourth snack is '三只松鼠' and the fifth snack is '芝麻球'. The image is still a bit blurry, and I want a clearer view of the fifth snack to be certain. I will go back to observation 1 and select a better bounding box to focus specifically on the fifth snack. </think><grounding>{\"bbox_2d\": [0.2,0.5,0.5,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1022.8,
+        703.5,
+        1279.0,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        1022,
+        703,
+        1279,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_06_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4845,
+      "output_tokens": 151,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.160864625126123,
+      "tokens_per_second": 29.258663221825895,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          28,
+          60
+        ],
+        [
+          1,
+          16,
+          36
+        ],
+        [
+          1,
+          12,
+          20
+        ],
+        [
+          1,
+          14,
+          18
+        ],
+        [
+          1,
+          14,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 257,
+      "original_crop_height": 193,
+      "processed_width": 257,
+      "processed_height": 193,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        852.5682194385215,
+        511.63639352082924,
+        1705.136438877043,
+        895.3636886614511
+      ],
+      "predicted_bbox_clipped": [
+        852,
+        511,
+        1706,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        816.0,
+        489.6,
+        1632.0,
+        856.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        852.5682194385215,
+        511.63639352082924,
+        1705.136438877043,
+        895.3636886614511
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_01_processed.png",
+      "original_crop_width": 854,
+      "original_crop_height": 385,
+      "processed_width": 854,
+      "processed_height": 385,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        852.0,
+        665.0,
+        1364.4,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        852,
+        665,
+        1365,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        154.0,
+        512.4,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        154.0,
+        512.4,
+        385.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_02_processed.png",
+      "original_crop_width": 513,
+      "original_crop_height": 231,
+      "processed_width": 513,
+      "processed_height": 231,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        852.0,
+        757.4,
+        1108.5,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        852,
+        757,
+        1109,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        92.4,
+        256.5,
+        231.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        92.4,
+        256.5,
+        231.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_03_processed.png",
+      "original_crop_width": 257,
+      "original_crop_height": 139,
+      "processed_width": 272,
+      "processed_height": 147,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0583657587548638,
+      "preprocess_scale_y": 1.0575539568345325
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1022.8,
+        703.5,
+        1279.0,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        1022,
+        703,
+        1279,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_04_processed.png",
+      "original_crop_width": 257,
+      "original_crop_height": 193,
+      "processed_width": 257,
+      "processed_height": 193,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1022.8,
+        703.5,
+        1279.0,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        1022,
+        703,
+        1279,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_05_processed.png",
+      "original_crop_width": 257,
+      "original_crop_height": 193,
+      "processed_width": 257,
+      "processed_height": 193,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT91f41b6832c0",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1022.8,
+        703.5,
+        1279.0,
+        896.0
+      ],
+      "predicted_bbox_clipped": [
+        1022,
+        703,
+        1279,
+        896
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        170.8,
+        192.5,
+        427.0,
+        385.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT91f41b6832c0/turn_06_processed.png",
+      "original_crop_width": 257,
+      "original_crop_height": 193,
+      "processed_width": 257,
+      "processed_height": 193,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "e68bfe75b2adb99d133593d75a18f2d960b751bc6c93a2ad766a77218f954aa3",
+  "crop_image_sha256": [
+    "f5c656cffbe5bf5bf2333aaa17998a98761a6f00542576b4b6ce3aa7c1b15b7b",
+    "4324991fc7044921d0fc9915fe12731b1ff48a84cad5754a0b274c70473abc68",
+    "9356d9ad860040beebe294a21cac6837bbdfeab4586547b739682aa7deda5570",
+    "59db5900b3628515e1aa3f20b3b0d116a074172481a2d6e6a61fbf6a0c7c0cbe",
+    "59db5900b3628515e1aa3f20b3b0d116a074172481a2d6e6a61fbf6a0c7c0cbe",
+    "59db5900b3628515e1aa3f20b3b0d116a074172481a2d6e6a61fbf6a0c7c0cbe"
+  ],
+  "raw_crop_image_sha256": [
+    "f5c656cffbe5bf5bf2333aaa17998a98761a6f00542576b4b6ce3aa7c1b15b7b",
+    "4324991fc7044921d0fc9915fe12731b1ff48a84cad5754a0b274c70473abc68",
+    "1857ae02f2e7c39b46cc04abaaba674056aa6aecc125d9d230336df98c030d8a",
+    "59db5900b3628515e1aa3f20b3b0d116a074172481a2d6e6a61fbf6a0c7c0cbe",
+    "59db5900b3628515e1aa3f20b3b0d116a074172481a2d6e6a61fbf6a0c7c0cbe",
+    "59db5900b3628515e1aa3f20b3b0d116a074172481a2d6e6a61fbf6a0c7c0cbe"
+  ],
+  "assistant_text_sha256": "e2f9c2e634cae8a6d5470d4f5dfb29ee903d614ffe0e77a5fda16389ad8650e4"
+}

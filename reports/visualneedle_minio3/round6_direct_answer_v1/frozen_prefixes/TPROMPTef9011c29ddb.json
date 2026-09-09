@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTef9011c29ddb",
+  "question": "The two digits before the number '54' in the image are too blurry. Could you help me check what those numbers are?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTef9011c29ddb.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 1051,
+  "turns": [
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 1,
+      "question": "The two digits before the number '54' in the image are too blurry. Could you help me check what those numbers are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the two digits before the number '54' in the image, as they are blurry. I need to scan the image for any numbers. I see some signs on the buildings. I will start by examining the signs on the right side of the street, as they seem to have more text and numbers. I will zoom into the area with the signs to see if I can find the number '54'. I will select the bounding box [0.5, 0.4, 1.0, 0.8] to focus on the signs on the right side of the street. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2213,
+      "output_tokens": 171,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.666529992595315,
+      "tokens_per_second": 36.64393034467511,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 2,
+      "question": "The two digits before the number '54' in the image are too blurry. Could you help me check what those numbers are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the two digits before the number '54' in the image. I've zoomed into the right side of the street, but I don't see any clear numbers in this view. I need to go back to the original image and search for other potential areas with numbers. I see some signs and possibly some numbers on the buildings further down the street. I will try to zoom into the central part of the street to see if I can find the number '54'. I will select the bounding box [0.3, 0.6, 0.7, 0.95] to focus on the central part of the street. </think><grounding>{\"bbox_2d\": [0.3,0.6,0.7,0.95], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.95
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1368.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1368
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1368.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1368.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2880,
+      "output_tokens": 183,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.137195350602269,
+      "tokens_per_second": 35.62255034326184,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 504,
+      "processed_width": 432,
+      "processed_height": 504,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 3,
+      "question": "The two digits before the number '54' in the image are too blurry. Could you help me check what those numbers are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the two digits before the number '54' in the image. I've zoomed into the central part of the street, but I still can't see any clear numbers. I need to go back to the original image and search for other potential areas with numbers. I see some signs on the left side of the street. I will zoom into the left side of the street to see if I can find the number '54'. I will select the bounding box [0.0, 0.4, 0.5, 0.95] to focus on the left side of the street. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.5,0.95], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.95
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1368.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        540,
+        1368
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1368.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1368.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3430,
+      "output_tokens": 175,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.146406603977084,
+      "tokens_per_second": 34.004308922027654,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          36,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 792,
+      "processed_width": 540,
+      "processed_height": 792,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 4,
+      "question": "The two digits before the number '54' in the image are too blurry. Could you help me check what those numbers are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the two digits before the number '54' in the image. I've zoomed into the left side of the street, but I still can't see any clear numbers. I need to go back to the original image and search for other potential areas with numbers. I see some signs on the buildings in the middle of the street. I will zoom into the middle of the street to see if I can find the number '54'. I will select the bounding box [0.3, 0.6, 0.7, 0.9] to focus on the central part of the street. </think><grounding>{\"bbox_2d\": [0.3,0.6,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4234,
+      "output_tokens": 174,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.0996570605784655,
+      "tokens_per_second": 28.526193894497172,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          36,
+          30
+        ],
+        [
+          1,
+          56,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 5,
+      "question": "The two digits before the number '54' in the image are too blurry. Could you help me check what those numbers are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the two digits before the number '54' in the image. I've zoomed into the central part of the street, but I still can't see any clear numbers. I need to go back to the original image and search for other potential areas with numbers. I see some signs on the buildings in the middle of the street. I will zoom into the middle of the street to see if I can find the number '54'. I will select the bounding box [0.3, 0.6, 0.7, 0.9] to focus on the central part of the street. </think><grounding>{\"bbox_2d\": [0.3,0.6,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4730,
+      "output_tokens": 174,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.882044423371553,
+      "tokens_per_second": 29.581551494006607,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          36,
+          30
+        ],
+        [
+          1,
+          56,
+          38
+        ],
+        [
+          1,
+          30,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 6,
+      "question": "The two digits before the number '54' in the image are too blurry. Could you help me check what those numbers are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the two digits before the number '54' in the image. I've zoomed into the central part of the street, but I still can't see any clear numbers. I need to go back to the original image and search for other potential areas with numbers. I see some signs on the buildings in the middle of the street. I will zoom into the middle of the street to see if I can find the number '54'. I will select the bounding box [0.3, 0.6, 0.7, 0.9] to focus on the central part of the street. </think><grounding>{\"bbox_2d\": [0.3,0.6,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5226,
+      "output_tokens": 174,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.816879803314805,
+      "tokens_per_second": 29.912944032442343,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          36,
+          30
+        ],
+        [
+          1,
+          56,
+          38
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          30,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_01_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.95
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1368.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1368
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1368.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1368.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_02_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 504,
+      "processed_width": 432,
+      "processed_height": 504,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.95
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1368.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        540,
+        1368
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1368.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1368.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_03_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 792,
+      "processed_width": 540,
+      "processed_height": 792,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_04_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_05_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTef9011c29ddb",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        864,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        864.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTef9011c29ddb/turn_06_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "4f5ea2d0c916403b704b3019f739e94eb188e47401e4c19582cac16e8610b8bd",
+  "crop_image_sha256": [
+    "a81bea6b9b50a40ed0e668eb49dd20de3e99632e7477021ca2cf81c09e28a19b",
+    "bcd90f52617ded8e63d3edc9ebfc7848ac24e0792bdb60c9cbce6e2e966748d0",
+    "e1b00bf9bc661fa520a8dc932f13b28d8ce51f48e8c6fb3cf05ff9d78a496130",
+    "ec82fbd686ca39d2d346cf8480d96846e0e29815d2a67411aa31b527504a178f",
+    "ec82fbd686ca39d2d346cf8480d96846e0e29815d2a67411aa31b527504a178f",
+    "ec82fbd686ca39d2d346cf8480d96846e0e29815d2a67411aa31b527504a178f"
+  ],
+  "raw_crop_image_sha256": [
+    "a81bea6b9b50a40ed0e668eb49dd20de3e99632e7477021ca2cf81c09e28a19b",
+    "bcd90f52617ded8e63d3edc9ebfc7848ac24e0792bdb60c9cbce6e2e966748d0",
+    "e1b00bf9bc661fa520a8dc932f13b28d8ce51f48e8c6fb3cf05ff9d78a496130",
+    "ec82fbd686ca39d2d346cf8480d96846e0e29815d2a67411aa31b527504a178f",
+    "ec82fbd686ca39d2d346cf8480d96846e0e29815d2a67411aa31b527504a178f",
+    "ec82fbd686ca39d2d346cf8480d96846e0e29815d2a67411aa31b527504a178f"
+  ],
+  "assistant_text_sha256": "44f2f260a9b561813feadfd5703f603003f3f396f8ca1f21ac325f7ca23a9edc"
+}

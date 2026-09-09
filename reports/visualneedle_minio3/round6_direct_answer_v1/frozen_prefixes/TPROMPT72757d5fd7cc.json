@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT72757d5fd7cc",
+  "question": "Please tell me what the two characters before the Chinese character '鸡' in the image are?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT72757d5fd7cc.png",
+  "original_width": 1080,
+  "original_height": 1620,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 776,
+  "turns": [
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 1,
+      "question": "Please tell me what the two characters before the Chinese character '鸡' in the image are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two characters before the Chinese character '鸡' in the image. I need to scan the image to locate the Chinese character '鸡' and then identify the characters preceding it. I can see a red sign with white characters in the middle-left of the image. I will zoom into that area to read the text on the sign. </think><grounding>{\"bbox_2d\": [0.1,0.5,0.5,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        810.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        810,
+        540,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        810.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        810.0,
+        540.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2478,
+      "output_tokens": 115,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.4897290877997875,
+      "tokens_per_second": 32.95384744966133,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 486,
+      "processed_width": 432,
+      "processed_height": 486,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 2,
+      "question": "Please tell me what the two characters before the Chinese character '鸡' in the image are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two characters before the Chinese character '鸡' in the image. I have zoomed into a region of the image, but I don't see the character '鸡' in this view. I need to go back to the original image and search for the character '鸡' in a different area. I will try a different area, perhaps in the middle of the image, as there are many signs there. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        810.0,
+        756.0,
+        1458.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        810,
+        756,
+        1458
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        810.0,
+        756.0,
+        1458.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        810.0,
+        756.0,
+        1458.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2945,
+      "output_tokens": 131,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.047498699277639,
+      "tokens_per_second": 32.36566821463826,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          34,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 3,
+      "question": "Please tell me what the two characters before the Chinese character '鸡' in the image are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two characters before the Chinese character '鸡' in the image. I have zoomed into another region of the image, but I still cannot see the character '鸡' in this view. I need to go back to the original image and search for the character '鸡' in a different area. I will try a different area, perhaps in the right part of the image, as there are also many signs there. </think><grounding>{\"bbox_2d\": [0.5,0.5,0.9,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        810.0,
+        972.0,
+        1458.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        810,
+        972,
+        1458
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        810.0,
+        972.0,
+        1458.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        810.0,
+        972.0,
+        1458.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3518,
+      "output_tokens": 133,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.2554110791534185,
+      "tokens_per_second": 31.25432479403596,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          34,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 4,
+      "question": "Please tell me what the two characters before the Chinese character '鸡' in the image are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two characters before the Chinese character '鸡' in the image. I have zoomed into another region of the image, but I still cannot see the character '鸡' in this view. I need to go back to the original image and search for the character '鸡' in a different area. I will try a different area, perhaps in the left part of the image, as there are many signs there. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.4,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        810.0,
+        432.0,
+        1458.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        810,
+        432,
+        1458
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        810.0,
+        432.0,
+        1458.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        810.0,
+        432.0,
+        1458.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4093,
+      "output_tokens": 132,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.421933690086007,
+      "tokens_per_second": 29.851193900972447,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          34,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 5,
+      "question": "Please tell me what the two characters before the Chinese character '鸡' in the image are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two characters before the Chinese character '鸡' in the image. I have zoomed into another region of the image, but I still cannot see the character '鸡' in this view. I need to go back to the original image and search for the character '鸡' in a different area. I will try a different area, perhaps in the middle of the image, as there are many signs there. </think><grounding>{\"bbox_2d\": [0.2,0.6,0.6,0.95], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.6,
+        0.95
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        972.0,
+        648.0,
+        1539.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        972,
+        648,
+        1539
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        972.0,
+        648.0,
+        1539.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        972.0,
+        648.0,
+        1539.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4667,
+      "output_tokens": 132,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.67641861923039,
+      "tokens_per_second": 28.226728774278037,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          34,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 567,
+      "processed_width": 432,
+      "processed_height": 567,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 6,
+      "question": "Please tell me what the two characters before the Chinese character '鸡' in the image are?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two characters before the Chinese character '鸡' in the image. I have zoomed into another region of the image, but I still cannot see the character '鸡' in this view. I need to go back to the original image and search for the character '鸡' in a different area. I will try a different area, perhaps in the right part of the image, as there are also many signs there. </think><grounding>{\"bbox_2d\": [0.6,0.6,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.6,
+        0.6,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        648.0,
+        972.0,
+        1080.0,
+        1620.0
+      ],
+      "predicted_bbox_clipped": [
+        648,
+        972,
+        1080,
+        1620
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        648.0,
+        972.0,
+        1080.0,
+        1620.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        648.0,
+        972.0,
+        1080.0,
+        1620.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5196,
+      "output_tokens": 133,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.845196759328246,
+      "tokens_per_second": 27.449865631140963,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          34,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          40,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        810.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        810,
+        540,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        810.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        810.0,
+        540.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 486,
+      "processed_width": 432,
+      "processed_height": 486,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        810.0,
+        756.0,
+        1458.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        810,
+        756,
+        1458
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        810.0,
+        756.0,
+        1458.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        810.0,
+        756.0,
+        1458.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_02_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        810.0,
+        972.0,
+        1458.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        810,
+        972,
+        1458
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        810.0,
+        972.0,
+        1458.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        810.0,
+        972.0,
+        1458.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_03_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        810.0,
+        432.0,
+        1458.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        810,
+        432,
+        1458
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        810.0,
+        432.0,
+        1458.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        810.0,
+        432.0,
+        1458.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_04_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.6,
+        0.95
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        972.0,
+        648.0,
+        1539.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        972,
+        648,
+        1539
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        972.0,
+        648.0,
+        1539.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        972.0,
+        648.0,
+        1539.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_05_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 567,
+      "processed_width": 432,
+      "processed_height": 567,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT72757d5fd7cc",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.6,
+        0.6,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        648.0,
+        972.0,
+        1080.0,
+        1620.0
+      ],
+      "predicted_bbox_clipped": [
+        648,
+        972,
+        1080,
+        1620
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        648.0,
+        972.0,
+        1080.0,
+        1620.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        648.0,
+        972.0,
+        1080.0,
+        1620.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT72757d5fd7cc/turn_06_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 648,
+      "processed_width": 432,
+      "processed_height": 648,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "0596af05e059d3a6c3b11803c30498e522710512b215340f47258cc3d3e26cc1",
+  "crop_image_sha256": [
+    "02b5e3d9b1cceafaeb13bb498d4608b2ff0ab27ed62c1911d2a01e1633f3eae5",
+    "062aa0bc2d69b8250b00cdf6fbc98872296d0e42fee5081d47be04fd02ccf58d",
+    "4fee5d485392dbd22c46dd58a477dba2e134c7dfb503627d7c88682b7caa7e89",
+    "d1dba299258adb0acefea37bda698e5583d98701f68c0a4880973df2a942137f",
+    "1cee82ceca35c320080b41d26c5004d589e7ab59f1dea3585456a173cfac89e8",
+    "d289f79ca0a3eaede63b28c5a7c0e64e6269809324e64face57ee06165dcd5cd"
+  ],
+  "raw_crop_image_sha256": [
+    "02b5e3d9b1cceafaeb13bb498d4608b2ff0ab27ed62c1911d2a01e1633f3eae5",
+    "062aa0bc2d69b8250b00cdf6fbc98872296d0e42fee5081d47be04fd02ccf58d",
+    "4fee5d485392dbd22c46dd58a477dba2e134c7dfb503627d7c88682b7caa7e89",
+    "d1dba299258adb0acefea37bda698e5583d98701f68c0a4880973df2a942137f",
+    "1cee82ceca35c320080b41d26c5004d589e7ab59f1dea3585456a173cfac89e8",
+    "d289f79ca0a3eaede63b28c5a7c0e64e6269809324e64face57ee06165dcd5cd"
+  ],
+  "assistant_text_sha256": "f33317c5f9716d6115d45ef5d250552062a662c19d301f259a49a7a8e6a270ad"
+}

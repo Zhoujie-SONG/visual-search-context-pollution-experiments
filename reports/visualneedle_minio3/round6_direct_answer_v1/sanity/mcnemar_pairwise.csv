@@ -1,0 +1,13 @@
+first_condition,second_condition,mode,metric,num_pairs,first_only,second_only,discordant,p_value
+O_oracle_top2_direct,F_full_direct,strict,valid_answer,2,0,0,0,1.0
+O_oracle_top2_direct,F_full_direct,strict,final_correct,2,0,0,0,1.0
+O_oracle_top2_direct,F_full_direct,lenient,valid_answer,2,0,0,0,1.0
+O_oracle_top2_direct,F_full_direct,lenient,final_correct,2,0,0,0,1.0
+O_oracle_top2_direct,R_recent_top2_direct,strict,valid_answer,2,0,0,0,1.0
+O_oracle_top2_direct,R_recent_top2_direct,strict,final_correct,2,0,0,0,1.0
+O_oracle_top2_direct,R_recent_top2_direct,lenient,valid_answer,2,0,0,0,1.0
+O_oracle_top2_direct,R_recent_top2_direct,lenient,final_correct,2,0,0,0,1.0
+O_oracle_top2_direct,X_random_top2_direct,strict,valid_answer,2,0,0,0,1.0
+O_oracle_top2_direct,X_random_top2_direct,strict,final_correct,2,0,0,0,1.0
+O_oracle_top2_direct,X_random_top2_direct,lenient,valid_answer,2,0,0,0,1.0
+O_oracle_top2_direct,X_random_top2_direct,lenient,final_correct,2,0,0,0,1.0

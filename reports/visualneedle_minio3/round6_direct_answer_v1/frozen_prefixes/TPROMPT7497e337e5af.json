@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT7497e337e5af",
+  "question": "Above the mother who is holding a child, what is written on the blue sign near the left hand of the figure wearing a red scarf?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT7497e337e5af.jpg",
+  "original_width": 3640,
+  "original_height": 2048,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 727,
+  "turns": [
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 1,
+      "question": "Above the mother who is holding a child, what is written on the blue sign near the left hand of the figure wearing a red scarf?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the text on a blue sign located near a figure wearing a red scarf, specifically above a mother holding a child. First, I need to locate the mother with a child in the image. I can see a group of people in the lower-left quadrant of the image. I will zoom into this area to get a better view. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1024.0,
+        1819.9999999999998,
+        2048.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1024,
+        1820,
+        2048
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        530.5,
+        942.5,
+        1061.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1024.0,
+        1819.9999999999998,
+        2048.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2771,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.640615465119481,
+      "tokens_per_second": 31.313386731509322,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1820,
+      "original_crop_height": 1024,
+      "processed_width": 1820,
+      "processed_height": 1024,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 2,
+      "question": "Above the mother who is holding a child, what is written on the blue sign near the left hand of the figure wearing a red scarf?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the text on a blue sign near a figure wearing a red scarf, who is standing above a mother holding a child. In observation 1, I can see a woman in a red scarf in the upper middle part of the image. She is standing next to a stroller, and there is a mother holding a child nearby. I need to zoom in on this area to see the details of the sign. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.7,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        546.0,
+        1126.4,
+        1274.0,
+        1536.0
+      ],
+      "predicted_bbox_clipped": [
+        546,
+        1126,
+        1274,
+        1536
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5387,
+      "output_tokens": 131,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.130057392641902,
+      "tokens_per_second": 25.535776692848454,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          74,
+          130
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 728,
+      "original_crop_height": 410,
+      "processed_width": 728,
+      "processed_height": 410,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 3,
+      "question": "Above the mother who is holding a child, what is written on the blue sign near the left hand of the figure wearing a red scarf?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text on a blue sign near a figure wearing a red scarf. In observation 2, I can see a woman in a red scarf, but I cannot see a blue sign. I need to go back to observation 1 and try a different area. In observation 1, there is a blue sign in the middle of the image, behind the people. I will try to zoom into that area. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.7,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        546.0,
+        1126.4,
+        1274.0,
+        1536.0
+      ],
+      "predicted_bbox_clipped": [
+        546,
+        1126,
+        1274,
+        1536
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_03_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6005,
+      "output_tokens": 131,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.352110283449292,
+      "tokens_per_second": 24.476326731364363,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          74,
+          130
+        ],
+        [
+          1,
+          30,
+          52
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 728,
+      "original_crop_height": 410,
+      "processed_width": 728,
+      "processed_height": 410,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 4,
+      "question": "Above the mother who is holding a child, what is written on the blue sign near the left hand of the figure wearing a red scarf?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text on a blue sign near a figure wearing a red scarf. In observation 3, I can see a woman in a red scarf, but I still cannot see a blue sign. I need to go back to the original image and try a different area. I will try to zoom into the area with more signs. </think><grounding>{\"bbox_2d\": [0.4,0.2,0.8,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.8,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1455.9999999999998,
+        409.6,
+        2911.9999999999995,
+        1228.8
+      ],
+      "predicted_bbox_clipped": [
+        1455,
+        409,
+        2912,
+        1229
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        754.0,
+        212.20000000000002,
+        1508.0,
+        636.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1455.9999999999998,
+        409.6,
+        2911.9999999999995,
+        1228.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6623,
+      "output_tokens": 113,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.087649768218398,
+      "tokens_per_second": 22.21064836378675,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          74,
+          130
+        ],
+        [
+          1,
+          30,
+          52
+        ],
+        [
+          1,
+          30,
+          52
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1457,
+      "original_crop_height": 820,
+      "processed_width": 1457,
+      "processed_height": 820,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 5,
+      "question": "Above the mother who is holding a child, what is written on the blue sign near the left hand of the figure wearing a red scarf?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text on a blue sign near a figure wearing a red scarf. In observation 4, I can see a woman in a red scarf in the middle of the image, but I still cannot see a blue sign. I need to go back to the original image and try a different area. I will try to zoom into the area with more signs. </think><grounding>{\"bbox_2d\": [0.4,0.3,0.8,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.3,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1455.9999999999998,
+        614.4,
+        2911.9999999999995,
+        1433.6
+      ],
+      "predicted_bbox_clipped": [
+        1455,
+        614,
+        2912,
+        1434
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        754.0,
+        318.3,
+        1508.0,
+        742.6999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1455.9999999999998,
+        614.4,
+        2911.9999999999995,
+        1433.6
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8341,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.9834991004318,
+      "tokens_per_second": 19.888028393187582,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          74,
+          130
+        ],
+        [
+          1,
+          30,
+          52
+        ],
+        [
+          1,
+          30,
+          52
+        ],
+        [
+          1,
+          58,
+          104
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1457,
+      "original_crop_height": 820,
+      "processed_width": 1457,
+      "processed_height": 820,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 6,
+      "question": "Above the mother who is holding a child, what is written on the blue sign near the left hand of the figure wearing a red scarf?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text on a blue sign near a figure wearing a red scarf. In observation 5, I can see a woman in a red scarf in the middle of the image, but I still cannot see a blue sign. I need to go back to the original image and try a different area. I will try to zoom into the area with more signs. </think><grounding>{\"bbox_2d\": [0.4,0.4,0.8,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.4,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1455.9999999999998,
+        819.2,
+        2911.9999999999995,
+        1638.4
+      ],
+      "predicted_bbox_clipped": [
+        1455,
+        819,
+        2912,
+        1639
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        754.0,
+        424.40000000000003,
+        1508.0,
+        848.8000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1455.9999999999998,
+        819.2,
+        2911.9999999999995,
+        1638.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10065,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.840456796810031,
+      "tokens_per_second": 17.3964990255467,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          76,
+          134
+        ],
+        [
+          1,
+          74,
+          130
+        ],
+        [
+          1,
+          30,
+          52
+        ],
+        [
+          1,
+          30,
+          52
+        ],
+        [
+          1,
+          58,
+          104
+        ],
+        [
+          1,
+          58,
+          104
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1457,
+      "original_crop_height": 820,
+      "processed_width": 1457,
+      "processed_height": 820,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1024.0,
+        1819.9999999999998,
+        2048.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1024,
+        1820,
+        2048
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        530.5,
+        942.5,
+        1061.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1024.0,
+        1819.9999999999998,
+        2048.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_01_processed.png",
+      "original_crop_width": 1820,
+      "original_crop_height": 1024,
+      "processed_width": 1820,
+      "processed_height": 1024,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        546.0,
+        1126.4,
+        1274.0,
+        1536.0
+      ],
+      "predicted_bbox_clipped": [
+        546,
+        1126,
+        1274,
+        1536
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_02_processed.png",
+      "original_crop_width": 728,
+      "original_crop_height": 410,
+      "processed_width": 728,
+      "processed_height": 410,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        546.0,
+        1126.4,
+        1274.0,
+        1536.0
+      ],
+      "predicted_bbox_clipped": [
+        546,
+        1126,
+        1274,
+        1536
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        546.0,
+        102.4,
+        1274.0,
+        512.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_03_processed.png",
+      "original_crop_width": 728,
+      "original_crop_height": 410,
+      "processed_width": 728,
+      "processed_height": 410,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        0.8,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1455.9999999999998,
+        409.6,
+        2911.9999999999995,
+        1228.8
+      ],
+      "predicted_bbox_clipped": [
+        1455,
+        409,
+        2912,
+        1229
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        754.0,
+        212.20000000000002,
+        1508.0,
+        636.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1455.9999999999998,
+        409.6,
+        2911.9999999999995,
+        1228.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_04_processed.png",
+      "original_crop_width": 1457,
+      "original_crop_height": 820,
+      "processed_width": 1457,
+      "processed_height": 820,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.3,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1455.9999999999998,
+        614.4,
+        2911.9999999999995,
+        1433.6
+      ],
+      "predicted_bbox_clipped": [
+        1455,
+        614,
+        2912,
+        1434
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        754.0,
+        318.3,
+        1508.0,
+        742.6999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1455.9999999999998,
+        614.4,
+        2911.9999999999995,
+        1433.6
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_05_processed.png",
+      "original_crop_width": 1457,
+      "original_crop_height": 820,
+      "processed_width": 1457,
+      "processed_height": 820,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7497e337e5af",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.4,
+        0.8,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1455.9999999999998,
+        819.2,
+        2911.9999999999995,
+        1638.4
+      ],
+      "predicted_bbox_clipped": [
+        1455,
+        819,
+        2912,
+        1639
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        754.0,
+        424.40000000000003,
+        1508.0,
+        848.8000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1455.9999999999998,
+        819.2,
+        2911.9999999999995,
+        1638.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7497e337e5af/turn_06_processed.png",
+      "original_crop_width": 1457,
+      "original_crop_height": 820,
+      "processed_width": 1457,
+      "processed_height": 820,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "f44d0e9c575e645f799d2af49b076afcae4e7cdb77b4eb7a292ecdcb3e10cd4d",
+  "crop_image_sha256": [
+    "054540b154050eaed3de780ce19ffd295b9a3e459186ea98fa465d9c336d73b3",
+    "bf2462c774fcf117fb295b7bf374dbeddd03798c5847bcbff4bff79a8c76452e",
+    "bf2462c774fcf117fb295b7bf374dbeddd03798c5847bcbff4bff79a8c76452e",
+    "e129752e7b8daaf08ad04a77e3132d7cf713a40e0aa92110ab0b9b7de29dea22",
+    "04422b0aaa4216983bc86d3f65befe51799794586441ca43d5b2cb5da72accdd",
+    "7301c1813b9fe461a4ebbc0bee7ce5722c5907bd0fe728203cb22ad5c28d3eb9"
+  ],
+  "raw_crop_image_sha256": [
+    "054540b154050eaed3de780ce19ffd295b9a3e459186ea98fa465d9c336d73b3",
+    "bf2462c774fcf117fb295b7bf374dbeddd03798c5847bcbff4bff79a8c76452e",
+    "bf2462c774fcf117fb295b7bf374dbeddd03798c5847bcbff4bff79a8c76452e",
+    "e129752e7b8daaf08ad04a77e3132d7cf713a40e0aa92110ab0b9b7de29dea22",
+    "04422b0aaa4216983bc86d3f65befe51799794586441ca43d5b2cb5da72accdd",
+    "7301c1813b9fe461a4ebbc0bee7ce5722c5907bd0fe728203cb22ad5c28d3eb9"
+  ],
+  "assistant_text_sha256": "02676640a72c25d57286476eeba198665f384c9d9a76ca5785bdb79ccbaacf46"
+}

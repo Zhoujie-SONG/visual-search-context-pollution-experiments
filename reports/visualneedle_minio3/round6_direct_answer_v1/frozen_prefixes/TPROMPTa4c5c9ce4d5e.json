@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTa4c5c9ce4d5e",
+  "question": "What are the first two characters of the second row on the second advertisement board under the sushi stand?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTa4c5c9ce4d5e.png",
+  "original_width": 1080,
+  "original_height": 1621,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 871,
+  "turns": [
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 1,
+      "question": "What are the first two characters of the second row on the second advertisement board under the sushi stand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the first two characters of the second row on the second advertisement board under the sushi stand. First, I need to locate the sushi stand in the image. I can see a stand with a sign that says \"Sushi\" in the middle of the crowded market. I will zoom into that area to get a better view of the advertisement boards. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        810.5,
+        756.0,
+        1458.9
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        810,
+        756,
+        1459
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        810.5,
+        756.0,
+        1458.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        810.5,
+        756.0,
+        1458.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2479,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.5697960518300533,
+      "tokens_per_second": 32.77498162395581,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 649,
+      "processed_width": 432,
+      "processed_height": 649,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 2,
+      "question": "What are the first two characters of the second row on the second advertisement board under the sushi stand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the first two characters of the second row on the second advertisement board under the sushi stand. In observation 1, I can see a stand with a sign that says \"Sushi\". There are several advertisement boards around this stand. I will focus on the one that is directly under the main \"Sushi\" sign. I can see a white board with some text on it. I will zoom in on that board to read the text. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.8], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        453.6,
+        1069.6,
+        626.4,
+        1329.2
+      ],
+      "predicted_bbox_clipped": [
+        453,
+        1069,
+        627,
+        1330
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        259.6,
+        302.4,
+        519.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        259.6,
+        302.4,
+        519.2
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3038,
+      "output_tokens": 137,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.180967016145587,
+      "tokens_per_second": 32.767539057578986,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          46,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 174,
+      "original_crop_height": 261,
+      "processed_width": 174,
+      "processed_height": 261,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 3,
+      "question": "What are the first two characters of the second row on the second advertisement board under the sushi stand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the first two characters of the second row on the second advertisement board under the sushi stand. In observation 2, I can see a white board with some text on it. The text seems to be in Chinese. I can see the first row is \"特色烤冷面\", the second row seems to be \"38杂粮煎饼\". The first two characters of the second row are \"38\". I am not sure if this is the correct answer as the text is not very clear. I will zoom in on the white board to get a clearer view of the text. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.9,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3326,
+      "output_tokens": 167,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.922590820118785,
+      "tokens_per_second": 33.925224765273136,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 4,
+      "question": "What are the first two characters of the second row on the second advertisement board under the sushi stand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the first two characters of the second row on the second advertisement board under the sushi stand. In observation 3, I can see a white board with some text on it. The text seems to be in Chinese. I can see the first row is \"特色烤冷面\", the second row seems to be \"8杂粮煎饼\". The first two characters of the second row are \"8杂\". The image is still a bit blurry, I will try to zoom in more to be sure. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.9,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_04_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3646,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.626755913719535,
+      "tokens_per_second": 32.42012390478845,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          16,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 5,
+      "question": "What are the first two characters of the second row on the second advertisement board under the sushi stand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the first two characters of the second row on the second advertisement board under the sushi stand. In observation 4, I can see a white board with some text on it. The text seems to be in Chinese. I can see the first row is \"特色烤冷面\", the second row seems to be \"8杂粮煎饼\". The first two characters of the second row are \"8杂\". The image is still a bit blurry, I will try to zoom in more to be sure. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.9,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_05_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3949,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.71622564829886,
+      "tokens_per_second": 31.805093985294135,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          16,
+          14
+        ],
+        [
+          1,
+          16,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 6,
+      "question": "What are the first two characters of the second row on the second advertisement board under the sushi stand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the first two characters of the second row on the second advertisement board under the sushi stand. In observation 5, I can see a white board with some text on it. The text seems to be in Chinese. I can see the first row is \"特色烤冷面\", the second row seems to be \"8杂粮煎饼\". The first two characters of the second row are \"8杂\". The image is still a bit blurry, I will try to zoom in more to be sure. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.9,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_06_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4252,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.039416119456291,
+      "tokens_per_second": 29.76535305764424,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          78
+        ],
+        [
+          1,
+          46,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          16,
+          14
+        ],
+        [
+          1,
+          16,
+          14
+        ],
+        [
+          1,
+          16,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        810.5,
+        756.0,
+        1458.9
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        810,
+        756,
+        1459
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        810.5,
+        756.0,
+        1458.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        810.5,
+        756.0,
+        1458.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 649,
+      "processed_width": 432,
+      "processed_height": 649,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        453.6,
+        1069.6,
+        626.4,
+        1329.2
+      ],
+      "predicted_bbox_clipped": [
+        453,
+        1069,
+        627,
+        1330
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        259.6,
+        302.4,
+        519.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        259.6,
+        302.4,
+        519.2
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_02_processed.png",
+      "original_crop_width": 174,
+      "original_crop_height": 261,
+      "processed_width": 174,
+      "processed_height": 261,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_03_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.5772357723577235,
+      "preprocess_scale_y": 1.5725190839694656
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_04_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.5772357723577235,
+      "preprocess_scale_y": 1.5725190839694656
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_05_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.5772357723577235,
+      "preprocess_scale_y": 1.5725190839694656
+    },
+    {
+      "sample_id": "TPROMPTa4c5c9ce4d5e",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        487.8,
+        1173.4,
+        609.6,
+        1303.9
+      ],
+      "predicted_bbox_clipped": [
+        487,
+        1173,
+        610,
+        1304
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        104.4,
+        156.6,
+        234.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTa4c5c9ce4d5e/turn_06_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 131,
+      "processed_width": 194,
+      "processed_height": 206,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.5772357723577235,
+      "preprocess_scale_y": 1.5725190839694656
+    }
+  ],
+  "original_image_sha256": "eee272a00d84b6cb93b00aadfc554596d64e4f9a56c277eac1faca7e4e479e3c",
+  "crop_image_sha256": [
+    "29571699f026d8ce8f6e8eb43ac43467975cc178b3466a1cba5148044815ea60",
+    "8e4c210f68db6336b5d6bd7caba5bc327abcf32a18a9f4e37e7b6063dc517d66",
+    "81048cd420ede755ce2d5229df874a9de7e6db1b81378ae0e4ec95f277d52040",
+    "81048cd420ede755ce2d5229df874a9de7e6db1b81378ae0e4ec95f277d52040",
+    "81048cd420ede755ce2d5229df874a9de7e6db1b81378ae0e4ec95f277d52040",
+    "81048cd420ede755ce2d5229df874a9de7e6db1b81378ae0e4ec95f277d52040"
+  ],
+  "raw_crop_image_sha256": [
+    "29571699f026d8ce8f6e8eb43ac43467975cc178b3466a1cba5148044815ea60",
+    "8e4c210f68db6336b5d6bd7caba5bc327abcf32a18a9f4e37e7b6063dc517d66",
+    "de2014042a00e46c58b008f5596373ed6b01eb0553e7dd8b24ea6761368e31ea",
+    "de2014042a00e46c58b008f5596373ed6b01eb0553e7dd8b24ea6761368e31ea",
+    "de2014042a00e46c58b008f5596373ed6b01eb0553e7dd8b24ea6761368e31ea",
+    "de2014042a00e46c58b008f5596373ed6b01eb0553e7dd8b24ea6761368e31ea"
+  ],
+  "assistant_text_sha256": "a9dbdc47458b8397360263632d2efff9baa0ccfc70a7640cd536f8d65b9aa440"
+}

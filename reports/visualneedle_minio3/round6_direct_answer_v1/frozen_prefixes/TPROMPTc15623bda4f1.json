@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTc15623bda4f1",
+  "question": "In the third row below the '云南白药' toothpaste, what is the first complete product from left to right?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTc15623bda4f1.jpg",
+  "original_width": 3739,
+  "original_height": 2804,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 724,
+  "turns": [
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 1,
+      "question": "In the third row below the '云南白药' toothpaste, what is the first complete product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the product on the third shelf below the '云南白药' toothpaste. First, I need to locate the toothpaste. I can see a shelf in the middle of the image with many products. I will zoom into that central area to get a better view of the products and identify the toothpaste and the products below it. </think><grounding>{\"bbox_2d\": [0.3,0.3,0.7,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1121.1322060307027,
+        840.602605917425,
+        2615.975147404973,
+        1681.20521183485
+      ],
+      "predicted_bbox_clipped": [
+        1121,
+        840,
+        2616,
+        1682
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        489.59999999999997,
+        367.2,
+        1142.3999999999999,
+        734.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1121.1322060307027,
+        840.602605917425,
+        2615.975147404973,
+        1681.20521183485
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2716,
+      "output_tokens": 115,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.730251584202051,
+      "tokens_per_second": 30.829019813847214,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1495,
+      "original_crop_height": 842,
+      "processed_width": 1495,
+      "processed_height": 842,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 2,
+      "question": "In the third row below the '云南白药' toothpaste, what is the first complete product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the first complete product from the left on the third row below the '云南白药' toothpaste. In observation 1, I can see a shelf with several toothpaste brands. I need to locate the '云南白药' toothpaste first. I can see some white boxes with green text on the shelf in the middle. I will zoom in on that area to get a better view and identify the brand. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.6,0.4], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1420.0,
+        924.2,
+        2018.0,
+        1176.8
+      ],
+      "predicted_bbox_clipped": [
+        1420,
+        924,
+        2018,
+        1177
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        299.0,
+        84.2,
+        897.0,
+        336.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        299.0,
+        84.2,
+        897.0,
+        336.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4518,
+      "output_tokens": 133,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.755312329158187,
+      "tokens_per_second": 27.96872020045515,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          60,
+          106
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 598,
+      "original_crop_height": 253,
+      "processed_width": 598,
+      "processed_height": 253,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 3,
+      "question": "In the third row below the '云南白药' toothpaste, what is the first complete product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the first complete product from the left on the third row below the '云南白药' toothpaste. In observation 2, I can see the '云南白药' toothpaste. The third row below it seems to be a shelf with some products. I will zoom in on that specific shelf to get a better view and identify the product. </think><grounding>{\"bbox_2d\": [0.1,0.5,0.9,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1479.8,
+        1050.5,
+        1958.2,
+        1151.7
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        59.800000000000004,
+        126.5,
+        538.2,
+        227.70000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        59.800000000000004,
+        126.5,
+        538.2,
+        227.70000000000002
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4937,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.988046107813716,
+      "tokens_per_second": 23.85703688937195,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          60,
+          106
+        ],
+        [
+          1,
+          18,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 4,
+      "question": "In the third row below the '云南白药' toothpaste, what is the first complete product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the first complete product from the left on the third row below the '云南白药' toothpaste. In observation 3, I can see the '云南白药' toothpaste. The third row below it seems to be a shelf with some products. I will zoom in on that specific shelf to get a better view and identify the product. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,1.0], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1479.0,
+        1050.0,
+        1959.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5221,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.600661426782608,
+      "tokens_per_second": 25.865846007977286,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          60,
+          106
+        ],
+        [
+          1,
+          18,
+          42
+        ],
+        [
+          1,
+          8,
+          34
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 5,
+      "question": "In the third row below the '云南白药' toothpaste, what is the first complete product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the first complete product from the left on the third row below the '云南白药' toothpaste. In observation 4, I can see the '云南白药' toothpaste. The third row below it seems to be a shelf with some products. I will zoom in on that specific shelf to get a better view and identify the product. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,1.0], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1479.0,
+        1050.0,
+        1959.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5505,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.733894620090723,
+      "tokens_per_second": 25.137864179519784,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          60,
+          106
+        ],
+        [
+          1,
+          18,
+          42
+        ],
+        [
+          1,
+          8,
+          34
+        ],
+        [
+          1,
+          8,
+          34
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 6,
+      "question": "In the third row below the '云南白药' toothpaste, what is the first complete product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the first complete product from the left on the third row below the '云南白药' toothpaste. In observation 5, I can see the '云南白药' toothpaste. The third row below it seems to be a shelf with some products. I will zoom in on that specific shelf to get a better view and identify the product. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,1.0], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1479.0,
+        1050.0,
+        1959.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5789,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.111255068331957,
+      "tokens_per_second": 23.281952946800462,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          60,
+          106
+        ],
+        [
+          1,
+          18,
+          42
+        ],
+        [
+          1,
+          8,
+          34
+        ],
+        [
+          1,
+          8,
+          34
+        ],
+        [
+          1,
+          8,
+          34
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1121.1322060307027,
+        840.602605917425,
+        2615.975147404973,
+        1681.20521183485
+      ],
+      "predicted_bbox_clipped": [
+        1121,
+        840,
+        2616,
+        1682
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        489.59999999999997,
+        367.2,
+        1142.3999999999999,
+        734.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1121.1322060307027,
+        840.602605917425,
+        2615.975147404973,
+        1681.20521183485
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_01_processed.png",
+      "original_crop_width": 1495,
+      "original_crop_height": 842,
+      "processed_width": 1495,
+      "processed_height": 842,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1420.0,
+        924.2,
+        2018.0,
+        1176.8
+      ],
+      "predicted_bbox_clipped": [
+        1420,
+        924,
+        2018,
+        1177
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        299.0,
+        84.2,
+        897.0,
+        336.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        299.0,
+        84.2,
+        897.0,
+        336.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_02_processed.png",
+      "original_crop_width": 598,
+      "original_crop_height": 253,
+      "processed_width": 598,
+      "processed_height": 253,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1479.8,
+        1050.5,
+        1958.2,
+        1151.7
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        59.800000000000004,
+        126.5,
+        538.2,
+        227.70000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        59.800000000000004,
+        126.5,
+        538.2,
+        227.70000000000002
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_03_processed.png",
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1479.0,
+        1050.0,
+        1959.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_04_processed.png",
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1479.0,
+        1050.0,
+        1959.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_05_processed.png",
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTc15623bda4f1",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1479.0,
+        1050.0,
+        1959.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        1479,
+        1050,
+        1959,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        480.0,
+        102.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTc15623bda4f1/turn_06_processed.png",
+      "original_crop_width": 480,
+      "original_crop_height": 102,
+      "processed_width": 480,
+      "processed_height": 102,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "ea3e85efe4cfdd3fe987c6747b12ce9e78ef43837eb29022e30371c491d8e897",
+  "crop_image_sha256": [
+    "beddaacc30e121ba923ab6f39dcbca143b8178b9be1976da952ea11dc3ea2476",
+    "ee72f381405b1b5032471104d96e9a28e616075550d032046707456436b3d2ad",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3"
+  ],
+  "raw_crop_image_sha256": [
+    "beddaacc30e121ba923ab6f39dcbca143b8178b9be1976da952ea11dc3ea2476",
+    "ee72f381405b1b5032471104d96e9a28e616075550d032046707456436b3d2ad",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3",
+    "aa7777306eccf4312a82f5ae386c8f9f8b194d26d568e69a7488294513c0b4c3"
+  ],
+  "assistant_text_sha256": "7c3c8245ea76226db1c9bd1c583460640555962f2a9f73743808c278dc777766"
+}

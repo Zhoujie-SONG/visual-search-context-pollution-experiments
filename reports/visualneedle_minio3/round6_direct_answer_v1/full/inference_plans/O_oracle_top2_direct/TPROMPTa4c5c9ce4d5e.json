@@ -1,0 +1,16 @@
+{
+  "sample_id": "TPROMPTa4c5c9ce4d5e",
+  "condition": "O_oracle_top2_direct",
+  "retained_crop_indices": [
+    1,
+    2
+  ],
+  "evicted_crop_indices": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "prefix_snapshot_sha256": "f4b46d5bd0fe4bcbbe92931c723682b1fdea170e9c470cacd944ba863595b9e9",
+  "direct_instruction_sha256": "a543cccfafb88d00e1d87d37dd602b8b91144e06db29343e05dfdb70c16cb399"
+}

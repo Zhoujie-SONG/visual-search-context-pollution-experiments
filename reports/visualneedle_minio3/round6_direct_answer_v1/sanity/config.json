@@ -1,0 +1,39 @@
+{
+  "experiment": "Round-6 Direct-Answer Memory Diagnostic",
+  "stage": "sanity",
+  "created_at": "2026-09-09 19:12:46 +0800",
+  "baseline_directory": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline",
+  "baseline_fingerprints": {
+    "config.json": "edb6dec5ce6e3ed7f89d39698739d172e0eeb8a7af596b33ee9ea110a857ba9c",
+    "trajectories.jsonl": "bbb82eb40faaa9f6af8ee569f955eb3ca0d1e58d2d43ae0cc84b56c2ab169e7f",
+    "episode_summary.csv": "4470ef8a48828f0b1c7dc7fb73ce7eaf85bc85e955da10f48ce500b71d8d6af1",
+    "official_judge_results.csv": "d78a19d779eb061e823a4fe022f874be13e3d1bb1cca78f4cc18e10192660c0f"
+  },
+  "model_path": "/mnt/data2/szj/models/Mini-o3-7B-v1-complete",
+  "python": "/mnt/data2/szj/envs/venv_e2m/bin/python",
+  "dtype": "bfloat16",
+  "attention_implementation": "sdpa",
+  "use_cache": true,
+  "do_sample": false,
+  "min_pixels": 40000,
+  "max_pixels": 2000000,
+  "answer_max_new_tokens": 128,
+  "prefix_crop_count": 6,
+  "intervention_point": "after sixth successful crop observation and before one answer-only generation",
+  "direct_answer_instruction": "Visual search is now finished.\nDo not perform any further grounding or visual tool calls.\nBased only on the visual evidence already available,\nanswer the original question now.\nPut only the final answer inside <answer> and </answer>.",
+  "direct_answer_instruction_sha256": "a543cccfafb88d00e1d87d37dd602b8b91144e06db29343e05dfdb70c16cb399",
+  "tool_execution_enabled": false,
+  "post_intervention_generation_count_per_arm": 1,
+  "random_seed": 42,
+  "selected_sample_ids": [
+    "TPROMPT0000ab2db273",
+    "TPROMPT038b4987f2c1"
+  ],
+  "arms": [
+    "F_full_direct",
+    "O_oracle_top2_direct",
+    "R_recent_top2_direct",
+    "X_random_top2_direct"
+  ],
+  "ground_truth_isolation": "GPU workers read sanitized frozen prefixes and index-only retention plans; GT metadata is attached only after all inference records are written"
+}

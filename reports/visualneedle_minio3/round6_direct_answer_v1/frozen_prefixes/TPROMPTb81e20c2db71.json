@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTb81e20c2db71",
+  "question": "What is the object placed in the gap of the bookshelf above the purple marker?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTb81e20c2db71.png",
+  "original_width": 1440,
+  "original_height": 1080,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 831,
+  "turns": [
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 1,
+      "question": "What is the object placed in the gap of the bookshelf above the purple marker?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the object placed in the gap of the bookshelf above the purple marker. First, I need to locate the purple marker in the image. I can see a purple marker on the messy desk. Above the desk, there is a bookshelf. I need to examine the gap between the books on the bookshelf to find the object. I will start by cropping the image to focus on the upper part of the desk and the bookshelf to get a better view. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.7,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        108.0,
+        1007.9999999999999,
+        540.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        108,
+        1008,
+        540
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        108.0,
+        1007.9999999999999,
+        540.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        108.0,
+        1007.9999999999999,
+        540.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2203,
+      "output_tokens": 142,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.026368310675025,
+      "tokens_per_second": 35.26751380978198,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 2,
+      "question": "What is the object placed in the gap of the bookshelf above the purple marker?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object in the gap of the bookshelf above the purple marker. I have already cropped the image to focus on the upper part of the desk and the bookshelf. In observation 1, I can see a bookshelf with many books. I need to find the purple marker first. I can see a purple object on the desk in the original image, but it's not clear what it is. I will try to zoom in on the desk area to get a better view of the purple marker and the objects around it. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        540,
+        720,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2757,
+      "output_tokens": 154,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.465085683390498,
+      "tokens_per_second": 34.48981966300417,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 720,
+      "original_crop_height": 540,
+      "processed_width": 720,
+      "processed_height": 540,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 3,
+      "question": "What is the object placed in the gap of the bookshelf above the purple marker?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object in the gap of the bookshelf above the purple marker. In observation 2, I can see a purple marker on the desk. I need to look for the bookshelf above it. The bookshelf is visible in the upper part of observation 2. I will zoom in on the bookshelf to see what's in the gap. </think><grounding>{\"bbox_2d\": [0.3,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        540.0,
+        720.0,
+        810.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        540,
+        720,
+        810
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3502,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.953487079590559,
+      "tokens_per_second": 30.100009840508744,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          38,
+          52
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 504,
+      "original_crop_height": 270,
+      "processed_width": 504,
+      "processed_height": 270,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 4,
+      "question": "What is the object placed in the gap of the bookshelf above the purple marker?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object in the gap of the bookshelf above the purple marker. I have been trying to locate the purple marker and the bookshelf above it. In observation 3, I can see a purple marker, but it's not very clear. I need to get a better view of the area above the desk. I will go back to the original image and try a different bounding box to get a better view of the bookshelf and the objects on it. </think><grounding>{\"bbox_2d\": [0.4,0.0,1.0,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.0,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        576.0,
+        0.0,
+        1440.0,
+        648.0
+      ],
+      "predicted_bbox_clipped": [
+        576,
+        0,
+        1440,
+        648
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        576.0,
+        0.0,
+        1440.0,
+        648.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        576.0,
+        0.0,
+        1440.0,
+        648.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3898,
+      "output_tokens": 140,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.545201018452644,
+      "tokens_per_second": 30.80171799478766,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          38,
+          52
+        ],
+        [
+          1,
+          20,
+          36
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 864,
+      "original_crop_height": 648,
+      "processed_width": 864,
+      "processed_height": 648,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 5,
+      "question": "What is the object placed in the gap of the bookshelf above the purple marker?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object in the gap of the bookshelf above the purple marker. I have been trying to locate the purple marker and the bookshelf above it. In observation 4, I can see a bookshelf with many books. I can see a purple marker on the desk in the original image, but it's not clear what it is. I will try to zoom in on the desk area to get a better view of the purple marker and the objects around it. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        540,
+        720,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4848,
+      "output_tokens": 141,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.91768523491919,
+      "tokens_per_second": 28.67202622054703,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          38,
+          52
+        ],
+        [
+          1,
+          20,
+          36
+        ],
+        [
+          1,
+          46,
+          62
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 720,
+      "original_crop_height": 540,
+      "processed_width": 720,
+      "processed_height": 540,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 6,
+      "question": "What is the object placed in the gap of the bookshelf above the purple marker?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the object in the gap of the bookshelf above the purple marker. I have been trying to locate the purple marker and the bookshelf above it. In observation 5, I can see a purple marker on the desk. I need to look for the bookshelf above it. The bookshelf is visible in the upper part of observation 5. I will zoom in on the bookshelf to see what's in the gap. </think><grounding>{\"bbox_2d\": [0.3,0.0,1.0,0.5], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        540.0,
+        720.0,
+        810.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        540,
+        720,
+        810
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5580,
+      "output_tokens": 135,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.06715345941484,
+      "tokens_per_second": 26.64217712790367,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          102
+        ],
+        [
+          1,
+          30,
+          42
+        ],
+        [
+          1,
+          38,
+          52
+        ],
+        [
+          1,
+          20,
+          36
+        ],
+        [
+          1,
+          46,
+          62
+        ],
+        [
+          1,
+          38,
+          52
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 504,
+      "original_crop_height": 270,
+      "processed_width": 504,
+      "processed_height": 270,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        108.0,
+        1007.9999999999999,
+        540.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        108,
+        1008,
+        540
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        108.0,
+        1007.9999999999999,
+        540.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        108.0,
+        1007.9999999999999,
+        540.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_01_processed.png",
+      "original_crop_width": 576,
+      "original_crop_height": 432,
+      "processed_width": 576,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        540,
+        720,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_02_processed.png",
+      "original_crop_width": 720,
+      "original_crop_height": 540,
+      "processed_width": 720,
+      "processed_height": 540,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.3,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        540.0,
+        720.0,
+        810.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        540,
+        720,
+        810
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_03_processed.png",
+      "original_crop_width": 504,
+      "original_crop_height": 270,
+      "processed_width": 504,
+      "processed_height": 270,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.0,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        576.0,
+        0.0,
+        1440.0,
+        648.0
+      ],
+      "predicted_bbox_clipped": [
+        576,
+        0,
+        1440,
+        648
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        576.0,
+        0.0,
+        1440.0,
+        648.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        576.0,
+        0.0,
+        1440.0,
+        648.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_04_processed.png",
+      "original_crop_width": 864,
+      "original_crop_height": 648,
+      "processed_width": 864,
+      "processed_height": 648,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        540,
+        720,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        540.0,
+        720.0,
+        1080.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_05_processed.png",
+      "original_crop_width": 720,
+      "original_crop_height": 540,
+      "processed_width": 720,
+      "processed_height": 540,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb81e20c2db71",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.3,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        540.0,
+        720.0,
+        810.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        540,
+        720,
+        810
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        0.0,
+        720.0,
+        270.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb81e20c2db71/turn_06_processed.png",
+      "original_crop_width": 504,
+      "original_crop_height": 270,
+      "processed_width": 504,
+      "processed_height": 270,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "91fb4b8d2f5c63c606e7b4920290165549e1cc2e6990110b4941ba871e516f10",
+  "crop_image_sha256": [
+    "76f3afc6cd9bfab65efcc4d53f2e65be80ada91b29b92f4315de0cc1e0588d11",
+    "4f2971b48425d51e2378cc8434e5b9ed3a31567f098579d6fd3c988f59417957",
+    "76502260ecb9edf7edbf0841b34493e77877e4df91e6cfad5d9e03e466c0a605",
+    "f97a3feb13a201fa51fe186a5f06397cda292dd83c928739b0b9e3c2ed4d428c",
+    "4f2971b48425d51e2378cc8434e5b9ed3a31567f098579d6fd3c988f59417957",
+    "76502260ecb9edf7edbf0841b34493e77877e4df91e6cfad5d9e03e466c0a605"
+  ],
+  "raw_crop_image_sha256": [
+    "76f3afc6cd9bfab65efcc4d53f2e65be80ada91b29b92f4315de0cc1e0588d11",
+    "4f2971b48425d51e2378cc8434e5b9ed3a31567f098579d6fd3c988f59417957",
+    "76502260ecb9edf7edbf0841b34493e77877e4df91e6cfad5d9e03e466c0a605",
+    "f97a3feb13a201fa51fe186a5f06397cda292dd83c928739b0b9e3c2ed4d428c",
+    "4f2971b48425d51e2378cc8434e5b9ed3a31567f098579d6fd3c988f59417957",
+    "76502260ecb9edf7edbf0841b34493e77877e4df91e6cfad5d9e03e466c0a605"
+  ],
+  "assistant_text_sha256": "e0f803420764dd83b836d8ebf35e8506565c9e8d381babd55402ab3d5ca430fb"
+}

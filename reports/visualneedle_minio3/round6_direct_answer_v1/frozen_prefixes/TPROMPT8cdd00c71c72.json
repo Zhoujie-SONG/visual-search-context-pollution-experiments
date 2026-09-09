@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT8cdd00c71c72",
+  "question": "In the advertisement containing the characters '東海', what is the background color of the character '海'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT8cdd00c71c72.jpg",
+  "original_width": 2048,
+  "original_height": 2730,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 711,
+  "turns": [
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 1,
+      "question": "In the advertisement containing the characters '東海', what is the background color of the character '海'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the background color of the character '海' in an advertisement that contains the characters '東海'. I will first scan the image for any signs or advertisements with these characters. I see a red sign on the left side of the street that seems to have Japanese characters on it. I will zoom into that area to read the text and identify the character '海' and its background color. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2712,
+      "output_tokens": 126,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.855754232034087,
+      "tokens_per_second": 32.678431356743715,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 2,
+      "question": "In the advertisement containing the characters '東海', what is the background color of the character '海'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the background color of the character '海' in an advertisement that contains the characters '東海'. I have scanned the image and I see a red sign on the left side of the street that seems to have Japanese characters on it. I will zoom into that area to read the text and identify the character '海' and its background color. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4378,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.320227237418294,
+      "tokens_per_second": 27.08190879096386,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 3,
+      "question": "In the advertisement containing the characters '東海', what is the background color of the character '海'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the background color of the character '海' in an advertisement that contains the characters '東海'. I have scanned the image and I see a red sign on the left side of the street that seems to have Japanese characters on it. I will zoom into that area to read the text and identify the character '海' and its background color. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6035,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.9877309408038855,
+      "tokens_per_second": 23.457560439525796,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 4,
+      "question": "In the advertisement containing the characters '東海', what is the background color of the character '海'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the background color of the character '海' in an advertisement that contains the characters '東海'. I have scanned the image and I see a red sign on the left side of the street that seems to have Japanese characters on it. I will zoom into that area to read the text and identify the character '海' and its background color. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7692,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.6519668363034725,
+      "tokens_per_second": 20.7007584065233,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 5,
+      "question": "In the advertisement containing the characters '東海', what is the background color of the character '海'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the background color of the character '海' in an advertisement that contains the characters '東海'. I have scanned the image and I see a red sign on the left side of the street that seems to have Japanese characters on it. I will zoom into that area to read the text and identify the character '海' and its background color. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 9349,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.316804762929678,
+      "tokens_per_second": 18.522022508375965,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 6,
+      "question": "In the advertisement containing the characters '東海', what is the background color of the character '海'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the background color of the character '海' in an advertisement that contains the characters '東海'. I have scanned the image and I see a red sign on the left side of the street that seems to have Japanese characters on it. I will zoom into that area to read the text and identify the character '海' and its background color. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 11006,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.050369016826153,
+      "tokens_per_second": 16.59487605836972,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_01_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_02_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_03_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_04_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_05_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT8cdd00c71c72",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        545,
+        1024,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        326.40000000000003,
+        612.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        545.7236199454077,
+        1023.2727870416585,
+        1637.170859836223
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8cdd00c71c72/turn_06_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "13912245005cc503b45f4ee7bada68d2b3b1a28976ac379140f77fd7a4cfcaf0",
+  "crop_image_sha256": [
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1"
+  ],
+  "raw_crop_image_sha256": [
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1",
+    "c9289670dee2a112c0eb952755c9bc5930e934fe1c60ab55c30fa8b760ce61b1"
+  ],
+  "assistant_text_sha256": "ad7c41e6139b5d2cc7786c6c93ecea91a118fcd227fb5724921606cf5e1d1ad4"
+}

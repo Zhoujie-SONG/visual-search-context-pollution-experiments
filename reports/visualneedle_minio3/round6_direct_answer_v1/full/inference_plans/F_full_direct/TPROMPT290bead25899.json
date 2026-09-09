@@ -1,0 +1,15 @@
+{
+  "sample_id": "TPROMPT290bead25899",
+  "condition": "F_full_direct",
+  "retained_crop_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "evicted_crop_indices": [],
+  "prefix_snapshot_sha256": "4542f3817de736e5afc953e7f31222e67f053241beb37883835c8fd843f3d3ef",
+  "direct_instruction_sha256": "a543cccfafb88d00e1d87d37dd602b8b91144e06db29343e05dfdb70c16cb399"
+}

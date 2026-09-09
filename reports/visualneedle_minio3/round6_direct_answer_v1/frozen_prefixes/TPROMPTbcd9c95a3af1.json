@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTbcd9c95a3af1",
+  "question": "Please help me extract the phone number located at the bottom-left of the white leftward arrow.",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTbcd9c95a3af1.png",
+  "original_width": 1080,
+  "original_height": 1350,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 658,
+  "turns": [
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 1,
+      "question": "Please help me extract the phone number located at the bottom-left of the white leftward arrow.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to extract a phone number from a sign in the image. I need to first locate the sign with a white leftward arrow at the bottom-left of the image. I can see a white sign with a leftward arrow at the bottom left of the image. I will zoom into that area to read the text on it. </think><grounding>{\"bbox_2d\": [0.0,0.7,0.4,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.7,
+        0.4,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        944.9999999999999,
+        432.0,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        944,
+        432,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        944.9999999999999,
+        432.0,
+        1350.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        944.9999999999999,
+        432.0,
+        1350.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2088,
+      "output_tokens": 112,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.2787541430443525,
+      "tokens_per_second": 34.15931634813185,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          96,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 406,
+      "processed_width": 432,
+      "processed_height": 406,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 2,
+      "question": "Please help me extract the phone number located at the bottom-left of the white leftward arrow.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find a phone number at the bottom-left of the image. In observation 1, I can see a white sign with a leftward arrow, but it's not clear enough to read the text. I need to zoom in on that specific sign to read the phone number. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.4,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1106.4,
+        172.8,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1106,
+        173,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        162.4,
+        172.8,
+        406.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        162.4,
+        172.8,
+        406.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2507,
+      "output_tokens": 104,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.2162633277475834,
+      "tokens_per_second": 32.335660797038464,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          96,
+          78
+        ],
+        [
+          1,
+          28,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 173,
+      "original_crop_height": 244,
+      "processed_width": 173,
+      "processed_height": 244,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 3,
+      "question": "Please help me extract the phone number located at the bottom-left of the white leftward arrow.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find a phone number at the bottom-left of the image. In observation 2, I can see a white sign with a leftward arrow, but it's still not clear enough to read the text. I need to zoom in on that specific sign to read the phone number. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        540.0,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        540,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        540.0,
+        1350.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        540.0,
+        1350.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2762,
+      "output_tokens": 104,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.294354220852256,
+      "tokens_per_second": 31.56916136756387,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          96,
+          78
+        ],
+        [
+          1,
+          28,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 1350,
+      "processed_width": 540,
+      "processed_height": 1350,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 4,
+      "question": "Please help me extract the phone number located at the bottom-left of the white leftward arrow.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find a phone number at the bottom-left of the image. In observation 3, I can see a white sign with a leftward arrow at the bottom left of the image. I will zoom into that area to read the text on it. </think><grounding>{\"bbox_2d\": [0.0,0.6,0.5,1.0], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.6,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        810.0,
+        270.0,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        810,
+        270,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        810.0,
+        270.0,
+        1350.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        810.0,
+        270.0,
+        1350.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3875,
+      "output_tokens": 98,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.5816409438848495,
+      "tokens_per_second": 27.36176002436014,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          96,
+          78
+        ],
+        [
+          1,
+          28,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          96,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 270,
+      "original_crop_height": 540,
+      "processed_width": 270,
+      "processed_height": 540,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 5,
+      "question": "Please help me extract the phone number located at the bottom-left of the white leftward arrow.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find a phone number at the bottom-left of the image. In observation 4, I can see a white sign with a leftward arrow. I can see a phone number on this sign. The phone number is \"01210910064\". I will zoom in on this sign to read the phone number more clearly. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.9,0.7], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        54.0,
+        1026.0,
+        243.0,
+        1188.0
+      ],
+      "predicted_bbox_clipped": [
+        54,
+        1026,
+        243,
+        1188
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4260,
+      "output_tokens": 120,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.202023403719068,
+      "tokens_per_second": 28.557670548382024,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          96,
+          78
+        ],
+        [
+          1,
+          28,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          96,
+          38
+        ],
+        [
+          1,
+          38,
+          20
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 189,
+      "original_crop_height": 162,
+      "processed_width": 216,
+      "processed_height": 185,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 6,
+      "question": "Please help me extract the phone number located at the bottom-left of the white leftward arrow.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find a phone number at the bottom-left of the image. In observation 5, I can see a white sign with a leftward arrow. I can see a phone number on this sign. The phone number is \"01210910064\". I will zoom in on this sign to read the phone number more clearly. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.9,0.7], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        54.0,
+        1026.0,
+        243.0,
+        1188.0
+      ],
+      "predicted_bbox_clipped": [
+        54,
+        1026,
+        243,
+        1188
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_06_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4533,
+      "output_tokens": 120,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.311350904405117,
+      "tokens_per_second": 27.833503386929177,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          96,
+          78
+        ],
+        [
+          1,
+          28,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          96,
+          38
+        ],
+        [
+          1,
+          38,
+          20
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 189,
+      "original_crop_height": 162,
+      "processed_width": 216,
+      "processed_height": 185,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.7,
+        0.4,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        944.9999999999999,
+        432.0,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        944,
+        432,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        944.9999999999999,
+        432.0,
+        1350.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        944.9999999999999,
+        432.0,
+        1350.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 406,
+      "processed_width": 432,
+      "processed_height": 406,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1106.4,
+        172.8,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1106,
+        173,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        162.4,
+        172.8,
+        406.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        162.4,
+        172.8,
+        406.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_02_processed.png",
+      "original_crop_width": 173,
+      "original_crop_height": 244,
+      "processed_width": 173,
+      "processed_height": 244,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        540.0,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        540,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        540.0,
+        1350.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        540.0,
+        1350.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_03_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 1350,
+      "processed_width": 540,
+      "processed_height": 1350,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.6,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        810.0,
+        270.0,
+        1350.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        810,
+        270,
+        1350
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        810.0,
+        270.0,
+        1350.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        810.0,
+        270.0,
+        1350.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_04_processed.png",
+      "original_crop_width": 270,
+      "original_crop_height": 540,
+      "processed_width": 270,
+      "processed_height": 540,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        54.0,
+        1026.0,
+        243.0,
+        1188.0
+      ],
+      "predicted_bbox_clipped": [
+        54,
+        1026,
+        243,
+        1188
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_05_processed.png",
+      "original_crop_width": 189,
+      "original_crop_height": 162,
+      "processed_width": 216,
+      "processed_height": 185,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1428571428571428,
+      "preprocess_scale_y": 1.1419753086419753
+    },
+    {
+      "sample_id": "TPROMPTbcd9c95a3af1",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        54.0,
+        1026.0,
+        243.0,
+        1188.0
+      ],
+      "predicted_bbox_clipped": [
+        54,
+        1026,
+        243,
+        1188
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        54.0,
+        216.0,
+        243.0,
+        378.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTbcd9c95a3af1/turn_06_processed.png",
+      "original_crop_width": 189,
+      "original_crop_height": 162,
+      "processed_width": 216,
+      "processed_height": 185,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1428571428571428,
+      "preprocess_scale_y": 1.1419753086419753
+    }
+  ],
+  "original_image_sha256": "802c5cade46e4d2d00feaa5e0dd34279b86c0478790e7d299fdfe4a1e6155ac1",
+  "crop_image_sha256": [
+    "a8a0757e4ddb29034823bf092c475bff67fe0fdad7ee03336e5fc85ee194add0",
+    "b0a55429007b154a33c0cccb6c73af0bbf476288b84cade8f20327311728cf29",
+    "d473d1fb97ea0b8d058cd46969e5a557024f6e75c67f9b1f5916a745b32ee41a",
+    "0a5360da060297e585cf3eb029a85e0a21a468aa315a1f868f67d6c84c259ecf",
+    "1669087bcc7ba345facdd59bc9d89a98bf185da5073f810a5b1e175f1e8ac8ee",
+    "1669087bcc7ba345facdd59bc9d89a98bf185da5073f810a5b1e175f1e8ac8ee"
+  ],
+  "raw_crop_image_sha256": [
+    "a8a0757e4ddb29034823bf092c475bff67fe0fdad7ee03336e5fc85ee194add0",
+    "b0a55429007b154a33c0cccb6c73af0bbf476288b84cade8f20327311728cf29",
+    "d473d1fb97ea0b8d058cd46969e5a557024f6e75c67f9b1f5916a745b32ee41a",
+    "0a5360da060297e585cf3eb029a85e0a21a468aa315a1f868f67d6c84c259ecf",
+    "f7d6f6acc2621e32fe3297da6d7b411ac334a47c0911d117f3b4510bedee7943",
+    "f7d6f6acc2621e32fe3297da6d7b411ac334a47c0911d117f3b4510bedee7943"
+  ],
+  "assistant_text_sha256": "1c3cbd1512a78eafee7f1499a40c329d3eabbeb31e4ee063dbaa563125d701ec"
+}

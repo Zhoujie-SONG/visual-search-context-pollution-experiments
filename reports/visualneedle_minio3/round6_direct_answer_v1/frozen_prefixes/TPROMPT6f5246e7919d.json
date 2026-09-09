@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT6f5246e7919d",
+  "question": "Did you notice the characters '外酥里嫩'? Quick, tell me what color they are.",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT6f5246e7919d.jpg",
+  "original_width": 3072,
+  "original_height": 4096,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 725,
+  "turns": [
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 1,
+      "question": "Did you notice the characters '外酥里嫩'? Quick, tell me what color they are.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the color of the characters '外酥里嫩' in the image. I will first scan the image for any text that might contain these characters. I see a lot of signs with Chinese characters. I will start by examining the most prominent signs. I see a sign on the left side of the image that has some text on it. I will zoom into that area to see if I can find the characters. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.5,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        409.39266433999813,
+        1534.9091805624878,
+        2046.9633216999905
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        409,
+        1535,
+        2047
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        163.20000000000002,
+        612.0,
+        816.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        409.39266433999813,
+        1534.9091805624878,
+        2046.9633216999905
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2711,
+      "output_tokens": 132,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.1075028870254755,
+      "tokens_per_second": 25.844331940627566,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1535,
+      "original_crop_height": 1638,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 2,
+      "question": "Did you notice the characters '外酥里嫩'? Quick, tell me what color they are.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the color of the characters '外酥里嫩'. I've scanned the previous observation and I don't see the characters '外酥里嫩'. I need to look for other signs in the original image. I see a sign on the right side of the image that has more text. I will zoom into that area to see if I can find the characters. </think><grounding>{\"bbox_2d\": [0.5,0.2,1.0,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1534.9091805624878,
+        818.7853286799963,
+        3069.8183611249756,
+        2865.7486503799864
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        818,
+        3070,
+        2866
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        326.40000000000003,
+        1224.0,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1534.9091805624878,
+        818.7853286799963,
+        3069.8183611249756,
+        2865.7486503799864
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5488,
+      "output_tokens": 121,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.857513211667538,
+      "tokens_per_second": 24.909865342077342,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1536,
+      "original_crop_height": 2048,
+      "processed_width": 1224,
+      "processed_height": 1632,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 3,
+      "question": "Did you notice the characters '外酥里嫩'? Quick, tell me what color they are.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the color of the characters '外酥里嫩'. I've scanned the previous observations and I still haven't found the characters. I need to look for other signs in the original image. I see a sign on the left side of the image that has some text on it. I will zoom into that area to see if I can find the characters. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.5,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1637.5706573599925,
+        1534.9091805624878,
+        3275.141314719985
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1637,
+        1535,
+        3276
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        652.8000000000001,
+        612.0,
+        1305.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1637.5706573599925,
+        1534.9091805624878,
+        3275.141314719985
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8200,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.970222480595112,
+      "tokens_per_second": 19.93225552092626,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ],
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1535,
+      "original_crop_height": 1639,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 4,
+      "question": "Did you notice the characters '外酥里嫩'? Quick, tell me what color they are.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the color of the characters '外酥里嫩'. I've scanned the previous observations and I still haven't found the characters. I need to look for other signs in the original image. I see a sign on the right side of the image that has more text. I will zoom into that area to see if I can find the characters. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.9091805624878,
+        1637.5706573599925,
+        3069.8183611249756,
+        3275.141314719985
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        1637,
+        3070,
+        3276
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        652.8000000000001,
+        1224.0,
+        1305.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1534.9091805624878,
+        1637.5706573599925,
+        3069.8183611249756,
+        3275.141314719985
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10964,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.1941328421235085,
+      "tokens_per_second": 16.263252648732692,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ],
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1536,
+      "original_crop_height": 1639,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 5,
+      "question": "Did you notice the characters '外酥里嫩'? Quick, tell me what color they are.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the color of the characters '外酥里嫩'. I've scanned the previous observations and I still haven't found the characters. I need to look for other signs in the original image. I see a sign on the left side of the image that has some text on it. I will zoom into that area to see if I can find the characters. </think><grounding>{\"bbox_2d\": [0.0,0.6,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.6,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2456.3559860399882,
+        1534.9091805624878,
+        4093.926643399981
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2456,
+        1535,
+        4094
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        979.1999999999999,
+        612.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2456.3559860399882,
+        1534.9091805624878,
+        4093.926643399981
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 13726,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.555314846336842,
+      "tokens_per_second": 13.909482250200604,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ],
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ],
+        [
+          1,
+          104,
+          98
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1535,
+      "original_crop_height": 1638,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 6,
+      "question": "Did you notice the characters '外酥里嫩'? Quick, tell me what color they are.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the color of the characters '外酥里嫩'. I've scanned the previous observations and I still haven't found the characters. I need to look for other signs in the original image. I see a sign on the right side of the image that has more text. I will zoom into that area to see if I can find the characters. </think><grounding>{\"bbox_2d\": [0.5,0.6,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.6,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1534.9091805624878,
+        2456.3559860399882,
+        3069.8183611249756,
+        4093.926643399981
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2456,
+        3070,
+        4094
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        979.1999999999999,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1534.9091805624878,
+        2456.3559860399882,
+        3069.8183611249756,
+        4093.926643399981
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 16490,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 9.642513206228614,
+      "tokens_per_second": 12.133766114463132,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ],
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          104,
+          98
+        ],
+        [
+          1,
+          104,
+          98
+        ],
+        [
+          1,
+          104,
+          98
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1536,
+      "original_crop_height": 1638,
+      "processed_width": 1369,
+      "processed_height": 1460,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        409.39266433999813,
+        1534.9091805624878,
+        2046.9633216999905
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        409,
+        1535,
+        2047
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        163.20000000000002,
+        612.0,
+        816.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        409.39266433999813,
+        1534.9091805624878,
+        2046.9633216999905
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_01_processed.png",
+      "original_crop_width": 1535,
+      "original_crop_height": 1638,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8918323754233113,
+      "preprocess_scale_y": 0.8919170875318998
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1534.9091805624878,
+        818.7853286799963,
+        3069.8183611249756,
+        2865.7486503799864
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        818,
+        3070,
+        2866
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        326.40000000000003,
+        1224.0,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1534.9091805624878,
+        818.7853286799963,
+        3069.8183611249756,
+        2865.7486503799864
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_02_processed.png",
+      "original_crop_width": 1536,
+      "original_crop_height": 2048,
+      "processed_width": 1224,
+      "processed_height": 1632,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7974413180273304,
+      "preprocess_scale_y": 0.7972785749012025
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1637.5706573599925,
+        1534.9091805624878,
+        3275.141314719985
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1637,
+        1535,
+        3276
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        652.8000000000001,
+        612.0,
+        1305.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1637.5706573599925,
+        1534.9091805624878,
+        3275.141314719985
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_03_processed.png",
+      "original_crop_width": 1535,
+      "original_crop_height": 1639,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8918323754233113,
+      "preprocess_scale_y": 0.8913729038299278
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1534.9091805624878,
+        1637.5706573599925,
+        3069.8183611249756,
+        3275.141314719985
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        1637,
+        3070,
+        3276
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        652.8000000000001,
+        1224.0,
+        1305.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1534.9091805624878,
+        1637.5706573599925,
+        3069.8183611249756,
+        3275.141314719985
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_04_processed.png",
+      "original_crop_width": 1536,
+      "original_crop_height": 1639,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8912517553872283,
+      "preprocess_scale_y": 0.8913729038299278
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.6,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2456.3559860399882,
+        1534.9091805624878,
+        4093.926643399981
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2456,
+        1535,
+        4094
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        979.1999999999999,
+        612.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2456.3559860399882,
+        1534.9091805624878,
+        4093.926643399981
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_05_processed.png",
+      "original_crop_width": 1535,
+      "original_crop_height": 1638,
+      "processed_width": 1368,
+      "processed_height": 1460,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8918323754233113,
+      "preprocess_scale_y": 0.8919170875318998
+    },
+    {
+      "sample_id": "TPROMPT6f5246e7919d",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.6,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1534.9091805624878,
+        2456.3559860399882,
+        3069.8183611249756,
+        4093.926643399981
+      ],
+      "predicted_bbox_clipped": [
+        1534,
+        2456,
+        3070,
+        4094
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        979.1999999999999,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1534.9091805624878,
+        2456.3559860399882,
+        3069.8183611249756,
+        4093.926643399981
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6f5246e7919d/turn_06_processed.png",
+      "original_crop_width": 1536,
+      "original_crop_height": 1638,
+      "processed_width": 1369,
+      "processed_height": 1460,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8912760416666666,
+      "preprocess_scale_y": 0.8913308913308914
+    }
+  ],
+  "original_image_sha256": "a6ab8f6678c74e80fa305b264a17153c3bbad72896c3084f06a03de2ebce36d6",
+  "crop_image_sha256": [
+    "6c132e81bf366644f02e46189a715242e00413c552d461c90ffcb19398cf28ab",
+    "1ac98fafd11a30e24d5a93cc57800878dd8dcf584dd7dc7045c0d9d4b49a5fc5",
+    "b5969a1234aacef1555c5314b33bbd15ca9f8a7c97724139b3446baa26f1e45b",
+    "02875364a1ad5c21dcafba65fc3457ec69117f19da254feec26bf931b20c827f",
+    "4042610d076b54730b81df53209d348fc02adc0efac5300c1941a1386b8db26b",
+    "13b1f4df8b022473b317eb8aca941727d4afe1c609bd49b05d0f6c5671d1dad7"
+  ],
+  "raw_crop_image_sha256": [
+    "3e1aadbd0f39b42d442e736aaf740504d0947f2a5107db681c400b6bfe4b70a2",
+    "c325d71202080ed0d6415dd3963e997d11285fab0b78587c1a7b1503b53341ac",
+    "f12256f0fb1a08e4f7e7704267699ef0f3ee971795707acab92517149097a200",
+    "0df32a042862f0fe1242a07afe13847cd8f1efd3145d7b28b966dc3a0af13bb1",
+    "ee24f8c4013e61023c91933c352abe809648200edad32f5e7cdf795227309f78",
+    "1d34994022310d016c454899dca20d38ec6a2f5215cca2de613be1d00d25b02c"
+  ],
+  "assistant_text_sha256": "1e8a9207a8f0dad7301b98e47e4dd6433acaedbd25b85845403c666e3e29a045"
+}

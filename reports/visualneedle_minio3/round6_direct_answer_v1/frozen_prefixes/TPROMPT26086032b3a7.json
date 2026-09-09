@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT26086032b3a7",
+  "question": "What text is written below ‘请上’?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT26086032b3a7.jpg",
+  "original_width": 2048,
+  "original_height": 2730,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 629,
+  "turns": [
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 1,
+      "question": "What text is written below ‘请上’?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the text written below the characters '请上'. I need to first locate these characters in the image. I can see a red sign with white text on the right side of the image. I will zoom into that area to read the text. </think><grounding>{\"bbox_2d\": [0.5,0.2,1.0,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        545.7236199454077,
+        2046.545574083317,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        545,
+        2047,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        326.40000000000003,
+        1224.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        545.7236199454077,
+        2046.545574083317,
+        1637.170859836223
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2701,
+      "output_tokens": 97,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.182391133159399,
+      "tokens_per_second": 30.480225698624544,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 2,
+      "question": "What text is written below ‘请上’?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text below the characters '请上'. I've zoomed into the right side of the image, but I don't see the text '请上' in this view. I need to go back to the original image and search for the text in a different area. I see a red sign on the left side of the image which seems to have some text on it. I will try to zoom into that area. </think><grounding>{\"bbox_2d\": [0.0,0.3,0.5,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        818.5854299181115,
+        1023.2727870416585,
+        1910.0326698089266
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        818,
+        1024,
+        1911
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        489.59999999999997,
+        612.0,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        818.5854299181115,
+        1023.2727870416585,
+        1910.0326698089266
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4338,
+      "output_tokens": 133,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.627826228737831,
+      "tokens_per_second": 28.739194910581965,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 3,
+      "question": "What text is written below ‘请上’?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text below the characters '请上'. I've zoomed into the left side of the image, but I still can't see the text '请上'. I need to go back to the original image and search for the text in another area. I see a red sign on the right side of the image which seems to have some text on it. I will try to zoom into that area. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1091.4472398908154,
+        2046.545574083317,
+        2455.7562897543344
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1091,
+        2047,
+        2456
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        652.8000000000001,
+        1224.0,
+        1468.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1091.4472398908154,
+        2046.545574083317,
+        2455.7562897543344
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6011,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.215038314461708,
+      "tokens_per_second": 24.7361557521587,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 4,
+      "question": "What text is written below ‘请上’?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text below the characters '请上'. I've zoomed into the right side of the image, and I can see a red sign. I will zoom in on the red sign to read the text. </think><grounding>{\"bbox_2d\": [0.5,0.5,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1364,
+        2047,
+        2729
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        816.0,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8050,
+      "output_tokens": 90,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.095857389271259,
+      "tokens_per_second": 17.661404769584923,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          98,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 5,
+      "question": "What text is written below ‘请上’?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text below the characters '请上'. I've zoomed into the right side of the image, and I can see a red sign. I will zoom in on the red sign to read the text. </think><grounding>{\"bbox_2d\": [0.5,0.5,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1364,
+        2047,
+        2729
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        816.0,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10050,
+      "output_tokens": 90,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.1585224736481905,
+      "tokens_per_second": 14.613894872528691,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          98,
+          74
+        ],
+        [
+          1,
+          98,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 6,
+      "question": "What text is written below ‘请上’?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the text below the characters '请上'. I've zoomed into the right side of the image, and I can see a red sign. I will zoom in on the red sign to read the text. </think><grounding>{\"bbox_2d\": [0.5,0.5,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1364,
+        2047,
+        2729
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        816.0,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 12050,
+      "output_tokens": 90,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.865799503400922,
+      "tokens_per_second": 13.108451529267521,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          78,
+          74
+        ],
+        [
+          1,
+          98,
+          74
+        ],
+        [
+          1,
+          98,
+          74
+        ],
+        [
+          1,
+          98,
+          74
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        545.7236199454077,
+        2046.545574083317,
+        1637.170859836223
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        545,
+        2047,
+        1638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        326.40000000000003,
+        1224.0,
+        979.1999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        545.7236199454077,
+        2046.545574083317,
+        1637.170859836223
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_01_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        818.5854299181115,
+        1023.2727870416585,
+        1910.0326698089266
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        818,
+        1024,
+        1911
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        489.59999999999997,
+        612.0,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        818.5854299181115,
+        1023.2727870416585,
+        1910.0326698089266
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_02_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1093,
+      "processed_width": 1024,
+      "processed_height": 1093,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1091.4472398908154,
+        2046.545574083317,
+        2455.7562897543344
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1091,
+        2047,
+        2456
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        652.8000000000001,
+        1224.0,
+        1468.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1091.4472398908154,
+        2046.545574083317,
+        2455.7562897543344
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_03_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1364,
+        2047,
+        2729
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        816.0,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_04_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1364,
+        2047,
+        2729
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        816.0,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_05_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT26086032b3a7",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1364,
+        2047,
+        2729
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        816.0,
+        1224.0,
+        1632.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1023.2727870416585,
+        1364.3090498635192,
+        2046.545574083317,
+        2728.6180997270385
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT26086032b3a7/turn_06_processed.png",
+      "original_crop_width": 1024,
+      "original_crop_height": 1365,
+      "processed_width": 1024,
+      "processed_height": 1365,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "f0def3d97d753fac5b5558f1233eb71744a66895b8eb1c7eed4ecc62b1dccb02",
+  "crop_image_sha256": [
+    "83d16272e9eeadea2147a311b0e417190d75264ce8711d9494c842e8b345ecc2",
+    "4615bb6000e62514ced60ff15f8fe875cde7b57113dbb3838d62ec459ff540f2",
+    "01ddb2607ffa033cd95cbf53222813f33bbe3ad9539be9a853ca69fe54dcc1d0",
+    "1137724a4af72a460dba9dc6595e40e167a0ff67a5626164dd5e9abadf59fc3a",
+    "1137724a4af72a460dba9dc6595e40e167a0ff67a5626164dd5e9abadf59fc3a",
+    "1137724a4af72a460dba9dc6595e40e167a0ff67a5626164dd5e9abadf59fc3a"
+  ],
+  "raw_crop_image_sha256": [
+    "83d16272e9eeadea2147a311b0e417190d75264ce8711d9494c842e8b345ecc2",
+    "4615bb6000e62514ced60ff15f8fe875cde7b57113dbb3838d62ec459ff540f2",
+    "01ddb2607ffa033cd95cbf53222813f33bbe3ad9539be9a853ca69fe54dcc1d0",
+    "1137724a4af72a460dba9dc6595e40e167a0ff67a5626164dd5e9abadf59fc3a",
+    "1137724a4af72a460dba9dc6595e40e167a0ff67a5626164dd5e9abadf59fc3a",
+    "1137724a4af72a460dba9dc6595e40e167a0ff67a5626164dd5e9abadf59fc3a"
+  ],
+  "assistant_text_sha256": "74e799a62084ece13417f930c90ad59b9e45c790cbe962aea833881975f52d37"
+}

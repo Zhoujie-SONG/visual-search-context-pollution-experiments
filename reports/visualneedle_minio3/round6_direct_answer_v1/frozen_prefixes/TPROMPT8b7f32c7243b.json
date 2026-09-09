@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT8b7f32c7243b",
+  "question": "What is the text content of the first row within the red area at the top of the sign on the street lamp in the picture?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT8b7f32c7243b.jpg",
+  "original_width": 3969,
+  "original_height": 5953,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 795,
+  "turns": [
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 1,
+      "question": "What is the text content of the first row within the red area at the top of the sign on the street lamp in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the text content of the first row within the red area at the top of the sign on the street lamp. I can see a street lamp on the left side of the street, and it has a sign with some text on it. I will zoom in on that area to read the text. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.5,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        793.2039299925088,
+        1785.074128027722,
+        1983.0098249812722,
+        3570.148256055444
+      ],
+      "predicted_bbox_clipped": [
+        793,
+        1785,
+        1984,
+        3571
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        230.8,
+        519.3,
+        577.0,
+        1038.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        793.2039299925088,
+        1785.074128027722,
+        1983.0098249812722,
+        3570.148256055444
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2766,
+      "output_tokens": 107,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.4318245574831963,
+      "tokens_per_second": 31.178750022836482,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1191,
+      "original_crop_height": 1786,
+      "processed_width": 1154,
+      "processed_height": 1731,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 2,
+      "question": "What is the text content of the first row within the red area at the top of the sign on the street lamp in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the text content of the first row within the red area at the top of the sign on the street lamp. In observation 1, I can see a street lamp on the left side of the image. The sign on the street lamp seems to have some text on it. I will zoom in on the street lamp to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.7], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        793.0,
+        2142.0348163567405,
+        1388.0528348583257,
+        3034.6218572485905
+      ],
+      "predicted_bbox_clipped": [
+        793,
+        2142,
+        1389,
+        3035
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        346.20000000000005,
+        577.0,
+        1211.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        357.0348163567403,
+        595.0528348583257,
+        1249.6218572485907
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5512,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.857411075383425,
+      "tokens_per_second": 24.08690518143237,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          124,
+          82
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 596,
+      "original_crop_height": 893,
+      "processed_width": 596,
+      "processed_height": 893,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 3,
+      "question": "What is the text content of the first row within the red area at the top of the sign on the street lamp in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the text content of the first row within the red area at the top of the sign on the street lamp. In observation 2, I can see a street lamp, but there is no sign with text on it. I need to go back to the original image and find another street lamp with a sign. I see another street lamp on the left side of the street, and it has a sign with some text on it. I will zoom in on that area to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.4,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2380,
+        1587,
+        4166
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        692.4000000000001,
+        461.6,
+        1211.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6398,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.815340496599674,
+      "tokens_per_second": 25.106010574164767,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          64,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1587,
+      "original_crop_height": 1786,
+      "processed_width": 1333,
+      "processed_height": 1500,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 4,
+      "question": "What is the text content of the first row within the red area at the top of the sign on the street lamp in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the text content of the first row within the red area at the top of the sign on the street lamp. In observation 3, I can see a street lamp on the right side of the image. The sign on the street lamp seems to have some text on it. I will zoom in on the street lamp to read the text. </think><grounding>{\"bbox_2d\": [0.6,0.3,1.0,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.6,
+        0.3,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        952.1999999999999,
+        2915.8,
+        1587.0,
+        3630.2
+      ],
+      "predicted_bbox_clipped": [
+        952,
+        2915,
+        1587,
+        3631
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        799.8,
+        450.0,
+        1333.0,
+        1050.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        952.1999999999999,
+        535.8000000000001,
+        1587.0,
+        1250.2
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 9132,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.528851894661784,
+      "tokens_per_second": 17.920455523836168,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          64,
+          42
+        ],
+        [
+          1,
+          106,
+          94
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 635,
+      "original_crop_height": 716,
+      "processed_width": 635,
+      "processed_height": 716,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 5,
+      "question": "What is the text content of the first row within the red area at the top of the sign on the street lamp in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the text content of the first row within the red area at the top of the sign on the street lamp. In observation 4, I can see a sign on the street lamp, but it's not red. The sign is white with black text. The text on the sign says \"TOW-AWAY\". The question asks for the text content of the first row within the red area at the top of the sign on the street lamp. I need to go back to the original image and find another street lamp with a sign. I see another street lamp on the left side of the street, and it has a sign with some text on it. I will zoom in on that area to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.4,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2380,
+        1587,
+        4166
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        692.4000000000001,
+        461.6,
+        1211.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 9944,
+      "output_tokens": 191,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.401578800752759,
+      "tokens_per_second": 22.733822360017253,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          64,
+          42
+        ],
+        [
+          1,
+          106,
+          94
+        ],
+        [
+          1,
+          52,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1587,
+      "original_crop_height": 1786,
+      "processed_width": 1333,
+      "processed_height": 1500,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 6,
+      "question": "What is the text content of the first row within the red area at the top of the sign on the street lamp in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the text content of the first row within the red area at the top of the sign on the street lamp. In observation 5, I can see a street lamp on the right side of the image. The sign on the street lamp seems to have some text on it. I will zoom in on the street lamp to read the text. </think><grounding>{\"bbox_2d\": [0.6,0.3,1.0,0.7], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.6,
+        0.3,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        952.1999999999999,
+        2915.8,
+        1587.0,
+        3630.2
+      ],
+      "predicted_bbox_clipped": [
+        952,
+        2915,
+        1587,
+        3631
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        799.8,
+        450.0,
+        1333.0,
+        1050.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        952.1999999999999,
+        535.8000000000001,
+        1587.0,
+        1250.2
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 12723,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.01573552377522,
+      "tokens_per_second": 14.596289966525218,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          124,
+          82
+        ],
+        [
+          1,
+          64,
+          42
+        ],
+        [
+          1,
+          106,
+          94
+        ],
+        [
+          1,
+          52,
+          46
+        ],
+        [
+          1,
+          106,
+          94
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 635,
+      "original_crop_height": 716,
+      "processed_width": 635,
+      "processed_height": 716,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        793.2039299925088,
+        1785.074128027722,
+        1983.0098249812722,
+        3570.148256055444
+      ],
+      "predicted_bbox_clipped": [
+        793,
+        1785,
+        1984,
+        3571
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        230.8,
+        519.3,
+        577.0,
+        1038.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        793.2039299925088,
+        1785.074128027722,
+        1983.0098249812722,
+        3570.148256055444
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_01_processed.png",
+      "original_crop_width": 1191,
+      "original_crop_height": 1786,
+      "processed_width": 1154,
+      "processed_height": 1731,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.9696617950528312,
+      "preprocess_scale_y": 0.9696533339036764
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        793.0,
+        2142.0348163567405,
+        1388.0528348583257,
+        3034.6218572485905
+      ],
+      "predicted_bbox_clipped": [
+        793,
+        2142,
+        1389,
+        3035
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        346.20000000000005,
+        577.0,
+        1211.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        357.0348163567403,
+        595.0528348583257,
+        1249.6218572485907
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_02_processed.png",
+      "original_crop_width": 596,
+      "original_crop_height": 893,
+      "processed_width": 596,
+      "processed_height": 893,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2380,
+        1587,
+        4166
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        692.4000000000001,
+        461.6,
+        1211.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_03_processed.png",
+      "original_crop_width": 1587,
+      "original_crop_height": 1786,
+      "processed_width": 1333,
+      "processed_height": 1500,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8399495904221802,
+      "preprocess_scale_y": 0.8398656215005599
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.6,
+        0.3,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        952.1999999999999,
+        2915.8,
+        1587.0,
+        3630.2
+      ],
+      "predicted_bbox_clipped": [
+        952,
+        2915,
+        1587,
+        3631
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        799.8,
+        450.0,
+        1333.0,
+        1050.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        952.1999999999999,
+        535.8000000000001,
+        1587.0,
+        1250.2
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_04_processed.png",
+      "original_crop_width": 635,
+      "original_crop_height": 716,
+      "processed_width": 635,
+      "processed_height": 716,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2380,
+        1587,
+        4166
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        692.4000000000001,
+        461.6,
+        1211.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2380.0988373702967,
+        1586.4078599850177,
+        4165.172965398017
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_05_processed.png",
+      "original_crop_width": 1587,
+      "original_crop_height": 1786,
+      "processed_width": 1333,
+      "processed_height": 1500,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.8399495904221802,
+      "preprocess_scale_y": 0.8398656215005599
+    },
+    {
+      "sample_id": "TPROMPT8b7f32c7243b",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.6,
+        0.3,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        952.1999999999999,
+        2915.8,
+        1587.0,
+        3630.2
+      ],
+      "predicted_bbox_clipped": [
+        952,
+        2915,
+        1587,
+        3631
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        799.8,
+        450.0,
+        1333.0,
+        1050.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        952.1999999999999,
+        535.8000000000001,
+        1587.0,
+        1250.2
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT8b7f32c7243b/turn_06_processed.png",
+      "original_crop_width": 635,
+      "original_crop_height": 716,
+      "processed_width": 635,
+      "processed_height": 716,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "322484930538b24e60457ce093389f8408b23ad1602522b5964921356679aedf",
+  "crop_image_sha256": [
+    "1e6eb8271bd3add1f2c8e666dda3ee41d222b6b78c8bb9ae37e45495241aea3a",
+    "035eb14aac7f0ee77660150ecf1b7826fdafece36d03f96b1820bec2ab571a68",
+    "047df1b3de1b328ff7d70ab3b9d4980e6cd06f60c31387ad982ed40959fd37fc",
+    "ca4fb1486cfda78dfdf63c1cf8f3ec2b1d9f99dc4d78e4960c28a6fb900ad45a",
+    "047df1b3de1b328ff7d70ab3b9d4980e6cd06f60c31387ad982ed40959fd37fc",
+    "ca4fb1486cfda78dfdf63c1cf8f3ec2b1d9f99dc4d78e4960c28a6fb900ad45a"
+  ],
+  "raw_crop_image_sha256": [
+    "59c3e40cc84098486a2bce0896d3cf18bee4e7b1467fbbefa14735738a583839",
+    "035eb14aac7f0ee77660150ecf1b7826fdafece36d03f96b1820bec2ab571a68",
+    "68ef135084ec64fca8815381e23fc95214c9a805999542e7491c2fd3e0371c1c",
+    "ca4fb1486cfda78dfdf63c1cf8f3ec2b1d9f99dc4d78e4960c28a6fb900ad45a",
+    "68ef135084ec64fca8815381e23fc95214c9a805999542e7491c2fd3e0371c1c",
+    "ca4fb1486cfda78dfdf63c1cf8f3ec2b1d9f99dc4d78e4960c28a6fb900ad45a"
+  ],
+  "assistant_text_sha256": "06b8013869dff01201d48b76a22f2a58f1484a700fcd63683f89e2a21a38580d"
+}

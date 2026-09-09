@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT11712e5ce7e5",
+  "question": "What characters are on the first signboard to the left of the '满满大勺' sign?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT11712e5ce7e5.jpg",
+  "original_width": 1834,
+  "original_height": 4096,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 871,
+  "turns": [
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 1,
+      "question": "What characters are on the first signboard to the left of the '满满大勺' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the characters on the first signboard to the left of the '满满大勺' sign. I need to first locate the '满满大勺' sign in the image. I can see a green sign in the middle of the street, which seems to have some text on it. I will zoom into that area to read the text. I will start by cropping the central area of the image to get a better view of the signs. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.8,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        366.8,
+        1638.4,
+        1467.2,
+        2867.2
+      ],
+      "predicted_bbox_clipped": [
+        366,
+        1638,
+        1468,
+        2868
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        189.20000000000002,
+        845.2,
+        756.8000000000001,
+        1479.1
+      ],
+      "predicted_bbox_source_content_pixel": [
+        366.8,
+        1638.4,
+        1467.2,
+        2867.2
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2767,
+      "output_tokens": 136,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.3887698873877525,
+      "tokens_per_second": 30.98818199396387,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          150,
+          68
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1102,
+      "original_crop_height": 1230,
+      "processed_width": 1102,
+      "processed_height": 1230,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 2,
+      "question": "What characters are on the first signboard to the left of the '满满大勺' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what characters are on the first signboard to the left of the '满满大勺' sign. In observation 1, I can see a sign with some text on it. I need to zoom in on that sign to read the text. The sign is located in the middle of the image, so I will crop that area. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.6], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        696.5999999999999,
+        2130.0,
+        1137.4,
+        2376.0
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2130,
+        1138,
+        2376
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        330.59999999999997,
+        492.0,
+        771.4,
+        738.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        330.59999999999997,
+        492.0,
+        771.4,
+        738.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4716,
+      "output_tokens": 116,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.433786364272237,
+      "tokens_per_second": 26.162740030673596,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          150,
+          68
+        ],
+        [
+          1,
+          88,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 442,
+      "original_crop_height": 246,
+      "processed_width": 442,
+      "processed_height": 246,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 3,
+      "question": "What characters are on the first signboard to the left of the '满满大勺' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what characters are on the first signboard to the left of the '满满大勺' sign. In observation 2, I can see a sign with some text on it. I can see the characters \"满满大勺\" on the right side of the sign. The question asks for the characters on the first signboard to the left of the '满满大勺' sign. In this image, I can see another sign to the left of the sign with \"满满大勺\" which has some other characters. I will zoom in on that sign to read the characters. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.6,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        740.2,
+        2228.4,
+        961.2,
+        2351.4
+      ],
+      "predicted_bbox_clipped": [
+        740,
+        2228,
+        962,
+        2352
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        44.2,
+        98.4,
+        265.2,
+        221.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        44.2,
+        98.4,
+        265.2,
+        221.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5073,
+      "output_tokens": 165,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.692897234112024,
+      "tokens_per_second": 28.983484720453877,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          150,
+          68
+        ],
+        [
+          1,
+          88,
+          78
+        ],
+        [
+          1,
+          18,
+          32
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 222,
+      "original_crop_height": 124,
+      "processed_width": 268,
+      "processed_height": 149,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 4,
+      "question": "What characters are on the first signboard to the left of the '满满大勺' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what characters are on the first signboard to the left of the '满满大勺' sign. In observation 3, I can see the characters \"金榜鸭脖\" on the sign. However, this is not the sign I am looking for. I need to go back and find the sign that is to the left of the '满满大勺' sign. In observation 2, I can see a sign with some other characters to the left of the sign with \"满满大勺\". I will zoom in on that sign to read the characters. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.4,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        696.0,
+        2228.4,
+        872.8,
+        2351.4
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2228,
+        873,
+        2352
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        98.4,
+        176.8,
+        221.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        98.4,
+        176.8,
+        221.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_04_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5395,
+      "output_tokens": 162,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.777711756527424,
+      "tokens_per_second": 28.038781930749487,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          150,
+          68
+        ],
+        [
+          1,
+          88,
+          78
+        ],
+        [
+          1,
+          18,
+          32
+        ],
+        [
+          1,
+          12,
+          20
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 177,
+      "original_crop_height": 124,
+      "processed_width": 239,
+      "processed_height": 167,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 5,
+      "question": "What characters are on the first signboard to the left of the '满满大勺' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what characters are on the first signboard to the left of the '满满大勺' sign. In observation 4, I can see the characters \"刘全\" on the sign. However, this is not the full sign. I need to go back and find the full sign. In observation 2, I can see a sign with some other characters to the left of the sign with \"满满大勺\". I will zoom in on that sign to read the characters. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.6,1.0], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        696.0,
+        2228.4,
+        961.2,
+        2376.0
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2228,
+        962,
+        2376
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_05_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5708,
+      "output_tokens": 145,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.406045712530613,
+      "tokens_per_second": 26.82182277221706,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          150,
+          68
+        ],
+        [
+          1,
+          88,
+          78
+        ],
+        [
+          1,
+          18,
+          32
+        ],
+        [
+          1,
+          12,
+          20
+        ],
+        [
+          1,
+          12,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 266,
+      "original_crop_height": 148,
+      "processed_width": 268,
+      "processed_height": 149,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 6,
+      "question": "What characters are on the first signboard to the left of the '满满大勺' sign?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what characters are on the first signboard to the left of the '满满大勺' sign. In observation 5, I can see the characters \"金榜鸭脖\" on the sign. However, this is not the full sign. I need to go back and find the full sign. In observation 2, I can see a sign with some other characters to the left of the sign with \"满满大勺\". I will zoom in on that sign to read the characters. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.6,1.0], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        696.0,
+        2228.4,
+        961.2,
+        2376.0
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2228,
+        962,
+        2376
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_06_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6010,
+      "output_tokens": 147,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.538956409320235,
+      "tokens_per_second": 26.539295335967534,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          150,
+          68
+        ],
+        [
+          1,
+          88,
+          78
+        ],
+        [
+          1,
+          18,
+          32
+        ],
+        [
+          1,
+          12,
+          20
+        ],
+        [
+          1,
+          12,
+          18
+        ],
+        [
+          1,
+          12,
+          20
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 266,
+      "original_crop_height": 148,
+      "processed_width": 268,
+      "processed_height": 149,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        366.8,
+        1638.4,
+        1467.2,
+        2867.2
+      ],
+      "predicted_bbox_clipped": [
+        366,
+        1638,
+        1468,
+        2868
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        189.20000000000002,
+        845.2,
+        756.8000000000001,
+        1479.1
+      ],
+      "predicted_bbox_source_content_pixel": [
+        366.8,
+        1638.4,
+        1467.2,
+        2867.2
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_01_processed.png",
+      "original_crop_width": 1102,
+      "original_crop_height": 1230,
+      "processed_width": 1102,
+      "processed_height": 1230,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        696.5999999999999,
+        2130.0,
+        1137.4,
+        2376.0
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2130,
+        1138,
+        2376
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        330.59999999999997,
+        492.0,
+        771.4,
+        738.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        330.59999999999997,
+        492.0,
+        771.4,
+        738.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_02_processed.png",
+      "original_crop_width": 442,
+      "original_crop_height": 246,
+      "processed_width": 442,
+      "processed_height": 246,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        740.2,
+        2228.4,
+        961.2,
+        2351.4
+      ],
+      "predicted_bbox_clipped": [
+        740,
+        2228,
+        962,
+        2352
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        44.2,
+        98.4,
+        265.2,
+        221.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        44.2,
+        98.4,
+        265.2,
+        221.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_03_processed.png",
+      "original_crop_width": 222,
+      "original_crop_height": 124,
+      "processed_width": 268,
+      "processed_height": 149,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.2072072072072073,
+      "preprocess_scale_y": 1.2016129032258065
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        696.0,
+        2228.4,
+        872.8,
+        2351.4
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2228,
+        873,
+        2352
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        98.4,
+        176.8,
+        221.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        98.4,
+        176.8,
+        221.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_04_processed.png",
+      "original_crop_width": 177,
+      "original_crop_height": 124,
+      "processed_width": 239,
+      "processed_height": 167,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.3502824858757063,
+      "preprocess_scale_y": 1.346774193548387
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        696.0,
+        2228.4,
+        961.2,
+        2376.0
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2228,
+        962,
+        2376
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_05_processed.png",
+      "original_crop_width": 266,
+      "original_crop_height": 148,
+      "processed_width": 268,
+      "processed_height": 149,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0075187969924813,
+      "preprocess_scale_y": 1.0067567567567568
+    },
+    {
+      "sample_id": "TPROMPT11712e5ce7e5",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        696.0,
+        2228.4,
+        961.2,
+        2376.0
+      ],
+      "predicted_bbox_clipped": [
+        696,
+        2228,
+        962,
+        2376
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        98.4,
+        265.2,
+        246.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT11712e5ce7e5/turn_06_processed.png",
+      "original_crop_width": 266,
+      "original_crop_height": 148,
+      "processed_width": 268,
+      "processed_height": 149,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0075187969924813,
+      "preprocess_scale_y": 1.0067567567567568
+    }
+  ],
+  "original_image_sha256": "7cd03bac970386a42cf38b0e86be6d04bb257639d56941e635dadf1b3d1c6df8",
+  "crop_image_sha256": [
+    "b8c60087cef7938bab2874bd53b005879a8d6bbc4a92fab0edeef87201e1a2a3",
+    "bc5dd12598213ecebd29cc89c582591cf5622f73df5553f407a8f7f8bc7753d7",
+    "ed91161ca0ac7e6afb20187cc78d20e30c48c4e370c955c3c550d36d6ae1d86a",
+    "abf3fb31cb6bfe55dfb06ae9cf80b75166e302f74c4dbeb8c40ba162d9b226cc",
+    "4f60ee14b6629db9e27b2bb5f4cfd03926be1de9ab8ec297a15b3e8b9564e288",
+    "4f60ee14b6629db9e27b2bb5f4cfd03926be1de9ab8ec297a15b3e8b9564e288"
+  ],
+  "raw_crop_image_sha256": [
+    "b8c60087cef7938bab2874bd53b005879a8d6bbc4a92fab0edeef87201e1a2a3",
+    "bc5dd12598213ecebd29cc89c582591cf5622f73df5553f407a8f7f8bc7753d7",
+    "e92c37053a05c2e4a26869a409b153d3483001d2c05c3941322fe1bac4e408ad",
+    "865be386cb35f245d419d71c319f933d59f2e84ae2161faf62db31e9c9f3f497",
+    "140b0e5b6d10657cd9e262bf210b85cbd95b3f18b08d4cf79f27f9d5f40c4cc0",
+    "140b0e5b6d10657cd9e262bf210b85cbd95b3f18b08d4cf79f27f9d5f40c4cc0"
+  ],
+  "assistant_text_sha256": "8be7993bb7f2861156a0282b88d2f67b8f2fa926cfef991fe989e1b886c19ff2"
+}

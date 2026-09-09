@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT378b8f698c05",
+  "question": "Identify what the obscured sign above the black car in the image is.",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT378b8f698c05.jpg",
+  "original_width": 2525,
+  "original_height": 3372,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 699,
+  "turns": [
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 1,
+      "question": "Identify what the obscured sign above the black car in the image is.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify a sign above a black car. I can see a black car in the lower-left portion of the image. Above it, there seems to be a blue sign, but it's too small and blurry to read. I will zoom into that specific area to get a better view. </think><grounding>{\"bbox_2d\": [0.0,0.7,0.5,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.7,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2358.9648825593413,
+        1261.4735916157254,
+        3369.949832227631
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2358,
+        1262,
+        3370
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        1143.1,
+        611.5,
+        1633.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2358.9648825593413,
+        1261.4735916157254,
+        3369.949832227631
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2706,
+      "output_tokens": 105,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7578484378755093,
+      "tokens_per_second": 27.941520722789317,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1262,
+      "original_crop_height": 1012,
+      "processed_width": 1262,
+      "processed_height": 1012,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 2,
+      "question": "Identify what the obscured sign above the black car in the image is.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the sign above the black car. In observation 1, I can see a black car on the right side of the image. Above this black car, there is a blue sign. It seems to be a circular sign, possibly a traffic sign. I will zoom in on this sign to read it. </think><grounding>{\"bbox_2d\": [0.6,0.5,1.0,0.9], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.6,
+        0.5,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        757.1999999999999,
+        2864.0,
+        1262.0,
+        3268.8
+      ],
+      "predicted_bbox_clipped": [
+        757,
+        2864,
+        1262,
+        3269
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        757.1999999999999,
+        506.0,
+        1262.0,
+        910.8000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        757.1999999999999,
+        506.0,
+        1262.0,
+        910.8000000000001
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4528,
+      "output_tokens": 111,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.2483545280992985,
+      "tokens_per_second": 26.12776294111713,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          72,
+          90
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 505,
+      "original_crop_height": 405,
+      "processed_width": 505,
+      "processed_height": 405,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 3,
+      "question": "Identify what the obscured sign above the black car in the image is.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the sign above the black car. In observation 2, I can see a blue sign with a white arrow pointing to the left. The sign is a bit blurry, but the shape and the arrow are quite clear. I will zoom in further to get a clearer view of the sign. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.8,0.7], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        858.0,
+        2945.0,
+        1161.0,
+        3147.5
+      ],
+      "predicted_bbox_clipped": [
+        858,
+        2945,
+        1161,
+        3148
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        101.0,
+        81.0,
+        404.0,
+        283.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        101.0,
+        81.0,
+        404.0,
+        283.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4988,
+      "output_tokens": 108,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.350951034575701,
+      "tokens_per_second": 24.822159371998545,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          72,
+          90
+        ],
+        [
+          1,
+          28,
+          36
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 303,
+      "original_crop_height": 203,
+      "processed_width": 303,
+      "processed_height": 203,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 4,
+      "question": "Identify what the obscured sign above the black car in the image is.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the sign above the black car. In observation 3, I can see a blue sign with a white arrow pointing to the left. The image is still a bit blurry, but the shape of the sign and the arrow are quite clear. I can also see a white arrow on the sign. I will zoom in one more time to get a clearer view of the sign. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.7,0.6], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        948.9,
+        2965.3,
+        1070.1,
+        3066.8
+      ],
+      "predicted_bbox_clipped": [
+        948,
+        2965,
+        1071,
+        3067
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        90.89999999999999,
+        20.3,
+        212.1,
+        121.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        90.89999999999999,
+        20.3,
+        212.1,
+        121.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5270,
+      "output_tokens": 125,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.820438330993056,
+      "tokens_per_second": 25.931251769431682,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          72,
+          90
+        ],
+        [
+          1,
+          28,
+          36
+        ],
+        [
+          1,
+          14,
+          22
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 102,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 5,
+      "question": "Identify what the obscured sign above the black car in the image is.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the sign above the black car. In observation 4, I can see a blue sign with a white arrow pointing to the left. The image is still a bit blurry, but the shape of the sign and the arrow are quite clear. I can also see a white arrow on the sign. I will zoom in one more time to get a clearer view of the sign. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.9,0.9], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        972.6,
+        2975.2,
+        1058.7,
+        3056.8
+      ],
+      "predicted_bbox_clipped": [
+        972,
+        2975,
+        1059,
+        3057
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        44.0,
+        18.2,
+        198.0,
+        163.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        24.6,
+        10.2,
+        110.7,
+        91.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5548,
+      "output_tokens": 125,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.952865395694971,
+      "tokens_per_second": 25.23791583527587,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          72,
+          90
+        ],
+        [
+          1,
+          28,
+          36
+        ],
+        [
+          1,
+          14,
+          22
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 87,
+      "original_crop_height": 82,
+      "processed_width": 206,
+      "processed_height": 194,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 6,
+      "question": "Identify what the obscured sign above the black car in the image is.",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the sign above the black car. In observation 5, I can see a blue sign with a white arrow pointing to the left. The image is still a bit blurry, but the shape of the sign and the arrow are quite clear. I can also see a white arrow on the sign. I will zoom in one more time to get a clearer view of the sign. </think><grounding>{\"bbox_2d\": [0.1,0.1,0.9,0.9], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        980.7,
+        2983.2,
+        1050.3,
+        3048.8
+      ],
+      "predicted_bbox_clipped": [
+        980,
+        2983,
+        1051,
+        3049
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.6,
+        19.400000000000002,
+        185.4,
+        174.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        8.700000000000001,
+        8.200000000000001,
+        78.3,
+        73.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5826,
+      "output_tokens": 125,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.993910402059555,
+      "tokens_per_second": 25.030485118124734,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          72,
+          90
+        ],
+        [
+          1,
+          28,
+          36
+        ],
+        [
+          1,
+          14,
+          22
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 71,
+      "original_crop_height": 66,
+      "processed_width": 207,
+      "processed_height": 193,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.7,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        2358.9648825593413,
+        1261.4735916157254,
+        3369.949832227631
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        2358,
+        1262,
+        3370
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        1143.1,
+        611.5,
+        1633.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        2358.9648825593413,
+        1261.4735916157254,
+        3369.949832227631
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_01_processed.png",
+      "original_crop_width": 1262,
+      "original_crop_height": 1012,
+      "processed_width": 1262,
+      "processed_height": 1012,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.6,
+        0.5,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        757.1999999999999,
+        2864.0,
+        1262.0,
+        3268.8
+      ],
+      "predicted_bbox_clipped": [
+        757,
+        2864,
+        1262,
+        3269
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        757.1999999999999,
+        506.0,
+        1262.0,
+        910.8000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        757.1999999999999,
+        506.0,
+        1262.0,
+        910.8000000000001
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_02_processed.png",
+      "original_crop_width": 505,
+      "original_crop_height": 405,
+      "processed_width": 505,
+      "processed_height": 405,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        858.0,
+        2945.0,
+        1161.0,
+        3147.5
+      ],
+      "predicted_bbox_clipped": [
+        858,
+        2945,
+        1161,
+        3148
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        101.0,
+        81.0,
+        404.0,
+        283.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        101.0,
+        81.0,
+        404.0,
+        283.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_03_processed.png",
+      "original_crop_width": 303,
+      "original_crop_height": 203,
+      "processed_width": 303,
+      "processed_height": 203,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        948.9,
+        2965.3,
+        1070.1,
+        3066.8
+      ],
+      "predicted_bbox_clipped": [
+        948,
+        2965,
+        1071,
+        3067
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        90.89999999999999,
+        20.3,
+        212.1,
+        121.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        90.89999999999999,
+        20.3,
+        212.1,
+        121.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_04_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 102,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.7886178861788617,
+      "preprocess_scale_y": 1.7843137254901962
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        972.6,
+        2975.2,
+        1058.7,
+        3056.8
+      ],
+      "predicted_bbox_clipped": [
+        972,
+        2975,
+        1059,
+        3057
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        44.0,
+        18.2,
+        198.0,
+        163.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        24.6,
+        10.2,
+        110.7,
+        91.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_05_processed.png",
+      "original_crop_width": 87,
+      "original_crop_height": 82,
+      "processed_width": 206,
+      "processed_height": 194,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.367816091954023,
+      "preprocess_scale_y": 2.3658536585365852
+    },
+    {
+      "sample_id": "TPROMPT378b8f698c05",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        980.7,
+        2983.2,
+        1050.3,
+        3048.8
+      ],
+      "predicted_bbox_clipped": [
+        980,
+        2983,
+        1051,
+        3049
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.6,
+        19.400000000000002,
+        185.4,
+        174.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        8.700000000000001,
+        8.200000000000001,
+        78.3,
+        73.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT378b8f698c05/turn_06_processed.png",
+      "original_crop_width": 71,
+      "original_crop_height": 66,
+      "processed_width": 207,
+      "processed_height": 193,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.915492957746479,
+      "preprocess_scale_y": 2.9242424242424243
+    }
+  ],
+  "original_image_sha256": "d29115c7b170d46786edce2b75fdc1b9945cdebd7e0adeebc75c99944f37d550",
+  "crop_image_sha256": [
+    "8b1ae515700b2c89852693f9ced5bc1c08603db95145249b8a61289cee5f4bb6",
+    "5a4ea277bbc1e1ba7c86bdc01d36a1e50f0112c4a88c373a7aa9a29802aab3dd",
+    "4fe4bd2f67382dd1805ac3df6d8139cbcdaaaf2ea02d935d85c4697fa821050f",
+    "e68cc5d99b14ac80e1089284a88818a005349abcf335a115cb1e5b2eb724cc0e",
+    "10fd5827c801908a795e615d43bcc04b759e6d8e72f7a03bb3bd44350e0e128c",
+    "17fe97d3707120b78285ea1876c83446154c9f1bbb3e6dcecab36b9ce42a676b"
+  ],
+  "raw_crop_image_sha256": [
+    "8b1ae515700b2c89852693f9ced5bc1c08603db95145249b8a61289cee5f4bb6",
+    "5a4ea277bbc1e1ba7c86bdc01d36a1e50f0112c4a88c373a7aa9a29802aab3dd",
+    "4fe4bd2f67382dd1805ac3df6d8139cbcdaaaf2ea02d935d85c4697fa821050f",
+    "3ae0c76957a19f0a03b96a88b12c90d5af55fc3727dc4a22b5f7dc349200474f",
+    "e4b7791b57e1b8e2caf1444ab0ecf8cd943400dc1aea5fb212a459a3feb13470",
+    "513c1fc2d442b4a26e6453f3f3070b836e79eee2defd90bf448f15c3cd20c8dc"
+  ],
+  "assistant_text_sha256": "a113ff9806b2a5e1b5ffefbd341b258a2bd5eca034ef6abf1b8e6092d9a7b576"
+}

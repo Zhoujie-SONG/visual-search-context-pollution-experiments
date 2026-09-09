@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTb7d16105e70e",
+  "question": "What is the name of the sixth book on the shelf below '朝花夕拾'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTb7d16105e70e.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 964,
+  "turns": [
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 1,
+      "question": "What is the name of the sixth book on the shelf below '朝花夕拾'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the name of the sixth book on the shelf below the book titled '朝花夕拾'. First, I need to locate the book '朝花夕拾' on the bookshelf. I can see a bookshelf in the center of the image. I will start by cropping the image to focus on the bookshelf to get a clearer view of the books. </think><grounding>{\"bbox_2d\": [0.3,0.2,0.9,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        288.0,
+        972.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        288,
+        972,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        288.0,
+        972.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        288.0,
+        972.0,
+        1152.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2204,
+      "output_tokens": 121,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.082104280591011,
+      "tokens_per_second": 29.641574953220328,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 864,
+      "processed_width": 648,
+      "processed_height": 864,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 2,
+      "question": "What is the name of the sixth book on the shelf below '朝花夕拾'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the sixth book on the shelf below the book '朝花夕拾'. I have already cropped the image to focus on the bookshelf. I need to locate the book '朝花夕拾' first. I can see a book with a red cover and white text on the second shelf from the top. I will assume this is the book '朝花夕拾'. Now I need to count the books on the shelf below it. The shelf below it has many books. I will count the books from left to right to find the sixth book. The books on the second shelf from the top are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. The sixth book seems to be a white book with some text on it. I will zoom in on that area to read the title. </think><grounding>{\"bbox_2d\": [0.1,0.2,0.9,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        388.8,
+        460.8,
+        907.2,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        388,
+        460,
+        908,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        64.8,
+        172.8,
+        583.2,
+        432.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        64.8,
+        172.8,
+        583.2,
+        432.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3135,
+      "output_tokens": 232,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.484503971412778,
+      "tokens_per_second": 35.777601651997166,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          62,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 520,
+      "original_crop_height": 260,
+      "processed_width": 520,
+      "processed_height": 260,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 3,
+      "question": "What is the name of the sixth book on the shelf below '朝花夕拾'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the sixth book on the shelf below the book '朝花夕拾'. In observation 2, I can see the books on the shelf. I can see the book '朝花夕拾' on the left side of the shelf. Counting the books from left to right, the sixth book seems to be a white book with some text on it. I will zoom in on the books to read the title more clearly. </think><grounding>{\"bbox_2d\": [0.1,0.1,0.6,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        440.0,
+        486.0,
+        700.0,
+        694.0
+      ],
+      "predicted_bbox_clipped": [
+        440,
+        486,
+        700,
+        694
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        52.0,
+        26.0,
+        312.0,
+        234.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        52.0,
+        26.0,
+        312.0,
+        234.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3635,
+      "output_tokens": 138,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.548224629834294,
+      "tokens_per_second": 30.34150932097383,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          62,
+          46
+        ],
+        [
+          1,
+          18,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 260,
+      "original_crop_height": 208,
+      "processed_width": 260,
+      "processed_height": 208,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 4,
+      "question": "What is the name of the sixth book on the shelf below '朝花夕拾'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the sixth book on the shelf below the book '朝花夕拾'. In observation 3, I can see the books on the shelf. I can see the book '朝花夕拾' on the left side of the shelf. Counting the books from left to right, the sixth book seems to be a white book with some text on it. I will zoom in on the books to read the title more clearly. The text on the books is still not clear enough to read. I need to zoom in more. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.5,0.9], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        440.0,
+        506.8,
+        570.0,
+        673.2
+      ],
+      "predicted_bbox_clipped": [
+        440,
+        506,
+        570,
+        674
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        20.8,
+        130.0,
+        187.20000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        20.8,
+        130.0,
+        187.20000000000002
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3933,
+      "output_tokens": 158,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.048797065392137,
+      "tokens_per_second": 31.294583235091515,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          62,
+          46
+        ],
+        [
+          1,
+          18,
+          38
+        ],
+        [
+          1,
+          14,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 130,
+      "original_crop_height": 168,
+      "processed_width": 176,
+      "processed_height": 227,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 5,
+      "question": "What is the name of the sixth book on the shelf below '朝花夕拾'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the sixth book on the shelf below the book '朝花夕拾'. In observation 4, I can see the book '朝花夕拾' on the left side of the shelf. Counting the books from left to right, the sixth book seems to be a white book with some text on it. I will zoom in on the books to read the title more clearly. The text on the books is still not clear enough to read. I need to zoom in more. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.5,0.9], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        440.0,
+        522.8,
+        505.0,
+        657.2
+      ],
+      "predicted_bbox_clipped": [
+        440,
+        522,
+        505,
+        658
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        22.700000000000003,
+        88.0,
+        204.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        16.8,
+        65.0,
+        151.2
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4251,
+      "output_tokens": 149,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.88524004817009,
+      "tokens_per_second": 30.5000365449416,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          62,
+          46
+        ],
+        [
+          1,
+          18,
+          38
+        ],
+        [
+          1,
+          14,
+          18
+        ],
+        [
+          1,
+          18,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 65,
+      "original_crop_height": 136,
+      "processed_width": 138,
+      "processed_height": 289,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 6,
+      "question": "What is the name of the sixth book on the shelf below '朝花夕拾'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the name of the sixth book on the shelf below the book '朝花夕拾'. In observation 5, I can see the book '朝花夕拾' on the left side of the shelf. Counting the books from left to right, the sixth book seems to be a white book with some text on it. I will zoom in on the books to read the title more clearly. The text on the books is still not clear enough to read. I need to go back to observation 2 and try a different bounding box to get a better view of the books. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.8,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        492.0,
+        486.0,
+        804.0,
+        694.0
+      ],
+      "predicted_bbox_clipped": [
+        492,
+        486,
+        804,
+        694
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        104.0,
+        26.0,
+        416.0,
+        234.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        104.0,
+        26.0,
+        416.0,
+        234.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_06_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4552,
+      "output_tokens": 166,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.395823463797569,
+      "tokens_per_second": 30.764535035986807,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          62,
+          46
+        ],
+        [
+          1,
+          18,
+          38
+        ],
+        [
+          1,
+          14,
+          18
+        ],
+        [
+          1,
+          18,
+          14
+        ],
+        [
+          1,
+          22,
+          10
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 312,
+      "original_crop_height": 208,
+      "processed_width": 312,
+      "processed_height": 208,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        288.0,
+        972.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        288,
+        972,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        288.0,
+        972.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        288.0,
+        972.0,
+        1152.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_01_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 864,
+      "processed_width": 648,
+      "processed_height": 864,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        388.8,
+        460.8,
+        907.2,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        388,
+        460,
+        908,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        64.8,
+        172.8,
+        583.2,
+        432.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        64.8,
+        172.8,
+        583.2,
+        432.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_02_processed.png",
+      "original_crop_width": 520,
+      "original_crop_height": 260,
+      "processed_width": 520,
+      "processed_height": 260,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        440.0,
+        486.0,
+        700.0,
+        694.0
+      ],
+      "predicted_bbox_clipped": [
+        440,
+        486,
+        700,
+        694
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        52.0,
+        26.0,
+        312.0,
+        234.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        52.0,
+        26.0,
+        312.0,
+        234.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_03_processed.png",
+      "original_crop_width": 260,
+      "original_crop_height": 208,
+      "processed_width": 260,
+      "processed_height": 208,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        440.0,
+        506.8,
+        570.0,
+        673.2
+      ],
+      "predicted_bbox_clipped": [
+        440,
+        506,
+        570,
+        674
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        20.8,
+        130.0,
+        187.20000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        20.8,
+        130.0,
+        187.20000000000002
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_04_processed.png",
+      "original_crop_width": 130,
+      "original_crop_height": 168,
+      "processed_width": 176,
+      "processed_height": 227,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.353846153846154,
+      "preprocess_scale_y": 1.3511904761904763
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        440.0,
+        522.8,
+        505.0,
+        657.2
+      ],
+      "predicted_bbox_clipped": [
+        440,
+        522,
+        505,
+        658
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        22.700000000000003,
+        88.0,
+        204.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        16.8,
+        65.0,
+        151.2
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_05_processed.png",
+      "original_crop_width": 65,
+      "original_crop_height": 136,
+      "processed_width": 138,
+      "processed_height": 289,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.123076923076923,
+      "preprocess_scale_y": 2.125
+    },
+    {
+      "sample_id": "TPROMPTb7d16105e70e",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        492.0,
+        486.0,
+        804.0,
+        694.0
+      ],
+      "predicted_bbox_clipped": [
+        492,
+        486,
+        804,
+        694
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        104.0,
+        26.0,
+        416.0,
+        234.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        104.0,
+        26.0,
+        416.0,
+        234.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb7d16105e70e/turn_06_processed.png",
+      "original_crop_width": 312,
+      "original_crop_height": 208,
+      "processed_width": 312,
+      "processed_height": 208,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "3dc476f2757fe1e1fad096a911c12ffeecf383189cba1b682e1a6256798d69aa",
+  "crop_image_sha256": [
+    "fd779cf631d7e79309c67b5d5f452789f7cfc7013df7ad638d38cb4eb95debcd",
+    "57cd3e7e44a01eca82bc97aac612d11933f2dc0973b5120e284e998bf9cb6c42",
+    "94631213d0000ec7ed23f15711c4477f2b25cc64b74bfa72eeb23d6ac5930343",
+    "7c7ea4fad52b20408042d3fb8f1a507711369d4d7762ae015a83a1639e2fe0d4",
+    "e8aa7e2744fc757cf19b4813f81e358cdf482bd758ebfd205cc97d3c81a970a5",
+    "65959a0efb6621a7e60bcb6478607d02a85f22cd67203b26dd374ccf1112d7ec"
+  ],
+  "raw_crop_image_sha256": [
+    "fd779cf631d7e79309c67b5d5f452789f7cfc7013df7ad638d38cb4eb95debcd",
+    "57cd3e7e44a01eca82bc97aac612d11933f2dc0973b5120e284e998bf9cb6c42",
+    "94631213d0000ec7ed23f15711c4477f2b25cc64b74bfa72eeb23d6ac5930343",
+    "537506ccd1f4a31bd3c430a6ade3b5dbd27292249098fe4eb1bc59913a259523",
+    "05f1fe6b6aebc3d7accadf67068ee17d4bc994543cb52228e73466784a9be9b7",
+    "65959a0efb6621a7e60bcb6478607d02a85f22cd67203b26dd374ccf1112d7ec"
+  ],
+  "assistant_text_sha256": "66e12ce224f8faa2d2d175ba1468327eeb02eb18b8e4619e8657022528827e74"
+}

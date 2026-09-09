@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT67091f5462b7",
+  "question": "In the picture, what are the characters below '我的英文'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT67091f5462b7.png",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 788,
+  "turns": [
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 1,
+      "question": "In the picture, what are the characters below '我的英文'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the characters below the text '我的英文'. I need to first locate this text in the image. I can see many books on the floor, and some of them have text on their covers. I will start by examining the books in the middle of the image, as they are more clearly visible. I will zoom into the central area of the image to get a better view of the book covers and read the text on them. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.8,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        576.0,
+        864.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        576,
+        864,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        576.0,
+        864.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        576.0,
+        864.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2199,
+      "output_tokens": 134,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.884202653542161,
+      "tokens_per_second": 34.498714910716615,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 432,
+      "processed_width": 648,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 2,
+      "question": "In the picture, what are the characters below '我的英文'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters below the text '我的英文'. I have zoomed into the middle part of the image, but I still cannot clearly see the text '我的英文'. I need to look for other books. I will try to look at the books on the left side of the image, as they might have the text I am looking for. I will go back to the original image and select a bounding box that focuses on the left side of the books. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.5,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        540,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2775,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.165420787408948,
+      "tokens_per_second": 33.36997799121835,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 720,
+      "processed_width": 540,
+      "processed_height": 720,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 3,
+      "question": "In the picture, what are the characters below '我的英文'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters below the text '我的英文'. I have already checked the middle and left parts of the image, but I still cannot find the text '我的英文'. I will now try to look at the books on the right side of the image. I will go back to the original image and select a bounding box that focuses on the right side of the books. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3505,
+      "output_tokens": 121,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.021123863756657,
+      "tokens_per_second": 30.0910899787499,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          52,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 720,
+      "processed_width": 540,
+      "processed_height": 720,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 4,
+      "question": "In the picture, what are the characters below '我的英文'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters below the text '我的英文'. I have already checked the middle, left, and right parts of the image, but I still cannot find the text '我的英文'. I will now try to look at the books in the center-right of the image, as there seems to be a book with some text on it. I will zoom into the region `[0.4, 0.4, 1.0, 0.8]` of observation 3 to get a better view. </think><grounding>{\"bbox_2d\": [0.4,0.4,1.0,0.8], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        756.0,
+        864.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        756,
+        864,
+        1080,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        288.0,
+        540.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        288.0,
+        540.0,
+        576.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4217,
+      "output_tokens": 152,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.000175455585122,
+      "tokens_per_second": 30.398933267475293,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          52,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 324,
+      "original_crop_height": 288,
+      "processed_width": 324,
+      "processed_height": 288,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 5,
+      "question": "In the picture, what are the characters below '我的英文'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters below the text '我的英文'. I have been searching for this text in the image. In observation 4, I can see a book with some text on it. I will zoom in on this book to read the text. The book is in the middle of observation 4. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.8,0.9], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        820.8,
+        979.2,
+        1015.2,
+        1123.2
+      ],
+      "predicted_bbox_clipped": [
+        820,
+        979,
+        1016,
+        1124
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        64.8,
+        115.2,
+        259.2,
+        259.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        64.8,
+        115.2,
+        259.2,
+        259.2
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4586,
+      "output_tokens": 108,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.097854441031814,
+      "tokens_per_second": 26.355255305946468,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          20,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 196,
+      "original_crop_height": 145,
+      "processed_width": 233,
+      "processed_height": 172,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 6,
+      "question": "In the picture, what are the characters below '我的英文'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters below the text '我的英文'. I have been searching for this text in the image. In observation 5, I can see a book with some text on it, but it's not the text I am looking for. I need to go back and search for another book. I will go back to the original image and select a bounding box that focuses on the books in the middle and right side of the image. </think><grounding>{\"bbox_2d\": [0.4,0.5,1.0,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        720.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        720,
+        1080,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        720.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        720.0,
+        1080.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4854,
+      "output_tokens": 134,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.756280845031142,
+      "tokens_per_second": 28.173273270855944,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          52,
+          38
+        ],
+        [
+          1,
+          20,
+          24
+        ],
+        [
+          1,
+          14,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 576,
+      "processed_width": 648,
+      "processed_height": 576,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        576.0,
+        864.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        576,
+        864,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        576.0,
+        864.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        576.0,
+        864.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_01_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 432,
+      "processed_width": 648,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        540,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        540.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_02_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 720,
+      "processed_width": 540,
+      "processed_height": 720,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_03_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 720,
+      "processed_width": 540,
+      "processed_height": 720,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.4,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        756.0,
+        864.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        756,
+        864,
+        1080,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        288.0,
+        540.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        288.0,
+        540.0,
+        576.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_04_processed.png",
+      "original_crop_width": 324,
+      "original_crop_height": 288,
+      "processed_width": 324,
+      "processed_height": 288,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        820.8,
+        979.2,
+        1015.2,
+        1123.2
+      ],
+      "predicted_bbox_clipped": [
+        820,
+        979,
+        1016,
+        1124
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        64.8,
+        115.2,
+        259.2,
+        259.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        64.8,
+        115.2,
+        259.2,
+        259.2
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_05_processed.png",
+      "original_crop_width": 196,
+      "original_crop_height": 145,
+      "processed_width": 233,
+      "processed_height": 172,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1887755102040816,
+      "preprocess_scale_y": 1.186206896551724
+    },
+    {
+      "sample_id": "TPROMPT67091f5462b7",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        720.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        720,
+        1080,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        720.0,
+        1080.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        720.0,
+        1080.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT67091f5462b7/turn_06_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 576,
+      "processed_width": 648,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "ed1b36831f56ba5e34c6a46d9d79d357d9f5565035f9bc0a5f36ae35503b9c43",
+  "crop_image_sha256": [
+    "3ce2304d404d265f7dc269ca7ebafff423a9c3c9a9fb43df0aec16182e842357",
+    "c9cd638e3d757db90d5e961ca2b5ed376c86b1daffc5bd4a020254e9b5b77902",
+    "50a9127fe155fbec193e468f76b11684bbc0ed78c500a8ca430f4f8b58c70fb3",
+    "d8f21e194716b291bd8a859333fffa7f4047599a0d8212ca869bbf851c59ce20",
+    "3f8f4d54e369c9b69cade0c27d76b96b15fae1176fdb033fc1ebbf88f5182194",
+    "e8c4d5d31fc5f763d8ba6929a3695dd0f63efa191863e5905c141fcb92c6e171"
+  ],
+  "raw_crop_image_sha256": [
+    "3ce2304d404d265f7dc269ca7ebafff423a9c3c9a9fb43df0aec16182e842357",
+    "c9cd638e3d757db90d5e961ca2b5ed376c86b1daffc5bd4a020254e9b5b77902",
+    "50a9127fe155fbec193e468f76b11684bbc0ed78c500a8ca430f4f8b58c70fb3",
+    "d8f21e194716b291bd8a859333fffa7f4047599a0d8212ca869bbf851c59ce20",
+    "33d201397c017ae2fc91d82b9ed6bcca399f4a55bebaf856a0fca5c4640a4f1d",
+    "e8c4d5d31fc5f763d8ba6929a3695dd0f63efa191863e5905c141fcb92c6e171"
+  ],
+  "assistant_text_sha256": "88e12f222815791b9e8f4f4b6a2ddb12d03f86aff86720129b68f26d5a83346f"
+}

@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT4b58392e9fa0",
+  "question": "What are the Chinese characters written on the white sign to the left of the green sign above the traffic light?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT4b58392e9fa0.jpg",
+  "original_width": 2937,
+  "original_height": 3671,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 715,
+  "turns": [
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 1,
+      "question": "What are the Chinese characters written on the white sign to the left of the green sign above the traffic light?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the Chinese characters on a white sign located to the left of a green sign, which is situated above a traffic light. I need to first locate the traffic light in the image. I can see a traffic light in the middle of the image, slightly to the left. Above it, there is a green sign, and to the left of that, there seems to be a white sign with some text on it. I will zoom into that area to get a better view. I'll select the bounding box to be around the traffic light and the signs above it. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        881.1,
+        1468.4,
+        2055.9,
+        2569.6999999999994
+      ],
+      "predicted_bbox_clipped": [
+        881,
+        1468,
+        2056,
+        2570
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        379.5,
+        632.4000000000001,
+        885.5,
+        1106.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        881.1,
+        1468.4,
+        2055.9,
+        2569.6999999999994
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2739,
+      "output_tokens": 161,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.701704164966941,
+      "tokens_per_second": 34.2429030732375,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          112,
+          90
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1175,
+      "original_crop_height": 1102,
+      "processed_width": 1175,
+      "processed_height": 1102,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 2,
+      "question": "What are the Chinese characters written on the white sign to the left of the green sign above the traffic light?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the Chinese characters on a white sign to the left of a green sign. In observation 1, I can see a green sign in the middle of the image. To the left of this green sign, there is a white sign with some text on it. I will zoom in on this area to read the text. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.6,0.7], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        998.5,
+        1908.8,
+        1586.0,
+        2239.4
+      ],
+      "predicted_bbox_clipped": [
+        998,
+        1908,
+        1586,
+        2240
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        117.5,
+        440.8,
+        705.0,
+        771.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        117.5,
+        440.8,
+        705.0,
+        771.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4635,
+      "output_tokens": 113,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.362005237489939,
+      "tokens_per_second": 25.905516808829976,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          112,
+          90
+        ],
+        [
+          1,
+          78,
+          84
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 588,
+      "original_crop_height": 332,
+      "processed_width": 588,
+      "processed_height": 332,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 3,
+      "question": "What are the Chinese characters written on the white sign to the left of the green sign above the traffic light?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the Chinese characters on the white sign to the left of the green sign. In observation 2, I can see a green sign, but it's not clear. I need to go back to observation 1 and select a better bounding box to get a clearer view of the white sign and the green sign next to it. </think><grounding>{\"bbox_2d\": [0.2,0.5,0.7,0.9], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1116.0,
+        2019.0,
+        1703.5,
+        2459.8
+      ],
+      "predicted_bbox_clipped": [
+        1116,
+        2019,
+        1704,
+        2460
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        235.0,
+        551.0,
+        822.5,
+        991.8000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        235.0,
+        551.0,
+        822.5,
+        991.8000000000001
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_03_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5097,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.549543187022209,
+      "tokens_per_second": 25.057460785335653,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          112,
+          90
+        ],
+        [
+          1,
+          78,
+          84
+        ],
+        [
+          1,
+          24,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 588,
+      "original_crop_height": 441,
+      "processed_width": 588,
+      "processed_height": 441,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 4,
+      "question": "What are the Chinese characters written on the white sign to the left of the green sign above the traffic light?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the Chinese characters on the white sign to the left of the green sign. In observation 3, I can see a white sign with some text on it, which is located to the left of a green sign. I will zoom in on this area to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.5,1.0], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1116.0,
+        2239.5,
+        1410.0,
+        2460.0
+      ],
+      "predicted_bbox_clipped": [
+        1116,
+        2239,
+        1410,
+        2460
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        220.5,
+        294.0,
+        441.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        220.5,
+        294.0,
+        441.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5644,
+      "output_tokens": 104,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.663101203739643,
+      "tokens_per_second": 22.302754209279364,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          112,
+          90
+        ],
+        [
+          1,
+          78,
+          84
+        ],
+        [
+          1,
+          24,
+          42
+        ],
+        [
+          1,
+          32,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 294,
+      "original_crop_height": 221,
+      "processed_width": 294,
+      "processed_height": 221,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 5,
+      "question": "What are the Chinese characters written on the white sign to the left of the green sign above the traffic light?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the Chinese characters on the white sign to the left of the green sign. In observation 4, I can see a white sign with some text on it, but it's not clear. I need to go back to observation 1 and select a better bounding box to get a clearer view of the white sign and the green sign next to it. </think><grounding>{\"bbox_2d\": [0.2,0.6,0.7,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.7,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1116.0,
+        2129.2,
+        1703.5,
+        2570.0
+      ],
+      "predicted_bbox_clipped": [
+        1116,
+        2129,
+        1704,
+        2570
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        235.0,
+        661.1999999999999,
+        822.5,
+        1102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        235.0,
+        661.1999999999999,
+        822.5,
+        1102.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_05_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5925,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.955721953883767,
+      "tokens_per_second": 24.01264661483691,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          112,
+          90
+        ],
+        [
+          1,
+          78,
+          84
+        ],
+        [
+          1,
+          24,
+          42
+        ],
+        [
+          1,
+          32,
+          42
+        ],
+        [
+          1,
+          16,
+          20
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 588,
+      "original_crop_height": 441,
+      "processed_width": 588,
+      "processed_height": 441,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 6,
+      "question": "What are the Chinese characters written on the white sign to the left of the green sign above the traffic light?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the Chinese characters on the white sign to the left of the green sign. In observation 5, I can see a white sign with some text on it, which is located to the left of a green sign. I will zoom in on this area to read the text. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.7,0.8], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1233.6,
+        2305.4,
+        1527.6,
+        2481.8
+      ],
+      "predicted_bbox_clipped": [
+        1233,
+        2305,
+        1528,
+        2482
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        117.60000000000001,
+        176.4,
+        411.59999999999997,
+        352.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        117.60000000000001,
+        176.4,
+        411.59999999999997,
+        352.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6477,
+      "output_tokens": 104,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.786401282995939,
+      "tokens_per_second": 21.72822416070045,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          112,
+          90
+        ],
+        [
+          1,
+          78,
+          84
+        ],
+        [
+          1,
+          24,
+          42
+        ],
+        [
+          1,
+          32,
+          42
+        ],
+        [
+          1,
+          16,
+          20
+        ],
+        [
+          1,
+          32,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 295,
+      "original_crop_height": 177,
+      "processed_width": 295,
+      "processed_height": 177,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        881.1,
+        1468.4,
+        2055.9,
+        2569.6999999999994
+      ],
+      "predicted_bbox_clipped": [
+        881,
+        1468,
+        2056,
+        2570
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        379.5,
+        632.4000000000001,
+        885.5,
+        1106.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        881.1,
+        1468.4,
+        2055.9,
+        2569.6999999999994
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_01_processed.png",
+      "original_crop_width": 1175,
+      "original_crop_height": 1102,
+      "processed_width": 1175,
+      "processed_height": 1102,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        998.5,
+        1908.8,
+        1586.0,
+        2239.4
+      ],
+      "predicted_bbox_clipped": [
+        998,
+        1908,
+        1586,
+        2240
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        117.5,
+        440.8,
+        705.0,
+        771.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        117.5,
+        440.8,
+        705.0,
+        771.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_02_processed.png",
+      "original_crop_width": 588,
+      "original_crop_height": 332,
+      "processed_width": 588,
+      "processed_height": 332,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1116.0,
+        2019.0,
+        1703.5,
+        2459.8
+      ],
+      "predicted_bbox_clipped": [
+        1116,
+        2019,
+        1704,
+        2460
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        235.0,
+        551.0,
+        822.5,
+        991.8000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        235.0,
+        551.0,
+        822.5,
+        991.8000000000001
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_03_processed.png",
+      "original_crop_width": 588,
+      "original_crop_height": 441,
+      "processed_width": 588,
+      "processed_height": 441,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1116.0,
+        2239.5,
+        1410.0,
+        2460.0
+      ],
+      "predicted_bbox_clipped": [
+        1116,
+        2239,
+        1410,
+        2460
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        220.5,
+        294.0,
+        441.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        220.5,
+        294.0,
+        441.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_04_processed.png",
+      "original_crop_width": 294,
+      "original_crop_height": 221,
+      "processed_width": 294,
+      "processed_height": 221,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.6,
+        0.7,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1116.0,
+        2129.2,
+        1703.5,
+        2570.0
+      ],
+      "predicted_bbox_clipped": [
+        1116,
+        2129,
+        1704,
+        2570
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        235.0,
+        661.1999999999999,
+        822.5,
+        1102.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        235.0,
+        661.1999999999999,
+        822.5,
+        1102.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_05_processed.png",
+      "original_crop_width": 588,
+      "original_crop_height": 441,
+      "processed_width": 588,
+      "processed_height": 441,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4b58392e9fa0",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1233.6,
+        2305.4,
+        1527.6,
+        2481.8
+      ],
+      "predicted_bbox_clipped": [
+        1233,
+        2305,
+        1528,
+        2482
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        117.60000000000001,
+        176.4,
+        411.59999999999997,
+        352.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        117.60000000000001,
+        176.4,
+        411.59999999999997,
+        352.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4b58392e9fa0/turn_06_processed.png",
+      "original_crop_width": 295,
+      "original_crop_height": 177,
+      "processed_width": 295,
+      "processed_height": 177,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "8cc16abb9c6c01a2c528c094739edb64d18c69aa61de3246c0e82cdf2f57fc7c",
+  "crop_image_sha256": [
+    "cd8c87be0150ecef118df8b021b57a5b45a76258af54786c6e26ba472b109972",
+    "f5265a1723abcd0f9b454c320caefaab70a6bfb5b89eef8f12bd47c271dc06e1",
+    "a606230eb0bd7e60feba996f652c6095c752f24086bbeb055ceb089b1b07ebda",
+    "c24f862f4517abb6cd5b8149356fd8f9717fbb6a2b62fabc75dca39e91ec03af",
+    "a9a48b1daea9b80023e30f6c73ddba67c8e673a162f7a331da23b21c47268972",
+    "8b68437be1eb0de8495137ae9ada8b65b4c8af7bffa0beab68281207d4ef6269"
+  ],
+  "raw_crop_image_sha256": [
+    "cd8c87be0150ecef118df8b021b57a5b45a76258af54786c6e26ba472b109972",
+    "f5265a1723abcd0f9b454c320caefaab70a6bfb5b89eef8f12bd47c271dc06e1",
+    "a606230eb0bd7e60feba996f652c6095c752f24086bbeb055ceb089b1b07ebda",
+    "c24f862f4517abb6cd5b8149356fd8f9717fbb6a2b62fabc75dca39e91ec03af",
+    "a9a48b1daea9b80023e30f6c73ddba67c8e673a162f7a331da23b21c47268972",
+    "8b68437be1eb0de8495137ae9ada8b65b4c8af7bffa0beab68281207d4ef6269"
+  ],
+  "assistant_text_sha256": "bf84a0710d61b7f7adaf55d0e90c1f518e5867e31b06051fa93aeb78040a2c21"
+}

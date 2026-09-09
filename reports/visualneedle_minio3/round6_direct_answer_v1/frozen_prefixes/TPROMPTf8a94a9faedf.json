@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTf8a94a9faedf",
+  "question": "What is the number to the right of 36?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTf8a94a9faedf.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 879,
+  "turns": [
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 1,
+      "question": "What is the number to the right of 36?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the number to the right of \"36\". I need to find the number \"36\" in the image first. I can see a red taxi in the middle of the image. There seems to be some text or numbers on the taxi. I will zoom in on the taxi to see if I can find the number \"36\". The taxi is in the middle of the image, so I will crop the image to focus on the taxi. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1152.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2198,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.921051559969783,
+      "tokens_per_second": 35.44967411779487,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 2,
+      "question": "What is the number to the right of 36?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the number to the right of \"36\". I have zoomed in on the red taxi, but I cannot see the number \"36\" on the taxi in this view. I need to look for other places in the image where the number \"36\" might be. I will go back to the original image and look for other potential locations. I see a building in the background with some signs. I will zoom in on the building to see if I can find the number \"36\". The building is located in the upper part of the image. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.9,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        144.0,
+        972.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        144,
+        972,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        144.0,
+        972.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        144.0,
+        972.0,
+        720.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2659,
+      "output_tokens": 162,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.585537230595946,
+      "tokens_per_second": 35.328466841157045,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 576,
+      "processed_width": 648,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 3,
+      "question": "What is the number to the right of 36?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the number to the right of \"36\". I have already checked the taxi and the building, but I still cannot find the number \"36\". I need to look for other potential locations. I will go back to the original image and scan the image again. I see a sign on the left side of the image, it seems to have some text on it. I will zoom in on that sign to see if I can find the number \"36\". </think><grounding>{\"bbox_2d\": [0.1,0.5,0.4,0.75], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.4,
+        0.75
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        720.0,
+        432.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        720,
+        432,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        720.0,
+        432.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        720.0,
+        432.0,
+        1080.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3401,
+      "output_tokens": 143,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.42671019025147,
+      "tokens_per_second": 32.3038992511675,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 324,
+      "original_crop_height": 360,
+      "processed_width": 324,
+      "processed_height": 360,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 4,
+      "question": "What is the number to the right of 36?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the number to the right of \"36\". I have already checked the taxi and the building, but I still cannot find the number \"36\". I need to look for other potential locations. I will go back to the original image and scan the image again. I see a sign on the left side of the image, it seems to have some text on it. I will zoom in on that sign to see if I can find the number \"36\". </think><grounding>{\"bbox_2d\": [0.15,0.55,0.35,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.15,
+        0.55,
+        0.35,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        162,
+        792,
+        378,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3797,
+      "output_tokens": 145,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.5844192784279585,
+      "tokens_per_second": 31.628869698349646,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          46
+        ],
+        [
+          1,
+          26,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 216,
+      "original_crop_height": 216,
+      "processed_width": 216,
+      "processed_height": 216,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 5,
+      "question": "What is the number to the right of 36?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the number to the right of \"36\". I have already checked the taxi and the building, but I still cannot find the number \"36\". I need to look for other potential locations. I will go back to the original image and scan the image again. I see a sign on the left side of the image, it seems to have some text on it. I will zoom in on that sign to see if I can find the number \"36\". </think><grounding>{\"bbox_2d\": [0.15,0.55,0.35,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.15,
+        0.55,
+        0.35,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        162,
+        792,
+        378,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4103,
+      "output_tokens": 145,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.6982925944030285,
+      "tokens_per_second": 30.862275408886894,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          46
+        ],
+        [
+          1,
+          26,
+          24
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 216,
+      "original_crop_height": 216,
+      "processed_width": 216,
+      "processed_height": 216,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 6,
+      "question": "What is the number to the right of 36?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the number to the right of \"36\". I have already checked the taxi and the building, but I still cannot find the number \"36\". I need to look for other potential locations. I will go back to the original image and scan the image again. I see a sign on the left side of the image, it seems to have some text on it. I will zoom in on that sign to see if I can find the number \"36\". </think><grounding>{\"bbox_2d\": [0.15,0.55,0.35,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.15,
+        0.55,
+        0.35,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        162,
+        792,
+        378,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4409,
+      "output_tokens": 145,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.784519027918577,
+      "tokens_per_second": 30.306076567758947,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          46
+        ],
+        [
+          1,
+          26,
+          24
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 216,
+      "original_crop_height": 216,
+      "processed_width": 216,
+      "processed_height": 216,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1152.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        144.0,
+        972.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        144,
+        972,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        144.0,
+        972.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        144.0,
+        972.0,
+        720.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_02_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 576,
+      "processed_width": 648,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.4,
+        0.75
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        720.0,
+        432.0,
+        1080.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        720,
+        432,
+        1080
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        720.0,
+        432.0,
+        1080.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        720.0,
+        432.0,
+        1080.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_03_processed.png",
+      "original_crop_width": 324,
+      "original_crop_height": 360,
+      "processed_width": 324,
+      "processed_height": 360,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.15,
+        0.55,
+        0.35,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        162,
+        792,
+        378,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_04_processed.png",
+      "original_crop_width": 216,
+      "original_crop_height": 216,
+      "processed_width": 216,
+      "processed_height": 216,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.15,
+        0.55,
+        0.35,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        162,
+        792,
+        378,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_05_processed.png",
+      "original_crop_width": 216,
+      "original_crop_height": 216,
+      "processed_width": 216,
+      "processed_height": 216,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTf8a94a9faedf",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.15,
+        0.55,
+        0.35,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        162,
+        792,
+        378,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        162.0,
+        792.0000000000001,
+        378.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTf8a94a9faedf/turn_06_processed.png",
+      "original_crop_width": 216,
+      "original_crop_height": 216,
+      "processed_width": 216,
+      "processed_height": 216,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "474a8f9f75bcd4e4d1444bffe36e4f6a07e936c3f4d5bd08ec334a500a6f08df",
+  "crop_image_sha256": [
+    "a91b2ec3a7d0bbb46343004014d9e97576b9652ccb8baa76cc53a72ed3e8412c",
+    "436bcdd993016f8fcc079f7016a964a7f1a778fbff47f83648556a8564a5631c",
+    "4fce7ca31b5374bfe37e5c8619fe44402ee0e5be176f75a5993679c6eda0589c",
+    "b394920dadcb4dc8147c839f9fe34ba08f067427c661709e1ddbc6f2534e16ab",
+    "b394920dadcb4dc8147c839f9fe34ba08f067427c661709e1ddbc6f2534e16ab",
+    "b394920dadcb4dc8147c839f9fe34ba08f067427c661709e1ddbc6f2534e16ab"
+  ],
+  "raw_crop_image_sha256": [
+    "a91b2ec3a7d0bbb46343004014d9e97576b9652ccb8baa76cc53a72ed3e8412c",
+    "436bcdd993016f8fcc079f7016a964a7f1a778fbff47f83648556a8564a5631c",
+    "4fce7ca31b5374bfe37e5c8619fe44402ee0e5be176f75a5993679c6eda0589c",
+    "b394920dadcb4dc8147c839f9fe34ba08f067427c661709e1ddbc6f2534e16ab",
+    "b394920dadcb4dc8147c839f9fe34ba08f067427c661709e1ddbc6f2534e16ab",
+    "b394920dadcb4dc8147c839f9fe34ba08f067427c661709e1ddbc6f2534e16ab"
+  ],
+  "assistant_text_sha256": "55cd279fe6a1a19e15faa4a310e266f2cf3645d9a8b5b5f1d09941c97dd37b9c"
+}

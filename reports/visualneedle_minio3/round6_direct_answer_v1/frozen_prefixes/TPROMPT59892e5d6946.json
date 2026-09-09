@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT59892e5d6946",
+  "question": "Help me see what item is placed to the left of the TV?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT59892e5d6946.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 1016,
+  "turns": [
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 1,
+      "question": "Help me see what item is placed to the left of the TV?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the item placed to the left of the TV. I can see a television set in the upper right portion of the image, located on a shelf. I will first zoom into the area containing the TV to get a better view and then identify the object to its left. </think><grounding>{\"bbox_2d\": [0.4,0.1,1.0,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.1,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        144,
+        1080,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2200,
+      "output_tokens": 103,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.1491524651646614,
+      "tokens_per_second": 32.70721285786155,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 576,
+      "processed_width": 648,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 2,
+      "question": "Help me see what item is placed to the left of the TV?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what item is placed to the left of the TV. In observation 1, I can see a television set in the upper middle part of the image, but it's not very clear. I can see some objects around it, but it's hard to identify what's to the left of the TV. I need to zoom in on the TV to see it more clearly and identify the item next to it. The TV seems to be in the upper middle part of observation 1. I will try to crop the region around the TV. </think><grounding>{\"bbox_2d\": [0.2,0.0,0.8,0.4], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.0,
+        0.8,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        561.6,
+        144.0,
+        950.4,
+        374.4
+      ],
+      "predicted_bbox_clipped": [
+        561,
+        144,
+        951,
+        375
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        0.0,
+        518.4,
+        230.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        0.0,
+        518.4,
+        230.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2883,
+      "output_tokens": 157,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.592172123491764,
+      "tokens_per_second": 34.18861396698289,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 390,
+      "original_crop_height": 231,
+      "processed_width": 390,
+      "processed_height": 231,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 3,
+      "question": "Help me see what item is placed to the left of the TV?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what item is placed to the left of the TV. In observation 2, I can see a television set in the background, but it's still not very clear and the object to its left is not clearly identifiable. I need to get a closer view of the TV and the objects around it. I will try to zoom in on the area that contains the TV and the objects to its left. The TV is in the middle of observation 2, so I will try to focus on that area. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.7,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        639.0,
+        167.1,
+        834.0,
+        351.9
+      ],
+      "predicted_bbox_clipped": [
+        639,
+        167,
+        834,
+        352
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        78.0,
+        23.1,
+        273.0,
+        207.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        78.0,
+        23.1,
+        273.0,
+        207.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3249,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.653748944401741,
+      "tokens_per_second": 32.23207822167621,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          46
+        ],
+        [
+          1,
+          16,
+          28
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 195,
+      "original_crop_height": 185,
+      "processed_width": 205,
+      "processed_height": 195,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 4,
+      "question": "Help me see what item is placed to the left of the TV?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what item is placed to the left of the TV. In observation 3, I can see a television set in the background, but it's still not very clear and the object to its left is not clearly identifiable. I need to get a closer view of the TV and the objects around it. I will try to zoom in on the area that contains the TV and the objects to its left. The TV is in the middle of observation 2, so I will try to focus on that area. I will go back to observation 1 and try a different bounding box to get a better view of the TV and the objects around it. The TV is in the upper middle part of observation 1. I will try to crop the region around the TV. </think><grounding>{\"bbox_2d\": [0.2,0.0,0.7,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.0,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        561.6,
+        144.0,
+        885.5999999999999,
+        432.0
+      ],
+      "predicted_bbox_clipped": [
+        561,
+        144,
+        886,
+        432
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        0.0,
+        453.59999999999997,
+        288.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        0.0,
+        453.59999999999997,
+        288.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_04_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3552,
+      "output_tokens": 202,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.828670408576727,
+      "tokens_per_second": 34.65627421697452,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          46
+        ],
+        [
+          1,
+          16,
+          28
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 325,
+      "original_crop_height": 288,
+      "processed_width": 325,
+      "processed_height": 288,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 5,
+      "question": "Help me see what item is placed to the left of the TV?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what item is placed to the left of the TV. In observation 4, I can see a television set in the background, but it's still not very clear and the object to its left is not clearly identifiable. I need to get a closer view of the TV and the objects around it. I will try to zoom in on the area that contains the TV and the objects to its left. The TV is in the middle of observation 4, so I will try to focus on that area. I will go back to observation 1 and try a different bounding box to get a better view of the TV and the objects around it. The TV is in the upper middle part of observation 1. I will try to crop the region around the TV. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.6,0.4], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        626.4,
+        201.6,
+        820.8,
+        374.4
+      ],
+      "predicted_bbox_clipped": [
+        626,
+        201,
+        821,
+        375
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_05_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3971,
+      "output_tokens": 202,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.022160151973367,
+      "tokens_per_second": 33.54278114536821,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          46
+        ],
+        [
+          1,
+          16,
+          28
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          20,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 195,
+      "original_crop_height": 174,
+      "processed_width": 212,
+      "processed_height": 189,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 6,
+      "question": "Help me see what item is placed to the left of the TV?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what item is placed to the left of the TV. In observation 5, I can see a television set in the background, but it's still not very clear and the object to its left is not clearly identifiable. I need to get a closer view of the TV and the objects around it. I will try to zoom in on the area that contains the TV and the objects to its left. The TV is in the middle of observation 5, so I will try to focus on that area. I will go back to observation 1 and try a different bounding box to get a better view of the TV and the objects around it. The TV is in the upper middle part of observation 1. I will try to crop the region around the TV. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.6,0.4], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        626.4,
+        201.6,
+        820.8,
+        374.4
+      ],
+      "predicted_bbox_clipped": [
+        626,
+        201,
+        821,
+        375
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_06_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4326,
+      "output_tokens": 202,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.084279667586088,
+      "tokens_per_second": 33.20031475149837,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          46
+        ],
+        [
+          1,
+          16,
+          28
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          20,
+          24
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 195,
+      "original_crop_height": 174,
+      "processed_width": 212,
+      "processed_height": 189,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.1,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        144,
+        1080,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_01_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 576,
+      "processed_width": 648,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.0,
+        0.8,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        561.6,
+        144.0,
+        950.4,
+        374.4
+      ],
+      "predicted_bbox_clipped": [
+        561,
+        144,
+        951,
+        375
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        0.0,
+        518.4,
+        230.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        0.0,
+        518.4,
+        230.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_02_processed.png",
+      "original_crop_width": 390,
+      "original_crop_height": 231,
+      "processed_width": 390,
+      "processed_height": 231,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        639.0,
+        167.1,
+        834.0,
+        351.9
+      ],
+      "predicted_bbox_clipped": [
+        639,
+        167,
+        834,
+        352
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        78.0,
+        23.1,
+        273.0,
+        207.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        78.0,
+        23.1,
+        273.0,
+        207.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_03_processed.png",
+      "original_crop_width": 195,
+      "original_crop_height": 185,
+      "processed_width": 205,
+      "processed_height": 195,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0512820512820513,
+      "preprocess_scale_y": 1.054054054054054
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.2,
+        0.0,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        561.6,
+        144.0,
+        885.5999999999999,
+        432.0
+      ],
+      "predicted_bbox_clipped": [
+        561,
+        144,
+        886,
+        432
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        0.0,
+        453.59999999999997,
+        288.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        0.0,
+        453.59999999999997,
+        288.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_04_processed.png",
+      "original_crop_width": 325,
+      "original_crop_height": 288,
+      "processed_width": 325,
+      "processed_height": 288,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        626.4,
+        201.6,
+        820.8,
+        374.4
+      ],
+      "predicted_bbox_clipped": [
+        626,
+        201,
+        821,
+        375
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_05_processed.png",
+      "original_crop_width": 195,
+      "original_crop_height": 174,
+      "processed_width": 212,
+      "processed_height": 189,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.087179487179487,
+      "preprocess_scale_y": 1.0862068965517242
+    },
+    {
+      "sample_id": "TPROMPT59892e5d6946",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.6,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        626.4,
+        201.6,
+        820.8,
+        374.4
+      ],
+      "predicted_bbox_clipped": [
+        626,
+        201,
+        821,
+        375
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        194.4,
+        57.6,
+        388.8,
+        230.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT59892e5d6946/turn_06_processed.png",
+      "original_crop_width": 195,
+      "original_crop_height": 174,
+      "processed_width": 212,
+      "processed_height": 189,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.087179487179487,
+      "preprocess_scale_y": 1.0862068965517242
+    }
+  ],
+  "original_image_sha256": "8b331d8d28376851b2069feb67bad2b5822e576a760a59b65650b70b944d4276",
+  "crop_image_sha256": [
+    "77b7519bb41eb1bb212dc6fa33f3a320e9aa7ab54fb16997d9a40435765fa559",
+    "d19b840be65cac80aef43f82b28ac090c554afad8ddffa0c66e3a3cce8b46ae8",
+    "904501fdbb25c649ed0b2b349d5c5b808f2b49dce496f5279a5c026609a02006",
+    "d94f32d99578a631156cb612e3e7df880d71767a67a7703b3b9944da5c8280c0",
+    "207351c6a59a59b0488c9681b56eb6bcb487bcc6e01218b1dcc712a5b6898e7d",
+    "207351c6a59a59b0488c9681b56eb6bcb487bcc6e01218b1dcc712a5b6898e7d"
+  ],
+  "raw_crop_image_sha256": [
+    "77b7519bb41eb1bb212dc6fa33f3a320e9aa7ab54fb16997d9a40435765fa559",
+    "d19b840be65cac80aef43f82b28ac090c554afad8ddffa0c66e3a3cce8b46ae8",
+    "f529baf680af9c72bfb0e3b2dc883daf45019f9716605a9fdd15ac83c76bd1c1",
+    "d94f32d99578a631156cb612e3e7df880d71767a67a7703b3b9944da5c8280c0",
+    "5635576c594c0b4bf650b10400394e7db7ef51762c9c32088c0f2c93e44d3d9b",
+    "5635576c594c0b4bf650b10400394e7db7ef51762c9c32088c0f2c93e44d3d9b"
+  ],
+  "assistant_text_sha256": "ba8a0c336b9d00edc0575c19b09808375ad398d7aa68c6ba38b2b44563892526"
+}

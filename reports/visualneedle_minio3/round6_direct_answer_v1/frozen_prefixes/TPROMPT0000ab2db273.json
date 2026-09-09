@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT0000ab2db273",
+  "question": "I'd like to ask, what are the two English letters below the character '间'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT0000ab2db273.png",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 661,
+  "turns": [
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 1,
+      "question": "I'd like to ask, what are the two English letters below the character '间'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two English letters below the Chinese character '间'. I need to first locate the character '间' in the image. I can see a red sign with white text in the middle-left of the image. I will zoom into that area to read the text. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.5,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        576.0,
+        540.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        576,
+        540,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        576.0,
+        540.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        576.0,
+        540.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2204,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.111365305259824,
+      "tokens_per_second": 32.46163342801873,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 2,
+      "question": "I'd like to ask, what are the two English letters below the character '间'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two English letters below the Chinese character '间'. In observation 1, I can see a red sign with white text, but I cannot clearly see the character '间'. I need to find another area in the original image to search for the character '间'. I see a red sign with white text on the right side of the image, which seems to have the character '间'. I will zoom into that area to read the text. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2627,
+      "output_tokens": 138,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.038067229092121,
+      "tokens_per_second": 34.17476534461427,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 3,
+      "question": "I'd like to ask, what are the two English letters below the character '间'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two English letters below the Chinese character '间'. In observation 2, I can see a white sign with some text on it. I will zoom in on that sign to see if I can find the character '间' and the letters below it. </think><grounding>{\"bbox_2d\": [0.1,0.5,0.5,1.0], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        864.0,
+        810.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        864,
+        810,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        54.0,
+        288.0,
+        270.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        54.0,
+        288.0,
+        270.0,
+        576.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3261,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.4453990440815687,
+      "tokens_per_second": 29.31445638306994,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 216,
+      "original_crop_height": 288,
+      "processed_width": 216,
+      "processed_height": 288,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 4,
+      "question": "I'd like to ask, what are the two English letters below the character '间'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two English letters below the Chinese character '间'. In observation 3, I can see a white sign with some text on it. I can see the character '间' on the left side of the image. I will zoom in on that area to read the text below it. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.3,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.3,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        921.6,
+        658.8,
+        1065.6
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        921,
+        659,
+        1066
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3539,
+      "output_tokens": 107,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.6544523164629936,
+      "tokens_per_second": 29.279353165445393,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          20,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 65,
+      "original_crop_height": 145,
+      "processed_width": 134,
+      "processed_height": 299,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 5,
+      "question": "I'd like to ask, what are the two English letters below the character '间'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two English letters below the Chinese character '间'. In observation 4, I can see a white sign with some text on it. I can see the character '间' on the left side of the image. I will zoom in on that area to read the text below it. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.3,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.3,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        921.6,
+        658.8,
+        1065.6
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        921,
+        659,
+        1066
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_05_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3798,
+      "output_tokens": 107,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7969682589173317,
+      "tokens_per_second": 28.18037779186229,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          20,
+          16
+        ],
+        [
+          1,
+          22,
+          10
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 65,
+      "original_crop_height": 145,
+      "processed_width": 134,
+      "processed_height": 299,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 6,
+      "question": "I'd like to ask, what are the two English letters below the character '间'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the two English letters below the Chinese character '间'. In observation 5, I can see a white sign with some text on it. I can see the character '间' on the left side of the image. I will zoom in on that area to read the text below it. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.3,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.3,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        921.6,
+        658.8,
+        1065.6
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        921,
+        659,
+        1066
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_06_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4057,
+      "output_tokens": 107,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.802035318687558,
+      "tokens_per_second": 28.14282115531105,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          20,
+          16
+        ],
+        [
+          1,
+          22,
+          10
+        ],
+        [
+          1,
+          22,
+          10
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 65,
+      "original_crop_height": 145,
+      "processed_width": 134,
+      "processed_height": 299,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        576.0,
+        540.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        576,
+        540,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        576.0,
+        540.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        576.0,
+        540.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1152.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_02_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        864.0,
+        810.0,
+        1152.0
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        864,
+        810,
+        1152
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        54.0,
+        288.0,
+        270.0,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        54.0,
+        288.0,
+        270.0,
+        576.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_03_processed.png",
+      "original_crop_width": 216,
+      "original_crop_height": 288,
+      "processed_width": 216,
+      "processed_height": 288,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.3,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        921.6,
+        658.8,
+        1065.6
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        921,
+        659,
+        1066
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_04_processed.png",
+      "original_crop_width": 65,
+      "original_crop_height": 145,
+      "processed_width": 134,
+      "processed_height": 299,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.0615384615384613,
+      "preprocess_scale_y": 2.0620689655172413
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.3,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        921.6,
+        658.8,
+        1065.6
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        921,
+        659,
+        1066
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_05_processed.png",
+      "original_crop_width": 65,
+      "original_crop_height": 145,
+      "processed_width": 134,
+      "processed_height": 299,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.0615384615384613,
+      "preprocess_scale_y": 2.0620689655172413
+    },
+    {
+      "sample_id": "TPROMPT0000ab2db273",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.3,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        594.0,
+        921.6,
+        658.8,
+        1065.6
+      ],
+      "predicted_bbox_clipped": [
+        594,
+        921,
+        659,
+        1066
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        57.6,
+        64.8,
+        201.6
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0000ab2db273/turn_06_processed.png",
+      "original_crop_width": 65,
+      "original_crop_height": 145,
+      "processed_width": 134,
+      "processed_height": 299,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.0615384615384613,
+      "preprocess_scale_y": 2.0620689655172413
+    }
+  ],
+  "original_image_sha256": "6c55986f0449f071e2953af8961a35d61466e5ddf2eddce203220fbd4a2435ec",
+  "crop_image_sha256": [
+    "1e82962984056f39225aa659dcb262b4880dea0e2d9feaef51ef413bea84e437",
+    "8e5e3056d13f510984a23f7bbe954230a10505b08e39f938f3d6c50fe3875a2e",
+    "f6d46f0c3fc3579110f02efe490d4acff5c2d1a76888581964ee6067575e0dee",
+    "356176ec92abcd9e3a8bad0d539b4c9a651fcb216c151518a63203ce59105351",
+    "356176ec92abcd9e3a8bad0d539b4c9a651fcb216c151518a63203ce59105351",
+    "356176ec92abcd9e3a8bad0d539b4c9a651fcb216c151518a63203ce59105351"
+  ],
+  "raw_crop_image_sha256": [
+    "1e82962984056f39225aa659dcb262b4880dea0e2d9feaef51ef413bea84e437",
+    "8e5e3056d13f510984a23f7bbe954230a10505b08e39f938f3d6c50fe3875a2e",
+    "f6d46f0c3fc3579110f02efe490d4acff5c2d1a76888581964ee6067575e0dee",
+    "f3b6c7e5f61f7efc7276d785ae2799a763d1e7c78da470635e83c02d1549df3a",
+    "f3b6c7e5f61f7efc7276d785ae2799a763d1e7c78da470635e83c02d1549df3a",
+    "f3b6c7e5f61f7efc7276d785ae2799a763d1e7c78da470635e83c02d1549df3a"
+  ],
+  "assistant_text_sha256": "72a101a44526ec5d4f3d34f2615c75927cec44646cba54a2442cdf600ac259f2"
+}

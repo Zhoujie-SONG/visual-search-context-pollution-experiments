@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT31205a3f0a8d",
+  "question": "On the shelf where '洁柔' tissues are located, in the sixth row counting from bottom to top, what color is the first product from left to right?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT31205a3f0a8d.jpg",
+  "original_width": 2000,
+  "original_height": 2666,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 1184,
+  "turns": [
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 1,
+      "question": "On the shelf where '洁柔' tissues are located, in the sixth row counting from bottom to top, what color is the first product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the color of a specific product on a shelf. I need to first locate the '洁柔' tissues and then identify the product in the specified row and position. I can see the tissues on the right side of the image, on a higher shelf. I will start by cropping this area to get a better view. </think><grounding>{\"bbox_2d\": [0.5,0.3,1.0,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.3,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        999.2898310953694,
+        799.395148777174,
+        1998.5796621907389,
+        1865.255347146739
+      ],
+      "predicted_bbox_clipped": [
+        999,
+        799,
+        1999,
+        1866
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        489.59999999999997,
+        1224.0,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        999.2898310953694,
+        799.395148777174,
+        1998.5796621907389,
+        1865.255347146739
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2724,
+      "output_tokens": 112,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.5839662849903107,
+      "tokens_per_second": 31.25029397432035,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1000,
+      "original_crop_height": 1067,
+      "processed_width": 1000,
+      "processed_height": 1067,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 2,
+      "question": "On the shelf where '洁柔' tissues are located, in the sixth row counting from bottom to top, what color is the first product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the color of the first product from the left on the shelf where '洁柔' tissues are located, on the sixth row from the bottom. In observation 1, I can see the tissues on the right side of the image. I will first locate the tissues and then count the rows to find the one I need. The tissues are on the right side of the image. I will zoom in on the tissues to get a better view and count the rows more accurately. </think><grounding>{\"bbox_2d\": [0.5,0.2,1.0,0.7], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1499.0,
+        1012.4,
+        1999.0,
+        1545.9
+      ],
+      "predicted_bbox_clipped": [
+        1499,
+        1012,
+        1999,
+        1546
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        500.0,
+        213.4,
+        1000.0,
+        746.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        500.0,
+        213.4,
+        1000.0,
+        746.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4301,
+      "output_tokens": 144,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.892190786078572,
+      "tokens_per_second": 29.43466563278206,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          76,
+          72
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 500,
+      "original_crop_height": 534,
+      "processed_width": 500,
+      "processed_height": 534,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 3,
+      "question": "On the shelf where '洁柔' tissues are located, in the sixth row counting from bottom to top, what color is the first product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the color of the first product from the left on the shelf where '洁柔' tissues are located, on the sixth row from the bottom. In observation 2, I can see the tissues on the right side of the image. I can see several rows of tissues. I need to count the rows from the bottom to find the sixth one. The bottom row seems to be the first one. The second row from the bottom seems to be the second one. The third row from the bottom seems to be the third one. The fourth row from the bottom seems to be the fourth one. The fifth row from the bottom seems to be the fifth one. The sixth row from the bottom seems to be the topmost row of tissues in this view. On this row, the first product from the left is a box of tissues. I need to zoom in to see the brand name and the color more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.0,1.0,0.4], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1749.0,
+        1012.0,
+        1999.0,
+        1225.6
+      ],
+      "predicted_bbox_clipped": [
+        1749,
+        1012,
+        1999,
+        1226
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4884,
+      "output_tokens": 232,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.170660883188248,
+      "tokens_per_second": 32.35406105229833,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          76,
+          72
+        ],
+        [
+          1,
+          38,
+          36
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 250,
+      "original_crop_height": 214,
+      "processed_width": 250,
+      "processed_height": 214,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 4,
+      "question": "On the shelf where '洁柔' tissues are located, in the sixth row counting from bottom to top, what color is the first product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the color of the first product from the left on the shelf where '洁柔' tissues are located, on the sixth row from the bottom. In observation 3, I can see the tissues on the right side of the image. I can see several rows of tissues. I need to count the rows from the bottom to find the sixth one. The bottom row seems to be the first one. The second row from the bottom seems to be the second one. The third row from the bottom seems to be the third one. The fourth row from the bottom seems to be the fourth one. The fifth row from the bottom seems to be the fifth one. The sixth row from the bottom seems to be the topmost row of tissues in this view. On this row, the first product from the left is a box of tissues. I need to zoom in to see the brand name and the color more clearly. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,1.0], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1499.0,
+        1012.0,
+        1749.0,
+        1546.0
+      ],
+      "predicted_bbox_clipped": [
+        1499,
+        1012,
+        1749,
+        1546
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        250.0,
+        534.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        250.0,
+        534.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_04_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5285,
+      "output_tokens": 232,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.326788134872913,
+      "tokens_per_second": 31.664625171261918,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          76,
+          72
+        ],
+        [
+          1,
+          38,
+          36
+        ],
+        [
+          1,
+          16,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 250,
+      "original_crop_height": 534,
+      "processed_width": 250,
+      "processed_height": 534,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 5,
+      "question": "On the shelf where '洁柔' tissues are located, in the sixth row counting from bottom to top, what color is the first product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the color of the first product from the left on the shelf where '洁柔' tissues are located, on the sixth row from the bottom. In observation 4, I can see the tissues on the right side of the image. I can see several rows of tissues. I need to count the rows from the bottom to find the sixth one. The bottom row seems to be the first one. The second row from the bottom seems to be the second one. The third row from the bottom seems to be the third one. The fourth row from the bottom seems to be the fourth one. The fifth row from the bottom seems to be the fifth one. The sixth row from the bottom seems to be the topmost row of tissues in this view. On this row, the first product from the left is a box of tissues. I need to zoom in to see the brand name and the color more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.0,1.0,0.4], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1749.0,
+        1012.0,
+        1999.0,
+        1225.6
+      ],
+      "predicted_bbox_clipped": [
+        1749,
+        1012,
+        1999,
+        1226
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_05_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5785,
+      "output_tokens": 232,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.411465449258685,
+      "tokens_per_second": 27.581400815293904,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          76,
+          72
+        ],
+        [
+          1,
+          38,
+          36
+        ],
+        [
+          1,
+          16,
+          18
+        ],
+        [
+          1,
+          38,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 250,
+      "original_crop_height": 214,
+      "processed_width": 250,
+      "processed_height": 214,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 6,
+      "question": "On the shelf where '洁柔' tissues are located, in the sixth row counting from bottom to top, what color is the first product from left to right?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the color of the first product from the left on the shelf where '洁柔' tissues are located, on the sixth row from the bottom. In observation 5, I can see the tissues on the right side of the image. I can see several rows of tissues. I need to count the rows from the bottom to find the sixth one. The bottom row seems to be the first one. The second row from the bottom seems to be the second one. The third row from the bottom seems to be the third one. The fourth row from the bottom seems to be the fourth one. The fifth row from the bottom seems to be the fifth one. The sixth row from the bottom seems to be the topmost row of tissues in this view. On this row, the first product from the left is a box of tissues. I need to zoom in to see the brand name and the color more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.0,1.0,0.4], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1749.0,
+        1012.0,
+        1999.0,
+        1225.6
+      ],
+      "predicted_bbox_clipped": [
+        1749,
+        1012,
+        1999,
+        1226
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_06_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6186,
+      "output_tokens": 232,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.398229761049151,
+      "tokens_per_second": 27.62486935949432,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          76,
+          72
+        ],
+        [
+          1,
+          38,
+          36
+        ],
+        [
+          1,
+          16,
+          18
+        ],
+        [
+          1,
+          38,
+          18
+        ],
+        [
+          1,
+          16,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 250,
+      "original_crop_height": 214,
+      "processed_width": 250,
+      "processed_height": 214,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.3,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        999.2898310953694,
+        799.395148777174,
+        1998.5796621907389,
+        1865.255347146739
+      ],
+      "predicted_bbox_clipped": [
+        999,
+        799,
+        1999,
+        1866
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        612.0,
+        489.59999999999997,
+        1224.0,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        999.2898310953694,
+        799.395148777174,
+        1998.5796621907389,
+        1865.255347146739
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_01_processed.png",
+      "original_crop_width": 1000,
+      "original_crop_height": 1067,
+      "processed_width": 1000,
+      "processed_height": 1067,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1499.0,
+        1012.4,
+        1999.0,
+        1545.9
+      ],
+      "predicted_bbox_clipped": [
+        1499,
+        1012,
+        1999,
+        1546
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        500.0,
+        213.4,
+        1000.0,
+        746.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        500.0,
+        213.4,
+        1000.0,
+        746.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_02_processed.png",
+      "original_crop_width": 500,
+      "original_crop_height": 534,
+      "processed_width": 500,
+      "processed_height": 534,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1749.0,
+        1012.0,
+        1999.0,
+        1225.6
+      ],
+      "predicted_bbox_clipped": [
+        1749,
+        1012,
+        1999,
+        1226
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_03_processed.png",
+      "original_crop_width": 250,
+      "original_crop_height": 214,
+      "processed_width": 250,
+      "processed_height": 214,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1499.0,
+        1012.0,
+        1749.0,
+        1546.0
+      ],
+      "predicted_bbox_clipped": [
+        1499,
+        1012,
+        1749,
+        1546
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        250.0,
+        534.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        250.0,
+        534.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_04_processed.png",
+      "original_crop_width": 250,
+      "original_crop_height": 534,
+      "processed_width": 250,
+      "processed_height": 534,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1749.0,
+        1012.0,
+        1999.0,
+        1225.6
+      ],
+      "predicted_bbox_clipped": [
+        1749,
+        1012,
+        1999,
+        1226
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_05_processed.png",
+      "original_crop_width": 250,
+      "original_crop_height": 214,
+      "processed_width": 250,
+      "processed_height": 214,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT31205a3f0a8d",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1749.0,
+        1012.0,
+        1999.0,
+        1225.6
+      ],
+      "predicted_bbox_clipped": [
+        1749,
+        1012,
+        1999,
+        1226
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        250.0,
+        0.0,
+        500.0,
+        213.60000000000002
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT31205a3f0a8d/turn_06_processed.png",
+      "original_crop_width": 250,
+      "original_crop_height": 214,
+      "processed_width": 250,
+      "processed_height": 214,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "2ef21c2a20396c6d574c7353c8f28d0c1e7b4836b42c4358d5d5f368d38e923e",
+  "crop_image_sha256": [
+    "2378579a865d97dab290eaf8a5dfd4a00ebfe735a1ec8bf51da6f19804ee659b",
+    "d8cdc009032c0c5d2e15fedfc594351ac3425ea90d26cce5f9b3449060d5de35",
+    "9c963778944d6c517fd350b116a0dcbedacbd7f67ce7a2b7dfaf24a40b73aa16",
+    "777adf475ef5f0b6a4b5f781ccf0cce750c1c24ac63ad46683418a22ba3cc846",
+    "9c963778944d6c517fd350b116a0dcbedacbd7f67ce7a2b7dfaf24a40b73aa16",
+    "9c963778944d6c517fd350b116a0dcbedacbd7f67ce7a2b7dfaf24a40b73aa16"
+  ],
+  "raw_crop_image_sha256": [
+    "2378579a865d97dab290eaf8a5dfd4a00ebfe735a1ec8bf51da6f19804ee659b",
+    "d8cdc009032c0c5d2e15fedfc594351ac3425ea90d26cce5f9b3449060d5de35",
+    "9c963778944d6c517fd350b116a0dcbedacbd7f67ce7a2b7dfaf24a40b73aa16",
+    "777adf475ef5f0b6a4b5f781ccf0cce750c1c24ac63ad46683418a22ba3cc846",
+    "9c963778944d6c517fd350b116a0dcbedacbd7f67ce7a2b7dfaf24a40b73aa16",
+    "9c963778944d6c517fd350b116a0dcbedacbd7f67ce7a2b7dfaf24a40b73aa16"
+  ],
+  "assistant_text_sha256": "7d8df23fa84aec2e5f0fd3d969a0a95dd935142649e08e836d7648f1123e8ca4"
+}

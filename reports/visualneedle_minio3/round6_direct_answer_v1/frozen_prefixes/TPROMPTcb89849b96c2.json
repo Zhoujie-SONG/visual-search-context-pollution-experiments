@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTcb89849b96c2",
+  "question": "Please find the whisk in the image, then find the item directly below the whisk that touches the ground and features a character. What color is the hat of the character on this item?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTcb89849b96c2.jpg",
+  "original_width": 5999,
+  "original_height": 4000,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 839,
+  "turns": [
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 1,
+      "question": "Please find the whisk in the image, then find the item directly below the whisk that touches the ground and features a character. What color is the hat of the character on this item?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find a whisk, identify the item directly below it that touches the ground, and then determine the color of the character's hat on that item. I will first scan the image for an object that looks like a whisk. I see a toy kitchen set on the right side of the image. I will zoom into that area to get a better view and see if I can find a whisk. </think><grounding>{\"bbox_2d\": [0.5,0.5,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        2998.1129105880245,
+        1998.4981859221687,
+        5996.225821176049,
+        3996.9963718443373
+      ],
+      "predicted_bbox_clipped": [
+        2998,
+        1998,
+        5997,
+        3997
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        865.5,
+        577.0,
+        1731.0,
+        1154.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        2998.1129105880245,
+        1998.4981859221687,
+        5996.225821176049,
+        3996.9963718443373
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2776,
+      "output_tokens": 126,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.328743996098638,
+      "tokens_per_second": 29.10775044991339,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2999,
+      "original_crop_height": 1999,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 2,
+      "question": "Please find the whisk in the image, then find the item directly below the whisk that touches the ground and features a character. What color is the hat of the character on this item?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find a whisk, then find the item directly below it that touches the ground and features a character. What color is the hat of the character on this item? In observation 1, I can see a toy kitchen set. On the wall above the toy stove, there is a black pan with a toy inside it. The toy seems to be a whisk. I will zoom in on this area to get a better view and identify the character and its hat color. </think><grounding>{\"bbox_2d\": [0.4,0.1,0.8,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.1,
+        0.8,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4197.045256723251,
+        2197.7498936829206,
+        5396.090513446504,
+        2996.749468414604
+      ],
+      "predicted_bbox_clipped": [
+        4197,
+        2197,
+        5397,
+        2997
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        692.4000000000001,
+        115.4,
+        1384.8000000000002,
+        577.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.045256723252,
+        199.74989368292077,
+        2398.090513446504,
+        998.7494684146038
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5541,
+      "output_tokens": 142,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.4068684577941895,
+      "tokens_per_second": 26.262891562546162,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1200,
+      "original_crop_height": 800,
+      "processed_width": 1200,
+      "processed_height": 800,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 3,
+      "question": "Please find the whisk in the image, then find the item directly below the whisk that touches the ground and features a character. What color is the hat of the character on this item?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the whisk, then find the item directly below it that touches the ground and features a character. What color is the hat of the character on this item? In observation 2, I can clearly see a wooden whisk in a black pan. Below the pan, there is a toy figure. I need to zoom in on the toy figure to see the character's hat color. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.7,0.6], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        4437.0,
+        2277.0,
+        5037.0,
+        2677.0
+      ],
+      "predicted_bbox_clipped": [
+        4437,
+        2277,
+        5037,
+        2677
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        240.0,
+        80.0,
+        840.0,
+        480.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        240.0,
+        80.0,
+        840.0,
+        480.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7027,
+      "output_tokens": 125,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.576794167980552,
+      "tokens_per_second": 22.41431120368291,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          58,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 600,
+      "original_crop_height": 400,
+      "processed_width": 600,
+      "processed_height": 400,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 4,
+      "question": "Please find the whisk in the image, then find the item directly below the whisk that touches the ground and features a character. What color is the hat of the character on this item?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the whisk, then find the item directly below it that touches the ground and features a character. What color is the hat of the character on this item? In observation 3, I can see the whisk and the pan with the toy. The toy is a character in a pan. I need to zoom in on the pan to see the character and its hat more clearly. </think><grounding>{\"bbox_2d\": [0.5,0.2,1.0,0.8], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        4737.0,
+        2357.0,
+        5037.0,
+        2597.0
+      ],
+      "predicted_bbox_clipped": [
+        4737,
+        2357,
+        5037,
+        2597
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        300.0,
+        80.0,
+        600.0,
+        320.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        300.0,
+        80.0,
+        600.0,
+        320.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7543,
+      "output_tokens": 125,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.798823229968548,
+      "tokens_per_second": 21.556097684439674,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          58,
+          86
+        ],
+        [
+          1,
+          28,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 300,
+      "original_crop_height": 240,
+      "processed_width": 300,
+      "processed_height": 240,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 5,
+      "question": "Please find the whisk in the image, then find the item directly below the whisk that touches the ground and features a character. What color is the hat of the character on this item?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the whisk, then find the item directly below it that touches the ground and features a character. What color is the hat of the character on this item? In observation 4, I can see a black pan with four pictures of characters on it. The question asks for the color of the hat of the character on the item directly below the whisk. The item directly below the whisk is the pan. The characters are in the pan. I need to zoom in on the pan to see the characters and their hats more clearly. </think><grounding>{\"bbox_2d\": [0.1,0.0,0.9,0.9], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        4767.0,
+        2357.0,
+        5007.0,
+        2573.0
+      ],
+      "predicted_bbox_clipped": [
+        4767,
+        2357,
+        5007,
+        2573
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        30.0,
+        0.0,
+        270.0,
+        216.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        30.0,
+        0.0,
+        270.0,
+        216.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7864,
+      "output_tokens": 155,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.578953564167023,
+      "tokens_per_second": 23.559977812311086,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          58,
+          86
+        ],
+        [
+          1,
+          28,
+          42
+        ],
+        [
+          1,
+          18,
+          22
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 240,
+      "original_crop_height": 216,
+      "processed_width": 240,
+      "processed_height": 216,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 6,
+      "question": "Please find the whisk in the image, then find the item directly below the whisk that touches the ground and features a character. What color is the hat of the character on this item?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to find the whisk, then find the item directly below it that touches the ground and features a character. What color is the hat of the character on this item? In observation 5, I can see the pan with four pictures of characters. The question asks for the color of the hat of the character on the item directly below the whisk. The item directly below the whisk is the pan. The characters are in the pan. I need to zoom in on the pan to see the characters and their hats more clearly. I will zoom in on the pan to see the characters more clearly. </think><grounding>{\"bbox_2d\": [0.1,0.0,0.9,0.9], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        4791.0,
+        2357.0,
+        4983.0,
+        2551.4
+      ],
+      "predicted_bbox_clipped": [
+        4791,
+        2357,
+        4983,
+        2552
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        24.0,
+        0.0,
+        216.0,
+        194.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        24.0,
+        0.0,
+        216.0,
+        194.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8188,
+      "output_tokens": 166,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.354934621602297,
+      "tokens_per_second": 22.569881112530727,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          58,
+          86
+        ],
+        [
+          1,
+          28,
+          42
+        ],
+        [
+          1,
+          18,
+          22
+        ],
+        [
+          1,
+          16,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 192,
+      "original_crop_height": 195,
+      "processed_width": 198,
+      "processed_height": 202,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        2998.1129105880245,
+        1998.4981859221687,
+        5996.225821176049,
+        3996.9963718443373
+      ],
+      "predicted_bbox_clipped": [
+        2998,
+        1998,
+        5997,
+        3997
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        865.5,
+        577.0,
+        1731.0,
+        1154.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        2998.1129105880245,
+        1998.4981859221687,
+        5996.225821176049,
+        3996.9963718443373
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_01_processed.png",
+      "original_crop_width": 2999,
+      "original_crop_height": 1999,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.5774594379299653,
+      "preprocess_scale_y": 0.5777224601840529
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.4,
+        0.1,
+        0.8,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4197.045256723251,
+        2197.7498936829206,
+        5396.090513446504,
+        2996.749468414604
+      ],
+      "predicted_bbox_clipped": [
+        4197,
+        2197,
+        5397,
+        2997
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        692.4000000000001,
+        115.4,
+        1384.8000000000002,
+        577.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.045256723252,
+        199.74989368292077,
+        2398.090513446504,
+        998.7494684146038
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_02_processed.png",
+      "original_crop_width": 1200,
+      "original_crop_height": 800,
+      "processed_width": 1200,
+      "processed_height": 800,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.7,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        4437.0,
+        2277.0,
+        5037.0,
+        2677.0
+      ],
+      "predicted_bbox_clipped": [
+        4437,
+        2277,
+        5037,
+        2677
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        240.0,
+        80.0,
+        840.0,
+        480.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        240.0,
+        80.0,
+        840.0,
+        480.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_03_processed.png",
+      "original_crop_width": 600,
+      "original_crop_height": 400,
+      "processed_width": 600,
+      "processed_height": 400,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        4737.0,
+        2357.0,
+        5037.0,
+        2597.0
+      ],
+      "predicted_bbox_clipped": [
+        4737,
+        2357,
+        5037,
+        2597
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        300.0,
+        80.0,
+        600.0,
+        320.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        300.0,
+        80.0,
+        600.0,
+        320.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_04_processed.png",
+      "original_crop_width": 300,
+      "original_crop_height": 240,
+      "processed_width": 300,
+      "processed_height": 240,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        4767.0,
+        2357.0,
+        5007.0,
+        2573.0
+      ],
+      "predicted_bbox_clipped": [
+        4767,
+        2357,
+        5007,
+        2573
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        30.0,
+        0.0,
+        270.0,
+        216.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        30.0,
+        0.0,
+        270.0,
+        216.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_05_processed.png",
+      "original_crop_width": 240,
+      "original_crop_height": 216,
+      "processed_width": 240,
+      "processed_height": 216,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTcb89849b96c2",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        4791.0,
+        2357.0,
+        4983.0,
+        2551.4
+      ],
+      "predicted_bbox_clipped": [
+        4791,
+        2357,
+        4983,
+        2552
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        24.0,
+        0.0,
+        216.0,
+        194.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        24.0,
+        0.0,
+        216.0,
+        194.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTcb89849b96c2/turn_06_processed.png",
+      "original_crop_width": 192,
+      "original_crop_height": 195,
+      "processed_width": 198,
+      "processed_height": 202,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.03125,
+      "preprocess_scale_y": 1.035897435897436
+    }
+  ],
+  "original_image_sha256": "4753d5b67ae5f76f3d82b1f991badc0fa7a9decd24acdb42931badce87d0cf6b",
+  "crop_image_sha256": [
+    "fbb6b532b166c3f7014938ad2943ae13cdf4ed45b1499226802d1bab82809ee4",
+    "98820fa7dbabb12043223b1f53b1e1cd1eedd51d4bb6825241b562377c163f59",
+    "dfee39ad9a6bdb795280d56cfa6557c2af94f081f5f91209ec4fcbe2af4bb2e8",
+    "b16f706d8e3a9c3938ce092a66da8b0263813e5a45a76417d9dcc32fba451684",
+    "f7759980ba39715dfa9e7273370bbebd92e4531c7f8dc65a0a20b95d6347fb42",
+    "b258182627b310e36ca5e6eaa2134ed1ef3fe2d9db872d567011ea5d2494218d"
+  ],
+  "raw_crop_image_sha256": [
+    "b04cd27b48ec30b8a1ba3f6a75e43106467c557522acd8209981485f05c29fad",
+    "98820fa7dbabb12043223b1f53b1e1cd1eedd51d4bb6825241b562377c163f59",
+    "dfee39ad9a6bdb795280d56cfa6557c2af94f081f5f91209ec4fcbe2af4bb2e8",
+    "b16f706d8e3a9c3938ce092a66da8b0263813e5a45a76417d9dcc32fba451684",
+    "f7759980ba39715dfa9e7273370bbebd92e4531c7f8dc65a0a20b95d6347fb42",
+    "da740797c16cd25b7a870ad40d6f2d9bba3b5a6daf1c55aae383b09c9b8e1c58"
+  ],
+  "assistant_text_sha256": "2972fc33b5a33597e9c6fd9df68b8bc99c3cb351fb1057c8f0d1adf1f0071327"
+}

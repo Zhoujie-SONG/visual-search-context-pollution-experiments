@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT4db4a1e6a431",
+  "question": "Do you know what the blue sign near the stairway entrance in the picture means?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT4db4a1e6a431.jpg",
+  "original_width": 3840,
+  "original_height": 2560,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 717,
+  "turns": [
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 1,
+      "question": "Do you know what the blue sign near the stairway entrance in the picture means?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about the meaning of a blue sign near the stairway entrance. I need to first locate the stairway entrance in the image. I can see a set of stairs on the left side of the image, leading down to the river. There seems to be a blue sign on the railing of these stairs. I will zoom into this area to get a better view of the sign and identify its meaning. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.4,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1279.038838990188,
+        1535.2896918363747,
+        2302.2699101823387
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1279,
+        1536,
+        2303
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        577.0,
+        692.4000000000001,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1279.038838990188,
+        1535.2896918363747,
+        2302.2699101823387
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2756,
+      "output_tokens": 127,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.9205707646906376,
+      "tokens_per_second": 32.39324262267748,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1536,
+      "original_crop_height": 1024,
+      "processed_width": 1536,
+      "processed_height": 1024,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 2,
+      "question": "Do you know what the blue sign near the stairway entrance in the picture means?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the meaning of the blue sign near the stairway entrance. In observation 1, I can see a blue sign on the left side of the image, near the top of the stairs. I will zoom in on that sign to get a better view and read its meaning. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.4,0.4], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.4,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1381.4,
+        614.4000000000001,
+        1688.6
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1381,
+        615,
+        1689
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        102.4,
+        614.4000000000001,
+        409.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        102.4,
+        614.4000000000001,
+        409.6
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5015,
+      "output_tokens": 104,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.308834644034505,
+      "tokens_per_second": 24.13645651127177,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          74,
+          110
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 615,
+      "original_crop_height": 308,
+      "processed_width": 615,
+      "processed_height": 308,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 3,
+      "question": "Do you know what the blue sign near the stairway entrance in the picture means?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the meaning of the blue sign near the stairway entrance. In observation 2, I can see a blue sign on the left side of the image. It appears to be a bus stop sign. I will zoom in on the blue sign to get a clearer view and confirm its meaning. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.5,0.7], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        123.0,
+        1442.6,
+        307.5,
+        1596.6
+      ],
+      "predicted_bbox_clipped": [
+        123,
+        1442,
+        308,
+        1597
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        123.0,
+        61.6,
+        307.5,
+        215.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        123.0,
+        61.6,
+        307.5,
+        215.6
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5458,
+      "output_tokens": 107,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.500340962782502,
+      "tokens_per_second": 23.77597628377102,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          74,
+          110
+        ],
+        [
+          1,
+          22,
+          44
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 185,
+      "original_crop_height": 155,
+      "processed_width": 218,
+      "processed_height": 183,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 4,
+      "question": "Do you know what the blue sign near the stairway entrance in the picture means?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the meaning of the blue sign near the stairway entrance. In observation 3, I can see a blue sign, but it's very blurry and I can't read it clearly. I need to go back to observation 1 and try a different bounding box to get a better view of the sign. In observation 1, there is a blue sign on the left side of the image, near the top of the stairs. I will try a different bounding box to get a better view of the sign. </think><grounding>{\"bbox_2d\": [0.1,0.1,0.3,0.4], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        153.60000000000002,
+        1381.4,
+        460.79999999999995,
+        1688.6
+      ],
+      "predicted_bbox_clipped": [
+        153,
+        1381,
+        461,
+        1689
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        153.60000000000002,
+        102.4,
+        460.79999999999995,
+        409.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        153.60000000000002,
+        102.4,
+        460.79999999999995,
+        409.6
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_04_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5718,
+      "output_tokens": 151,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.6112268175929785,
+      "tokens_per_second": 26.91033617221942,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          74,
+          110
+        ],
+        [
+          1,
+          22,
+          44
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 308,
+      "original_crop_height": 308,
+      "processed_width": 308,
+      "processed_height": 308,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 5,
+      "question": "Do you know what the blue sign near the stairway entrance in the picture means?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the meaning of the blue sign near the stairway entrance. In observation 4, I can see a blue sign on the left side of the image, near the top of the stairs. It appears to be a bus stop sign. I will zoom in on the blue sign to get a clearer view and confirm its meaning. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.8], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        153.0,
+        1442.6,
+        307.0,
+        1627.4
+      ],
+      "predicted_bbox_clipped": [
+        153,
+        1442,
+        307,
+        1628
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6087,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.87673289142549,
+      "tokens_per_second": 23.376305928184085,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          74,
+          110
+        ],
+        [
+          1,
+          22,
+          44
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          22,
+          22
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 154,
+      "original_crop_height": 186,
+      "processed_width": 182,
+      "processed_height": 220,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 6,
+      "question": "Do you know what the blue sign near the stairway entrance in the picture means?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the meaning of the blue sign near the stairway entrance. In observation 5, I can see a blue sign on the left side of the image, near the top of the stairs. It appears to be a bus stop sign. I will zoom in on the blue sign to get a clearer view and confirm its meaning. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.5,0.8], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        153.0,
+        1442.6,
+        307.0,
+        1627.4
+      ],
+      "predicted_bbox_clipped": [
+        153,
+        1442,
+        307,
+        1628
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_06_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6354,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.055892487987876,
+      "tokens_per_second": 22.547947819469805,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          74,
+          110
+        ],
+        [
+          1,
+          22,
+          44
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          22,
+          22
+        ],
+        [
+          1,
+          16,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 154,
+      "original_crop_height": 186,
+      "processed_width": 182,
+      "processed_height": 220,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1279.038838990188,
+        1535.2896918363747,
+        2302.2699101823387
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1279,
+        1536,
+        2303
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        577.0,
+        692.4000000000001,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1279.038838990188,
+        1535.2896918363747,
+        2302.2699101823387
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_01_processed.png",
+      "original_crop_width": 1536,
+      "original_crop_height": 1024,
+      "processed_width": 1536,
+      "processed_height": 1024,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.4,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1381.4,
+        614.4000000000001,
+        1688.6
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1381,
+        615,
+        1689
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        102.4,
+        614.4000000000001,
+        409.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        102.4,
+        614.4000000000001,
+        409.6
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_02_processed.png",
+      "original_crop_width": 615,
+      "original_crop_height": 308,
+      "processed_width": 615,
+      "processed_height": 308,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        123.0,
+        1442.6,
+        307.5,
+        1596.6
+      ],
+      "predicted_bbox_clipped": [
+        123,
+        1442,
+        308,
+        1597
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        123.0,
+        61.6,
+        307.5,
+        215.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        123.0,
+        61.6,
+        307.5,
+        215.6
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_03_processed.png",
+      "original_crop_width": 185,
+      "original_crop_height": 155,
+      "processed_width": 218,
+      "processed_height": 183,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1783783783783783,
+      "preprocess_scale_y": 1.1806451612903226
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        153.60000000000002,
+        1381.4,
+        460.79999999999995,
+        1688.6
+      ],
+      "predicted_bbox_clipped": [
+        153,
+        1381,
+        461,
+        1689
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        153.60000000000002,
+        102.4,
+        460.79999999999995,
+        409.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        153.60000000000002,
+        102.4,
+        460.79999999999995,
+        409.6
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_04_processed.png",
+      "original_crop_width": 308,
+      "original_crop_height": 308,
+      "processed_width": 308,
+      "processed_height": 308,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        153.0,
+        1442.6,
+        307.0,
+        1627.4
+      ],
+      "predicted_bbox_clipped": [
+        153,
+        1442,
+        307,
+        1628
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_05_processed.png",
+      "original_crop_width": 154,
+      "original_crop_height": 186,
+      "processed_width": 182,
+      "processed_height": 220,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1818181818181819,
+      "preprocess_scale_y": 1.1827956989247312
+    },
+    {
+      "sample_id": "TPROMPT4db4a1e6a431",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        153.0,
+        1442.6,
+        307.0,
+        1627.4
+      ],
+      "predicted_bbox_clipped": [
+        153,
+        1442,
+        307,
+        1628
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        61.6,
+        154.0,
+        246.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4db4a1e6a431/turn_06_processed.png",
+      "original_crop_width": 154,
+      "original_crop_height": 186,
+      "processed_width": 182,
+      "processed_height": 220,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1818181818181819,
+      "preprocess_scale_y": 1.1827956989247312
+    }
+  ],
+  "original_image_sha256": "eadfed1fb641a35abe8eeac28139229a96f679711135701b3f8ff643f998e248",
+  "crop_image_sha256": [
+    "29243afd12e7cd5780ea9c47b3dfe18ade35004105a205c0ac68160cb9154312",
+    "25e70ec4536b4b39c539a790e4829aa5ac39d160d8757d581beab5c5ddd44420",
+    "c1c006249d976502b56df28a650bf675adef272f5b99eb0ad1ff61cf5947c00a",
+    "b910cf0df0705ccfd059bdf24f02f1f4394fc746f7e2aa37ff5f4d7b9f10a263",
+    "08810a70298675ee3ef8a3c5d9ddd1369ee5577e10afd01114640bbe1bc2f3d1",
+    "08810a70298675ee3ef8a3c5d9ddd1369ee5577e10afd01114640bbe1bc2f3d1"
+  ],
+  "raw_crop_image_sha256": [
+    "29243afd12e7cd5780ea9c47b3dfe18ade35004105a205c0ac68160cb9154312",
+    "25e70ec4536b4b39c539a790e4829aa5ac39d160d8757d581beab5c5ddd44420",
+    "290f45d5cf9552d84b857065c06dfc7140d07c5fa242315b5781febd9d933e79",
+    "b910cf0df0705ccfd059bdf24f02f1f4394fc746f7e2aa37ff5f4d7b9f10a263",
+    "d8b4f5d765bb6f5aeca4eb79bcad4e4d6c99e3bfdb69152123060aaa33e8d3b4",
+    "d8b4f5d765bb6f5aeca4eb79bcad4e4d6c99e3bfdb69152123060aaa33e8d3b4"
+  ],
+  "assistant_text_sha256": "09f5573654bc378622bdf9793e946f85d9ca25362a8e2ce6132becb4d5390961"
+}

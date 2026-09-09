@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTd8cea30a3f40",
+  "question": "To the left of the building on the right side of the image, what is the white object partially obscured by plants?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTd8cea30a3f40.jpg",
+  "original_width": 6000,
+  "original_height": 4000,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 730,
+  "turns": [
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 1,
+      "question": "To the left of the building on the right side of the image, what is the white object partially obscured by plants?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify a white object that is partially obscured by plants, located to the left of the building on the right side of the image. I can see a building on the right side of the image with a yellow awning. To the left of this building, there are some red flowers and a white object is partially visible behind them. I will zoom into this area to get a better view of the object. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3197.59709747547
+      ],
+      "predicted_bbox_clipped": [
+        1799,
+        1598,
+        4199,
+        3198
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        461.6,
+        1211.6999999999998,
+        923.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3197.59709747547
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2763,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.929305050522089,
+      "tokens_per_second": 32.83023291430623,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 1600,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 2,
+      "question": "To the left of the building on the right side of the image, what is the white object partially obscured by plants?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify a white object that is partially obscured by plants, located to the left of the building on the right side of the image. In observation 1, I can see a white object partially obscured by some plants in the middle of the image. It seems to be a sign or a stand. I will zoom in on that area to get a better view and identify the object. </think><grounding>{\"bbox_2d\": [0.4,0.5,0.8,0.9], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        2758.556057397734,
+        2397.3992743688673,
+        3718.112114795468,
+        3036.9186938639614
+      ],
+      "predicted_bbox_clipped": [
+        2758,
+        2397,
+        3719,
+        3037
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        692.4000000000001,
+        577.0,
+        1384.8000000000002,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        959.5560573977342,
+        799.3992743688674,
+        1919.1121147954684,
+        1438.9186938639614
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5531,
+      "output_tokens": 125,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.004481416195631,
+      "tokens_per_second": 24.977612984128942,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 961,
+      "original_crop_height": 640,
+      "processed_width": 961,
+      "processed_height": 640,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 3,
+      "question": "To the left of the building on the right side of the image, what is the white object partially obscured by plants?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify a white object that is partially obscured by plants, located to the left of the building on the right side of the image. In observation 2, I can see a white object partially obscured by some plants. It seems to be a sign or a stand. I will zoom in on that area to get a better view and identify the object. </think><grounding>{\"bbox_2d\": [0.4,0.4,0.9,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3142.4,
+        2653.0,
+        3622.9,
+        2973.0
+      ],
+      "predicted_bbox_clipped": [
+        3142,
+        2653,
+        3623,
+        2973
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        384.40000000000003,
+        256.0,
+        864.9,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        384.40000000000003,
+        256.0,
+        864.9,
+        576.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6535,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.338666453957558,
+      "tokens_per_second": 22.290210678321213,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          68
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 481,
+      "original_crop_height": 320,
+      "processed_width": 481,
+      "processed_height": 320,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 4,
+      "question": "To the left of the building on the right side of the image, what is the white object partially obscured by plants?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify a white object that is partially obscured by plants, located to the left of the building on the right side of the image. In observation 3, I can see a white object partially obscured by some plants. It seems to be a sign or a stand. I will zoom in on that area to get a better view and identify the object. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.6,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3238.2,
+        2717.0,
+        3430.6,
+        2877.0
+      ],
+      "predicted_bbox_clipped": [
+        3238,
+        2717,
+        3431,
+        2877
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6938,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.37797667644918,
+      "tokens_per_second": 22.127280789653778,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          68
+        ],
+        [
+          1,
+          22,
+          34
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 193,
+      "original_crop_height": 160,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 5,
+      "question": "To the left of the building on the right side of the image, what is the white object partially obscured by plants?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify a white object that is partially obscured by plants, located to the left of the building on the right side of the image. In observation 4, I can see a white object partially obscured by some plants. It seems to be a sign or a stand. I will zoom in on that area to get a better view and identify the object. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.6,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3238.2,
+        2717.0,
+        3430.6,
+        2877.0
+      ],
+      "predicted_bbox_clipped": [
+        3238,
+        2717,
+        3431,
+        2877
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_05_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7210,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.440707176923752,
+      "tokens_per_second": 21.872156712408145,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          68
+        ],
+        [
+          1,
+          22,
+          34
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 193,
+      "original_crop_height": 160,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 6,
+      "question": "To the left of the building on the right side of the image, what is the white object partially obscured by plants?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify a white object that is partially obscured by plants, located to the left of the building on the right side of the image. In observation 5, I can see a white object partially obscured by some plants. It seems to be a sign or a stand. I will zoom in on that area to get a better view and identify the object. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.6,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3238.2,
+        2717.0,
+        3430.6,
+        2877.0
+      ],
+      "predicted_bbox_clipped": [
+        3238,
+        2717,
+        3431,
+        2877
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_06_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7482,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.545894965529442,
+      "tokens_per_second": 21.457312253413658,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          68
+        ],
+        [
+          1,
+          22,
+          34
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 193,
+      "original_crop_height": 160,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3197.59709747547
+      ],
+      "predicted_bbox_clipped": [
+        1799,
+        1598,
+        4199,
+        3198
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        461.6,
+        1211.6999999999998,
+        923.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1799.1676076207514,
+        1598.798548737735,
+        4198.057751115086,
+        3197.59709747547
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_01_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 1600,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7215836893133192,
+      "preprocess_scale_y": 0.7217919986924513
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        2758.556057397734,
+        2397.3992743688673,
+        3718.112114795468,
+        3036.9186938639614
+      ],
+      "predicted_bbox_clipped": [
+        2758,
+        2397,
+        3719,
+        3037
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        692.4000000000001,
+        577.0,
+        1384.8000000000002,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        959.5560573977342,
+        799.3992743688674,
+        1919.1121147954684,
+        1438.9186938639614
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_02_processed.png",
+      "original_crop_width": 961,
+      "original_crop_height": 640,
+      "processed_width": 961,
+      "processed_height": 640,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.4,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3142.4,
+        2653.0,
+        3622.9,
+        2973.0
+      ],
+      "predicted_bbox_clipped": [
+        3142,
+        2653,
+        3623,
+        2973
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        384.40000000000003,
+        256.0,
+        864.9,
+        576.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        384.40000000000003,
+        256.0,
+        864.9,
+        576.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_03_processed.png",
+      "original_crop_width": 481,
+      "original_crop_height": 320,
+      "processed_width": 481,
+      "processed_height": 320,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3238.2,
+        2717.0,
+        3430.6,
+        2877.0
+      ],
+      "predicted_bbox_clipped": [
+        3238,
+        2717,
+        3431,
+        2877
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_04_processed.png",
+      "original_crop_width": 193,
+      "original_crop_height": 160,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1398963730569949,
+      "preprocess_scale_y": 1.1375
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3238.2,
+        2717.0,
+        3430.6,
+        2877.0
+      ],
+      "predicted_bbox_clipped": [
+        3238,
+        2717,
+        3431,
+        2877
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_05_processed.png",
+      "original_crop_width": 193,
+      "original_crop_height": 160,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1398963730569949,
+      "preprocess_scale_y": 1.1375
+    },
+    {
+      "sample_id": "TPROMPTd8cea30a3f40",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        3238.2,
+        2717.0,
+        3430.6,
+        2877.0
+      ],
+      "predicted_bbox_clipped": [
+        3238,
+        2717,
+        3431,
+        2877
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        96.2,
+        64.0,
+        288.59999999999997,
+        224.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd8cea30a3f40/turn_06_processed.png",
+      "original_crop_width": 193,
+      "original_crop_height": 160,
+      "processed_width": 220,
+      "processed_height": 182,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.1398963730569949,
+      "preprocess_scale_y": 1.1375
+    }
+  ],
+  "original_image_sha256": "96837d6425dd7bc01f897366f266edb3cb5495978c1173c7380ec13eee288f51",
+  "crop_image_sha256": [
+    "5a9fce07053c4f7c412b54ebb0b191836352334287beaff19e5b8419bfa5afe3",
+    "fa037bf0b8cc8d226180d7f8490904d3ef6de454cce399cc25dddcdf2a496663",
+    "f6e32279ca8946d291018c2321755d56437aa5bd34c1d23259d8ba68c88ed91f",
+    "674a6c3d95b3e5edaeb1c0438e292d77e59d9e991e1cbbdb239c8d68f9b9e227",
+    "674a6c3d95b3e5edaeb1c0438e292d77e59d9e991e1cbbdb239c8d68f9b9e227",
+    "674a6c3d95b3e5edaeb1c0438e292d77e59d9e991e1cbbdb239c8d68f9b9e227"
+  ],
+  "raw_crop_image_sha256": [
+    "d860adc1410ebf899781b41248916c914a5c91add625802e318cb56c38adc574",
+    "fa037bf0b8cc8d226180d7f8490904d3ef6de454cce399cc25dddcdf2a496663",
+    "f6e32279ca8946d291018c2321755d56437aa5bd34c1d23259d8ba68c88ed91f",
+    "b1fb95d9ac5b01f8c4cbf57eed5d82a9675d9233dc17b65a694478a1fa88b56f",
+    "b1fb95d9ac5b01f8c4cbf57eed5d82a9675d9233dc17b65a694478a1fa88b56f",
+    "b1fb95d9ac5b01f8c4cbf57eed5d82a9675d9233dc17b65a694478a1fa88b56f"
+  ],
+  "assistant_text_sha256": "d22503d28ae1aa1ddeb81025de132e858b8e758412eb934b1a04721a4cb6c2cd"
+}

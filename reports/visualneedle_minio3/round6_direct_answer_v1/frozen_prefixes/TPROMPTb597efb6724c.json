@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTb597efb6724c",
+  "question": "How many '禁止长时间停车' traffic signs are there in total in the picture?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTb597efb6724c.jpg",
+  "original_width": 1080,
+  "original_height": 1660,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 715,
+  "turns": [
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 1,
+      "question": "How many '禁止长时间停车' traffic signs are there in total in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to count the number of '禁止长时间停车' traffic signs in the image. I will first scan the image to locate any traffic signs. I can see a blue circular sign in the middle of the image, which seems to be a traffic sign. I will zoom in on that area to read the text on it. </think><grounding>{\"bbox_2d\": [0.3,0.6,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        996.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        996,
+        756,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        996.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        996.0,
+        756.0,
+        1494.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2515,
+      "output_tokens": 111,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.419251812621951,
+      "tokens_per_second": 32.463242277228765,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 498,
+      "processed_width": 432,
+      "processed_height": 498,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 2,
+      "question": "How many '禁止长时间停车' traffic signs are there in total in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to count the number of '禁止长时间停车' traffic signs in the image. I have already zoomed into a region that seems to contain some traffic signs. I can see a blue circular sign on the left side of the image. I will zoom in on that sign to see if it is the sign I am looking for. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.4,0.6], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.4,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        1045.8,
+        496.8,
+        1294.8
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        1045,
+        497,
+        1295
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        49.800000000000004,
+        172.8,
+        298.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        49.800000000000004,
+        172.8,
+        298.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2993,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.6768507920205593,
+      "tokens_per_second": 31.00479362594776,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          36,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 173,
+      "original_crop_height": 250,
+      "processed_width": 173,
+      "processed_height": 250,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 3,
+      "question": "How many '禁止长时间停车' traffic signs are there in total in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to count the number of '禁止长时间停车' traffic signs in the image. I have zoomed into a region that seems to contain some traffic signs, but I can't clearly see the text on them. I need to find a better view of the traffic signs. I will go back to the original image and try a different bounding box to get a better view of the traffic signs. I will try to focus on the area with more traffic signs. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        830.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        830,
+        756,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        830.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        830.0,
+        756.0,
+        1494.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3258,
+      "output_tokens": 138,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.277964822947979,
+      "tokens_per_second": 32.25832976927172,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          36,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 664,
+      "processed_width": 432,
+      "processed_height": 664,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 4,
+      "question": "How many '禁止长时间停车' traffic signs are there in total in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to count the number of '禁止长时间停车' traffic signs in the image. I have already zoomed into a region that seems to contain some traffic signs. I can see a blue circular sign on the left side of the image. I will zoom in on that sign to see if it is the sign I am looking for. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.4,0.6], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.4,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        896.4,
+        496.8,
+        1228.4
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        896,
+        497,
+        1229
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        66.4,
+        172.8,
+        398.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        66.4,
+        172.8,
+        398.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3853,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.9566071424633265,
+      "tokens_per_second": 28.81256488078451,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          36,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          48,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 173,
+      "original_crop_height": 333,
+      "processed_width": 173,
+      "processed_height": 333,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 5,
+      "question": "How many '禁止长时间停车' traffic signs are there in total in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to count the number of '禁止长时间停车' traffic signs in the image. I have been trying to locate this specific sign, but the previous attempts have not been successful. I will go back to the original image and try a different bounding box to get a better view of the traffic signs. I will try to focus on the area with more traffic signs. </think><grounding>{\"bbox_2d\": [0.4,0.5,0.8,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        830.0,
+        864.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        830,
+        864,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        830.0,
+        864.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        830.0,
+        864.0,
+        1494.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4136,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.1462320648133755,
+      "tokens_per_second": 28.700757251356663,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          36,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          48,
+          30
+        ],
+        [
+          1,
+          24,
+          12
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 664,
+      "processed_width": 432,
+      "processed_height": 664,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 6,
+      "question": "How many '禁止长时间停车' traffic signs are there in total in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to count the number of '禁止长时间停车' traffic signs in the image. I have been trying to locate this specific sign, but the previous attempts have not been successful. I will go back to the original image and try a different bounding box to get a better view of the traffic signs. I will try to focus on the area with more traffic signs. </think><grounding>{\"bbox_2d\": [0.1,0.5,0.5,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        830.0,
+        540.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        830,
+        540,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        830.0,
+        540.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        830.0,
+        540.0,
+        1494.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4712,
+      "output_tokens": 119,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.351527659222484,
+      "tokens_per_second": 27.346718053784016,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          36,
+          30
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          48,
+          30
+        ],
+        [
+          1,
+          24,
+          12
+        ],
+        [
+          1,
+          48,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 664,
+      "processed_width": 432,
+      "processed_height": 664,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.6,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        996.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        996,
+        756,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        996.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        996.0,
+        756.0,
+        1494.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 498,
+      "processed_width": 432,
+      "processed_height": 498,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.4,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        1045.8,
+        496.8,
+        1294.8
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        1045,
+        497,
+        1295
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        49.800000000000004,
+        172.8,
+        298.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        49.800000000000004,
+        172.8,
+        298.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_02_processed.png",
+      "original_crop_width": 173,
+      "original_crop_height": 250,
+      "processed_width": 173,
+      "processed_height": 250,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        830.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        830,
+        756,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        830.0,
+        756.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        830.0,
+        756.0,
+        1494.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_03_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 664,
+      "processed_width": 432,
+      "processed_height": 664,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.4,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        896.4,
+        496.8,
+        1228.4
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        896,
+        497,
+        1229
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        66.4,
+        172.8,
+        398.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        66.4,
+        172.8,
+        398.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_04_processed.png",
+      "original_crop_width": 173,
+      "original_crop_height": 333,
+      "processed_width": 173,
+      "processed_height": 333,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.5,
+        0.8,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        830.0,
+        864.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        830,
+        864,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        830.0,
+        864.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        830.0,
+        864.0,
+        1494.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_05_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 664,
+      "processed_width": 432,
+      "processed_height": 664,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb597efb6724c",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.5,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        830.0,
+        540.0,
+        1494.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        830,
+        540,
+        1494
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        830.0,
+        540.0,
+        1494.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        830.0,
+        540.0,
+        1494.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb597efb6724c/turn_06_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 664,
+      "processed_width": 432,
+      "processed_height": 664,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "3a89049b33f24d2cdd625d146dada9d6d653f1ec4294142807f499c716787608",
+  "crop_image_sha256": [
+    "951a23dc7037d64b2dabe338fdb2ee0f0d93381647fb8f19214c9298af05081a",
+    "ad024af7c85cb5b329f3c01f83a25e284dce881d7d8c987e9288ee1c98eb503d",
+    "7a9446863817241691bfb1fd3754f5ff0a9aaca9618ad5a9bfd807dd92fc5e9e",
+    "9dc00ff6d798bfdd2752bf468f3744ca1e7c7f886062d6228a0917188084f6d6",
+    "708ae5311e0de8841bb7e4b701a5239c30df63e442a820a26c8441a5fc2590df",
+    "397e561c4b3af7b3bbcb9f345ed74b4de58cb534796421e38389d54355584a95"
+  ],
+  "raw_crop_image_sha256": [
+    "951a23dc7037d64b2dabe338fdb2ee0f0d93381647fb8f19214c9298af05081a",
+    "ad024af7c85cb5b329f3c01f83a25e284dce881d7d8c987e9288ee1c98eb503d",
+    "7a9446863817241691bfb1fd3754f5ff0a9aaca9618ad5a9bfd807dd92fc5e9e",
+    "9dc00ff6d798bfdd2752bf468f3744ca1e7c7f886062d6228a0917188084f6d6",
+    "708ae5311e0de8841bb7e4b701a5239c30df63e442a820a26c8441a5fc2590df",
+    "397e561c4b3af7b3bbcb9f345ed74b4de58cb534796421e38389d54355584a95"
+  ],
+  "assistant_text_sha256": "116d2aa4656528c4c89a6d6247a00cacb6e3082a6a22060275cc176ad4db8eef"
+}

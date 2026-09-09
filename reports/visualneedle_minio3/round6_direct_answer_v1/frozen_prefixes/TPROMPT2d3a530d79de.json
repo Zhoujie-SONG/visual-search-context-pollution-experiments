@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT2d3a530d79de",
+  "question": "What are the characters to the right of '咖啡' in the picture?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT2d3a530d79de.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 773,
+  "turns": [
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 1,
+      "question": "What are the characters to the right of '咖啡' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the characters to the right of '咖啡' in the image. I can see a blue sign on the left side of the image. I will zoom in on that sign to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.4,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        432.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        432.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        432.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2201,
+      "output_tokens": 87,
+      "finish_reason": "eos",
+      "runtime_seconds": 2.788450350984931,
+      "tokens_per_second": 31.200125176792202,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 2,
+      "question": "What are the characters to the right of '咖啡' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters to the right of '咖啡' in the image. In observation 1, I can see a blue sign with some text on it. I need to zoom in on the sign to read the text more clearly. I can see some text on the blue sign, and I will try to zoom in on that area to read it. </think><grounding>{\"bbox_2d\": [0.0,0.4,1.0,1.0], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.8,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        172.8,
+        432.0,
+        432.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        172.8,
+        432.0,
+        432.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2610,
+      "output_tokens": 118,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.58981242030859,
+      "tokens_per_second": 32.87079829922044,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 3,
+      "question": "What are the characters to the right of '咖啡' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters to the right of '咖啡' in the image. In observation 2, I can see a blue sign with some text on it. I need to zoom in on the sign to read the text more clearly. I can see some text on the blue sign, and I will try to zoom in on that area to read it. I can see some text on the blue sign, and I will try to zoom in on that area to read it. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,1.0], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2960,
+      "output_tokens": 142,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.25892686471343,
+      "tokens_per_second": 33.341732438872185,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 4,
+      "question": "What are the characters to the right of '咖啡' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters to the right of '咖啡' in the image. In observation 3, I can see a blue sign with some text on it. I need to zoom in on the sign to read the text more clearly. I can see some text on the blue sign, and I will try to zoom in on that area to read it. I can see some text on the blue sign, and I will try to zoom in on that area to read it. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,1.0], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3334,
+      "output_tokens": 142,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.418719556182623,
+      "tokens_per_second": 32.13600641419191,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 5,
+      "question": "What are the characters to the right of '咖啡' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters to the right of '咖啡' in the image. In observation 4, I can see a blue sign with some text on it. I need to zoom in on the sign to read the text more clearly. I can see some text on the blue sign, and I will try to zoom in on that area to read it. I can see some text on the blue sign, and I will try to zoom in on that area to read it. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,1.0], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3708,
+      "output_tokens": 142,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.449437053874135,
+      "tokens_per_second": 31.91414965099018,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 6,
+      "question": "What are the characters to the right of '咖啡' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters to the right of '咖啡' in the image. In observation 5, I can see a blue sign with some text on it. I need to zoom in on the sign to read the text more clearly. I can see some text on the blue sign, and I will try to zoom in on that area to read it. I can see some text on the blue sign, and I will try to zoom in on that area to read it. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,1.0], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4082,
+      "output_tokens": 142,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.565542755648494,
+      "tokens_per_second": 31.102545217502886,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          18,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        432.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        432.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        432.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 432,
+      "processed_width": 432,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.8,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        172.8,
+        432.0,
+        432.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        172.8,
+        432.0,
+        432.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_02_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_03_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_04_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_05_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT2d3a530d79de",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        748.0,
+        432.0,
+        1008.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        748,
+        432,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        432.0,
+        260.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT2d3a530d79de/turn_06_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 260,
+      "processed_width": 432,
+      "processed_height": 260,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "979d26cefd12b17384849e18a6bd42c2a87dd3daf90e7fe529bc7df82f399eb2",
+  "crop_image_sha256": [
+    "49c8f66647f6f7a036092e9e8db9db5354dd2b2431e19d4e6c36e4276b568943",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26"
+  ],
+  "raw_crop_image_sha256": [
+    "49c8f66647f6f7a036092e9e8db9db5354dd2b2431e19d4e6c36e4276b568943",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26",
+    "308f7262a776657e998d15ed2a47807e3e450e6effd147af922f9400f7550f26"
+  ],
+  "assistant_text_sha256": "fb0470517d6154ac6893efa6dc59b7b5c8cf923f268fd0de7f1d6113440c5061"
+}

@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT4827f5bac79f",
+  "question": "What color is the water ladle hanging in front of the yellow wooden board of the window in the picture?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT4827f5bac79f.jpg",
+  "original_width": 2048,
+  "original_height": 2660,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 697,
+  "turns": [
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 1,
+      "question": "What color is the water ladle hanging in front of the yellow wooden board of the window in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the color of the water ladle hanging in front of the yellow wooden board of the window. I need to first locate the window in the image. I can see a window with a yellow frame in the middle of the image, behind the cluttered area. I will zoom into that area to get a better view of the window and the objects around it. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        613.9804210520942,
+        1063.4707331434586,
+        1432.6209824548866,
+        1861.0737830010517
+      ],
+      "predicted_bbox_clipped": [
+        613,
+        1063,
+        1433,
+        1862
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        372.0,
+        644.4000000000001,
+        868.0,
+        1127.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        613.9804210520942,
+        1063.4707331434586,
+        1432.6209824548866,
+        1861.0737830010517
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2727,
+      "output_tokens": 120,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7342872209846973,
+      "tokens_per_second": 32.134646560035385,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          88
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 820,
+      "original_crop_height": 799,
+      "processed_width": 820,
+      "processed_height": 799,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 2,
+      "question": "What color is the water ladle hanging in front of the yellow wooden board of the window in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the water ladle hanging in front of the yellow wooden board of the window. In observation 1, I can see a window with a yellow frame in the middle of the image. I can also see a white object that looks like a water ladle hanging on the right side of the window. I will zoom in on that area to get a better view and confirm its color. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.9], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1023.0,
+        1382.6,
+        1433.0,
+        1782.1
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1382,
+        1433,
+        1783
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        410.0,
+        319.6,
+        820.0,
+        719.1
+      ],
+      "predicted_bbox_source_content_pixel": [
+        410.0,
+        319.6,
+        820.0,
+        719.1
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3785,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.773937942460179,
+      "tokens_per_second": 27.021716988118563,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          88
+        ],
+        [
+          1,
+          58,
+          58
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 410,
+      "original_crop_height": 401,
+      "processed_width": 410,
+      "processed_height": 401,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 3,
+      "question": "What color is the water ladle hanging in front of the yellow wooden board of the window in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the water ladle hanging in front of the yellow wooden board of the window. In observation 2, I can see a white object that looks like a water ladle hanging on the right side of the window. I will zoom in on that area to get a better view and confirm its color. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.9], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.4,
+        1433.0,
+        1742.9
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1433,
+        1743
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        205.0,
+        160.4,
+        410.0,
+        360.90000000000003
+      ],
+      "predicted_bbox_source_content_pixel": [
+        205.0,
+        160.4,
+        410.0,
+        360.90000000000003
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4221,
+      "output_tokens": 112,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.107769690454006,
+      "tokens_per_second": 27.265403963682623,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          88
+        ],
+        [
+          1,
+          58,
+          58
+        ],
+        [
+          1,
+          28,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 205,
+      "original_crop_height": 201,
+      "processed_width": 205,
+      "processed_height": 201,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 4,
+      "question": "What color is the water ladle hanging in front of the yellow wooden board of the window in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the water ladle hanging in front of the yellow wooden board of the window. In observation 3, I can see a white object that looks like a water ladle hanging on the right side of the window. I will zoom in on that area to get a better view and confirm its color. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,0.5], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.0,
+        1330.5,
+        1642.5
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1331,
+        1643
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        102.5,
+        100.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        102.5,
+        100.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4494,
+      "output_tokens": 112,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.782651035115123,
+      "tokens_per_second": 23.417974503612108,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          88
+        ],
+        [
+          1,
+          58,
+          58
+        ],
+        [
+          1,
+          28,
+          30
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 103,
+      "original_crop_height": 101,
+      "processed_width": 202,
+      "processed_height": 198,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 5,
+      "question": "What color is the water ladle hanging in front of the yellow wooden board of the window in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the water ladle hanging in front of the yellow wooden board of the window. In observation 4, I can see a white object that looks like a water ladle hanging on the right side of the window. I will zoom in on that area to get a better view and confirm its color. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,0.5], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.0,
+        1279.5,
+        1592.5
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1280,
+        1593
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        101.0,
+        99.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        51.5,
+        50.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4767,
+      "output_tokens": 112,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.247344067320228,
+      "tokens_per_second": 26.369420095194698,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          88
+        ],
+        [
+          1,
+          58,
+          58
+        ],
+        [
+          1,
+          28,
+          30
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 52,
+      "original_crop_height": 51,
+      "processed_width": 202,
+      "processed_height": 198,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 6,
+      "question": "What color is the water ladle hanging in front of the yellow wooden board of the window in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know the color of the water ladle hanging in front of the yellow wooden board of the window. In observation 5, I can see a white object that looks like a water ladle hanging on the right side of the window. I will zoom in on that area to get a better view and confirm its color. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,0.5], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.0,
+        1254.0,
+        1567.5
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1254,
+        1568
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        101.0,
+        99.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        26.0,
+        25.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5040,
+      "output_tokens": 112,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.345109881833196,
+      "tokens_per_second": 25.7761030321165,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          88
+        ],
+        [
+          1,
+          58,
+          58
+        ],
+        [
+          1,
+          28,
+          30
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 26,
+      "original_crop_height": 26,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        613.9804210520942,
+        1063.4707331434586,
+        1432.6209824548866,
+        1861.0737830010517
+      ],
+      "predicted_bbox_clipped": [
+        613,
+        1063,
+        1433,
+        1862
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        372.0,
+        644.4000000000001,
+        868.0,
+        1127.6999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        613.9804210520942,
+        1063.4707331434586,
+        1432.6209824548866,
+        1861.0737830010517
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_01_processed.png",
+      "original_crop_width": 820,
+      "original_crop_height": 799,
+      "processed_width": 820,
+      "processed_height": 799,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1023.0,
+        1382.6,
+        1433.0,
+        1782.1
+      ],
+      "predicted_bbox_clipped": [
+        1023,
+        1382,
+        1433,
+        1783
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        410.0,
+        319.6,
+        820.0,
+        719.1
+      ],
+      "predicted_bbox_source_content_pixel": [
+        410.0,
+        319.6,
+        820.0,
+        719.1
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_02_processed.png",
+      "original_crop_width": 410,
+      "original_crop_height": 401,
+      "processed_width": 410,
+      "processed_height": 401,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.4,
+        1433.0,
+        1742.9
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1433,
+        1743
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        205.0,
+        160.4,
+        410.0,
+        360.90000000000003
+      ],
+      "predicted_bbox_source_content_pixel": [
+        205.0,
+        160.4,
+        410.0,
+        360.90000000000003
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_03_processed.png",
+      "original_crop_width": 205,
+      "original_crop_height": 201,
+      "processed_width": 205,
+      "processed_height": 201,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.0,
+        1330.5,
+        1642.5
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1331,
+        1643
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        102.5,
+        100.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        102.5,
+        100.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_04_processed.png",
+      "original_crop_width": 103,
+      "original_crop_height": 101,
+      "processed_width": 202,
+      "processed_height": 198,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.9611650485436893,
+      "preprocess_scale_y": 1.9603960396039604
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.0,
+        1279.5,
+        1592.5
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1280,
+        1593
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        101.0,
+        99.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        51.5,
+        50.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_05_processed.png",
+      "original_crop_width": 52,
+      "original_crop_height": 51,
+      "processed_width": 202,
+      "processed_height": 198,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 3.8846153846153846,
+      "preprocess_scale_y": 3.8823529411764706
+    },
+    {
+      "sample_id": "TPROMPT4827f5bac79f",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1228.0,
+        1542.0,
+        1254.0,
+        1567.5
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1542,
+        1254,
+        1568
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        101.0,
+        99.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        26.0,
+        25.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4827f5bac79f/turn_06_processed.png",
+      "original_crop_width": 26,
+      "original_crop_height": 26,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 7.6923076923076925,
+      "preprocess_scale_y": 7.6923076923076925
+    }
+  ],
+  "original_image_sha256": "24f449b37dadcf081216989b02b9db405c3b6075e5e52181436dc40083d44061",
+  "crop_image_sha256": [
+    "4076811798c4c6b72b9443cc29190922c860a087f2702870c0b59083a8ddfc02",
+    "13facd833fbea01e25b47503ab7894735cc6e0d2c212c42bd0bc4aea9b7b281a",
+    "b20fc24d9ee3e913c18db2939a4ce7bdafb1fba76baf0ec6535b3a2ec79a66e5",
+    "3c38d87942bf63e9d7032a052a2396f2967960a83729cdec4cab13c92c67cc6d",
+    "89ed271ce8bcb68038072645a2fa548659d4fa08f425a67396a4a18096ace472",
+    "bdcbd9e70069a8eb45bcc5f43bcc4b75ddd78df66c97ca1e11585b8ce3393b57"
+  ],
+  "raw_crop_image_sha256": [
+    "4076811798c4c6b72b9443cc29190922c860a087f2702870c0b59083a8ddfc02",
+    "13facd833fbea01e25b47503ab7894735cc6e0d2c212c42bd0bc4aea9b7b281a",
+    "b20fc24d9ee3e913c18db2939a4ce7bdafb1fba76baf0ec6535b3a2ec79a66e5",
+    "b42f932dc237795ded5199f523322876e467ef8cddbbf9c2e3b2de80ef0ca01d",
+    "7c136bac00e138ead52bd8476380d0490fdbeb6ea71ac96fbe39690975442c70",
+    "89293cda7fffb467579c1f5a63aee766ae7eaa46901a9ec50acd01d969afb459"
+  ],
+  "assistant_text_sha256": "5e39661e32143e1ed840fe86e051c5fa61cdbc3f90879f062131e5a3e1bc478e"
+}

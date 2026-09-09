@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTd71e0ba6af48",
+  "question": "What is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTd71e0ba6af48.jpg",
+  "original_width": 5496,
+  "original_height": 2765,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 860,
+  "turns": [
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 1,
+      "question": "What is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the text on the nameplate in front of a man wearing a dark blue short-sleeved shirt. I can see a man in a dark blue shirt in the middle of the long table, slightly to the left. There seems to be a nameplate in front of him, but the text is not clear enough to read from the original image. I will zoom in on that specific area to read the text. </think><grounding>{\"bbox_2d\": [0.15,0.4,0.5,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.15,
+        0.4,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        824.3999999999999,
+        1106.0,
+        2748.0,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        824,
+        1106,
+        2748,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        299.09999999999997,
+        401.20000000000005,
+        997.0,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        824.3999999999999,
+        1106.0,
+        2748.0,
+        1935.4999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2704,
+      "output_tokens": 132,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.9639818370342255,
+      "tokens_per_second": 33.29984985470061,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          70,
+          142
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1924,
+      "original_crop_height": 830,
+      "processed_width": 1924,
+      "processed_height": 830,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 2,
+      "question": "What is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt. In observation 1, I can see a man in a dark blue shirt, but the nameplate in front of him is not clearly visible. I need to adjust the bounding box to better focus on that specific area. I will go back to the original image and select a new bounding box that is more focused on the man and the nameplate in front of him. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.5,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        2212.0
+      ],
+      "predicted_bbox_clipped": [
+        1099,
+        829,
+        2748,
+        2212
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        398.8,
+        300.9,
+        997.0,
+        802.4000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        2212.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5003,
+      "output_tokens": 144,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.202687164768577,
+      "tokens_per_second": 27.678004738615748,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          60,
+          138
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1649,
+      "original_crop_height": 1383,
+      "processed_width": 1544,
+      "processed_height": 1295,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 3,
+      "question": "What is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt. In observation 2, I can see a man in a dark blue shirt, but the nameplate in front of him is still not clearly visible. I need to adjust the bounding box again to better focus on that specific area. I will go back to the original image and select a new bounding box that is more focused on the man and the nameplate in front of him. </think><grounding>{\"bbox_2d\": [0.3,0.3,0.6,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1648,
+        829,
+        3298,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        598.1999999999999,
+        300.9,
+        1196.3999999999999,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7774,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.380404127761722,
+      "tokens_per_second": 22.882563091065133,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          60,
+          138
+        ],
+        [
+          1,
+          92,
+          110
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1650,
+      "original_crop_height": 1107,
+      "processed_width": 1650,
+      "processed_height": 1107,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 4,
+      "question": "What is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt. In observation 3, I can see a man in a dark blue shirt, but the nameplate in front of him is still not clearly visible. I need to adjust the bounding box again to better focus on that specific area. I will go back to the original image and select a new bounding box that is more focused on the man and the nameplate in front of him. </think><grounding>{\"bbox_2d\": [0.3,0.3,0.6,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1648,
+        829,
+        3298,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        598.1999999999999,
+        300.9,
+        1196.3999999999999,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10377,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.943098708987236,
+      "tokens_per_second": 18.380735950669727,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          60,
+          138
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          80,
+          118
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1650,
+      "original_crop_height": 1107,
+      "processed_width": 1650,
+      "processed_height": 1107,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 5,
+      "question": "What is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt. In observation 4, I can see a man in a dark blue shirt, but the nameplate in front of him is still not clearly visible. I need to adjust the bounding box again to better focus on that specific area. I will go back to the original image and select a new bounding box that is more focused on the man and the nameplate in front of him. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.5,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1099,
+        829,
+        2748,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        398.8,
+        300.9,
+        997.0,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 12980,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.825921468436718,
+      "tokens_per_second": 16.54218208513701,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          60,
+          138
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          80,
+          118
+        ],
+        [
+          1,
+          80,
+          118
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1649,
+      "original_crop_height": 1107,
+      "processed_width": 1649,
+      "processed_height": 1107,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 6,
+      "question": "What is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to know what is written on the nameplate in front of the man wearing a dark blue short-sleeved shirt. In observation 5, I can see a man in a dark blue shirt, but the nameplate in front of him is still not clearly visible. I need to adjust the bounding box again to better focus on that specific area. I will go back to the original image and select a new bounding box that is more focused on the man and the nameplate in front of him. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.5,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1099,
+        829,
+        2748,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        398.8,
+        300.9,
+        997.0,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 15583,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 9.890505447983742,
+      "tokens_per_second": 14.761631826385907,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          60,
+          138
+        ],
+        [
+          1,
+          92,
+          110
+        ],
+        [
+          1,
+          80,
+          118
+        ],
+        [
+          1,
+          80,
+          118
+        ],
+        [
+          1,
+          80,
+          118
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1649,
+      "original_crop_height": 1107,
+      "processed_width": 1649,
+      "processed_height": 1107,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.15,
+        0.4,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        824.3999999999999,
+        1106.0,
+        2748.0,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        824,
+        1106,
+        2748,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        299.09999999999997,
+        401.20000000000005,
+        997.0,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        824.3999999999999,
+        1106.0,
+        2748.0,
+        1935.4999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_01_processed.png",
+      "original_crop_width": 1924,
+      "original_crop_height": 830,
+      "processed_width": 1924,
+      "processed_height": 830,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        2212.0
+      ],
+      "predicted_bbox_clipped": [
+        1099,
+        829,
+        2748,
+        2212
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        398.8,
+        300.9,
+        997.0,
+        802.4000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        2212.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_02_processed.png",
+      "original_crop_width": 1649,
+      "original_crop_height": 1383,
+      "processed_width": 1544,
+      "processed_height": 1295,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.9363250454821104,
+      "preprocess_scale_y": 0.9363702096890817
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1648,
+        829,
+        3298,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        598.1999999999999,
+        300.9,
+        1196.3999999999999,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_03_processed.png",
+      "original_crop_width": 1650,
+      "original_crop_height": 1107,
+      "processed_width": 1650,
+      "processed_height": 1107,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.3,
+        0.6,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1648,
+        829,
+        3298,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        598.1999999999999,
+        300.9,
+        1196.3999999999999,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1648.7999999999997,
+        829.4999999999999,
+        3297.5999999999995,
+        1935.4999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_04_processed.png",
+      "original_crop_width": 1650,
+      "original_crop_height": 1107,
+      "processed_width": 1650,
+      "processed_height": 1107,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1099,
+        829,
+        2748,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        398.8,
+        300.9,
+        997.0,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_05_processed.png",
+      "original_crop_width": 1649,
+      "original_crop_height": 1107,
+      "processed_width": 1649,
+      "processed_height": 1107,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd71e0ba6af48",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "predicted_bbox_clipped": [
+        1099,
+        829,
+        2748,
+        1936
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        398.8,
+        300.9,
+        997.0,
+        702.0999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1099.2,
+        829.4999999999999,
+        2748.0,
+        1935.4999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd71e0ba6af48/turn_06_processed.png",
+      "original_crop_width": 1649,
+      "original_crop_height": 1107,
+      "processed_width": 1649,
+      "processed_height": 1107,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "38fd6f8db559919cdc00379982f12a5c136cd509a9b2b5247e05f1a0fcd8be37",
+  "crop_image_sha256": [
+    "f039397c6af434f4af8321016ed364745451e5f9bc1ed4e46fd18185178af2b5",
+    "396474ae83d70d47e3df37fbe3b57b44c38602f096930d5ac1eee773b4cb5d6c",
+    "0d7c3ef2e32fe98a665bf5a0f11057f14d8ee71837e368566b51e32fb4036331",
+    "0d7c3ef2e32fe98a665bf5a0f11057f14d8ee71837e368566b51e32fb4036331",
+    "2c0d20c51b819f3de765c0b07bc757cdc2f43ff8422eaae1a08f56b07a03cac6",
+    "2c0d20c51b819f3de765c0b07bc757cdc2f43ff8422eaae1a08f56b07a03cac6"
+  ],
+  "raw_crop_image_sha256": [
+    "f039397c6af434f4af8321016ed364745451e5f9bc1ed4e46fd18185178af2b5",
+    "9d1fb783eeec2ed2036693dca27fcb91f563ae02b5584eb11681d321c3cf6022",
+    "0d7c3ef2e32fe98a665bf5a0f11057f14d8ee71837e368566b51e32fb4036331",
+    "0d7c3ef2e32fe98a665bf5a0f11057f14d8ee71837e368566b51e32fb4036331",
+    "2c0d20c51b819f3de765c0b07bc757cdc2f43ff8422eaae1a08f56b07a03cac6",
+    "2c0d20c51b819f3de765c0b07bc757cdc2f43ff8422eaae1a08f56b07a03cac6"
+  ],
+  "assistant_text_sha256": "71da344b1c056de11936f40eb520a5d30c0fb5e413eed31062e3659e8afce886"
+}

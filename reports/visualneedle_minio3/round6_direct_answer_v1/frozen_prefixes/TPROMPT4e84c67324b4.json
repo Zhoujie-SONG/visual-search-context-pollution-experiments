@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT4e84c67324b4",
+  "question": "Counting two rows directly up from '小麻花', what is the product?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT4e84c67324b4.png",
+  "original_width": 1920,
+  "original_height": 2560,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 883,
+  "turns": [
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 1,
+      "question": "Counting two rows directly up from '小麻花', what is the product?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the product that is two rows up from the product labeled '小麻花'. First, I need to locate the product '小麻花' in the image. I can see a shelf with many snacks. I'll scan the shelves to find the text '小麻花'. I see some text on the packaging, but it's hard to read from this view. I will start by zooming into the middle section of the shelves to get a better view of the products and their labels. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        191.86364757031095,
+        1023.4816608499953,
+        1726.7728281327986,
+        1791.0929064874913
+      ],
+      "predicted_bbox_clipped": [
+        191,
+        1023,
+        1727,
+        1792
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        122.4,
+        652.8000000000001,
+        1101.6000000000001,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        191.86364757031095,
+        1023.4816608499953,
+        1726.7728281327986,
+        1791.0929064874913
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2708,
+      "output_tokens": 148,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.363564822822809,
+      "tokens_per_second": 33.91722273172469,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1536,
+      "original_crop_height": 769,
+      "processed_width": 1536,
+      "processed_height": 769,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 2,
+      "question": "Counting two rows directly up from '小麻花', what is the product?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the product that is two rows up from the product labeled '小麻花'. In observation 1, I can see a shelf with many snacks. I need to find the product labeled '小麻花' first. I can see some text on the packaging, but it's hard to read from this view. I will zoom into the middle section of the shelves to get a better view of the products and their labels. I will focus on the middle shelf in observation 1. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.7], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        344.6,
+        1330.6,
+        1573.4,
+        1561.3
+      ],
+      "predicted_bbox_clipped": [
+        344,
+        1330,
+        1574,
+        1562
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        153.60000000000002,
+        307.6,
+        1382.4,
+        538.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        153.60000000000002,
+        307.6,
+        1382.4,
+        538.3
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4438,
+      "output_tokens": 147,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.412947965785861,
+      "tokens_per_second": 27.15710568975667,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          54,
+          110
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1230,
+      "original_crop_height": 232,
+      "processed_width": 1230,
+      "processed_height": 232,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 3,
+      "question": "Counting two rows directly up from '小麻花', what is the product?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the product that is two rows up from the product labeled '小麻花'. In observation 2, I can see a shelf with many snacks. I need to find the product labeled '小麻花' first. I can see some text on the packaging, but it's hard to read from this view. I will zoom into the middle section of the shelves to get a better view of the products and their labels. I will focus on the middle shelf in observation 2. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.7], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        467.0,
+        1422.8,
+        1451.0,
+        1492.4
+      ],
+      "predicted_bbox_clipped": [
+        467,
+        1422,
+        1451,
+        1493
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        123.0,
+        92.80000000000001,
+        1107.0,
+        162.39999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        123.0,
+        92.80000000000001,
+        1107.0,
+        162.39999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5034,
+      "output_tokens": 147,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.735646311193705,
+      "tokens_per_second": 25.629195390433047,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          54,
+          110
+        ],
+        [
+          1,
+          16,
+          88
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 984,
+      "original_crop_height": 71,
+      "processed_width": 984,
+      "processed_height": 71,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 4,
+      "question": "Counting two rows directly up from '小麻花', what is the product?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the product that is two rows up from the product labeled '小麻花'. In observation 3, I can see a shelf with many snacks. I need to find the product labeled '小麻花' first. I can see some text on the packaging, but it's hard to read from this view. I will zoom into the middle section of the shelves to get a better view of the products and their labels. I will focus on the middle shelf in observation 3. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.7], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        565.4,
+        1450.4,
+        1352.6,
+        1471.7
+      ],
+      "predicted_bbox_clipped": [
+        565,
+        1450,
+        1353,
+        1472
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        98.4,
+        28.400000000000002,
+        885.6,
+        49.699999999999996
+      ],
+      "predicted_bbox_source_content_pixel": [
+        98.4,
+        28.400000000000002,
+        885.6,
+        49.699999999999996
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5383,
+      "output_tokens": 147,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.385333813726902,
+      "tokens_per_second": 27.296358050322816,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          54,
+          110
+        ],
+        [
+          1,
+          16,
+          88
+        ],
+        [
+          1,
+          6,
+          70
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 788,
+      "original_crop_height": 22,
+      "processed_width": 1197,
+      "processed_height": 33,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 5,
+      "question": "Counting two rows directly up from '小麻花', what is the product?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the product that is two rows up from the product labeled '小麻花'. In observation 4, I can see a shelf with many snacks. I need to find the product labeled '小麻花' first. I can see some text on the packaging, but it's hard to read from this view. I will zoom into the middle section of the shelves to get a better view of the products and their labels. I will focus on the middle shelf in observation 4. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.7], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        643.8,
+        1458.8,
+        1274.1999999999998,
+        1465.4
+      ],
+      "predicted_bbox_clipped": [
+        643,
+        1458,
+        1275,
+        1466
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        119.7,
+        13.200000000000001,
+        1077.3,
+        23.099999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        78.8,
+        8.8,
+        709.1999999999999,
+        15.399999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5715,
+      "output_tokens": 147,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.862901320680976,
+      "tokens_per_second": 25.07291048571255,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          54,
+          110
+        ],
+        [
+          1,
+          16,
+          88
+        ],
+        [
+          1,
+          6,
+          70
+        ],
+        [
+          1,
+          4,
+          88
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 632,
+      "original_crop_height": 8,
+      "processed_width": 1778,
+      "processed_height": 28,
+      "padding_applied": true
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 6,
+      "question": "Counting two rows directly up from '小麻花', what is the product?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the product that is two rows up from the product labeled '小麻花'. In observation 5, I can see a shelf with many snacks. I need to find the product labeled '小麻花' first. I can see some text on the packaging, but it's hard to read from this view. I will zoom into the middle section of the shelves to get a better view of the products and their labels. I will focus on the middle shelf in observation 5. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.7], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        706.2,
+        1461.2,
+        1211.8000000000002,
+        1464.121739130435
+      ],
+      "predicted_bbox_clipped": [
+        706,
+        1461,
+        1212,
+        1465
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        177.8,
+        11.200000000000001,
+        1600.2,
+        19.599999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        63.20000000000001,
+        3.2,
+        568.8000000000001,
+        6.121739130434782
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6023,
+      "output_tokens": 147,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.667789570987225,
+      "tokens_per_second": 25.936036996235078,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          54,
+          110
+        ],
+        [
+          1,
+          16,
+          88
+        ],
+        [
+          1,
+          6,
+          70
+        ],
+        [
+          1,
+          4,
+          88
+        ],
+        [
+          1,
+          2,
+          128
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 506,
+      "original_crop_height": 4,
+      "processed_width": 2249,
+      "processed_height": 28,
+      "padding_applied": true
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        191.86364757031095,
+        1023.4816608499953,
+        1726.7728281327986,
+        1791.0929064874913
+      ],
+      "predicted_bbox_clipped": [
+        191,
+        1023,
+        1727,
+        1792
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        122.4,
+        652.8000000000001,
+        1101.6000000000001,
+        1142.3999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        191.86364757031095,
+        1023.4816608499953,
+        1726.7728281327986,
+        1791.0929064874913
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_01_processed.png",
+      "original_crop_width": 1536,
+      "original_crop_height": 769,
+      "processed_width": 1536,
+      "processed_height": 769,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        344.6,
+        1330.6,
+        1573.4,
+        1561.3
+      ],
+      "predicted_bbox_clipped": [
+        344,
+        1330,
+        1574,
+        1562
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        153.60000000000002,
+        307.6,
+        1382.4,
+        538.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        153.60000000000002,
+        307.6,
+        1382.4,
+        538.3
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_02_processed.png",
+      "original_crop_width": 1230,
+      "original_crop_height": 232,
+      "processed_width": 1230,
+      "processed_height": 232,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        467.0,
+        1422.8,
+        1451.0,
+        1492.4
+      ],
+      "predicted_bbox_clipped": [
+        467,
+        1422,
+        1451,
+        1493
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        123.0,
+        92.80000000000001,
+        1107.0,
+        162.39999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        123.0,
+        92.80000000000001,
+        1107.0,
+        162.39999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_03_processed.png",
+      "original_crop_width": 984,
+      "original_crop_height": 71,
+      "processed_width": 984,
+      "processed_height": 71,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        565.4,
+        1450.4,
+        1352.6,
+        1471.7
+      ],
+      "predicted_bbox_clipped": [
+        565,
+        1450,
+        1353,
+        1472
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        98.4,
+        28.400000000000002,
+        885.6,
+        49.699999999999996
+      ],
+      "predicted_bbox_source_content_pixel": [
+        98.4,
+        28.400000000000002,
+        885.6,
+        49.699999999999996
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_04_processed.png",
+      "original_crop_width": 788,
+      "original_crop_height": 22,
+      "processed_width": 1197,
+      "processed_height": 33,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.5190355329949239,
+      "preprocess_scale_y": 1.5
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        643.8,
+        1458.8,
+        1274.1999999999998,
+        1465.4
+      ],
+      "predicted_bbox_clipped": [
+        643,
+        1458,
+        1275,
+        1466
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        119.7,
+        13.200000000000001,
+        1077.3,
+        23.099999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        78.8,
+        8.8,
+        709.1999999999999,
+        15.399999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_05_processed.png",
+      "original_crop_width": 632,
+      "original_crop_height": 8,
+      "processed_width": 1778,
+      "processed_height": 28,
+      "padding_applied": true,
+      "pad_left": 0,
+      "pad_top": 2,
+      "pad_right": 0,
+      "pad_bottom": 3,
+      "preprocess_scale_x": 2.8132911392405062,
+      "preprocess_scale_y": 2.875
+    },
+    {
+      "sample_id": "TPROMPT4e84c67324b4",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        706.2,
+        1461.2,
+        1211.8000000000002,
+        1464.121739130435
+      ],
+      "predicted_bbox_clipped": [
+        706,
+        1461,
+        1212,
+        1465
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        177.8,
+        11.200000000000001,
+        1600.2,
+        19.599999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        63.20000000000001,
+        3.2,
+        568.8000000000001,
+        6.121739130434782
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT4e84c67324b4/turn_06_processed.png",
+      "original_crop_width": 506,
+      "original_crop_height": 4,
+      "processed_width": 2249,
+      "processed_height": 28,
+      "padding_applied": true,
+      "pad_left": 0,
+      "pad_top": 5,
+      "pad_right": 0,
+      "pad_bottom": 5,
+      "preprocess_scale_x": 4.444664031620554,
+      "preprocess_scale_y": 4.5
+    }
+  ],
+  "original_image_sha256": "bc0be9843a7c3fdc2bb6ceae39f7852397a7998227962f93c9b10e588822382e",
+  "crop_image_sha256": [
+    "b37537a49175edc840d7debc135f9ed8e8f0ded06c53bc4e85bfd4a3383d9022",
+    "0037c0a17e383a520ea32d1d2a041ade128fdef513ac85faccde9e7672e40ddc",
+    "3d3c27fe888db8cc50d1bc489a9b767a8804ee9aae9be22f0fd7ed2636cdb72d",
+    "65cb740b9eaf696bd560cd7effaebf0b946031ab4d4468eb1772a149c4ed46dc",
+    "f29761a6d7fd58925c837ecea85ecbf1b0b5a4c261fddd91d51d0dfc52e17ccb",
+    "df2d8740b8221df112dfb12aadd7ea9fb02fbd324f0c4c1a6eee06d89368fd85"
+  ],
+  "raw_crop_image_sha256": [
+    "b37537a49175edc840d7debc135f9ed8e8f0ded06c53bc4e85bfd4a3383d9022",
+    "0037c0a17e383a520ea32d1d2a041ade128fdef513ac85faccde9e7672e40ddc",
+    "3d3c27fe888db8cc50d1bc489a9b767a8804ee9aae9be22f0fd7ed2636cdb72d",
+    "da4f8fa705de6d1360f2c22a9d3b851240d2d5e93ba5af777507ae6df8912c46",
+    "a0a5a50ba5b2f16c4bc2df41e5044256bb1d8bca9963c196e4e7392c7cd3896c",
+    "d03774610621e0c9ccf3ec17215276609df815c8b17001153f4e50e525a2b5a4"
+  ],
+  "assistant_text_sha256": "a5d106f1dbe445f88f2c6db9c6bbdfc7674ca838f967c1bd4cb6f40d6790983e"
+}

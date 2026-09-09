@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTd27b2a205b7d",
+  "question": "In the picture, what is the fourth product from left to right on the first shelf below the '旺仔牛奶' (Wangzai Milk)?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTd27b2a205b7d.png",
+  "original_width": 1279,
+  "original_height": 1706,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 818,
+  "turns": [
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 1,
+      "question": "In the picture, what is the fourth product from left to right on the first shelf below the '旺仔牛奶' (Wangzai Milk)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the fourth product from the left on the first shelf below '旺仔牛奶' (Wangzai Milk). First, I need to locate the '旺仔牛奶' (Wangzai Milk) product in the image. I can see a refrigerator on the left side of the image. I will zoom into the leftmost refrigerator to see the products more clearly. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.4,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        682.0545755508173,
+        511.2366775883911,
+        1534.6227949893387
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        682,
+        512,
+        1535
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        652.8000000000001,
+        489.6,
+        1468.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        682.0545755508173,
+        511.2366775883911,
+        1534.6227949893387
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2722,
+      "output_tokens": 124,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.817691346630454,
+      "tokens_per_second": 32.48036280079165,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 512,
+      "original_crop_height": 853,
+      "processed_width": 512,
+      "processed_height": 853,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 2,
+      "question": "In the picture, what is the fourth product from left to right on the first shelf below the '旺仔牛奶' (Wangzai Milk)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the fourth product from the left on the first shelf below '旺仔牛奶' (Wangzai Milk). In observation 1, I can see the left refrigerator. I need to find the '旺仔牛奶' (Wangzai Milk) first. I can see some white bottles on the second shelf from the top. I will zoom in on that area to see if they are '旺仔牛奶' (Wangzai Milk). </think><grounding>{\"bbox_2d\": [0.1,0.2,0.9,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        51.2,
+        852.6,
+        460.8,
+        1108.5
+      ],
+      "predicted_bbox_clipped": [
+        51,
+        852,
+        461,
+        1109
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        51.2,
+        170.60000000000002,
+        460.8,
+        426.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        51.2,
+        170.60000000000002,
+        460.8,
+        426.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3483,
+      "output_tokens": 142,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.517899055033922,
+      "tokens_per_second": 31.43053845830865,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          60,
+          36
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 410,
+      "original_crop_height": 257,
+      "processed_width": 410,
+      "processed_height": 257,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 3,
+      "question": "In the picture, what is the fourth product from left to right on the first shelf below the '旺仔牛奶' (Wangzai Milk)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the fourth product from the left on the first shelf below '旺仔牛奶' (Wangzai Milk). In observation 2, I can see several bottles of milk. I need to identify which one is '旺仔牛奶' (Wangzai Milk). I can see some white bottles with a logo on them. I will zoom in on the white bottles to see the logo more clearly. </think><grounding>{\"bbox_2d\": [0.1,0.2,0.9,0.7], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        92.0,
+        903.4,
+        420.0,
+        1031.9
+      ],
+      "predicted_bbox_clipped": [
+        92,
+        903,
+        420,
+        1032
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        41.0,
+        51.400000000000006,
+        369.0,
+        179.89999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        41.0,
+        51.400000000000006,
+        369.0,
+        179.89999999999998
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3857,
+      "output_tokens": 132,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.57122129201889,
+      "tokens_per_second": 28.876309320326495,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          60,
+          36
+        ],
+        [
+          1,
+          18,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 328,
+      "original_crop_height": 129,
+      "processed_width": 328,
+      "processed_height": 129,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 4,
+      "question": "In the picture, what is the fourth product from left to right on the first shelf below the '旺仔牛奶' (Wangzai Milk)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the fourth product from the left on the first shelf below '旺仔牛奶' (Wangzai Milk). In observation 3, I can see the white bottles more clearly. I can see the logo on the bottles. I need to identify the fourth bottle from the left. The fourth bottle from the left is a bottle with a white body and a red cap. I will zoom in on this bottle to get a better view of the product. </think><grounding>{\"bbox_2d\": [0.1,0.2,0.5,0.9], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        124.80000000000001,
+        928.8,
+        256.0,
+        1019.1
+      ],
+      "predicted_bbox_clipped": [
+        124,
+        928,
+        256,
+        1020
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        32.800000000000004,
+        25.8,
+        164.0,
+        116.10000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        32.800000000000004,
+        25.8,
+        164.0,
+        116.10000000000001
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4146,
+      "output_tokens": 141,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.683412030339241,
+      "tokens_per_second": 30.10625567142055,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          60,
+          36
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          10,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 132,
+      "original_crop_height": 92,
+      "processed_width": 240,
+      "processed_height": 167,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 5,
+      "question": "In the picture, what is the fourth product from left to right on the first shelf below the '旺仔牛奶' (Wangzai Milk)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the fourth product from the left on the first shelf below '旺仔牛奶' (Wangzai Milk). In observation 4, I can see the fourth product from the left is a bottle with a white body and a red cap. I can see the product clearly, but I still can't read the text on the bottle. I need to zoom in even more to see the text on the bottle. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.6,0.9], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        150.4,
+        946.4,
+        203.2,
+        1010.8
+      ],
+      "predicted_bbox_clipped": [
+        150,
+        946,
+        204,
+        1011
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        48.0,
+        33.4,
+        144.0,
+        150.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        26.400000000000002,
+        18.4,
+        79.2,
+        82.8
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4438,
+      "output_tokens": 133,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.578272890299559,
+      "tokens_per_second": 29.050256108979504,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          60,
+          36
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          10,
+          24
+        ],
+        [
+          1,
+          12,
+          18
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 54,
+      "original_crop_height": 65,
+      "processed_width": 182,
+      "processed_height": 219,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 6,
+      "question": "In the picture, what is the fourth product from left to right on the first shelf below the '旺仔牛奶' (Wangzai Milk)?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants me to identify the fourth product from the left on the first shelf below '旺仔牛奶' (Wangzai Milk). In observation 5, I can see a bottle with a white body and a red cap, but the text on the bottle is still not clear. I need to go back and try a different approach. I will go back to observation 1 and try a different area. I will try to zoom in on the second shelf from the top of the left refrigerator. </think><grounding>{\"bbox_2d\": [0.1,0.1,0.9,0.4], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.9,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        51.2,
+        767.3,
+        460.8,
+        1023.2
+      ],
+      "predicted_bbox_clipped": [
+        51,
+        767,
+        461,
+        1024
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        51.2,
+        85.30000000000001,
+        460.8,
+        341.20000000000005
+      ],
+      "predicted_bbox_source_content_pixel": [
+        51.2,
+        85.30000000000001,
+        460.8,
+        341.20000000000005
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_06_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4724,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.979803824797273,
+      "tokens_per_second": 29.318424005576894,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          116,
+          86
+        ],
+        [
+          1,
+          60,
+          36
+        ],
+        [
+          1,
+          18,
+          30
+        ],
+        [
+          1,
+          10,
+          24
+        ],
+        [
+          1,
+          12,
+          18
+        ],
+        [
+          1,
+          16,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 410,
+      "original_crop_height": 257,
+      "processed_width": 410,
+      "processed_height": 257,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        682.0545755508173,
+        511.2366775883911,
+        1534.6227949893387
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        682,
+        512,
+        1535
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        652.8000000000001,
+        489.6,
+        1468.8
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        682.0545755508173,
+        511.2366775883911,
+        1534.6227949893387
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_01_processed.png",
+      "original_crop_width": 512,
+      "original_crop_height": 853,
+      "processed_width": 512,
+      "processed_height": 853,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        51.2,
+        852.6,
+        460.8,
+        1108.5
+      ],
+      "predicted_bbox_clipped": [
+        51,
+        852,
+        461,
+        1109
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        51.2,
+        170.60000000000002,
+        460.8,
+        426.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        51.2,
+        170.60000000000002,
+        460.8,
+        426.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_02_processed.png",
+      "original_crop_width": 410,
+      "original_crop_height": 257,
+      "processed_width": 410,
+      "processed_height": 257,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.9,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        92.0,
+        903.4,
+        420.0,
+        1031.9
+      ],
+      "predicted_bbox_clipped": [
+        92,
+        903,
+        420,
+        1032
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        41.0,
+        51.400000000000006,
+        369.0,
+        179.89999999999998
+      ],
+      "predicted_bbox_source_content_pixel": [
+        41.0,
+        51.400000000000006,
+        369.0,
+        179.89999999999998
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_03_processed.png",
+      "original_crop_width": 328,
+      "original_crop_height": 129,
+      "processed_width": 328,
+      "processed_height": 129,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.1,
+        0.2,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        124.80000000000001,
+        928.8,
+        256.0,
+        1019.1
+      ],
+      "predicted_bbox_clipped": [
+        124,
+        928,
+        256,
+        1020
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        32.800000000000004,
+        25.8,
+        164.0,
+        116.10000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        32.800000000000004,
+        25.8,
+        164.0,
+        116.10000000000001
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_04_processed.png",
+      "original_crop_width": 132,
+      "original_crop_height": 92,
+      "processed_width": 240,
+      "processed_height": 167,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.8181818181818181,
+      "preprocess_scale_y": 1.815217391304348
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        150.4,
+        946.4,
+        203.2,
+        1010.8
+      ],
+      "predicted_bbox_clipped": [
+        150,
+        946,
+        204,
+        1011
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        48.0,
+        33.4,
+        144.0,
+        150.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        26.400000000000002,
+        18.4,
+        79.2,
+        82.8
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_05_processed.png",
+      "original_crop_width": 54,
+      "original_crop_height": 65,
+      "processed_width": 182,
+      "processed_height": 219,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 3.3703703703703702,
+      "preprocess_scale_y": 3.3692307692307693
+    },
+    {
+      "sample_id": "TPROMPTd27b2a205b7d",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.1,
+        0.1,
+        0.9,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        51.2,
+        767.3,
+        460.8,
+        1023.2
+      ],
+      "predicted_bbox_clipped": [
+        51,
+        767,
+        461,
+        1024
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        51.2,
+        85.30000000000001,
+        460.8,
+        341.20000000000005
+      ],
+      "predicted_bbox_source_content_pixel": [
+        51.2,
+        85.30000000000001,
+        460.8,
+        341.20000000000005
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTd27b2a205b7d/turn_06_processed.png",
+      "original_crop_width": 410,
+      "original_crop_height": 257,
+      "processed_width": 410,
+      "processed_height": 257,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "0e5047bbacb0bf53d4011a6ee861690a37c2672ad03edd60fbc0460987d1f4c2",
+  "crop_image_sha256": [
+    "aaa609b6ebae03b84627d0ccd3912daf073151d0009ab8ad1b88c85a85b29026",
+    "40044c3368a2e8dba454d31afa7db3ab4090fb04d8fabda590d1377ae6ff242b",
+    "241c528ff69b0a8995b1c2734cbf743ac395e6eddd22795d58c660bdb30bd223",
+    "b748a8d3aa99d030be17138a55a840d2ca231cc40baea1fbdb4756d8d09da4b2",
+    "eac5293c7c6e938d3d6f8d3e4dcd5b7254e00dd22ac9db7b8636e4cd507533e7",
+    "90e4566cbf3169548c3ab7d89a426176420c38221e275511150f709bb026ea2b"
+  ],
+  "raw_crop_image_sha256": [
+    "aaa609b6ebae03b84627d0ccd3912daf073151d0009ab8ad1b88c85a85b29026",
+    "40044c3368a2e8dba454d31afa7db3ab4090fb04d8fabda590d1377ae6ff242b",
+    "241c528ff69b0a8995b1c2734cbf743ac395e6eddd22795d58c660bdb30bd223",
+    "9579eefcc1cee2714ad14eb70d1983eb9823eae9fcea3216db41aa0a501e340a",
+    "8846f031268852d0457003e923b17b4fc16bf586a8360836c21f9c47d390fc2e",
+    "90e4566cbf3169548c3ab7d89a426176420c38221e275511150f709bb026ea2b"
+  ],
+  "assistant_text_sha256": "b765baedff938617807ab9a9ddd8748b3184f9c359f392055af35fc103a3d570"
+}

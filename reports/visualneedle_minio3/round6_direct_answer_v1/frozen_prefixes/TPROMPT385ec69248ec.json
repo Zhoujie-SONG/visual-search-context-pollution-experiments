@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT385ec69248ec",
+  "question": "On the blue sign below the \"马克猫\" flags, what are the characters after '地铁'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT385ec69248ec.jpg",
+  "original_width": 1080,
+  "original_height": 1665,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 761,
+  "turns": [
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 1,
+      "question": "On the blue sign below the \"马克猫\" flags, what are the characters after '地铁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the characters that come after the word '地铁' on a blue sign located below some flags. First, I need to locate the flags and the blue sign in the image. I can see a string of small flags in the middle of the image. Below these flags, there's a blue sign. I will zoom into that area to read the text on the sign. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.65], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.65
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        666.0,
+        756.0,
+        1082.25
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        666,
+        756,
+        1083
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        666.0,
+        756.0,
+        1082.25
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        666.0,
+        756.0,
+        1082.25
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2518,
+      "output_tokens": 123,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7077996283769608,
+      "tokens_per_second": 33.17331364366137,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 417,
+      "processed_width": 432,
+      "processed_height": 417,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 2,
+      "question": "On the blue sign below the \"马克猫\" flags, what are the characters after '地铁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters that come after '地铁' on a blue sign. In observation 1, I can see a blue sign on the left side, but it's not clear enough to read the text. I need to go back to the original image and select a better bounding box to focus on the blue sign. The previous bounding box was too wide and didn't focus enough on the specific sign. I will try a tighter bounding box on the original image to isolate the blue sign more effectively. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.5,0.65], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.5,
+        0.65
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        666.0,
+        540.0,
+        1082.25
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        666,
+        540,
+        1083
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        666.0,
+        540.0,
+        1082.25
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        666.0,
+        540.0,
+        1082.25
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2963,
+      "output_tokens": 147,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.423029016703367,
+      "tokens_per_second": 33.23514257873082,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 324,
+      "original_crop_height": 417,
+      "processed_width": 324,
+      "processed_height": 417,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 3,
+      "question": "On the blue sign below the \"马克猫\" flags, what are the characters after '地铁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters that come after '地铁' on a blue sign. In observation 2, I can see a blue sign on the left side of the image. I will zoom in on this blue sign to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.2,0.4,0.7], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        749.4,
+        345.6,
+        957.9
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        749,
+        346,
+        958
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        83.4,
+        129.6,
+        291.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        83.4,
+        129.6,
+        291.9
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3387,
+      "output_tokens": 94,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.355606537312269,
+      "tokens_per_second": 28.012819427658798,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          30,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 130,
+      "original_crop_height": 209,
+      "processed_width": 158,
+      "processed_height": 254,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 4,
+      "question": "On the blue sign below the \"马克猫\" flags, what are the characters after '地铁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters that come after '地铁' on a blue sign. In observation 3, I can see a blue sign, but it's still not clear enough to read the text. I need to go back to the original image and select a better bounding box to focus on the blue sign. The previous bounding box was too high and didn't capture the text clearly. I will try a bounding box that is lower and more focused on the blue sign. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.3,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.3,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        832.5,
+        324.0,
+        1332.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        832,
+        324,
+        1332
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        832.5,
+        324.0,
+        1332.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        832.5,
+        324.0,
+        1332.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3632,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.49504435993731,
+      "tokens_per_second": 30.92294288324633,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          30,
+          24
+        ],
+        [
+          1,
+          18,
+          12
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 324,
+      "original_crop_height": 500,
+      "processed_width": 324,
+      "processed_height": 500,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 5,
+      "question": "On the blue sign below the \"马克猫\" flags, what are the characters after '地铁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters that come after '地铁' on a blue sign. I have tried several times to locate the blue sign, but I haven't been successful. In observation 4, I can see a blue sign on the right side of the image, but it's still not clear enough to read the text. I need to go back to the original image and select a better bounding box to focus on the blue sign. The previous bounding box was too low and didn't capture the text clearly. I will try a bounding box that is higher and more focused on the blue sign. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.4,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.4,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        666.0,
+        432.0,
+        999.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        666,
+        432,
+        999
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        666.0,
+        432.0,
+        999.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        666.0,
+        432.0,
+        999.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4084,
+      "output_tokens": 164,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.176400797441602,
+      "tokens_per_second": 31.682245331747843,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          30,
+          24
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          36,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 324,
+      "original_crop_height": 333,
+      "processed_width": 324,
+      "processed_height": 333,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 6,
+      "question": "On the blue sign below the \"马克猫\" flags, what are the characters after '地铁'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the characters that come after '地铁' on a blue sign. In observation 5, I can see a blue sign on the left side of the image. I will zoom in on this blue sign to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,0.5], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        666.0,
+        270.0,
+        832.5
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        666,
+        270,
+        833
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        162.0,
+        166.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        162.0,
+        166.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4489,
+      "output_tokens": 94,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.6925274524837732,
+      "tokens_per_second": 25.45681818472901,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          118,
+          78
+        ],
+        [
+          1,
+          30,
+          30
+        ],
+        [
+          1,
+          30,
+          24
+        ],
+        [
+          1,
+          18,
+          12
+        ],
+        [
+          1,
+          36,
+          24
+        ],
+        [
+          1,
+          24,
+          24
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 162,
+      "original_crop_height": 167,
+      "processed_width": 197,
+      "processed_height": 203,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.65
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        666.0,
+        756.0,
+        1082.25
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        666,
+        756,
+        1083
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        666.0,
+        756.0,
+        1082.25
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        666.0,
+        756.0,
+        1082.25
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 417,
+      "processed_width": 432,
+      "processed_height": 417,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.5,
+        0.65
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        666.0,
+        540.0,
+        1082.25
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        666,
+        540,
+        1083
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        666.0,
+        540.0,
+        1082.25
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        666.0,
+        540.0,
+        1082.25
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_02_processed.png",
+      "original_crop_width": 324,
+      "original_crop_height": 417,
+      "processed_width": 324,
+      "processed_height": 417,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.2,
+        0.4,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        749.4,
+        345.6,
+        957.9
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        749,
+        346,
+        958
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        83.4,
+        129.6,
+        291.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        83.4,
+        129.6,
+        291.9
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_03_processed.png",
+      "original_crop_width": 130,
+      "original_crop_height": 209,
+      "processed_width": 158,
+      "processed_height": 254,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.2153846153846153,
+      "preprocess_scale_y": 1.215311004784689
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.3,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        832.5,
+        324.0,
+        1332.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        832,
+        324,
+        1332
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        832.5,
+        324.0,
+        1332.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        832.5,
+        324.0,
+        1332.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_04_processed.png",
+      "original_crop_width": 324,
+      "original_crop_height": 500,
+      "processed_width": 324,
+      "processed_height": 500,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.4,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        666.0,
+        432.0,
+        999.0
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        666,
+        432,
+        999
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        108.0,
+        666.0,
+        432.0,
+        999.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        108.0,
+        666.0,
+        432.0,
+        999.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_05_processed.png",
+      "original_crop_width": 324,
+      "original_crop_height": 333,
+      "processed_width": 324,
+      "processed_height": 333,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT385ec69248ec",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        108.0,
+        666.0,
+        270.0,
+        832.5
+      ],
+      "predicted_bbox_clipped": [
+        108,
+        666,
+        270,
+        833
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        162.0,
+        166.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        162.0,
+        166.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT385ec69248ec/turn_06_processed.png",
+      "original_crop_width": 162,
+      "original_crop_height": 167,
+      "processed_width": 197,
+      "processed_height": 203,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.2160493827160495,
+      "preprocess_scale_y": 1.215568862275449
+    }
+  ],
+  "original_image_sha256": "bf09f31c9952c67f11214fbcf60dd8c4b751c7f8cb45f1d29959603e3aca93c0",
+  "crop_image_sha256": [
+    "77cb36115297d88b56fb49ac1b1b51ef4bcbadf70c99305c8343def8aca236fd",
+    "c0cc199f06e4940171a055a38168b1b7147661c8523ee99c49e3089e98afb82e",
+    "bc5cbfd8b8053eacc988deedef7717fc668fcab8a7d2069ea826ef5b61eab9de",
+    "0f703032278fcc448c31cfa267b77e5d8aa125342a3f68ceb6aac7903dfedf7b",
+    "736d0bef48465453c0b410efb959682d6e468c6bdb98aa6c97fd7d81d43bf082",
+    "71fefbf24f26a10625a2c3dc4b0b9e0cd10451fad1cbe719a6874a0ee855d477"
+  ],
+  "raw_crop_image_sha256": [
+    "77cb36115297d88b56fb49ac1b1b51ef4bcbadf70c99305c8343def8aca236fd",
+    "c0cc199f06e4940171a055a38168b1b7147661c8523ee99c49e3089e98afb82e",
+    "500ae20e700f9f7d18de7dfe5918728715da212f5072519d9135447d7078bf2a",
+    "0f703032278fcc448c31cfa267b77e5d8aa125342a3f68ceb6aac7903dfedf7b",
+    "736d0bef48465453c0b410efb959682d6e468c6bdb98aa6c97fd7d81d43bf082",
+    "06ad2f4d877130459968c584d5c90cb1521f997a5fe6aa5472f2c824d2b323bd"
+  ],
+  "assistant_text_sha256": "a5983a437a94b04a936a6bdb8ea627106016f67a37b6dd9af6721488bebe4ec9"
+}

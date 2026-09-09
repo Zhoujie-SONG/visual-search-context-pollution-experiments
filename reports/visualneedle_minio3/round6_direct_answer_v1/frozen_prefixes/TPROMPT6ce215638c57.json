@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT6ce215638c57",
+  "question": "On the yellow shelf on the wall to the right of the window in the picture, what is the shape of the ornament placed first from top to bottom?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT6ce215638c57.png",
+  "original_width": 1200,
+  "original_height": 1600,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 628,
+  "turns": [
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 1,
+      "question": "On the yellow shelf on the wall to the right of the window in the picture, what is the shape of the ornament placed first from top to bottom?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about the shape of the first ornament on the yellow shelf to the right of the window. First, I need to locate the window and the yellow shelf in the image. I can see a large window in the upper right portion of the image. To its right, there is a yellow shelf. I will zoom into this area to get a better view of the ornaments on the shelf. </think><grounding>{\"bbox_2d\": [0.5,0.2,1.0,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        600.0,
+        320.0,
+        1200.0,
+        960.0
+      ],
+      "predicted_bbox_clipped": [
+        600,
+        320,
+        1200,
+        960
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        600.0,
+        320.0,
+        1200.0,
+        960.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        600.0,
+        320.0,
+        1200.0,
+        960.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2679,
+      "output_tokens": 124,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7676027808338404,
+      "tokens_per_second": 32.9121744550142,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 600,
+      "original_crop_height": 640,
+      "processed_width": 600,
+      "processed_height": 640,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 2,
+      "question": "On the yellow shelf on the wall to the right of the window in the picture, what is the shape of the ornament placed first from top to bottom?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shape of the first ornament on the yellow shelf to the right of the window. In observation 1, I can see a yellow shelf to the right of the window. I will zoom in on this shelf to get a better view of the ornaments. </think><grounding>{\"bbox_2d\": [0.4,0.2,1.0,0.7], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        768.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        768
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        240.0,
+        128.0,
+        600.0,
+        448.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        240.0,
+        128.0,
+        600.0,
+        448.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3383,
+      "output_tokens": 100,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.522796271368861,
+      "tokens_per_second": 28.386540775218535,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          86
+        ],
+        [
+          1,
+          46,
+          42
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 360,
+      "original_crop_height": 320,
+      "processed_width": 360,
+      "processed_height": 320,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 3,
+      "question": "On the yellow shelf on the wall to the right of the window in the picture, what is the shape of the ornament placed first from top to bottom?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shape of the first ornament on the yellow shelf to the right of the window. In observation 2, I can see a yellow shelf to the right of the window. I will zoom in on the top shelf to get a better view of the ornaments. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.4], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3723,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.630358973518014,
+      "tokens_per_second": 27.820940225678438,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          86
+        ],
+        [
+          1,
+          46,
+          42
+        ],
+        [
+          1,
+          22,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 4,
+      "question": "On the yellow shelf on the wall to the right of the window in the picture, what is the shape of the ornament placed first from top to bottom?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shape of the first ornament on the yellow shelf to the right of the window. In observation 3, I can see a yellow shelf to the right of the window. I will zoom in on the top shelf to get a better view of the ornaments. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.4], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_04_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3986,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.684257620945573,
+      "tokens_per_second": 27.413935286663836,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          86
+        ],
+        [
+          1,
+          46,
+          42
+        ],
+        [
+          1,
+          22,
+          26
+        ],
+        [
+          1,
+          10,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 5,
+      "question": "On the yellow shelf on the wall to the right of the window in the picture, what is the shape of the ornament placed first from top to bottom?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shape of the first ornament on the yellow shelf to the right of the window. In observation 4, I can see a yellow shelf to the right of the window. I will zoom in on the top shelf to get a better view of the ornaments. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.4], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_05_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4249,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.7490602042526007,
+      "tokens_per_second": 26.940084847246403,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          86
+        ],
+        [
+          1,
+          46,
+          42
+        ],
+        [
+          1,
+          22,
+          26
+        ],
+        [
+          1,
+          10,
+          26
+        ],
+        [
+          1,
+          10,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 6,
+      "question": "On the yellow shelf on the wall to the right of the window in the picture, what is the shape of the ornament placed first from top to bottom?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the shape of the first ornament on the yellow shelf to the right of the window. In observation 5, I can see a yellow shelf to the right of the window. I will zoom in on the top shelf to get a better view of the ornaments. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.4], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_06_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4512,
+      "output_tokens": 101,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.8668451495468616,
+      "tokens_per_second": 26.119483996362188,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          114,
+          86
+        ],
+        [
+          1,
+          46,
+          42
+        ],
+        [
+          1,
+          22,
+          26
+        ],
+        [
+          1,
+          10,
+          26
+        ],
+        [
+          1,
+          10,
+          26
+        ],
+        [
+          1,
+          10,
+          26
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        600.0,
+        320.0,
+        1200.0,
+        960.0
+      ],
+      "predicted_bbox_clipped": [
+        600,
+        320,
+        1200,
+        960
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        600.0,
+        320.0,
+        1200.0,
+        960.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        600.0,
+        320.0,
+        1200.0,
+        960.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_01_processed.png",
+      "original_crop_width": 600,
+      "original_crop_height": 640,
+      "processed_width": 600,
+      "processed_height": 640,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.4,
+        0.2,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        768.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        768
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        240.0,
+        128.0,
+        600.0,
+        448.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        240.0,
+        128.0,
+        600.0,
+        448.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_02_processed.png",
+      "original_crop_width": 360,
+      "original_crop_height": 320,
+      "processed_width": 360,
+      "processed_height": 320,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_03_processed.png",
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_04_processed.png",
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_05_processed.png",
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT6ce215638c57",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        840.0,
+        448.0,
+        1200.0,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        840,
+        448,
+        1200,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        360.0,
+        128.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6ce215638c57/turn_06_processed.png",
+      "original_crop_width": 360,
+      "original_crop_height": 128,
+      "processed_width": 360,
+      "processed_height": 128,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "abb3eed77d0edbd597f141fd0c378815e741f9ebf8060f57d3ef9774b25bb820",
+  "crop_image_sha256": [
+    "e8638cdd2d61a0f03b815c41f00412c541fbefa70851e0d56b1cef023813d447",
+    "31f270a43df7db633a023b78d62a82a7a078a4130907fd98d2a680c93f3ec98d",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98"
+  ],
+  "raw_crop_image_sha256": [
+    "e8638cdd2d61a0f03b815c41f00412c541fbefa70851e0d56b1cef023813d447",
+    "31f270a43df7db633a023b78d62a82a7a078a4130907fd98d2a680c93f3ec98d",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98",
+    "47106261e021f288cf1223ae336b1d3659957d31ed526b4b31b51556952f1c98"
+  ],
+  "assistant_text_sha256": "cf42d7840dd4c88729bd9e3faf70286fad291a29f188f3523af28c34703bb140"
+}

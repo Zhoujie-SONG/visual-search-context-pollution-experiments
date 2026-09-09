@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTb732c7fab386",
+  "question": "Please find the sign with a golden five-pointed star. What brand is on the first sign directly above it?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTb732c7fab386.jpg",
+  "original_width": 6000,
+  "original_height": 4000,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 749,
+  "turns": [
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 1,
+      "question": "Please find the sign with a golden five-pointed star. What brand is on the first sign directly above it?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the brand on the first sign directly above a sign with a golden five-pointed star. I can see a sign with a golden five-pointed star on the right side of the image, on a building. The sign above it seems to have a brand logo. I will zoom into that area to get a better view. </think><grounding>{\"bbox_2d\": [0.6,0.5,1.0,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.6,
+        0.5,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3598.3352152415027,
+        1998.4981859221687,
+        5997.225358735838,
+        3597.296734659904
+      ],
+      "predicted_bbox_clipped": [
+        3598,
+        1998,
+        5998,
+        3598
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        1038.6,
+        577.0,
+        1731.0,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        3598.3352152415027,
+        1998.4981859221687,
+        5997.225358735838,
+        3597.296734659904
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2762,
+      "output_tokens": 113,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.58754856325686,
+      "tokens_per_second": 31.497831459991716,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2400,
+      "original_crop_height": 1600,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 2,
+      "question": "Please find the sign with a golden five-pointed star. What brand is on the first sign directly above it?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the brand on the first sign directly above a sign with a golden five-pointed star. In observation 1, I can see a golden five-pointed star on the right side of the image. The sign directly above it seems to have some text and a logo. I will zoom in on that area to get a better view of the brand name. </think><grounding>{\"bbox_2d\": [0.5,0.2,1.0,0.6], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        4797.445071747167,
+        2317.759709747547,
+        5996.890143494335,
+        2957.279129242641
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2958
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        865.5,
+        230.8,
+        1731.0,
+        692.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471675,
+        319.759709747547,
+        2398.890143494335,
+        959.2791292426408
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5514,
+      "output_tokens": 120,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.890852820128202,
+      "tokens_per_second": 24.53559827156166,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1200,
+      "original_crop_height": 641,
+      "processed_width": 1200,
+      "processed_height": 641,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 3,
+      "question": "Please find the sign with a golden five-pointed star. What brand is on the first sign directly above it?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the brand on the first sign directly above the sign with a golden five-pointed star. In observation 2, I can see a sign with a golden five-pointed star, but it's not golden, it's white. The sign directly above it seems to have some text and a logo. I will zoom in on the sign directly above the star to read the text and identify the brand. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 6720,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.545493105426431,
+      "tokens_per_second": 23.26213333017575,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 4,
+      "question": "Please find the sign with a golden five-pointed star. What brand is on the first sign directly above it?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the brand on the first sign directly above the sign with a golden five-pointed star. In observation 3, I can see a sign with a golden five-pointed star, but it's not golden, it's white. The sign directly above it seems to have some text and a logo. I will zoom in on the sign directly above the star to read the text and identify the brand. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_04_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7419,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.804364329203963,
+      "tokens_per_second": 22.224655911234237,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          86
+        ],
+        [
+          1,
+          22,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 5,
+      "question": "Please find the sign with a golden five-pointed star. What brand is on the first sign directly above it?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the brand on the first sign directly above the sign with a golden five-pointed star. In observation 4, I can see a sign with a golden five-pointed star, but it's not golden, it's white. The sign directly above it seems to have some text and a logo. I will zoom in on the sign directly above the star to read the text and identify the brand. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_05_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8118,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.114947060123086,
+      "tokens_per_second": 21.095849028888143,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          86
+        ],
+        [
+          1,
+          22,
+          86
+        ],
+        [
+          1,
+          22,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 6,
+      "question": "Please find the sign with a golden five-pointed star. What brand is on the first sign directly above it?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the brand on the first sign directly above the sign with a golden five-pointed star. In observation 5, I can see a sign with a golden five-pointed star, but it's not golden, it's white. The sign directly above it seems to have some text and a logo. I will zoom in on the sign directly above the star to read the text and identify the brand. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_06_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8817,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.400850210338831,
+      "tokens_per_second": 20.15357269127086,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          46,
+          86
+        ],
+        [
+          1,
+          22,
+          86
+        ],
+        [
+          1,
+          22,
+          86
+        ],
+        [
+          1,
+          22,
+          86
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.6,
+        0.5,
+        1.0,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        3598.3352152415027,
+        1998.4981859221687,
+        5997.225358735838,
+        3597.296734659904
+      ],
+      "predicted_bbox_clipped": [
+        3598,
+        1998,
+        5998,
+        3598
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        1038.6,
+        577.0,
+        1731.0,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        3598.3352152415027,
+        1998.4981859221687,
+        5997.225358735838,
+        3597.296734659904
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_01_processed.png",
+      "original_crop_width": 2400,
+      "original_crop_height": 1600,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7215836893133192,
+      "preprocess_scale_y": 0.7217919986924513
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.5,
+        0.2,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        4797.445071747167,
+        2317.759709747547,
+        5996.890143494335,
+        2957.279129242641
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2958
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        865.5,
+        230.8,
+        1731.0,
+        692.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1199.4450717471675,
+        319.759709747547,
+        2398.890143494335,
+        959.2791292426408
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_02_processed.png",
+      "original_crop_width": 1200,
+      "original_crop_height": 641,
+      "processed_width": 1200,
+      "processed_height": 641,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_03_processed.png",
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_04_processed.png",
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_05_processed.png",
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTb732c7fab386",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        4797.0,
+        2317.0,
+        5997.0,
+        2637.5
+      ],
+      "predicted_bbox_clipped": [
+        4797,
+        2317,
+        5997,
+        2638
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1200.0,
+        320.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTb732c7fab386/turn_06_processed.png",
+      "original_crop_width": 1200,
+      "original_crop_height": 321,
+      "processed_width": 1200,
+      "processed_height": 321,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "d2d2137e86e9ab36b2b2e63bb48eaaf80fd87ab8befc4828b7a160191b8597d0",
+  "crop_image_sha256": [
+    "ba641bce115b3bd90693d0d0699b072a8d4d54a07a1785dd40b0fbf71db90821",
+    "dc6af46d9a646ea2f429c172978f3a7ac977db4ac2f50a83b78d3bf2da0a6571",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351"
+  ],
+  "raw_crop_image_sha256": [
+    "7d30e3fb1979b5a8eaab708973cda03c0943e0d59f3e1396a1c82f7e411bf379",
+    "dc6af46d9a646ea2f429c172978f3a7ac977db4ac2f50a83b78d3bf2da0a6571",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351",
+    "a91fc735735e1c7d0c8b4917b25c453b240250beda1a8777c7cc462b80e82351"
+  ],
+  "assistant_text_sha256": "21a9506ab55e954c02669adafe79ecc34b4c7bf7d94ae2950fada247b84ae82c"
+}

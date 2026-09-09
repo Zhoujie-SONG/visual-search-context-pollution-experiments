@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT5013d9f0a3b0",
+  "question": "What is the girl in the black skirt, who is to the right of the boy in purple clothes next to the clown, holding in her hand?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT5013d9f0a3b0.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 835,
+  "turns": [
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 1,
+      "question": "What is the girl in the black skirt, who is to the right of the boy in purple clothes next to the clown, holding in her hand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about an object held by a specific person in the image. I need to first locate the group of people described: a boy in purple clothes next to a clown. Then, I need to find the girl in the black skirt to the right of that boy and identify what she is holding. I will start by cropping the image to focus on the area with the people, which seems to be in the lower-left quadrant of the image. </think><grounding>{\"bbox_2d\": [0.0,0.6,0.4,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.6,
+        0.4,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        864.0,
+        432.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        864,
+        432,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        864.0,
+        432.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        864.0,
+        432.0,
+        1440.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2216,
+      "output_tokens": 134,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.873640751466155,
+      "tokens_per_second": 34.59277940249922,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 2,
+      "question": "What is the girl in the black skirt, who is to the right of the boy in purple clothes next to the clown, holding in her hand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about what a girl in a black skirt, to the right of a boy in purple clothes next to a clown, is holding. In the current view (observation 1), I cannot see a boy in purple clothes or a clown. I need to go back to the original image and search for these elements. I will try a wider view to locate the group of people mentioned in the question. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.6,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        720.0,
+        648.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        720,
+        648,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        720.0,
+        648.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        720.0,
+        648.0,
+        1440.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2762,
+      "output_tokens": 126,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.118108274415135,
+      "tokens_per_second": 30.59657289314348,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 720,
+      "processed_width": 648,
+      "processed_height": 720,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 3,
+      "question": "What is the girl in the black skirt, who is to the right of the boy in purple clothes next to the clown, holding in her hand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about what a girl in a black skirt, to the right of a boy in purple clothes next to a clown, is holding. In observation 2, I still cannot see a boy in purple clothes or a clown. I need to go back to the original image and search for these elements more carefully. I will try a different area in the original image, focusing on the group of people in the middle of the image. </think><grounding>{\"bbox_2d\": [0.3,0.5,0.7,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3583,
+      "output_tokens": 132,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.412033189088106,
+      "tokens_per_second": 29.91817929349761,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          52,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 4,
+      "question": "What is the girl in the black skirt, who is to the right of the boy in purple clothes next to the clown, holding in her hand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about what a girl in a black skirt, to the right of a boy in purple clothes next to a clown, is holding. In observation 3, I can see a group of people. I can see a girl in a black skirt on the right side of the image. I need to find a boy in purple clothes next to a clown. I can see a KFC logo with a clown-like face on it. I will zoom in on this area to see if I can find the boy and the girl. </think><grounding>{\"bbox_2d\": [0.4,0.1,1.0,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.1,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        144,
+        1080,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4127,
+      "output_tokens": 151,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.445430010557175,
+      "tokens_per_second": 27.729674186841624,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          52,
+          46
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 864,
+      "processed_width": 648,
+      "processed_height": 864,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 5,
+      "question": "What is the girl in the black skirt, who is to the right of the boy in purple clothes next to the clown, holding in her hand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about what a girl in a black skirt, to the right of a boy in purple clothes next to a clown, is holding. In observation 4, I can see a group of people in the lower part of the image. I can see a boy in a purple shirt and a girl in a black skirt. I need to zoom in on this group of people to see what the girl is holding. </think><grounding>{\"bbox_2d\": [0.3,0.7,0.9,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        1007.9999999999999,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        1007,
+        972,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        1007.9999999999999,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        1007.9999999999999,
+        972.0,
+        1440.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5088,
+      "output_tokens": 128,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.837897624820471,
+      "tokens_per_second": 26.45777358811927,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          52,
+          46
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          62,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 433,
+      "processed_width": 648,
+      "processed_height": 433,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 6,
+      "question": "What is the girl in the black skirt, who is to the right of the boy in purple clothes next to the clown, holding in her hand?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking about what a girl in a black skirt, to the right of a boy in purple clothes next to a clown, is holding. In observation 5, I can see a girl in a black skirt and a girl in a light-colored dress. I can also see a boy in a purple shirt. However, the boy in the purple shirt is not next to a clown. I need to go back to the original image and search for the group of people again. I will try a different area in the original image, focusing on the group of people in the middle of the image. </think><grounding>{\"bbox_2d\": [0.4,0.6,0.9,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.6,
+        0.9,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        864.0,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        864,
+        972,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        864.0,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        864.0,
+        972.0,
+        1440.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5658,
+      "output_tokens": 164,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.12707033008337,
+      "tokens_per_second": 26.766462789691605,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          52,
+          46
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          62,
+          46
+        ],
+        [
+          1,
+          30,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.6,
+        0.4,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        864.0,
+        432.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        864,
+        432,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        864.0,
+        432.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        864.0,
+        432.0,
+        1440.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.6,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        720.0,
+        648.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        720,
+        648,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        720.0,
+        648.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        720.0,
+        648.0,
+        1440.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_02_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 720,
+      "processed_width": 648,
+      "processed_height": 720,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        720,
+        756,
+        1296
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        720.0,
+        756.0,
+        1296.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_03_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.1,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        144,
+        1080,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        144.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_04_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 864,
+      "processed_width": 648,
+      "processed_height": 864,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        324.0,
+        1007.9999999999999,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        324,
+        1007,
+        972,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        324.0,
+        1007.9999999999999,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        324.0,
+        1007.9999999999999,
+        972.0,
+        1440.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_05_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 433,
+      "processed_width": 648,
+      "processed_height": 433,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT5013d9f0a3b0",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.4,
+        0.6,
+        0.9,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        432.0,
+        864.0,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_clipped": [
+        432,
+        864,
+        972,
+        1440
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        432.0,
+        864.0,
+        972.0,
+        1440.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        432.0,
+        864.0,
+        972.0,
+        1440.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT5013d9f0a3b0/turn_06_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "53e605e2992a5fa08a9f990a2eaaeaa1e5def8fb3b4f0928d52b892500d890bf",
+  "crop_image_sha256": [
+    "c8eef9ef7f783866be7fc1fffc47b415203148648d8cbc88e99af670684e9651",
+    "b184bbc82a6671b6982152a5dd4f1b9eeef082de6f5d4c6ca2ee415c33f9a663",
+    "c602c5997264382fdc61e6fe376c9c82f9ac7f8629ffd6ad220c3478a82f5942",
+    "73f5fb347eb452593b779eba261e668cc9e7edd72b0f763d09d33ab55f0550bb",
+    "0572ff68c02a9b58660fd1cbad50f2169304acb1a745209698d321797d5bb82d",
+    "3b04617dbbc361afe84c6eef9a6788e0d426286b570a2ff919fde23c583a6a51"
+  ],
+  "raw_crop_image_sha256": [
+    "c8eef9ef7f783866be7fc1fffc47b415203148648d8cbc88e99af670684e9651",
+    "b184bbc82a6671b6982152a5dd4f1b9eeef082de6f5d4c6ca2ee415c33f9a663",
+    "c602c5997264382fdc61e6fe376c9c82f9ac7f8629ffd6ad220c3478a82f5942",
+    "73f5fb347eb452593b779eba261e668cc9e7edd72b0f763d09d33ab55f0550bb",
+    "0572ff68c02a9b58660fd1cbad50f2169304acb1a745209698d321797d5bb82d",
+    "3b04617dbbc361afe84c6eef9a6788e0d426286b570a2ff919fde23c583a6a51"
+  ],
+  "assistant_text_sha256": "4b8a14f8d95c2c381b165399228281fcc32525de7de42724ee5aa3462f1e8b12"
+}

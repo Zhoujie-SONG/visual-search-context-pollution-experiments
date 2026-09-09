@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT290bead25899",
+  "question": "In the picture, who is wearing red clothes and located at the bottom right of SpongeBob?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT290bead25899.jpg",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 923,
+  "turns": [
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 1,
+      "question": "In the picture, who is wearing red clothes and located at the bottom right of SpongeBob?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the character wearing red clothes located at the bottom right of SpongeBob. First, I need to locate SpongeBob in the image. I can see a yellow figure that looks like SpongeBob on the staircase. I will zoom into the area around SpongeBob to see the characters around him more clearly. I will select the bounding box [0.2, 0.2, 0.6, 0.6] to focus on the area with the staircase and the characters on it. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.6,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        288.0,
+        648.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        288,
+        648,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        288.0,
+        648.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        288.0,
+        648.0,
+        864.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2205,
+      "output_tokens": 148,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.118838844820857,
+      "tokens_per_second": 35.93245707733851,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 2,
+      "question": "In the picture, who is wearing red clothes and located at the bottom right of SpongeBob?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the character wearing red clothes located at the bottom right of SpongeBob. In observation 1, I can see a yellow figure that looks like SpongeBob on the middle shelf. I will zoom in on the shelf where SpongeBob is to see the characters around him more clearly. I will select the bounding box [0.3, 0.1, 0.7, 0.5] to focus on the shelf with the yellow figure and the characters around it. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.7,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        345.6,
+        345.6,
+        518.4,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        345,
+        345,
+        519,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        57.6,
+        302.4,
+        288.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        57.6,
+        302.4,
+        288.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2765,
+      "output_tokens": 145,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.245961965993047,
+      "tokens_per_second": 34.15009393898029,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 174,
+      "original_crop_height": 231,
+      "processed_width": 174,
+      "processed_height": 231,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 3,
+      "question": "In the picture, who is wearing red clothes and located at the bottom right of SpongeBob?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the character wearing red clothes located at the bottom right of SpongeBob. In observation 2, I can see a yellow figure that looks like SpongeBob on the top shelf. I will zoom in on the area around SpongeBob to see the characters more clearly. I will select the bounding box [0.2, 0.1, 0.8, 0.5] to focus on the area with SpongeBob and the characters around him. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.8,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.8,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        379.8,
+        368.1,
+        484.20000000000005,
+        460.5
+      ],
+      "predicted_bbox_clipped": [
+        379,
+        368,
+        485,
+        461
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        23.1,
+        139.20000000000002,
+        115.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        23.1,
+        139.20000000000002,
+        115.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3070,
+      "output_tokens": 141,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.217497805133462,
+      "tokens_per_second": 33.43214543665615,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          18,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 106,
+      "original_crop_height": 93,
+      "processed_width": 214,
+      "processed_height": 187,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 4,
+      "question": "In the picture, who is wearing red clothes and located at the bottom right of SpongeBob?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the character wearing red clothes located at the bottom right of SpongeBob. In observation 3, I can see a character wearing red clothes next to SpongeBob. This character is a figure of a man in a red shirt. I will zoom in on this character to get a better view and confirm its identity. I will select the bounding box [0.3, 0.2, 0.7, 0.8] to focus on the character in red clothes. </think><grounding>{\"bbox_2d\": [0.3,0.2,0.7,0.8], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        410.8,
+        386.6,
+        453.2,
+        442.4
+      ],
+      "predicted_bbox_clipped": [
+        410,
+        386,
+        454,
+        443
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        64.2,
+        37.4,
+        149.79999999999998,
+        149.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        31.799999999999997,
+        18.599999999999998,
+        74.19999999999999,
+        74.39999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3364,
+      "output_tokens": 146,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.439351439476013,
+      "tokens_per_second": 32.88768685932932,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          18,
+          14
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 44,
+      "original_crop_height": 57,
+      "processed_width": 176,
+      "processed_height": 228,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 5,
+      "question": "In the picture, who is wearing red clothes and located at the bottom right of SpongeBob?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the character wearing red clothes located at the bottom right of SpongeBob. In observation 4, I can see a character wearing red clothes, but it's not clear enough to identify the character. I need to go back to observation 3 and select a better bounding box to get a clearer view of the character. In observation 3, the character in red clothes is located to the left of SpongeBob. I will select a bounding box that includes both the character in red and SpongeBob to get a better view. I will select the bounding box [0.2, 0.1, 0.9, 0.9] to focus on the area with both characters. </think><grounding>{\"bbox_2d\": [0.2,0.1,0.9,0.9], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        400.2,
+        377.3,
+        474.4,
+        451.7
+      ],
+      "predicted_bbox_clipped": [
+        400,
+        377,
+        475,
+        452
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        42.800000000000004,
+        18.7,
+        192.6,
+        168.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        21.2,
+        9.299999999999999,
+        95.39999999999999,
+        83.7
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_05_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3670,
+      "output_tokens": 188,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.470937307924032,
+      "tokens_per_second": 34.363398704588214,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          18,
+          14
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          18,
+          14
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 75,
+      "original_crop_height": 75,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 6,
+      "question": "In the picture, who is wearing red clothes and located at the bottom right of SpongeBob?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the character wearing red clothes located at the bottom right of SpongeBob. In observation 5, I can see a character wearing red clothes. This character is a figure of a man in a red shirt. I can clearly see the red clothes and the character's features. I will zoom in on the character to get a better view and confirm its identity. I will select the bounding box [0.2, 0.2, 0.7, 0.8] to focus on the character in red clothes. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.7,0.8], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        415.0,
+        392.0,
+        452.5,
+        437.0
+      ],
+      "predicted_bbox_clipped": [
+        415,
+        392,
+        453,
+        437
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        40.0,
+        40.0,
+        140.0,
+        160.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.0,
+        15.0,
+        52.5,
+        60.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4019,
+      "output_tokens": 155,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.806970303878188,
+      "tokens_per_second": 32.24484242703735,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          18,
+          14
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          18,
+          14
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 38,
+      "original_crop_height": 45,
+      "processed_width": 184,
+      "processed_height": 218,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.6,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        288.0,
+        648.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        288,
+        648,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        288.0,
+        648.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        288.0,
+        648.0,
+        864.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_01_processed.png",
+      "original_crop_width": 432,
+      "original_crop_height": 576,
+      "processed_width": 432,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        345.6,
+        345.6,
+        518.4,
+        576.0
+      ],
+      "predicted_bbox_clipped": [
+        345,
+        345,
+        519,
+        576
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        129.6,
+        57.6,
+        302.4,
+        288.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        129.6,
+        57.6,
+        302.4,
+        288.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_02_processed.png",
+      "original_crop_width": 174,
+      "original_crop_height": 231,
+      "processed_width": 174,
+      "processed_height": 231,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.8,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        379.8,
+        368.1,
+        484.20000000000005,
+        460.5
+      ],
+      "predicted_bbox_clipped": [
+        379,
+        368,
+        485,
+        461
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        34.800000000000004,
+        23.1,
+        139.20000000000002,
+        115.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        34.800000000000004,
+        23.1,
+        139.20000000000002,
+        115.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_03_processed.png",
+      "original_crop_width": 106,
+      "original_crop_height": 93,
+      "processed_width": 214,
+      "processed_height": 187,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.018867924528302,
+      "preprocess_scale_y": 2.010752688172043
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.3,
+        0.2,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        410.8,
+        386.6,
+        453.2,
+        442.4
+      ],
+      "predicted_bbox_clipped": [
+        410,
+        386,
+        454,
+        443
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        64.2,
+        37.4,
+        149.79999999999998,
+        149.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        31.799999999999997,
+        18.599999999999998,
+        74.19999999999999,
+        74.39999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_04_processed.png",
+      "original_crop_width": 44,
+      "original_crop_height": 57,
+      "processed_width": 176,
+      "processed_height": 228,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 4.0,
+      "preprocess_scale_y": 4.0
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.2,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        400.2,
+        377.3,
+        474.4,
+        451.7
+      ],
+      "predicted_bbox_clipped": [
+        400,
+        377,
+        475,
+        452
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        42.800000000000004,
+        18.7,
+        192.6,
+        168.3
+      ],
+      "predicted_bbox_source_content_pixel": [
+        21.2,
+        9.299999999999999,
+        95.39999999999999,
+        83.7
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_05_processed.png",
+      "original_crop_width": 75,
+      "original_crop_height": 75,
+      "processed_width": 200,
+      "processed_height": 200,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.6666666666666665,
+      "preprocess_scale_y": 2.6666666666666665
+    },
+    {
+      "sample_id": "TPROMPT290bead25899",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        415.0,
+        392.0,
+        452.5,
+        437.0
+      ],
+      "predicted_bbox_clipped": [
+        415,
+        392,
+        453,
+        437
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        40.0,
+        40.0,
+        140.0,
+        160.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.0,
+        15.0,
+        52.5,
+        60.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT290bead25899/turn_06_processed.png",
+      "original_crop_width": 38,
+      "original_crop_height": 45,
+      "processed_width": 184,
+      "processed_height": 218,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 4.842105263157895,
+      "preprocess_scale_y": 4.844444444444444
+    }
+  ],
+  "original_image_sha256": "c4c34c5c9694beb3829b1362b56b1dcbed54d09c94404c232c598282b368f20e",
+  "crop_image_sha256": [
+    "182fde7c05ca1a7d505aa601594e5e53a85ab71b0467db8afd570860c4f56324",
+    "f49f9d44257eb81e314d5e18cdc760781a79a3ae89c68361bc2ee120b059a032",
+    "13ac3c0987978b78746ebc49c68ccc38b90f77449b8e6979f5681a0f3795d510",
+    "7dcf7cab8c8b974702aabfea24c0d7737b1455d855bb600f89f45fa9a19300ab",
+    "399cab5263f3660100489f0c2387436f900f4b898ab490b18cdf08a1e9002c5e",
+    "1cfb1c9a7daa9397e8bf3f078745a966c4c40ee61aa3b14c1ff2de428efa815a"
+  ],
+  "raw_crop_image_sha256": [
+    "182fde7c05ca1a7d505aa601594e5e53a85ab71b0467db8afd570860c4f56324",
+    "f49f9d44257eb81e314d5e18cdc760781a79a3ae89c68361bc2ee120b059a032",
+    "3d78ed326c6d017ebd41444efa212f43033085bd9bc17be884f92e97e88b326a",
+    "67bd987e7adae607ccc40089b385132402e5740db95b61e3130c8bfa4b41fb2e",
+    "06db0daafac03274b7481bc1a6b7fcb74f408713d05591def772f85e18d44976",
+    "33aca1408847773b1eeb38fdf35305e405e601ef1223d82b67f345e0e133e30e"
+  ],
+  "assistant_text_sha256": "6243981ad34d8471954a9ce28548b52f9e0313edb19f440085137e01109682f6"
+}

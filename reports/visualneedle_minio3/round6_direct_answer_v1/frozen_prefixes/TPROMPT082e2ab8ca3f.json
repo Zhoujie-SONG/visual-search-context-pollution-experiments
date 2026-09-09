@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT082e2ab8ca3f",
+  "question": "In the picture, there is a utility knife with its blade retracted. What colors are on this utility knife?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT082e2ab8ca3f.jpg",
+  "original_width": 4096,
+  "original_height": 3072,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 856,
+  "turns": [
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 1,
+      "question": "In the picture, there is a utility knife with its blade retracted. What colors are on this utility knife?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the colors of a utility knife with its blade retracted. I need to scan the image to find a utility knife. I see a desk with many items on it. I'll start by examining the area with the most clutter, as a utility knife might be hidden there. I see a pink mug, some books, and other small objects on the desk. I'll start by cropping the central area of the desk to get a closer look. </think><grounding>{\"bbox_2d\": [0.3,0.4,0.7,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1228.1779930199941,
+        1227.9273444499904,
+        2865.7486503799864,
+        2455.854688899981
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1227,
+        2866,
+        2456
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        489.59999999999997,
+        489.6,
+        1142.3999999999999,
+        979.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1228.1779930199941,
+        1227.9273444499904,
+        2865.7486503799864,
+        2455.854688899981
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2714,
+      "output_tokens": 137,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.352341596037149,
+      "tokens_per_second": 31.477308703144963,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1638,
+      "original_crop_height": 1229,
+      "processed_width": 1632,
+      "processed_height": 1224,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 2,
+      "question": "In the picture, there is a utility knife with its blade retracted. What colors are on this utility knife?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to identify the colors of a utility knife with its blade retracted. In observation 1, I can see a pink mug, some books, and a notebook. I don't see a clear utility knife in this view. I need to look for another area in the original image. I will try to focus on the left side of the desk, as there are many small items there. </think><grounding>{\"bbox_2d\": [0.0,0.4,0.5,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1227.9273444499904,
+        2046.9633216999905,
+        2762.8365250124784
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1227,
+        2047,
+        2763
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        489.6,
+        816.0,
+        1101.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1227.9273444499904,
+        2046.9633216999905,
+        2762.8365250124784
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5442,
+      "output_tokens": 124,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.15367054194212,
+      "tokens_per_second": 24.06052132957486,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2047,
+      "original_crop_height": 1536,
+      "processed_width": 1632,
+      "processed_height": 1224,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 3,
+      "question": "In the picture, there is a utility knife with its blade retracted. What colors are on this utility knife?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find a utility knife with its blade retracted. In observation 2, I see a lot of items on the desk, including a pink pencil case, some markers, and a yellow toy. I still don't see a clear utility knife. I need to look for another area. I will go back to the original image and try a different area. I will focus on the right side of the desk, as there are some items that might be useful. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        2046.9633216999905,
+        1227.9273444499904,
+        4093.926643399981,
+        3069.8183611249756
+      ],
+      "predicted_bbox_clipped": [
+        2046,
+        1227,
+        4094,
+        3070
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        816.0,
+        489.6,
+        1632.0,
+        1224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        2046.9633216999905,
+        1227.9273444499904,
+        4093.926643399981,
+        3069.8183611249756
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8157,
+      "output_tokens": 139,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.642709359526634,
+      "tokens_per_second": 20.92519670466288,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2048,
+      "original_crop_height": 1843,
+      "processed_width": 1490,
+      "processed_height": 1341,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 4,
+      "question": "In the picture, there is a utility knife with its blade retracted. What colors are on this utility knife?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find a utility knife with its blade retracted. In observation 3, I can see a desk with a notebook, a pencil, a ruler, and a pink water bottle. I still don't see a clear utility knife. I need to look for another area. I will go back to the original image and try a different area. I will focus on the top shelf in the background, as there might be some items there. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.4], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1227.9273444499904
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        4094,
+        1228
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1632.0,
+        489.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1227.9273444499904
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10937,
+      "output_tokens": 134,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.662501744925976,
+      "tokens_per_second": 17.487761107360704,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          96,
+          106
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 4094,
+      "original_crop_height": 1228,
+      "processed_width": 2581,
+      "processed_height": 774,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 5,
+      "question": "In the picture, there is a utility knife with its blade retracted. What colors are on this utility knife?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find a utility knife with its blade retracted. I've been searching the desk and the top shelf, but I haven't found a clear utility knife. In observation 4, I see a lot of books and some shoes, but no utility knife. I need to go back to the original image and try a different area. I will focus on the area with the most clutter, which seems to be the top shelf and the area around it. I will try to zoom in on the area with the most clutter to see if I can find the utility knife there. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        4094,
+        1535
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1632.0,
+        612.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 13652,
+      "output_tokens": 161,
+      "finish_reason": "eos",
+      "runtime_seconds": 9.618737637996674,
+      "tokens_per_second": 16.738163162284984,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          96,
+          106
+        ],
+        [
+          1,
+          54,
+          184
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 4094,
+      "original_crop_height": 1535,
+      "processed_width": 2309,
+      "processed_height": 865,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 6,
+      "question": "In the picture, there is a utility knife with its blade retracted. What colors are on this utility knife?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find a utility knife with its blade retracted. I've been searching the desk and the top shelf, but I haven't found a clear utility knife. In observation 5, I see a lot of books and some shoes, but no utility knife. I need to go back to the original image and try a different area. I will focus on the area with the most clutter, which seems to be the top shelf and the area around it. I will try to zoom in on the area with the most clutter to see if I can find the utility knife there. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        4094,
+        1535
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1632.0,
+        612.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 16452,
+      "output_tokens": 161,
+      "finish_reason": "eos",
+      "runtime_seconds": 10.842155534774065,
+      "tokens_per_second": 14.849445710645305,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          86,
+          116
+        ],
+        [
+          1,
+          96,
+          106
+        ],
+        [
+          1,
+          54,
+          184
+        ],
+        [
+          1,
+          62,
+          164
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 4094,
+      "original_crop_height": 1535,
+      "processed_width": 2309,
+      "processed_height": 865,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.4,
+        0.7,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        1228.1779930199941,
+        1227.9273444499904,
+        2865.7486503799864,
+        2455.854688899981
+      ],
+      "predicted_bbox_clipped": [
+        1228,
+        1227,
+        2866,
+        2456
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        489.59999999999997,
+        489.6,
+        1142.3999999999999,
+        979.2
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1228.1779930199941,
+        1227.9273444499904,
+        2865.7486503799864,
+        2455.854688899981
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_01_processed.png",
+      "original_crop_width": 1638,
+      "original_crop_height": 1229,
+      "processed_width": 1632,
+      "processed_height": 1224,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.9968415881548612,
+      "preprocess_scale_y": 0.9966394340846051
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1227.9273444499904,
+        2046.9633216999905,
+        2762.8365250124784
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1227,
+        2047,
+        2763
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        489.6,
+        816.0,
+        1101.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1227.9273444499904,
+        2046.9633216999905,
+        2762.8365250124784
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_02_processed.png",
+      "original_crop_width": 2047,
+      "original_crop_height": 1536,
+      "processed_width": 1632,
+      "processed_height": 1224,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7976680612592392,
+      "preprocess_scale_y": 0.7974413180273304
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        2046.9633216999905,
+        1227.9273444499904,
+        4093.926643399981,
+        3069.8183611249756
+      ],
+      "predicted_bbox_clipped": [
+        2046,
+        1227,
+        4094,
+        3070
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        816.0,
+        489.6,
+        1632.0,
+        1224.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        2046.9633216999905,
+        1227.9273444499904,
+        4093.926643399981,
+        3069.8183611249756
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_03_processed.png",
+      "original_crop_width": 2048,
+      "original_crop_height": 1843,
+      "processed_width": 1490,
+      "processed_height": 1341,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7278595914453974,
+      "preprocess_scale_y": 0.7279928246935012
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1227.9273444499904
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        4094,
+        1228
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1632.0,
+        489.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1227.9273444499904
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_04_processed.png",
+      "original_crop_width": 4094,
+      "original_crop_height": 1228,
+      "processed_width": 2581,
+      "processed_height": 774,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.6305135544106504,
+      "preprocess_scale_y": 0.6309418913424156
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        4094,
+        1535
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1632.0,
+        612.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_05_processed.png",
+      "original_crop_width": 4094,
+      "original_crop_height": 1535,
+      "processed_width": 2309,
+      "processed_height": 865,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.5641754752847689,
+      "preprocess_scale_y": 0.5641045128182299
+    },
+    {
+      "sample_id": "TPROMPT082e2ab8ca3f",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        4094,
+        1535
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1632.0,
+        612.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        4093.926643399981,
+        1534.9091805624878
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT082e2ab8ca3f/turn_06_processed.png",
+      "original_crop_width": 4094,
+      "original_crop_height": 1535,
+      "processed_width": 2309,
+      "processed_height": 865,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.5641754752847689,
+      "preprocess_scale_y": 0.5641045128182299
+    }
+  ],
+  "original_image_sha256": "bf8624155019073bd2b44de5af0ee845e97a6d4bf0641d246e0b1464918f658f",
+  "crop_image_sha256": [
+    "da46b3bc01199c5df322d80e3d6d1b7c343ff5f2164b6b83a65448ee4837992c",
+    "11e185a51eefa7247fd3aed0f537708c792932a1e6604a0758018ba1008eea58",
+    "03bb2a692297f415671d0dc5f9610086823ee95b4dac7c5ddecddfca4e353894",
+    "866a8478e8927af8e968a2399d56c6f969fb8c866d666a520234f4f884cf9e17",
+    "ce8dbf9aa6923e792f97ff75938e4f9b0a6b2e1e795fa1a79c876ecbe50fee85",
+    "ce8dbf9aa6923e792f97ff75938e4f9b0a6b2e1e795fa1a79c876ecbe50fee85"
+  ],
+  "raw_crop_image_sha256": [
+    "2d51c4d5cb54e40618da9e2a7b33298af8268920df9e4bf9df63354b05f79a01",
+    "725ac4f313dd378aa45adc4800ec7e96e613f1193e0702284278fd7aa2ed5c87",
+    "582cdf71643f677a6caaca323a5db359402342c7070340a2965e48b9375c6478",
+    "1bcc2f719ff741bd09a508afe1baafa12d80a3832271d11eb702825e6d5aca23",
+    "e7dd841db4e06f81c2647bf1905d09dd24762bf34df492f508ff08429c21b070",
+    "e7dd841db4e06f81c2647bf1905d09dd24762bf34df492f508ff08429c21b070"
+  ],
+  "assistant_text_sha256": "0cbc549d00aca5b1c6e91f961b44c6764de869ebe4d2bc00aaacefbcafc10169"
+}
