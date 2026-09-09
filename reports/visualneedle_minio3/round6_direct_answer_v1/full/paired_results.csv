@@ -47,7 +47,7 @@ TPROMPT732a4ca03c30,OCR Recognition,1.0,False,False,False,False,False,,False,Fal
 TPROMPT7497e337e5af,OCR Recognition,1.0,False,False,False,False,True,,False,False,False,False,True,,False,False,False,False,True,,False,False,False,False,True,
 TPROMPT76d13ba158b2,OCR Recognition,1.0,False,False,False,False,True,,False,False,False,False,True,,False,False,False,False,False,,False,False,False,False,False,
 TPROMPT77a09000c1fe,Occluded Object Recognition,1.0,False,False,False,False,True,,False,False,False,False,False,,False,False,False,False,False,,False,False,False,False,False,
-TPROMPT84ed52046338,Entity Recognition,1.0,False,False,False,False,False,,True,,True,,False,A can,True,,True,,False,"The second item from the left on the countertop of the cabinet to the left of the clock is a black container, likely a can or a jar.",False,False,False,False,False,
+TPROMPT84ed52046338,Entity Recognition,1.0,False,False,False,False,False,,True,False,True,False,False,A can,True,False,True,False,False,"The second item from the left on the countertop of the cabinet to the left of the clock is a black container, likely a can or a jar.",False,False,False,False,False,
 TPROMPT8b7f32c7243b,OCR Recognition,1.0,False,False,False,False,False,,False,False,False,False,False,,True,True,True,True,False,TOW-AWAY,False,False,False,False,False,
 TPROMPT8cdd00c71c72,Color Recognition,1.0,False,False,False,False,True,,False,False,False,False,True,,False,False,False,False,True,,False,False,False,False,True,
 TPROMPT91f41b6832c0,Spatial Relationship,1.0,True,False,True,False,False,芝麻球,True,,True,,False,芝麻球,False,False,False,False,False,,False,False,False,False,False,

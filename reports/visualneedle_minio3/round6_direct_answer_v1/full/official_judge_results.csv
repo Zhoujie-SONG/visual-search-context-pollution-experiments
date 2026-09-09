@@ -1,7 +1,7 @@
 sample_id,condition,model,judge_result,judge_parse_success,raw_output,finish_reason,runtime_seconds,prompt_tokens,candidate_tokens,thought_tokens,total_tokens,error
 TPROMPT6064c9a5c9cc,F_full_direct,gemini-3.8-flash,False,True,NO,STOP,19.684364579617977,1541,1,,1542,
-TPROMPT84ed52046338,O_oracle_top2_direct,gemini-3.8-flash,,False,,,,,,,,HTTP 400
-TPROMPT84ed52046338,R_recent_top2_direct,gemini-3.8-flash,,False,,,,,,,,HTTP 400
+TPROMPT84ed52046338,O_oracle_top2_direct,gemini-3.8-flash,False,True,NO,STOP,11.003963273018599,1592,1,63,1656,
+TPROMPT84ed52046338,R_recent_top2_direct,gemini-3.8-flash,False,True,NO,STOP,7.845099980011582,1651,1,34,1686,
 TPROMPT91f41b6832c0,F_full_direct,gemini-3.8-flash,False,True,NO,STOP,4.575484152883291,1546,1,,1547,
 TPROMPT91f41b6832c0,O_oracle_top2_direct,gemini-3.8-flash,,False,,,,,,,,HTTP 400
 TPROMPT9cfcac6766a6,F_full_direct,gemini-3.8-flash,True,True,YES,STOP,13.538868464529514,1516,1,54,1571,
