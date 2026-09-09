@@ -1,0 +1,58 @@
+{
+  "experiment": "Round-6 Visual Memory Surgery Pilot",
+  "stage": "smoke",
+  "created_at": "2026-09-09 18:42:50 +0800",
+  "baseline_directory": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline",
+  "baseline_fingerprints": {
+    "config.json": "edb6dec5ce6e3ed7f89d39698739d172e0eeb8a7af596b33ee9ea110a857ba9c",
+    "trajectories.jsonl": "bbb82eb40faaa9f6af8ee569f955eb3ca0d1e58d2d43ae0cc84b56c2ab169e7f",
+    "episode_summary.csv": "4470ef8a48828f0b1c7dc7fb73ce7eaf85bc85e955da10f48ce500b71d8d6af1",
+    "official_judge_results.csv": "d78a19d779eb061e823a4fe022f874be13e3d1bb1cca78f4cc18e10192660c0f"
+  },
+  "model_path": "/mnt/data2/szj/models/Mini-o3-7B-v1-complete",
+  "python": "/mnt/data2/szj/envs/venv_e2m/bin/python",
+  "dtype": "bfloat16",
+  "attention_implementation": "sdpa",
+  "use_cache": true,
+  "do_sample": false,
+  "max_rounds": 12,
+  "max_images_including_original": 12,
+  "max_new_tokens_per_round": 2048,
+  "total_generation_budget": 8192,
+  "max_time_per_round_seconds": 600,
+  "min_pixels": 40000,
+  "max_pixels": 2000000,
+  "prefix_crop_count": 6,
+  "intervention_point": "after sixth successful crop observation and before next generation",
+  "retained_crop_count_B_C_E": 2,
+  "eviction_placeholder": "[Visual observation evicted from working memory.]",
+  "force_answer_instruction": "Do not call any more visual tools.\nBased on the visual evidence available so far, provide your best final answer now.\nPut the final answer inside <answer> and </answer>.",
+  "random_seed": 42,
+  "devcheck_behavioral_gates": {
+    "next_action_match": 0.95,
+    "next_bbox_match": 0.95,
+    "final_answer_match": 0.95,
+    "later_crop_count_match": 0.95,
+    "suffix_behavior_match": 0.9
+  },
+  "selected_sample_ids": [
+    "TPROMPT08c724f096a1",
+    "TPROMPT294532df0b70",
+    "TPROMPT2d3a530d79de",
+    "TPROMPT312e2d4924ab",
+    "TPROMPT4e84c67324b4",
+    "TPROMPT59892e5d6946",
+    "TPROMPT642beb76b8d9",
+    "TPROMPTbbf9cdc186ad",
+    "TPROMPTe2ae8879903b",
+    "TPROMPTf9789aa0279c"
+  ],
+  "arms": [
+    "A_full",
+    "B_oracle_top2",
+    "C_recent_top2",
+    "D_force_answer_r6",
+    "E_random_top2"
+  ],
+  "ground_truth_isolation": "GPU workers load sanitized frozen_prefixes and index-only inference_plans; annotations, answers, categories, GT boxes, and coverage values are not loaded"
+}

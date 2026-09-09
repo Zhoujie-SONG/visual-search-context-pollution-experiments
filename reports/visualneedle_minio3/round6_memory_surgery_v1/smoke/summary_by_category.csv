@@ -1,0 +1,51 @@
+cohort,condition,num_samples,answered,answer_rate,final_correct,final_scored,judge_pending,final_accuracy,accuracy_among_answered,natural_stops,natural_termination_rate,mean_additional_crops,median_additional_crops,mean_stop_round,max_round_rate,max_image_rate,mean_first_post_visual_tokens,mean_runtime_seconds,oom,invalid,category
+primary_prefix_hit,A_full,1,0,0.0,0,1,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,3246.0,33.10118060745299,0,0,Color Recognition
+primary_prefix_hit,B_oracle_top2,1,0,0.0,0,1,0,0.0,,0,0.0,2.0,2.0,12.0,1.0,0.0,2999.0,28.362950576469302,0,0,Color Recognition
+primary_prefix_hit,C_recent_top2,1,0,0.0,0,1,0,0.0,,0,0.0,2.0,2.0,12.0,1.0,0.0,2621.0,29.66344682686031,0,0,Color Recognition
+primary_prefix_hit,D_force_answer_r6,1,0,0.0,0,1,0,0.0,,0,0.0,0.0,0.0,7.0,0.0,0.0,3246.0,5.933363577350974,0,1,Color Recognition
+primary_prefix_hit,E_random_top2,1,0,0.0,0,1,0,0.0,,0,0.0,2.0,2.0,12.0,1.0,0.0,2999.0,27.348420245572925,0,0,Color Recognition
+primary_prefix_hit,A_full,3,0,0.0,0,3,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,6270.333333333333,55.641278456275664,0,0,Entity Recognition
+primary_prefix_hit,B_oracle_top2,3,0,0.0,0,3,0,0.0,,0,0.0,4.333333333333333,5.0,12.0,1.0,0.6666666666666666,3904.6666666666665,48.688744229575,0,0,Entity Recognition
+primary_prefix_hit,C_recent_top2,3,0,0.0,0,3,0,0.0,,0,0.0,2.3333333333333335,2.0,12.0,1.0,0.3333333333333333,3388.3333333333335,38.49198588294288,0,0,Entity Recognition
+primary_prefix_hit,D_force_answer_r6,3,0,0.0,0,3,0,0.0,,0,0.0,0.0,0.0,7.0,0.0,0.0,6270.333333333333,8.096625830978155,0,3,Entity Recognition
+primary_prefix_hit,E_random_top2,3,0,0.0,0,3,0,0.0,,0,0.0,3.3333333333333335,5.0,12.0,1.0,0.6666666666666666,3397.3333333333335,38.85299989891549,0,0,Entity Recognition
+primary_prefix_hit,A_full,2,0,0.0,0,2,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,3015.0,30.844203043729067,0,0,OCR Recognition
+primary_prefix_hit,B_oracle_top2,2,0,0.0,0,2,0,0.0,,0,0.0,2.0,2.0,12.0,1.0,0.0,2500.5,30.777135494165123,0,0,OCR Recognition
+primary_prefix_hit,C_recent_top2,2,0,0.0,0,2,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,2313.5,28.780854602344334,0,0,OCR Recognition
+primary_prefix_hit,D_force_answer_r6,2,0,0.0,0,2,0,0.0,,0,0.0,0.0,0.0,7.0,0.0,0.0,3015.0,5.303680000826716,0,2,OCR Recognition
+primary_prefix_hit,E_random_top2,2,0,0.0,0,2,0,0.0,,0,0.0,2.0,2.0,12.0,1.0,0.0,2479.5,30.04322376381606,0,0,OCR Recognition
+primary_prefix_hit,A_full,1,0,0.0,0,1,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,2279.0,32.568346006795764,0,0,Occluded Object Recognition
+primary_prefix_hit,B_oracle_top2,1,0,0.0,0,1,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,2055.0,31.811228254809976,0,0,Occluded Object Recognition
+primary_prefix_hit,C_recent_top2,1,0,0.0,0,1,0,0.0,,0,0.0,4.0,4.0,12.0,1.0,0.0,1984.0,27.883149763569236,0,0,Occluded Object Recognition
+primary_prefix_hit,D_force_answer_r6,1,0,0.0,0,1,0,0.0,,0,0.0,0.0,0.0,7.0,0.0,0.0,2279.0,4.903648881241679,0,1,Occluded Object Recognition
+primary_prefix_hit,E_random_top2,1,0,0.0,0,1,0,0.0,,0,0.0,4.0,4.0,12.0,1.0,0.0,1984.0,27.320111779496074,0,0,Occluded Object Recognition
+primary_prefix_hit,A_full,3,0,0.0,0,3,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,3538.0,33.316551418354116,0,0,Spatial Relationship
+primary_prefix_hit,B_oracle_top2,3,0,0.0,0,3,0,0.0,,0,0.0,3.0,2.0,12.0,1.0,0.3333333333333333,3033.0,34.796525870760284,0,0,Spatial Relationship
+primary_prefix_hit,C_recent_top2,3,0,0.0,0,3,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,2404.6666666666665,30.48266051833828,0,0,Spatial Relationship
+primary_prefix_hit,D_force_answer_r6,3,0,0.0,0,3,0,0.0,,0,0.0,0.0,0.0,7.0,0.0,0.0,3538.0,6.8799728360027075,0,3,Spatial Relationship
+primary_prefix_hit,E_random_top2,3,0,0.0,0,3,0,0.0,,0,0.0,3.6666666666666665,5.0,12.0,1.0,0.6666666666666666,2496.6666666666665,30.628690433378022,0,0,Spatial Relationship
+secondary_prefix_no_hit,A_full,0,0,,0,0,0,,,0,,,,,,,,,0,0,Color Recognition
+secondary_prefix_no_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Color Recognition
+secondary_prefix_no_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Color Recognition
+secondary_prefix_no_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,Color Recognition
+secondary_prefix_no_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Color Recognition
+secondary_prefix_no_hit,A_full,0,0,,0,0,0,,,0,,,,,,,,,0,0,Entity Recognition
+secondary_prefix_no_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Entity Recognition
+secondary_prefix_no_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Entity Recognition
+secondary_prefix_no_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,Entity Recognition
+secondary_prefix_no_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Entity Recognition
+secondary_prefix_no_hit,A_full,0,0,,0,0,0,,,0,,,,,,,,,0,0,OCR Recognition
+secondary_prefix_no_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,OCR Recognition
+secondary_prefix_no_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,OCR Recognition
+secondary_prefix_no_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,OCR Recognition
+secondary_prefix_no_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,OCR Recognition
+secondary_prefix_no_hit,A_full,0,0,,0,0,0,,,0,,,,,,,,,0,0,Occluded Object Recognition
+secondary_prefix_no_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Occluded Object Recognition
+secondary_prefix_no_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Occluded Object Recognition
+secondary_prefix_no_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,Occluded Object Recognition
+secondary_prefix_no_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Occluded Object Recognition
+secondary_prefix_no_hit,A_full,0,0,,0,0,0,,,0,,,,,,,,,0,0,Spatial Relationship
+secondary_prefix_no_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Spatial Relationship
+secondary_prefix_no_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Spatial Relationship
+secondary_prefix_no_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,Spatial Relationship
+secondary_prefix_no_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,Spatial Relationship

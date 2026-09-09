@@ -1,0 +1,6 @@
+cohort,condition,num_samples,answered,answer_rate,final_correct,final_scored,judge_pending,final_accuracy,accuracy_among_answered,natural_stops,natural_termination_rate,mean_additional_crops,median_additional_crops,mean_stop_round,max_round_rate,max_image_rate,mean_first_post_visual_tokens,mean_runtime_seconds,oom,invalid
+primary_prefix_hit,A_full,10,0,0.0,0,10,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,4098.0,39.42314223255962,0,0
+primary_prefix_hit,B_oracle_top2,10,0,0.0,0,10,0,0.0,,0,0.0,3.3,2.5,12.0,1.0,0.4,3086.8,37.218426012061535,0,0
+primary_prefix_hit,C_recent_top2,10,0,0.0,0,10,0,0.0,,0,0.0,3.8,5.0,12.0,1.0,0.6,2661.1,32.203224499896166,0,0
+primary_prefix_hit,D_force_answer_r6,10,0,0.0,0,10,0,0.0,,0,0.0,0.0,0.0,7.0,0.0,0.0,4098.0,6.637416846118867,0,10
+primary_prefix_hit,E_random_top2,10,0,0.0,0,10,0,0.0,,0,0.0,3.1,3.0,12.0,1.0,0.4,2762.4,32.320005054958166,0,0

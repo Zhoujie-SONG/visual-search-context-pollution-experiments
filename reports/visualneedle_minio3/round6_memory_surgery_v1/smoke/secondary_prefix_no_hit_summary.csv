@@ -1,0 +1,6 @@
+cohort,condition,num_samples,answered,answer_rate,final_correct,final_scored,judge_pending,final_accuracy,accuracy_among_answered,natural_stops,natural_termination_rate,mean_additional_crops,median_additional_crops,mean_stop_round,max_round_rate,max_image_rate,mean_first_post_visual_tokens,mean_runtime_seconds,oom,invalid
+secondary_prefix_no_hit,A_full,0,0,,0,0,0,,,0,,,,,,,,,0,0
+secondary_prefix_no_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0
+secondary_prefix_no_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0
+secondary_prefix_no_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0
+secondary_prefix_no_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0

@@ -1,0 +1,11 @@
+sample_id,category,first_gt_hit_crop_index,max_prefix_gt_coverage,irrelevant_prefix_crops,repeated_prefix_crops,oracle_answer_rescue,oracle_accuracy_rescue,oracle_minus_full_additional_crops
+TPROMPT08c724f096a1,Spatial Relationship,1,1.0,3,0,False,False,-3.0
+TPROMPT294532df0b70,Occluded Object Recognition,1,1.0,0,3,False,False,0.0
+TPROMPT2d3a530d79de,OCR Recognition,1,1.0,0,4,False,False,-3.0
+TPROMPT312e2d4924ab,Entity Recognition,1,1.0,0,0,False,False,0.0
+TPROMPT4e84c67324b4,Spatial Relationship,1,0.7258064516129032,5,0,False,False,-3.0
+TPROMPT59892e5d6946,Entity Recognition,1,1.0,0,1,False,False,0.0
+TPROMPT642beb76b8d9,Spatial Relationship,1,1.0,5,4,False,False,0.0
+TPROMPTbbf9cdc186ad,OCR Recognition,1,1.0,0,0,False,False,-3.0
+TPROMPTe2ae8879903b,Entity Recognition,1,1.0,1,0,False,False,-2.0
+TPROMPTf9789aa0279c,Color Recognition,1,1.0,5,0,False,False,-3.0
