@@ -18,7 +18,12 @@ This repository is a lightweight research record. It intentionally excludes:
 `reports/` mirrors publishable files from `outputs/`. `MANIFEST.txt` records the
 files included by the most recent synchronization.
 
+## Current review target
+
+The unexecuted Round-6 Visual Memory Surgery pilot is documented in
+[`docs/ROUND6_MEMORY_SURGERY_README.md`](docs/ROUND6_MEMORY_SURGERY_README.md).
+Its runner, scorer, judge adapter, tests, and gated launchers are under `code/`.
+
 The active working project remains `/home/songzhoujie/cvpr27/vstar`. Run
 `publish_reports_to_github.sh` there after an experiment finishes to refresh and
 push this repository.
-
