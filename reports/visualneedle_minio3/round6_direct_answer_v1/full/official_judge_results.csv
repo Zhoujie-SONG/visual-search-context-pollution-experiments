@@ -1,0 +1,11 @@
+sample_id,condition,model,judge_result,judge_parse_success,raw_output,finish_reason,runtime_seconds,prompt_tokens,candidate_tokens,thought_tokens,total_tokens,error
+TPROMPT6064c9a5c9cc,F_full_direct,gemini-3.8-flash,False,True,NO,STOP,19.684364579617977,1541,1,,1542,
+TPROMPT84ed52046338,O_oracle_top2_direct,gemini-3.8-flash,,False,,,,,,,,HTTP 400
+TPROMPT84ed52046338,R_recent_top2_direct,gemini-3.8-flash,,False,,,,,,,,HTTP 400
+TPROMPT91f41b6832c0,F_full_direct,gemini-3.8-flash,False,True,NO,STOP,4.575484152883291,1546,1,,1547,
+TPROMPT91f41b6832c0,O_oracle_top2_direct,gemini-3.8-flash,,False,,,,,,,,HTTP 400
+TPROMPT9cfcac6766a6,F_full_direct,gemini-3.8-flash,True,True,YES,STOP,13.538868464529514,1516,1,54,1571,
+TPROMPT9cfcac6766a6,O_oracle_top2_direct,gemini-3.8-flash,True,True,YES,STOP,6.856767127290368,1521,1,77,1599,
+TPROMPT9cfcac6766a6,X_random_top2_direct,gemini-3.8-flash,True,True,YES,STOP,14.12675179541111,1529,1,42,1572,
+TPROMPTbbf9cdc186ad,O_oracle_top2_direct,gemini-3.8-flash,,False,,,,,,,,HTTP 400
+TPROMPTf580f92c43df,R_recent_top2_direct,gemini-3.8-flash,False,True,NO,STOP,6.003873310983181,1537,1,123,1661,

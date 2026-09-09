@@ -349,8 +349,8 @@ TPROMPT9cb8bd6915b4,Spatial Relationship,strict,O_oracle_top2_direct,X_random_to
 TPROMPT9cb8bd6915b4,Spatial Relationship,lenient,O_oracle_top2_direct,X_random_top2_direct,False,False,False,False
 TPROMPT9cfcac6766a6,Entity Recognition,strict,O_oracle_top2_direct,F_full_direct,False,False,False,False
 TPROMPT9cfcac6766a6,Entity Recognition,lenient,O_oracle_top2_direct,F_full_direct,False,False,False,False
-TPROMPT9cfcac6766a6,Entity Recognition,strict,O_oracle_top2_direct,R_recent_top2_direct,False,False,False,True
-TPROMPT9cfcac6766a6,Entity Recognition,lenient,O_oracle_top2_direct,R_recent_top2_direct,False,False,False,True
+TPROMPT9cfcac6766a6,Entity Recognition,strict,O_oracle_top2_direct,R_recent_top2_direct,True,False,False,True
+TPROMPT9cfcac6766a6,Entity Recognition,lenient,O_oracle_top2_direct,R_recent_top2_direct,True,False,False,True
 TPROMPT9cfcac6766a6,Entity Recognition,strict,O_oracle_top2_direct,X_random_top2_direct,False,False,False,False
 TPROMPT9cfcac6766a6,Entity Recognition,lenient,O_oracle_top2_direct,X_random_top2_direct,False,False,False,False
 TPROMPT9ee217718764,OCR Recognition,strict,O_oracle_top2_direct,F_full_direct,False,False,False,False

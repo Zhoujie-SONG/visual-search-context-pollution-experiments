@@ -659,6 +659,7 @@ reports/visualneedle_minio3/round6_direct_answer_v1/full/integrity_report.md
 reports/visualneedle_minio3/round6_direct_answer_v1/full/lenient_summary.csv
 reports/visualneedle_minio3/round6_direct_answer_v1/full/mcnemar_pairwise.csv
 reports/visualneedle_minio3/round6_direct_answer_v1/full/merged_results.csv
+reports/visualneedle_minio3/round6_direct_answer_v1/full/official_judge_results.csv
 reports/visualneedle_minio3/round6_direct_answer_v1/full/oom_log.csv
 reports/visualneedle_minio3/round6_direct_answer_v1/full/paired_results.csv
 reports/visualneedle_minio3/round6_direct_answer_v1/full/sample_ids.txt
