@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT6064c9a5c9cc",
+  "question": "Did you see the numbers below 'bo'? What are they?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT6064c9a5c9cc.png",
+  "original_width": 1080,
+  "original_height": 1920,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 744,
+  "turns": [
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 1,
+      "question": "Did you see the numbers below 'bo'? What are they?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the numbers below the word 'bo'. I need to find the word 'bo' in the image. I can see a sign with some text on it in the middle of the image. I will zoom into that area to read the text. I will select the bounding box [0.2, 0.5, 0.6, 0.8] to focus on the signs in the middle of the image. </think><grounding>{\"bbox_2d\": [0.2,0.5,0.6,0.8], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.6,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        215.85284186017574,
+        959.7418603096047,
+        647.5585255805273,
+        1535.5869764953675
+      ],
+      "predicted_bbox_clipped": [
+        215,
+        959,
+        648,
+        1536
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        212.0,
+        942.5,
+        636.0,
+        1508.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        215.85284186017574,
+        959.7418603096047,
+        647.5585255805273,
+        1535.5869764953675
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2756,
+      "output_tokens": 135,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.080050138756633,
+      "tokens_per_second": 33.08782868073781,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          134,
+          76
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 433,
+      "original_crop_height": 577,
+      "processed_width": 433,
+      "processed_height": 577,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 2,
+      "question": "Did you see the numbers below 'bo'? What are they?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the numbers below the word 'bo'. In observation 1, I can see a sign that says \"Foot & Bo\". Below the word 'bo', there are some numbers. I will zoom in on that sign to read the numbers more clearly. The sign is located in the middle-left of the current view. I will select the bounding box [0.0, 0.5, 0.5, 0.9] to focus on that sign. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.5,0.9], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        215.0,
+        1247.5,
+        431.5,
+        1478.3000000000002
+      ],
+      "predicted_bbox_clipped": [
+        215,
+        1247,
+        432,
+        1479
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        288.5,
+        216.5,
+        519.3000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        288.5,
+        216.5,
+        519.3000000000001
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3303,
+      "output_tokens": 144,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.474949339404702,
+      "tokens_per_second": 32.17913524338494,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          134,
+          76
+        ],
+        [
+          1,
+          42,
+          30
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 217,
+      "original_crop_height": 232,
+      "processed_width": 217,
+      "processed_height": 232,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 3,
+      "question": "Did you see the numbers below 'bo'? What are they?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the numbers below the word 'bo'. In observation 2, I can see a sign that says \"Foot & Bo\". Below the word 'bo', there are some numbers. I can see the numbers are \"123-2916\". I will zoom in on the sign to get a clearer view of the numbers. </think><grounding>{\"bbox_2d\": [0.2,0.2,0.9,0.8], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        258.4,
+        1293.4,
+        410.3,
+        1432.6
+      ],
+      "predicted_bbox_clipped": [
+        258,
+        1293,
+        411,
+        1433
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        43.400000000000006,
+        46.400000000000006,
+        195.3,
+        185.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        43.400000000000006,
+        46.400000000000006,
+        195.3,
+        185.60000000000002
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3608,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.9567195493727922,
+      "tokens_per_second": 29.56995019233711,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          134,
+          76
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          16,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 153,
+      "original_crop_height": 140,
+      "processed_width": 209,
+      "processed_height": 191,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 4,
+      "question": "Did you see the numbers below 'bo'? What are they?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the numbers below the word 'bo'. In observation 3, I can see a sign that says \"Foot & Bod\". Below the word 'bo', there are some numbers. I can see the numbers are \"TEL: 2914\". I will zoom in on the sign to get a clearer view of the numbers. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.9], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        273.3,
+        1349.0,
+        395.7,
+        1419.0
+      ],
+      "predicted_bbox_clipped": [
+        273,
+        1349,
+        396,
+        1419
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.900000000000002,
+        76.4,
+        188.1,
+        171.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.3,
+        56.0,
+        137.7,
+        126.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3878,
+      "output_tokens": 116,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.9995922558009624,
+      "tokens_per_second": 29.00295644681153,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          134,
+          76
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          14,
+          16
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 70,
+      "processed_width": 265,
+      "processed_height": 151,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 5,
+      "question": "Did you see the numbers below 'bo'? What are they?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the numbers below the word 'bo'. In observation 4, I can see a sign that says \"Foot & Bod\". Below the word 'bo', there are some numbers. I can see the numbers are \"TEL: 2914\". I will zoom in on the sign to get a clearer view of the numbers. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.9], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        273.3,
+        1349.0,
+        395.7,
+        1419.0
+      ],
+      "predicted_bbox_clipped": [
+        273,
+        1349,
+        396,
+        1419
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.900000000000002,
+        76.4,
+        188.1,
+        171.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.3,
+        56.0,
+        137.7,
+        126.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_05_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4151,
+      "output_tokens": 116,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.081696530804038,
+      "tokens_per_second": 28.419555232625193,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          134,
+          76
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          12,
+          20
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 70,
+      "processed_width": 265,
+      "processed_height": 151,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 6,
+      "question": "Did you see the numbers below 'bo'? What are they?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the numbers below the word 'bo'. In observation 5, I can see a sign that says \"Foot & Bod\". Below the word 'bo', there are some numbers. I can see the numbers are \"TEL: 2914\". I will zoom in on the sign to get a clearer view of the numbers. </think><grounding>{\"bbox_2d\": [0.1,0.4,0.9,0.9], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        273.3,
+        1349.0,
+        395.7,
+        1419.0
+      ],
+      "predicted_bbox_clipped": [
+        273,
+        1349,
+        396,
+        1419
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.900000000000002,
+        76.4,
+        188.1,
+        171.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.3,
+        56.0,
+        137.7,
+        126.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_06_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4424,
+      "output_tokens": 116,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.149358946830034,
+      "tokens_per_second": 27.95612562962767,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          134,
+          76
+        ],
+        [
+          1,
+          42,
+          30
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          14,
+          16
+        ],
+        [
+          1,
+          12,
+          20
+        ],
+        [
+          1,
+          12,
+          20
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 123,
+      "original_crop_height": 70,
+      "processed_width": 265,
+      "processed_height": 151,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.5,
+        0.6,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        215.85284186017574,
+        959.7418603096047,
+        647.5585255805273,
+        1535.5869764953675
+      ],
+      "predicted_bbox_clipped": [
+        215,
+        959,
+        648,
+        1536
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        212.0,
+        942.5,
+        636.0,
+        1508.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        215.85284186017574,
+        959.7418603096047,
+        647.5585255805273,
+        1535.5869764953675
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_01_processed.png",
+      "original_crop_width": 433,
+      "original_crop_height": 577,
+      "processed_width": 433,
+      "processed_height": 577,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.5,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        215.0,
+        1247.5,
+        431.5,
+        1478.3000000000002
+      ],
+      "predicted_bbox_clipped": [
+        215,
+        1247,
+        432,
+        1479
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        288.5,
+        216.5,
+        519.3000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        288.5,
+        216.5,
+        519.3000000000001
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_02_processed.png",
+      "original_crop_width": 217,
+      "original_crop_height": 232,
+      "processed_width": 217,
+      "processed_height": 232,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.2,
+        0.2,
+        0.9,
+        0.8
+      ],
+      "predicted_bbox_pixel": [
+        258.4,
+        1293.4,
+        410.3,
+        1432.6
+      ],
+      "predicted_bbox_clipped": [
+        258,
+        1293,
+        411,
+        1433
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        43.400000000000006,
+        46.400000000000006,
+        195.3,
+        185.60000000000002
+      ],
+      "predicted_bbox_source_content_pixel": [
+        43.400000000000006,
+        46.400000000000006,
+        195.3,
+        185.60000000000002
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_03_processed.png",
+      "original_crop_width": 153,
+      "original_crop_height": 140,
+      "processed_width": 209,
+      "processed_height": 191,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.3660130718954249,
+      "preprocess_scale_y": 1.3642857142857143
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        273.3,
+        1349.0,
+        395.7,
+        1419.0
+      ],
+      "predicted_bbox_clipped": [
+        273,
+        1349,
+        396,
+        1419
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.900000000000002,
+        76.4,
+        188.1,
+        171.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.3,
+        56.0,
+        137.7,
+        126.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_04_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 70,
+      "processed_width": 265,
+      "processed_height": 151,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.154471544715447,
+      "preprocess_scale_y": 2.157142857142857
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        273.3,
+        1349.0,
+        395.7,
+        1419.0
+      ],
+      "predicted_bbox_clipped": [
+        273,
+        1349,
+        396,
+        1419
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.900000000000002,
+        76.4,
+        188.1,
+        171.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.3,
+        56.0,
+        137.7,
+        126.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_05_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 70,
+      "processed_width": 265,
+      "processed_height": 151,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.154471544715447,
+      "preprocess_scale_y": 2.157142857142857
+    },
+    {
+      "sample_id": "TPROMPT6064c9a5c9cc",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.1,
+        0.4,
+        0.9,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        273.3,
+        1349.0,
+        395.7,
+        1419.0
+      ],
+      "predicted_bbox_clipped": [
+        273,
+        1349,
+        396,
+        1419
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        20.900000000000002,
+        76.4,
+        188.1,
+        171.9
+      ],
+      "predicted_bbox_source_content_pixel": [
+        15.3,
+        56.0,
+        137.7,
+        126.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT6064c9a5c9cc/turn_06_processed.png",
+      "original_crop_width": 123,
+      "original_crop_height": 70,
+      "processed_width": 265,
+      "processed_height": 151,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 2.154471544715447,
+      "preprocess_scale_y": 2.157142857142857
+    }
+  ],
+  "original_image_sha256": "8d5febcb2e8d34198dd4e36efcc983c093346e7e39873faae95eabfea5a0ea3f",
+  "crop_image_sha256": [
+    "80666f10e70ee903f79922503f7571dee175db7f9dad98c542f3b11f3a26d550",
+    "5a9a37135e05ae57b299c0e25e171e2f53d204d85e1bc7d24ff067b3da378151",
+    "3eadee236bc5dfb48ffcbf8f4bc30a58040924cb531b6d9b668f7a01003a8d42",
+    "a49f85090afbd7d29eee05c65702cf7bbd0279025f1e7fc8468eeb7adfee07c2",
+    "a49f85090afbd7d29eee05c65702cf7bbd0279025f1e7fc8468eeb7adfee07c2",
+    "a49f85090afbd7d29eee05c65702cf7bbd0279025f1e7fc8468eeb7adfee07c2"
+  ],
+  "raw_crop_image_sha256": [
+    "80666f10e70ee903f79922503f7571dee175db7f9dad98c542f3b11f3a26d550",
+    "5a9a37135e05ae57b299c0e25e171e2f53d204d85e1bc7d24ff067b3da378151",
+    "718d995259ea1032cee8d5fc05b7cd40dc4455e1373030a3c8fd5b6f3dcb9867",
+    "d467e6b396e804c9035e7d4b8ac01c56de1eca3b9ae5f1dc14630c601b015d37",
+    "d467e6b396e804c9035e7d4b8ac01c56de1eca3b9ae5f1dc14630c601b015d37",
+    "d467e6b396e804c9035e7d4b8ac01c56de1eca3b9ae5f1dc14630c601b015d37"
+  ],
+  "assistant_text_sha256": "62a849d96ab5551d5bbf89e6c0535890651bff0153a944e4304367f790fa244c"
+}

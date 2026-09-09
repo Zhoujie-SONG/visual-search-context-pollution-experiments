@@ -77,11 +77,11 @@ def synchronize() -> list[Path]:
             copy_file(source, destination)
             copied.append(destination.relative_to(DESTINATION))
 
-    experiment_readme = SOURCE / "README_experiment.md"
-    if experiment_readme.exists():
-        destination = DESTINATION / "reports" / "README_experiment.md"
-        copy_file(experiment_readme, destination)
-        copied.append(destination.relative_to(DESTINATION))
+    for documentation in (SOURCE / "README_experiment.md", SOURCE / "ROUND6_MEMORY_SURGERY_README.md"):
+        if documentation.exists():
+            destination = DESTINATION / "docs" / documentation.name
+            copy_file(documentation, destination)
+            copied.append(destination.relative_to(DESTINATION))
 
     output_root = SOURCE / "outputs"
     for source in sorted(output_root.rglob("*")):

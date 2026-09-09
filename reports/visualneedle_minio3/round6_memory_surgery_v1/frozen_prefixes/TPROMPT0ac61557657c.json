@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT0ac61557657c",
+  "question": "What building number is the first building to the bottom left of Building '31栋' in the picture?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT0ac61557657c.jpg",
+  "original_width": 5472,
+  "original_height": 3648,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 799,
+  "turns": [
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 1,
+      "question": "What building number is the first building to the bottom left of Building '31栋' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the building number of the first building to the bottom left of 'Building 31栋'. First, I need to locate 'Building 31栋' in the image. Looking at the image, I can see a building in the upper middle part that seems to have some text on it. I will zoom into that area to read the text and identify 'Building 31栋'. </think><grounding>{\"bbox_2d\": [0.3,0.05,0.7,0.25], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.05,
+        0.7,
+        0.25
+      ],
+      "predicted_bbox_pixel": [
+        1640.8408581501253,
+        182.2630345561018,
+        3828.6286690169586,
+        911.3151727805089
+      ],
+      "predicted_bbox_clipped": [
+        1640,
+        182,
+        3829,
+        912
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        57.7,
+        1211.6999999999998,
+        288.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1640.8408581501253,
+        182.2630345561018,
+        3828.6286690169586,
+        911.3151727805089
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2761,
+      "output_tokens": 129,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.9946008808910847,
+      "tokens_per_second": 32.29358923368176,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2189,
+      "original_crop_height": 730,
+      "processed_width": 2189,
+      "processed_height": 730,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 2,
+      "question": "What building number is the first building to the bottom left of Building '31栋' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the building number of the first building to the bottom left of 'Building 31栋'. In observation 1, I can see some buildings, but I cannot clearly see the text '31栋'. I need to go back to the original image and search for '31栋' again. I will try a different area in the original image. I will try to zoom into the building in the middle of the image, which seems to have some text on it. </think><grounding>{\"bbox_2d\": [0.3,0.1,0.7,0.4], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1640.8408581501253,
+        364.5260691122036,
+        3828.6286690169586,
+        1458.1042764488143
+      ],
+      "predicted_bbox_clipped": [
+        1640,
+        364,
+        3829,
+        1459
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        115.4,
+        1211.6999999999998,
+        461.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1640.8408581501253,
+        364.5260691122036,
+        3828.6286690169586,
+        1458.1042764488143
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5015,
+      "output_tokens": 144,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.263376006856561,
+      "tokens_per_second": 27.358866212942466,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          52,
+          156
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2189,
+      "original_crop_height": 1095,
+      "processed_width": 2000,
+      "processed_height": 1000,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 3,
+      "question": "What building number is the first building to the bottom left of Building '31栋' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the building number of the first building to the bottom left of 'Building 31栋'. In observation 2, I still cannot see the text '31栋'. I need to go back to the original image and search for '31栋' again. I will try to zoom into the building in the lower left corner of the original image, as it seems to have some text on it. </think><grounding>{\"bbox_2d\": [0.0,0.5,0.4,0.9], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1822.6303455610177,
+        2187.787810866834,
+        3280.7346220098325
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1822,
+        2188,
+        3281
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        577.0,
+        692.4000000000001,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1822.6303455610177,
+        2187.787810866834,
+        3280.7346220098325
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 7741,
+      "output_tokens": 130,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.0768408961594105,
+      "tokens_per_second": 21.392694365613647,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          52,
+          156
+        ],
+        [
+          1,
+          70,
+          142
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2188,
+      "original_crop_height": 1459,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 4,
+      "question": "What building number is the first building to the bottom left of Building '31栋' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the building number of the first building to the bottom left of 'Building 31栋'. In observation 3, I can see a building with some text on it. I will zoom in on that building to read the text. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,0.4], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1822.0,
+        1093.494090409501,
+        2405.1617706520888
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1822,
+        1094,
+        2406
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        865.5,
+        461.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1093.494090409501,
+        583.1617706520889
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10510,
+      "output_tokens": 96,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.573557801544666,
+      "tokens_per_second": 14.603963773991879,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          52,
+          156
+        ],
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          82,
+          124
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1094,
+      "original_crop_height": 584,
+      "processed_width": 1094,
+      "processed_height": 584,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 5,
+      "question": "What building number is the first building to the bottom left of Building '31栋' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the building number of the first building to the bottom left of 'Building 31栋'. In observation 4, I can see a building with the number '22栋' on it. The question asks for the building number of the first building to the bottom left of 'Building 31栋'. In the image, the building to the bottom left of '22栋' is '21栋'. I will zoom in on the building to get a clearer view of the number. </think><grounding>{\"bbox_2d\": [0.4,0.0,1.0,0.6], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.4,
+        0.0,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        437.6,
+        1822.0,
+        1094.0,
+        2172.4
+      ],
+      "predicted_bbox_clipped": [
+        437,
+        1822,
+        1094,
+        2173
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        437.6,
+        0.0,
+        1094.0,
+        350.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        437.6,
+        0.0,
+        1094.0,
+        350.4
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 11522,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.361851831898093,
+      "tokens_per_second": 17.938610132721145,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          52,
+          156
+        ],
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          42,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 657,
+      "original_crop_height": 351,
+      "processed_width": 657,
+      "processed_height": 351,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 6,
+      "question": "What building number is the first building to the bottom left of Building '31栋' in the picture?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the building number of the first building to the bottom left of 'Building 31栋'. In observation 5, I can see a building with the number '22栋' on it. The question asks for the building number of the first building to the bottom left of 'Building 31栋'. In the image, the building to the bottom left of '22栋' is '21栋'. I will zoom in on the building to get a clearer view of the number. </think><grounding>{\"bbox_2d\": [0.0,0.0,0.5,0.5], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        437.0,
+        1822.0,
+        765.5,
+        1997.5
+      ],
+      "predicted_bbox_clipped": [
+        437,
+        1822,
+        766,
+        1998
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        328.5,
+        175.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        328.5,
+        175.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 12068,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 8.568161953240633,
+      "tokens_per_second": 17.506671888160014,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          52,
+          156
+        ],
+        [
+          1,
+          70,
+          142
+        ],
+        [
+          1,
+          82,
+          124
+        ],
+        [
+          1,
+          42,
+          78
+        ],
+        [
+          1,
+          26,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 329,
+      "original_crop_height": 176,
+      "processed_width": 329,
+      "processed_height": 176,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.05,
+        0.7,
+        0.25
+      ],
+      "predicted_bbox_pixel": [
+        1640.8408581501253,
+        182.2630345561018,
+        3828.6286690169586,
+        911.3151727805089
+      ],
+      "predicted_bbox_clipped": [
+        1640,
+        182,
+        3829,
+        912
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        57.7,
+        1211.6999999999998,
+        288.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1640.8408581501253,
+        182.2630345561018,
+        3828.6286690169586,
+        911.3151727805089
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_01_processed.png",
+      "original_crop_width": 2189,
+      "original_crop_height": 730,
+      "processed_width": 2189,
+      "processed_height": 730,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.3,
+        0.1,
+        0.7,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        1640.8408581501253,
+        364.5260691122036,
+        3828.6286690169586,
+        1458.1042764488143
+      ],
+      "predicted_bbox_clipped": [
+        1640,
+        364,
+        3829,
+        1459
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        519.3,
+        115.4,
+        1211.6999999999998,
+        461.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1640.8408581501253,
+        364.5260691122036,
+        3828.6286690169586,
+        1458.1042764488143
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_02_processed.png",
+      "original_crop_width": 2189,
+      "original_crop_height": 1095,
+      "processed_width": 2000,
+      "processed_height": 1000,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.9136592051164916,
+      "preprocess_scale_y": 0.91324200913242
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.5,
+        0.4,
+        0.9
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1822.6303455610177,
+        2187.787810866834,
+        3280.7346220098325
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1822,
+        2188,
+        3281
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        577.0,
+        692.4000000000001,
+        1038.6000000000001
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        1822.6303455610177,
+        2187.787810866834,
+        3280.7346220098325
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_03_processed.png",
+      "original_crop_width": 2188,
+      "original_crop_height": 1459,
+      "processed_width": 1731,
+      "processed_height": 1154,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.7914994763948656,
+      "preprocess_scale_y": 0.7915470856120095
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.4
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        1822.0,
+        1093.494090409501,
+        2405.1617706520888
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        1822,
+        1094,
+        2406
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        865.5,
+        461.6
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1093.494090409501,
+        583.1617706520889
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_04_processed.png",
+      "original_crop_width": 1094,
+      "original_crop_height": 584,
+      "processed_width": 1094,
+      "processed_height": 584,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.4,
+        0.0,
+        1.0,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        437.6,
+        1822.0,
+        1094.0,
+        2172.4
+      ],
+      "predicted_bbox_clipped": [
+        437,
+        1822,
+        1094,
+        2173
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        437.6,
+        0.0,
+        1094.0,
+        350.4
+      ],
+      "predicted_bbox_source_content_pixel": [
+        437.6,
+        0.0,
+        1094.0,
+        350.4
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_05_processed.png",
+      "original_crop_width": 657,
+      "original_crop_height": 351,
+      "processed_width": 657,
+      "processed_height": 351,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT0ac61557657c",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        437.0,
+        1822.0,
+        765.5,
+        1997.5
+      ],
+      "predicted_bbox_clipped": [
+        437,
+        1822,
+        766,
+        1998
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        328.5,
+        175.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        328.5,
+        175.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT0ac61557657c/turn_06_processed.png",
+      "original_crop_width": 329,
+      "original_crop_height": 176,
+      "processed_width": 329,
+      "processed_height": 176,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "52a7b277f21be5a5ac2c9eba7d30c788d9bac4039857904c69798b3647d26152",
+  "crop_image_sha256": [
+    "994f31df5c720140a59321cbf11d9650c567d5c388afa561ed3fe9d5a7ebcf50",
+    "23cf9f7dae937256f6ffffa356e86391c9e46336075260ef254fe1b97d432d0e",
+    "c8a8ee59c24a3be808f9089a67f769c7a0122d80525725b622c266596f23de40",
+    "5cff30c419586e71753912f7c6cbd2103be4a5a18094499c6e48f7ae53832769",
+    "7a647b77765e335ad4e5c222c3cdb054e8fbcff94de22a97ca71b348b1c877de",
+    "c7cac5c047e8528fa9c628c468d88e5771b28a35cf2e6495b0ad37a28f693382"
+  ],
+  "raw_crop_image_sha256": [
+    "994f31df5c720140a59321cbf11d9650c567d5c388afa561ed3fe9d5a7ebcf50",
+    "7f0f4b7874bd95d8fb33d7c3d3c8a70137d21238a9d9868fad10bd41fa54e135",
+    "fba02e8b7076fd4d83e9c464d0cb5baf246ddbe1d8ed62e5c0744d7d3389d789",
+    "5cff30c419586e71753912f7c6cbd2103be4a5a18094499c6e48f7ae53832769",
+    "7a647b77765e335ad4e5c222c3cdb054e8fbcff94de22a97ca71b348b1c877de",
+    "c7cac5c047e8528fa9c628c468d88e5771b28a35cf2e6495b0ad37a28f693382"
+  ],
+  "assistant_text_sha256": "dbb998f51233cb2e6f56af62baf868671d969cb4e7314e5eb3cf56cdb58a5fb4"
+}

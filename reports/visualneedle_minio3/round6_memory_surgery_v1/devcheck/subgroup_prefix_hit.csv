@@ -1,0 +1,14 @@
+sample_id,category,first_gt_hit_crop_index,max_prefix_gt_coverage,irrelevant_prefix_crops,repeated_prefix_crops,oracle_answer_rescue,oracle_accuracy_rescue,oracle_minus_full_additional_crops
+TPROMPT0ac61557657c,Spatial Relationship,3,1.0,3,0,False,False,-5.0
+TPROMPT2f6ab630f960,OCR Recognition,1,0.29545454545454547,1,0,False,False,-5.0
+TPROMPT378b8f698c05,Occluded Object Recognition,1,1.0,0,0,False,False,-5.0
+TPROMPT433eb7d38409,Entity Recognition,3,1.0,2,0,False,False,-5.0
+TPROMPT59892e5d6946,Entity Recognition,1,1.0,0,1,False,False,-5.0
+TPROMPT6064c9a5c9cc,OCR Recognition,1,1.0,0,2,False,False,-5.0
+TPROMPT642beb76b8d9,Spatial Relationship,1,1.0,5,4,False,False,-5.0
+TPROMPT65ab072c3b73,Color Recognition,1,0.5981308411214953,0,4,False,False,-5.0
+TPROMPT6ce215638c57,Entity Recognition,1,0.45454545454545453,5,3,False,False,-5.0
+TPROMPT77a09000c1fe,Occluded Object Recognition,1,1.0,0,1,False,False,-5.0
+TPROMPTbcd9c95a3af1,OCR Recognition,1,1.0,4,1,False,False,-5.0
+TPROMPTbf5dc4466ea8,Color Recognition,1,1.0,0,3,False,False,-5.0
+TPROMPTeb5d2ac29103,Entity Recognition,2,1.0,3,0,False,False,-5.0

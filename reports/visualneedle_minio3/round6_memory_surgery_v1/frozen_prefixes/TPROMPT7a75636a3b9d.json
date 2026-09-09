@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPT7a75636a3b9d",
+  "question": "In the image, what is the second product to the right of the first product directly above the '原味阿萨姆奶茶'?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPT7a75636a3b9d.jpg",
+  "original_width": 5184,
+  "original_height": 3296,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 867,
+  "turns": [
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 1,
+      "question": "In the image, what is the second product to the right of the first product directly above the '原味阿萨姆奶茶'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking for the second product to the right of the first product directly above the product labeled '原味阿萨姆奶茶'. I need to first locate the product '原味阿萨姆奶茶' in the image. I can see a shelf in the middle of the image with many products. I will zoom into that area to read the product names. </think><grounding>{\"bbox_2d\": [0.2,0.4,0.8,1.0], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1036.4932266278363,
+        1317.5841763451456,
+        4145.972906511345,
+        3293.9604408628643
+      ],
+      "predicted_bbox_clipped": [
+        1036,
+        1317,
+        4146,
+        3294
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        354.6,
+        450.8,
+        1418.4,
+        1127.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1036.4932266278363,
+        1317.5841763451456,
+        4145.972906511345,
+        3293.9604408628643
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2744,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.662232670933008,
+      "tokens_per_second": 31.947724383713858,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          80,
+          126
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 3110,
+      "original_crop_height": 1977,
+      "processed_width": 1773,
+      "processed_height": 1127,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 2,
+      "question": "In the image, what is the second product to the right of the first product directly above the '原味阿萨姆奶茶'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the second product to the right of the first product directly above the product labeled '原味阿萨姆奶茶'. I can see a shelf in the middle of the image with many products. I will zoom into that area to read the product names. I will try to find the product '原味阿萨姆奶茶' in this area. I can see some products on the shelves, but I can't clearly read the text on them. I will zoom in on the shelf to read the text. </think><grounding>{\"bbox_2d\": [0.1,0.0,0.9,0.5], \"source\": \"observation_1\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1346.9079798237433,
+        1317.0,
+        3834.17181841369,
+        2304.8883178983438
+      ],
+      "predicted_bbox_clipped": [
+        1346,
+        1317,
+        3835,
+        2305
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        177.3,
+        0.0,
+        1595.7,
+        563.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        310.90797982374335,
+        0.0,
+        2798.17181841369,
+        987.8883178983439
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_02_raw.png",
+      "source": "observation_1",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5478,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 5.52272111736238,
+      "tokens_per_second": 27.160524098967926,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          80,
+          126
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 2489,
+      "original_crop_height": 988,
+      "processed_width": 2244,
+      "processed_height": 890,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 3,
+      "question": "In the image, what is the second product to the right of the first product directly above the '原味阿萨姆奶茶'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the second product to the right of the first product directly above the product labeled '原味阿萨姆奶茶'. I can see a shelf in the middle of the image with many products. I will zoom into that area to read the product names. I will try to find the product '原味阿萨姆奶茶' in this area. I can see some products on the shelves, but I can't clearly read the text on them. I will zoom in on the shelf to read the text. </think><grounding>{\"bbox_2d\": [0.1,0.0,0.9,0.5], \"source\": \"observation_2\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1594.807478925019,
+        1317.0,
+        3585.2673103251723,
+        1810.4819570476084
+      ],
+      "predicted_bbox_clipped": [
+        1594,
+        1317,
+        3586,
+        1811
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        224.4,
+        0.0,
+        2019.6000000000001,
+        445.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        248.8074789250191,
+        0.0,
+        2239.2673103251723,
+        493.4819570476083
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_03_raw.png",
+      "source": "observation_2",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 8205,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 6.873260324820876,
+      "tokens_per_second": 21.82370416821207,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          62,
+          160
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1992,
+      "original_crop_height": 494,
+      "processed_width": 1992,
+      "processed_height": 494,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 4,
+      "question": "In the image, what is the second product to the right of the first product directly above the '原味阿萨姆奶茶'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the second product to the right of the first product directly above the product labeled '原味阿萨姆奶茶'. I can see a shelf in the middle of the image with many products. I will zoom into that area to read the product names. I will try to find the product '原味阿萨姆奶茶' in this area. I can see some products on the shelves, but I can't clearly read the text on them. I will zoom in on the shelf to read the text. </think><grounding>{\"bbox_2d\": [0.1,0.0,0.9,0.5], \"source\": \"observation_3\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1793.2,
+        1317.0,
+        3386.8,
+        1564.0
+      ],
+      "predicted_bbox_clipped": [
+        1793,
+        1317,
+        3387,
+        1564
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        199.20000000000002,
+        0.0,
+        1792.8,
+        247.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        199.20000000000002,
+        0.0,
+        1792.8,
+        247.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_04_raw.png",
+      "source": "observation_3",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 9730,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.396348915994167,
+      "tokens_per_second": 20.2802763503536,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          62,
+          160
+        ],
+        [
+          1,
+          36,
+          142
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1594,
+      "original_crop_height": 247,
+      "processed_width": 1594,
+      "processed_height": 247,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 5,
+      "question": "In the image, what is the second product to the right of the first product directly above the '原味阿萨姆奶茶'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the second product to the right of the first product directly above the product labeled '原味阿萨姆奶茶'. I can see a shelf in the middle of the image with many products. I will zoom into that area to read the product names. I will try to find the product '原味阿萨姆奶茶' in this area. I can see some products on the shelves, but I can't clearly read the text on them. I will zoom in on the shelf to read the text. </think><grounding>{\"bbox_2d\": [0.1,0.0,0.9,0.5], \"source\": \"observation_4\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1952.4,
+        1317.0,
+        3227.6000000000004,
+        1440.5
+      ],
+      "predicted_bbox_clipped": [
+        1952,
+        1317,
+        3228,
+        1441
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        159.4,
+        0.0,
+        1434.6000000000001,
+        123.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        159.4,
+        0.0,
+        1434.6000000000001,
+        123.5
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_05_raw.png",
+      "source": "observation_4",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10490,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.594409663230181,
+      "tokens_per_second": 19.75137063335605,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          62,
+          160
+        ],
+        [
+          1,
+          36,
+          142
+        ],
+        [
+          1,
+          18,
+          114
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1276,
+      "original_crop_height": 124,
+      "processed_width": 1276,
+      "processed_height": 124,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 6,
+      "question": "In the image, what is the second product to the right of the first product directly above the '原味阿萨姆奶茶'?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user wants to find the second product to the right of the first product directly above the product labeled '原味阿萨姆奶茶'. I can see a shelf in the middle of the image with many products. I will zoom into that area to read the product names. I will try to find the product '原味阿萨姆奶茶' in this area. I can see some products on the shelves, but I can't clearly read the text on them. I will zoom in on the shelf to read the text. </think><grounding>{\"bbox_2d\": [0.1,0.0,0.9,0.5], \"source\": \"observation_5\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        2079.6,
+        1317.0,
+        3100.4,
+        1379.0
+      ],
+      "predicted_bbox_clipped": [
+        2079,
+        1317,
+        3101,
+        1379
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        127.60000000000001,
+        0.0,
+        1148.4,
+        62.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        127.60000000000001,
+        0.0,
+        1148.4,
+        62.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_06_raw.png",
+      "source": "observation_5",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 10921,
+      "output_tokens": 150,
+      "finish_reason": "eos",
+      "runtime_seconds": 7.836766634136438,
+      "tokens_per_second": 19.140546988678967,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          80,
+          126
+        ],
+        [
+          1,
+          62,
+          160
+        ],
+        [
+          1,
+          36,
+          142
+        ],
+        [
+          1,
+          18,
+          114
+        ],
+        [
+          1,
+          8,
+          92
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1022,
+      "original_crop_height": 62,
+      "processed_width": 1022,
+      "processed_height": 62,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.4,
+        0.8,
+        1.0
+      ],
+      "predicted_bbox_pixel": [
+        1036.4932266278363,
+        1317.5841763451456,
+        4145.972906511345,
+        3293.9604408628643
+      ],
+      "predicted_bbox_clipped": [
+        1036,
+        1317,
+        4146,
+        3294
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        354.6,
+        450.8,
+        1418.4,
+        1127.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        1036.4932266278363,
+        1317.5841763451456,
+        4145.972906511345,
+        3293.9604408628643
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_01_processed.png",
+      "original_crop_width": 3110,
+      "original_crop_height": 1977,
+      "processed_width": 1773,
+      "processed_height": 1127,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.5702651958322622,
+      "preprocess_scale_y": 0.5704086077248112
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "observation_1",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1346.9079798237433,
+        1317.0,
+        3834.17181841369,
+        2304.8883178983438
+      ],
+      "predicted_bbox_clipped": [
+        1346,
+        1317,
+        3835,
+        2305
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        177.3,
+        0.0,
+        1595.7,
+        563.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        310.90797982374335,
+        0.0,
+        2798.17181841369,
+        987.8883178983439
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_02_processed.png",
+      "original_crop_width": 2489,
+      "original_crop_height": 988,
+      "processed_width": 2244,
+      "processed_height": 890,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 0.9019021492823591,
+      "preprocess_scale_y": 0.901755360342524
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "observation_2",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1594.807478925019,
+        1317.0,
+        3585.2673103251723,
+        1810.4819570476084
+      ],
+      "predicted_bbox_clipped": [
+        1594,
+        1317,
+        3586,
+        1811
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        224.4,
+        0.0,
+        2019.6000000000001,
+        445.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        248.8074789250191,
+        0.0,
+        2239.2673103251723,
+        493.4819570476083
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_03_processed.png",
+      "original_crop_width": 1992,
+      "original_crop_height": 494,
+      "processed_width": 1992,
+      "processed_height": 494,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "observation_3",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1793.2,
+        1317.0,
+        3386.8,
+        1564.0
+      ],
+      "predicted_bbox_clipped": [
+        1793,
+        1317,
+        3387,
+        1564
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        199.20000000000002,
+        0.0,
+        1792.8,
+        247.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        199.20000000000002,
+        0.0,
+        1792.8,
+        247.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_04_processed.png",
+      "original_crop_width": 1594,
+      "original_crop_height": 247,
+      "processed_width": 1594,
+      "processed_height": 247,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "observation_4",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        1952.4,
+        1317.0,
+        3227.6000000000004,
+        1440.5
+      ],
+      "predicted_bbox_clipped": [
+        1952,
+        1317,
+        3228,
+        1441
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        159.4,
+        0.0,
+        1434.6000000000001,
+        123.5
+      ],
+      "predicted_bbox_source_content_pixel": [
+        159.4,
+        0.0,
+        1434.6000000000001,
+        123.5
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_05_processed.png",
+      "original_crop_width": 1276,
+      "original_crop_height": 124,
+      "processed_width": 1276,
+      "processed_height": 124,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPT7a75636a3b9d",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "observation_5",
+      "predicted_bbox_raw": [
+        0.1,
+        0.0,
+        0.9,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        2079.6,
+        1317.0,
+        3100.4,
+        1379.0
+      ],
+      "predicted_bbox_clipped": [
+        2079,
+        1317,
+        3101,
+        1379
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        127.60000000000001,
+        0.0,
+        1148.4,
+        62.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        127.60000000000001,
+        0.0,
+        1148.4,
+        62.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPT7a75636a3b9d/turn_06_processed.png",
+      "original_crop_width": 1022,
+      "original_crop_height": 62,
+      "processed_width": 1022,
+      "processed_height": 62,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "fe022aea8d2014d6c0afb29161a6e979296809461b3951f94181be0fddd82c1e",
+  "crop_image_sha256": [
+    "de046835012f5b366380a567becdf788f684fb863dead335397f29a40497c857",
+    "4be1dd4c4cd825da5b1c31a15e41fe32764b48626daba574a6f2a97126a9e472",
+    "165da17eafe50ec2b9d00863e923d8174efe856aa549ff9266539c142a33a5f6",
+    "b385211cce906f7ca82a5246823937f247254d9be9526cea8046ac1f01e18de4",
+    "f55af65e651a56f0d31544e0c1948a5a1088282d2865bca9d2cf5c5b8aaf3532",
+    "42483baee3f71d652bda1e61f2af40eef245eb419579f8429d931e9d82d3942d"
+  ],
+  "raw_crop_image_sha256": [
+    "5413e4fde1659f45c720fd9c0c4399b00527ee935244bbca620d46db16cb0583",
+    "7528f2a06b60dad9848f482d30b646d94696368b35702c47d52f62ef11c7b9d6",
+    "165da17eafe50ec2b9d00863e923d8174efe856aa549ff9266539c142a33a5f6",
+    "b385211cce906f7ca82a5246823937f247254d9be9526cea8046ac1f01e18de4",
+    "f55af65e651a56f0d31544e0c1948a5a1088282d2865bca9d2cf5c5b8aaf3532",
+    "42483baee3f71d652bda1e61f2af40eef245eb419579f8429d931e9d82d3942d"
+  ],
+  "assistant_text_sha256": "36f647e133e928b0b949b95d09e65fabcbdad53777350dc0d79557ec2b498842"
+}

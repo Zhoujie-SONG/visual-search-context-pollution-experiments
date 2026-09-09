@@ -1,0 +1,16 @@
+cohort,condition,num_samples,answered,answer_rate,final_correct,final_scored,judge_pending,final_accuracy,accuracy_among_answered,natural_stops,natural_termination_rate,mean_additional_crops,median_additional_crops,mean_stop_round,max_round_rate,max_image_rate,mean_first_post_visual_tokens,mean_runtime_seconds,oom,invalid,evidence_subgroup
+primary_prefix_hit,A_full,13,0,0.0,0,13,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,6755.846153846154,47.24600300837595,0,0,primary_prefix_hit_all
+primary_prefix_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,primary_prefix_hit_all
+primary_prefix_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,primary_prefix_hit_all
+primary_prefix_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,primary_prefix_hit_all
+primary_prefix_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,primary_prefix_hit_all
+primary_prefix_hit,A_full,11,0,0.0,0,11,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,6312.636363636364,44.30162426575341,0,0,max_prefix_gt_coverage_ge_0.50
+primary_prefix_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.50
+primary_prefix_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.50
+primary_prefix_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.50
+primary_prefix_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.50
+primary_prefix_hit,A_full,10,0,0.0,0,10,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,6584.5,45.01766012944281,0,0,max_prefix_gt_coverage_ge_0.999999
+primary_prefix_hit,B_oracle_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.999999
+primary_prefix_hit,C_recent_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.999999
+primary_prefix_hit,D_force_answer_r6,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.999999
+primary_prefix_hit,E_random_top2,0,0,,0,0,0,,,0,,,,,,,,,0,0,max_prefix_gt_coverage_ge_0.999999

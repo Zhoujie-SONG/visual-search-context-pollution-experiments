@@ -1,0 +1,15 @@
+{
+  "sample_id": "TPROMPT378b8f698c05",
+  "condition": "A_full",
+  "retained_crop_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "evicted_crop_indices": [],
+  "forced_answer": false,
+  "prefix_snapshot_sha256": "77f2fdf931616bae9554dbac4559a3cdc3ae328a43189d3784e660d8a288fdea"
+}

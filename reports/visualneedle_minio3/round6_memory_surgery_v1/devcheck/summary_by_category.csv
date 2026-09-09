@@ -1,0 +1,11 @@
+cohort,condition,num_samples,answered,answer_rate,final_correct,final_scored,judge_pending,final_accuracy,accuracy_among_answered,natural_stops,natural_termination_rate,mean_additional_crops,median_additional_crops,mean_stop_round,max_round_rate,max_image_rate,mean_first_post_visual_tokens,mean_runtime_seconds,oom,invalid,category
+primary_prefix_hit,A_full,2,0,0.0,0,2,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,9408.5,64.35574267338961,0,0,Color Recognition
+primary_prefix_hit,A_full,4,0,0.0,0,4,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,3700.25,32.95697429543361,0,0,Entity Recognition
+primary_prefix_hit,A_full,3,0,0.0,0,3,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,7187.0,52.41168265417218,0,0,OCR Recognition
+primary_prefix_hit,A_full,2,0,0.0,0,2,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,9230.5,56.01530776824802,0,0,Occluded Object Recognition
+primary_prefix_hit,A_full,2,0,0.0,0,2,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,7093.0,42.19649654068053,0,0,Spatial Relationship
+secondary_prefix_no_hit,A_full,2,0,0.0,0,2,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,3972.0,37.5401608357206,0,0,Color Recognition
+secondary_prefix_no_hit,A_full,1,0,0.0,0,1,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,8905.0,51.93239242956042,0,0,Entity Recognition
+secondary_prefix_no_hit,A_full,1,0,0.0,0,1,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,2996.0,32.046862648800015,0,0,OCR Recognition
+secondary_prefix_no_hit,A_full,0,0,,0,0,0,,,0,,,,,,,,,0,0,Occluded Object Recognition
+secondary_prefix_no_hit,A_full,3,0,0.0,0,3,0,0.0,,0,0.0,5.0,5.0,12.0,1.0,1.0,6418.0,41.80276332857708,0,0,Spatial Relationship

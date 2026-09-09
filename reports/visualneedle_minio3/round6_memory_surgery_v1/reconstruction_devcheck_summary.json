@@ -1,0 +1,20 @@
+{
+  "num_samples": 20,
+  "behavioral_gates": {
+    "next_action_match": 0.95,
+    "next_bbox_match": 0.95,
+    "final_answer_match": 0.95,
+    "later_crop_count_match": 0.95,
+    "suffix_behavior_match": 0.9
+  },
+  "match_rates": {
+    "next_output_exact_match": 1.0,
+    "next_action_match": 1.0,
+    "next_bbox_match": 1.0,
+    "final_answer_match": 1.0,
+    "later_crop_count_match": 1.0,
+    "suffix_behavior_match": 1.0
+  },
+  "next_output_exact_match_is_diagnostic_only": true,
+  "passed": true
+}

@@ -1,0 +1,802 @@
+{
+  "sample_id": "TPROMPTeb5d2ac29103",
+  "question": "Who is the cartoon character wearing a brown backpack?",
+  "original_image_path": "/home/songzhoujie/cvpr27/needle_data/images/TPROMPTeb5d2ac29103.png",
+  "original_width": 1080,
+  "original_height": 1440,
+  "prefix_end_turn": 6,
+  "prefix_output_tokens": 677,
+  "turns": [
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 1,
+      "question": "Who is the cartoon character wearing a brown backpack?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the cartoon character wearing a brown backpack. I will scan the image to find any cartoon characters with a brown backpack. I see a shelf in the middle of the image that seems to have many small figures. I will zoom into that area to get a better look. </think><grounding>{\"bbox_2d\": [0.2,0.3,0.8,0.6], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.8,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        432.0,
+        864.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        432,
+        864,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        432.0,
+        864.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        432.0,
+        864.0,
+        864.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_01_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_01_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2196,
+      "output_tokens": 102,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.121160661801696,
+      "tokens_per_second": 32.680150447981205,
+      "input_image_count": 1,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 648,
+      "original_crop_height": 432,
+      "processed_width": 648,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 2,
+      "question": "Who is the cartoon character wearing a brown backpack?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the cartoon character wearing a brown backpack. I've zoomed into the middle shelf, but I don't see any character with a brown backpack in this view. I need to look for another shelf or area in the image. I will go back to the original image and look for another shelf. The shelf below seems to have more figures. </think><grounding>{\"bbox_2d\": [0.0,0.4,1.0,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        1080,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_02_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_02_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 2740,
+      "output_tokens": 117,
+      "finish_reason": "eos",
+      "runtime_seconds": 3.644220534712076,
+      "tokens_per_second": 32.10563106308932,
+      "input_image_count": 2,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1080,
+      "original_crop_height": 432,
+      "processed_width": 1080,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 3,
+      "question": "Who is the cartoon character wearing a brown backpack?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the cartoon character wearing a brown backpack. I've scanned the previous two observations and still haven't found the character. I will go back to the original image and look for another shelf. The shelf at the very top seems to have many small figures. I will zoom into that area to see if I can find the character there. </think><grounding>{\"bbox_2d\": [0.0,0.0,1.0,0.3], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.3
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        1080.0,
+        432.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        1080,
+        432
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1080.0,
+        432.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1080.0,
+        432.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_03_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_03_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 3539,
+      "output_tokens": 115,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.032572288066149,
+      "tokens_per_second": 28.517777682579162,
+      "input_image_count": 3,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          30,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 1080,
+      "original_crop_height": 432,
+      "processed_width": 1080,
+      "processed_height": 432,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 4,
+      "question": "Who is the cartoon character wearing a brown backpack?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the cartoon character wearing a brown backpack. I've scanned the previous three observations and still haven't found the character. I will go back to the original image and look for another shelf. The shelf on the left side seems to have many small figures. I will zoom into that area to see if I can find the character there. </think><grounding>{\"bbox_2d\": [0.0,0.1,0.5,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        144.0,
+        540.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        144,
+        540,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        144.0,
+        540.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        144.0,
+        540.0,
+        720.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_04_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_04_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4336,
+      "output_tokens": 115,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.191099250689149,
+      "tokens_per_second": 27.439102040136696,
+      "input_image_count": 4,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          30,
+          78
+        ],
+        [
+          1,
+          30,
+          78
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 5,
+      "question": "Who is the cartoon character wearing a brown backpack?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the cartoon character wearing a brown backpack. I've scanned the previous observations and still haven't found the character. I will go back to the original image and look for another shelf. The shelf on the right side seems to have many small figures. I will zoom into that area to see if I can find the character there. </think><grounding>{\"bbox_2d\": [0.5,0.1,1.0,0.5], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.1,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        144,
+        1080,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_05_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_05_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 4947,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.352997751906514,
+      "tokens_per_second": 26.188848811160213,
+      "input_image_count": 5,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          30,
+          78
+        ],
+        [
+          1,
+          30,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 6,
+      "question": "Who is the cartoon character wearing a brown backpack?",
+      "action_type": "crop",
+      "raw_model_output": "<think> The user is asking to identify the cartoon character wearing a brown backpack. I've scanned the previous observations and still haven't found the character. I will go back to the original image and look for another shelf. The shelf on the right side seems to have many small figures. I will zoom into that area to see if I can find the character there. </think><grounding>{\"bbox_2d\": [0.5,0.4,1.0,0.7], \"source\": \"original_image\"}</grounding>",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "bbox_parse_success": true,
+      "bbox_valid": true,
+      "bbox_was_clipped": false,
+      "crop_executed": true,
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_06_processed.png",
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_06_raw.png",
+      "source": "original_image",
+      "error_type": "",
+      "error_message": "",
+      "input_tokens": 5557,
+      "output_tokens": 114,
+      "finish_reason": "eos",
+      "runtime_seconds": 4.624240398406982,
+      "tokens_per_second": 24.65269756288453,
+      "input_image_count": 6,
+      "image_grid_thw": [
+        [
+          1,
+          102,
+          78
+        ],
+        [
+          1,
+          30,
+          46
+        ],
+        [
+          1,
+          30,
+          78
+        ],
+        [
+          1,
+          30,
+          78
+        ],
+        [
+          1,
+          42,
+          38
+        ],
+        [
+          1,
+          42,
+          38
+        ]
+      ],
+      "max_new_tokens": 2048,
+      "use_cache": true,
+      "original_crop_width": 540,
+      "original_crop_height": 432,
+      "processed_width": 540,
+      "processed_height": 432,
+      "padding_applied": false
+    }
+  ],
+  "crops": [
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 1,
+      "crop_index": 1,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.2,
+        0.3,
+        0.8,
+        0.6
+      ],
+      "predicted_bbox_pixel": [
+        216.0,
+        432.0,
+        864.0,
+        864.0
+      ],
+      "predicted_bbox_clipped": [
+        216,
+        432,
+        864,
+        864
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        216.0,
+        432.0,
+        864.0,
+        864.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        216.0,
+        432.0,
+        864.0,
+        864.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_01_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_01_processed.png",
+      "original_crop_width": 648,
+      "original_crop_height": 432,
+      "processed_width": 648,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 2,
+      "crop_index": 2,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.4,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        576,
+        1080,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_02_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_02_processed.png",
+      "original_crop_width": 1080,
+      "original_crop_height": 432,
+      "processed_width": 1080,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 3,
+      "crop_index": 3,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.0,
+        1.0,
+        0.3
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        0.0,
+        1080.0,
+        432.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        0,
+        1080,
+        432
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        0.0,
+        1080.0,
+        432.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        0.0,
+        1080.0,
+        432.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_03_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_03_processed.png",
+      "original_crop_width": 1080,
+      "original_crop_height": 432,
+      "processed_width": 1080,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 4,
+      "crop_index": 4,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.0,
+        0.1,
+        0.5,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        0.0,
+        144.0,
+        540.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        0,
+        144,
+        540,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        0.0,
+        144.0,
+        540.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        0.0,
+        144.0,
+        540.0,
+        720.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_04_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_04_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 5,
+      "crop_index": 5,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.1,
+        1.0,
+        0.5
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        144,
+        1080,
+        720
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        144.0,
+        1080.0,
+        720.0
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_05_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_05_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 576,
+      "processed_width": 540,
+      "processed_height": 576,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    },
+    {
+      "sample_id": "TPROMPTeb5d2ac29103",
+      "turn_index": 6,
+      "crop_index": 6,
+      "source": "original_image",
+      "predicted_bbox_raw": [
+        0.5,
+        0.4,
+        1.0,
+        0.7
+      ],
+      "predicted_bbox_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_clipped": [
+        540,
+        576,
+        1080,
+        1008
+      ],
+      "predicted_bbox_source_processed_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "predicted_bbox_source_content_pixel": [
+        540.0,
+        576.0,
+        1080.0,
+        1007.9999999999999
+      ],
+      "bbox_was_clipped": false,
+      "raw_crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_06_raw.png",
+      "crop_path": "/home/songzhoujie/cvpr27/vstar/outputs/visualneedle_minio3/full300_baseline/crops/TPROMPTeb5d2ac29103/turn_06_processed.png",
+      "original_crop_width": 540,
+      "original_crop_height": 432,
+      "processed_width": 540,
+      "processed_height": 432,
+      "padding_applied": false,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "preprocess_scale_x": 1.0,
+      "preprocess_scale_y": 1.0
+    }
+  ],
+  "original_image_sha256": "2981acf2750f2be923595a871538780062c1fa9e5b47bb004af0331d625430cc",
+  "crop_image_sha256": [
+    "064da58e01e467dbfec6569e94c715dc2f1783d0d8a33f5f2026447184d00a27",
+    "e519332d4538596b227ac09d01200f3bcf6aba74b96b1dfb4b6d320ca781d6b2",
+    "efa9ebb25edb8a232b58834a364f87c360aae8ad0af3d75518cc49abd2b6b84e",
+    "48a38e69bcad98ededd2d2b477ff5f5e0c7e07fb18a603fcbee80eba16400ffd",
+    "0ddf5396ec6ed0944caa6ad00b4b91949ffef245004d77be76fadae9bcf965ba",
+    "e5145e869d74610f31e58699e27299f9681c9ae785ce876dc4e4fabd21845a36"
+  ],
+  "raw_crop_image_sha256": [
+    "064da58e01e467dbfec6569e94c715dc2f1783d0d8a33f5f2026447184d00a27",
+    "e519332d4538596b227ac09d01200f3bcf6aba74b96b1dfb4b6d320ca781d6b2",
+    "efa9ebb25edb8a232b58834a364f87c360aae8ad0af3d75518cc49abd2b6b84e",
+    "48a38e69bcad98ededd2d2b477ff5f5e0c7e07fb18a603fcbee80eba16400ffd",
+    "0ddf5396ec6ed0944caa6ad00b4b91949ffef245004d77be76fadae9bcf965ba",
+    "e5145e869d74610f31e58699e27299f9681c9ae785ce876dc4e4fabd21845a36"
+  ],
+  "assistant_text_sha256": "647363e43f136166dc94726af4226a6037c1ba04d847227ea41fd867abd809d8"
+}

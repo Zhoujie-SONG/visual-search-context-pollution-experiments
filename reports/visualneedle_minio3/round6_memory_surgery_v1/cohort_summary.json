@@ -1,0 +1,11 @@
+{
+  "all_baseline_samples": 300,
+  "all_eligible_no_answer": 139,
+  "primary_prefix_hit": 88,
+  "secondary_prefix_no_hit": 51,
+  "excluded": 161,
+  "exclusion_reason_counts_not_mutually_exclusive": {
+    "baseline_answer_present": 151,
+    "fewer_than_6_successful_crops": 150
+  }
+}
