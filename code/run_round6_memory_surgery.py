@@ -34,9 +34,15 @@ MODEL_PATH = Path("/mnt/data2/szj/models/Mini-o3-7B-v1-complete")
 PREFIX_CROP_COUNT = 6
 RETAINED_CROP_COUNT = 2
 SEED = 42
-DEV_SAMPLE_COUNT = 8
+DEV_SAMPLE_COUNT = 20
 SMOKE_SAMPLE_COUNT = 10
-DEV_RECONSTRUCTION_PASS_RATE = 0.80
+DEV_RECONSTRUCTION_GATES = {
+    "next_action_match": 0.95,
+    "next_bbox_match": 0.95,
+    "final_answer_match": 0.95,
+    "later_crop_count_match": 0.95,
+    "suffix_behavior_match": 0.90,
+}
 NUM_SHARDS = 8
 GT_HIT_THRESHOLD = 0.10
 EVICTION_PLACEHOLDER = "[Visual observation evicted from working memory.]"
@@ -54,6 +60,10 @@ ARMS = (
 )
 STAGES = ("devcheck", "smoke", "formal")
 FATAL_PREFIX_ERRORS = {"oom", "runtime_error", "uncaught_episode_error"}
+
+
+class SourceUnavailableError(ValueError):
+    """The model requested a source absent from current visual working memory."""
 
 
 @dataclass(frozen=True)
@@ -368,7 +378,7 @@ def prepare(stage: str) -> None:
         "eviction_placeholder": EVICTION_PLACEHOLDER,
         "force_answer_instruction": FORCE_ANSWER_INSTRUCTION,
         "random_seed": SEED,
-        "devcheck_min_match_rate": DEV_RECONSTRUCTION_PASS_RATE,
+        "devcheck_behavioral_gates": DEV_RECONSTRUCTION_GATES,
         "selected_sample_ids": selected,
         "arms": ["A_full"] if stage == "devcheck" else list(ARMS),
         "ground_truth_isolation": (
@@ -420,9 +430,32 @@ def observation_from_crop(crop: Dict[str, Any], image: Image.Image) -> baseline.
     )
 
 
+def resolve_available_source(
+    source: str, available_sources: Dict[str, baseline.Observation]
+) -> baseline.Observation:
+    if source not in available_sources:
+        raise SourceUnavailableError(
+            f"source '{source}' is unavailable in the current visual working memory"
+        )
+    return available_sources[source]
+
+
+def cumulative_images_at_intervention(prefix: PrefixBundle) -> int:
+    return 1 + len(prefix.crops)
+
+
+def next_observation_index(cumulative_acquired_images: int) -> int:
+    # The original image occupies one budget slot; crop N is observation_N.
+    return cumulative_acquired_images
+
+
+def image_budget_exhausted(cumulative_acquired_images: int) -> bool:
+    return cumulative_acquired_images >= baseline.MAX_IMAGES
+
+
 def reconstruct_messages(
     prefix: PrefixBundle, plan: InterventionPlan
-) -> Tuple[Image.Image, List[baseline.Observation], List[Dict[str, Any]], List[Dict[str, Any]]]:
+) -> Tuple[Image.Image, Dict[str, baseline.Observation], List[Dict[str, Any]], int]:
     payload = asdict(prefix)
     if sha256_json(payload) != plan.prefix_snapshot_sha256:
         raise RuntimeError("Prefix snapshot hash differs from the prepared inference plan")
@@ -432,7 +465,7 @@ def reconstruct_messages(
     with Image.open(original_path) as handle:
         original = handle.convert("RGB")
     original_processed, original_prep = baseline.process_for_model(original)
-    observations = [baseline.Observation(
+    original_observation = baseline.Observation(
         source_name="original_image",
         original_bbox=(0, 0, original.width, original.height),
         processed_image=original_processed,
@@ -442,10 +475,10 @@ def reconstruct_messages(
         scale_y=float(original_prep["scale_y"]),
         pad_left=int(original_prep["pad_left"]),
         pad_top=int(original_prep["pad_top"]),
-    )]
+    )
+    available_sources = {"original_image": original_observation}
     messages = baseline.initial_messages(original_processed, prefix.question)
     crop_by_turn = {int(crop["turn_index"]): crop for crop in prefix.crops}
-    prefix_images: List[Image.Image] = []
     assistant_texts: List[str] = []
     for turn in prefix.turns:
         turn_index = int(turn["turn_index"])
@@ -460,11 +493,11 @@ def reconstruct_messages(
                 raise RuntimeError(f"Frozen crop changed: {crop_path}")
             if sha256_file(raw_crop_path) != prefix.raw_crop_image_sha256[crop_index - 1]:
                 raise RuntimeError(f"Frozen raw crop changed: {raw_crop_path}")
-            with Image.open(crop_path) as handle:
-                crop_image = handle.convert("RGB")
-            prefix_images.append(crop_image)
-            observations.append(observation_from_crop(crop, crop_image))
             if crop_index in plan.retained_crop_indices:
+                with Image.open(crop_path) as handle:
+                    crop_image = handle.convert("RGB")
+                source_name = f"observation_{crop_index}"
+                available_sources[source_name] = observation_from_crop(crop, crop_image)
                 baseline.append_observation_message(
                     messages, raw_output, crop_image, action_turn=turn_index - 1, observation_turn=turn_index
                 )
@@ -480,7 +513,7 @@ def reconstruct_messages(
         if not isinstance(content, list):
             raise RuntimeError("Force-answer intervention expected a crop observation user message")
         content.append({"type": "text", "text": "\n" + FORCE_ANSWER_INSTRUCTION})
-    return original, observations, messages, prefix_images
+    return original, available_sources, messages, cumulative_images_at_intervention(prefix)
 
 
 class SurgeryBackend(CacheEnabledHFBackend):
@@ -495,6 +528,31 @@ class SurgeryBackend(CacheEnabledHFBackend):
         result["visual_tokens_per_image"] = per_image
         result["visual_tokens"] = sum(per_image) if per_image is not None else None
         return result
+
+
+def parse_forced_answer_output(raw_output: str) -> Dict[str, Any]:
+    grounding = baseline.parse_grounding(raw_output)
+    answer = baseline.parse_answer(raw_output)
+    if grounding["present"]:
+        return {
+            "action_type": "forbidden_tool_call",
+            "answer": "",
+            "protocol_violation": True,
+            "error_type": "tool_call_after_force_answer",
+        }
+    if answer:
+        return {
+            "action_type": "answer",
+            "answer": answer,
+            "protocol_violation": False,
+            "error_type": "",
+        }
+    return {
+        "action_type": "invalid",
+        "answer": "",
+        "protocol_violation": False,
+        "error_type": "unparsed_forced_answer",
+    }
 
 
 def empty_turn(sample_id: str, question: str, turn_index: int) -> Dict[str, Any]:
@@ -527,7 +585,10 @@ def run_continuation(
 ) -> Dict[str, Any]:
     started = time.perf_counter()
     backend.torch.cuda.reset_peak_memory_stats()
-    original, observations, messages, _ = reconstruct_messages(prefix, plan)
+    original, available_sources, messages, cumulative_acquired_images = reconstruct_messages(prefix, plan)
+    available_prefix_source_names = list(available_sources)
+    cumulative_at_intervention = cumulative_acquired_images
+    next_index_at_intervention = next_observation_index(cumulative_acquired_images)
     prefix_crops = copy.deepcopy(prefix.crops)
     post_turns: List[Dict[str, Any]] = []
     post_crops: List[Dict[str, Any]] = []
@@ -540,6 +601,8 @@ def run_continuation(
     error_type = ""
     error_message = ""
     first_generation: Optional[Dict[str, Any]] = None
+    unavailable_source_call_count = 0
+    force_answer_protocol_violation = False
     crop_directory = output_dir / "crops" / prefix.sample_id
     crop_directory.mkdir(parents=True, exist_ok=True)
 
@@ -563,22 +626,25 @@ def run_continuation(
             answer = baseline.parse_answer(raw_output)
 
             if plan.forced_answer:
-                if answer:
-                    turn.update({"action_type": "answer", "final_answer": answer})
-                    final_answer = answer
-                    stop_reason = "forced_answer"
-                elif grounding["present"]:
+                forced = parse_forced_answer_output(raw_output)
+                force_answer_protocol_violation = bool(forced["protocol_violation"])
+                if forced["action_type"] == "forbidden_tool_call":
                     turn.update({
                         "action_type": "forbidden_tool_call",
-                        "error_type": "tool_call_after_force_answer",
+                        "error_type": forced["error_type"],
                         "error_message": "Force-answer arm prohibits post-intervention visual tool calls",
+                        "force_answer_protocol_violation": True,
                     })
                     status = "invalid"
                     stop_reason = "tool_call_after_force_answer"
+                elif forced["action_type"] == "answer":
+                    final_answer = str(forced["answer"])
+                    turn.update({"action_type": "answer", "final_answer": final_answer})
+                    stop_reason = "forced_answer"
                 else:
                     turn.update({
                         "action_type": "invalid",
-                        "error_type": "unparsed_forced_answer",
+                        "error_type": forced["error_type"],
                         "error_message": "Forced output did not contain a complete answer tag",
                     })
                     status = "invalid"
@@ -597,8 +663,8 @@ def run_continuation(
                     continue
                 turn["predicted_bbox_raw"] = grounding["bbox"]
                 turn["source"] = grounding["source"]
-                if len(observations) >= baseline.MAX_IMAGES or round_index == baseline.MAX_ROUNDS:
-                    reached_image_cap = len(observations) >= baseline.MAX_IMAGES
+                if image_budget_exhausted(cumulative_acquired_images) or round_index == baseline.MAX_ROUNDS:
+                    reached_image_cap = image_budget_exhausted(cumulative_acquired_images)
                     reached_turn_cap = round_index == baseline.MAX_ROUNDS
                     turn["error_type"] = "budget_cap_before_crop"
                     turn["error_message"] = "Official policy does not execute a crop after the image/round cap"
@@ -606,7 +672,7 @@ def run_continuation(
                     stop_reason = "image_or_turn_cap"
                     break
                 try:
-                    _, source_observation = baseline.resolve_source(str(grounding["source"]), observations)
+                    source_observation = resolve_available_source(str(grounding["source"]), available_sources)
                     converted = baseline.convert_bbox(grounding["bbox"], source_observation, original.size)
                     turn["predicted_bbox_source_processed_pixel"] = converted["source_processed_pixel"]
                     turn["predicted_bbox_source_content_pixel"] = converted["source_content_pixel"]
@@ -614,7 +680,7 @@ def run_continuation(
                     turn["predicted_bbox_clipped"] = converted["clipped_original"]
                     turn["bbox_was_clipped"] = bool(converted["was_clipped"])
                     turn["bbox_valid"] = True
-                    crop_number = len(prefix_crops) + len(post_crops) + 1
+                    crop_number = next_observation_index(cumulative_acquired_images)
                     bbox = tuple(int(value) for value in converted["clipped_original"])
                     raw_crop = original.crop(bbox).convert("RGB")
                     raw_path = crop_directory / f"turn_{round_index:02d}_raw.png"
@@ -646,7 +712,9 @@ def run_continuation(
                         "post_intervention": True,
                     }
                     post_crops.append(crop)
-                    observations.append(observation_from_crop(crop, processed_crop))
+                    source_name = f"observation_{crop_number}"
+                    available_sources[source_name] = observation_from_crop(crop, processed_crop)
+                    cumulative_acquired_images += 1
                     turn.update({
                         "crop_executed": True, "crop_path": str(processed_path),
                         "raw_crop_path": str(raw_path), "original_crop_width": raw_crop.width,
@@ -658,6 +726,14 @@ def run_continuation(
                         messages, raw_output, processed_crop,
                         action_turn=round_index - 1, observation_turn=round_index,
                     )
+                except SourceUnavailableError as exc:
+                    unavailable_source_call_count += 1
+                    turn.update({
+                        "action_type": "invalid", "bbox_valid": False,
+                        "error_type": "source_unavailable", "error_message": str(exc),
+                    })
+                    post_turns.append(turn)
+                    baseline.append_official_error_message(messages, raw_output, str(exc))
                 except Exception as exc:
                     turn.update({
                         "action_type": "invalid", "bbox_valid": False,
@@ -734,7 +810,12 @@ def run_continuation(
         "evicted_crop_indices": plan.evicted_crop_indices,
         "retained_prefix_image_count": len(plan.retained_crop_indices),
         "evicted_prefix_image_count": len(plan.evicted_crop_indices),
+        "available_prefix_source_names": available_prefix_source_names,
+        "cumulative_acquired_images_at_intervention": cumulative_at_intervention,
+        "next_observation_index": next_index_at_intervention,
+        "unavailable_source_call_count": unavailable_source_call_count,
         "forced_answer": plan.forced_answer,
+        "force_answer_protocol_violation": force_answer_protocol_violation,
         "post_intervention_answer_present": bool(final_answer),
         "post_intervention_final_answer": final_answer,
         "final_answer": final_answer,
@@ -874,7 +955,10 @@ EPISODE_FIELDS = [
     "sample_id", "condition", "category", "baseline_answer_present", "baseline_correct", "baseline_status",
     "prefix_crop_count", "prefix_gt_hit", "max_prefix_gt_coverage", "retained_crop_indices",
     "evicted_crop_indices", "retained_gt_coverages", "retained_prefix_image_count",
-    "evicted_prefix_image_count", "post_intervention_answer_present", "post_intervention_final_answer",
+    "evicted_prefix_image_count", "available_prefix_source_names",
+    "cumulative_acquired_images_at_intervention", "next_observation_index",
+    "unavailable_source_call_count", "force_answer_protocol_violation",
+    "post_intervention_answer_present", "post_intervention_final_answer",
     "post_intervention_status", "post_intervention_correct_exact", "post_intervention_correct_normalized",
     "num_additional_crops", "total_final_crops", "natural_stop", "forced_answer", "final_round",
     "reached_max_rounds", "reached_max_images", "input_tokens_first_post_intervention",
@@ -945,10 +1029,12 @@ def reconstruction_devcheck(stage: str, episodes: Sequence[Dict[str, Any]]) -> T
         "final_answer_match", "later_crop_count_match", "suffix_behavior_match",
     )
     rates = {key: sum(bool(row[key]) for row in rows) / len(rows) if rows else 0.0 for key in metrics}
-    passed = bool(rows) and all(value >= DEV_RECONSTRUCTION_PASS_RATE for value in rates.values())
+    passed = bool(rows) and all(rates[key] >= threshold for key, threshold in DEV_RECONSTRUCTION_GATES.items())
     baseline.atomic_write_json(OUTPUT_ROOT / "reconstruction_devcheck_summary.json", {
-        "num_samples": len(rows), "minimum_required_match_rate": DEV_RECONSTRUCTION_PASS_RATE,
-        "match_rates": rates, "passed": passed,
+        "num_samples": len(rows), "behavioral_gates": DEV_RECONSTRUCTION_GATES,
+        "match_rates": rates,
+        "next_output_exact_match_is_diagnostic_only": True,
+        "passed": passed,
     })
     return rows, passed
 
@@ -993,11 +1079,81 @@ def merge_stage(stage: str) -> None:
             problems.append(f"{sample_id}: original image hash differs across arms")
         if len({ep["assistant_text_sha256"] for ep in sample_episodes}) != 1:
             problems.append(f"{sample_id}: assistant textual prefix differs across arms")
+        if len({tuple(ep.get("prefix_crop_sha256", [])) for ep in sample_episodes}) != 1:
+            problems.append(f"{sample_id}: processed prefix crop hashes differ across arms")
+        if len({tuple(ep.get("prefix_raw_crop_sha256", [])) for ep in sample_episodes}) != 1:
+            problems.append(f"{sample_id}: raw prefix crop hashes differ across arms")
+        cumulative_counts = {
+            int(ep.get("cumulative_acquired_images_at_intervention", -1))
+            for ep in sample_episodes if ep["condition"] in {"A_full", "B_oracle_top2", "C_recent_top2", "E_random_top2"}
+        }
+        if cumulative_counts and cumulative_counts != {PREFIX_CROP_COUNT + 1}:
+            problems.append(f"{sample_id}: cumulative image budget differs across A/B/C/E or is not 7")
+        for arm in ("A_full", "D_force_answer_r6"):
+            if arm in arms:
+                ep = next(item for item in sample_episodes if item["condition"] == arm)
+                expected_sources = ["original_image"] + [f"observation_{index}" for index in range(1, 7)]
+                if ep.get("available_prefix_source_names") != expected_sources:
+                    problems.append(f"{sample_id}/{arm}: full prefix source registry is incomplete")
+        if "C_recent_top2" in arms:
+            recent = next(item for item in sample_episodes if item["condition"] == "C_recent_top2")
+            if recent.get("retained_crop_indices") != [5, 6]:
+                problems.append(f"{sample_id}/C_recent_top2: selection is not fixed recent [5, 6]")
+        if "E_random_top2" in arms:
+            random_arm = next(item for item in sample_episodes if item["condition"] == "E_random_top2")
+            expected_random = retained_indices("E_random_top2", sample_id, {})
+            if random_arm.get("retained_crop_indices") != expected_random:
+                problems.append(f"{sample_id}/E_random_top2: selection differs from seed-42 non-GT plan")
         for arm in ("B_oracle_top2", "C_recent_top2", "E_random_top2"):
             if arm in arms:
                 ep = next(item for item in sample_episodes if item["condition"] == arm)
                 if ep["retained_prefix_image_count"] != RETAINED_CROP_COUNT:
                     problems.append(f"{sample_id}/{arm}: retained image count is not 2")
+                expected_sources = ["original_image"] + [f"observation_{index}" for index in ep["retained_crop_indices"]]
+                if ep.get("available_prefix_source_names") != expected_sources:
+                    problems.append(f"{sample_id}/{arm}: available source registry is not original plus retained stable IDs")
+                evicted_names = {f"observation_{index}" for index in ep["evicted_crop_indices"]}
+                if evicted_names.intersection(ep.get("available_prefix_source_names", [])):
+                    problems.append(f"{sample_id}/{arm}: evicted source remains available")
+                if int(ep.get("next_observation_index", -1)) != PREFIX_CROP_COUNT + 1:
+                    problems.append(f"{sample_id}/{arm}: next observation ID is not observation_7")
+        if "D_force_answer_r6" in arms:
+            forced = next(item for item in sample_episodes if item["condition"] == "D_force_answer_r6")
+            if int(forced.get("num_additional_crops", -1)) != 0:
+                problems.append(f"{sample_id}/D_force_answer_r6: a post-intervention crop executed")
+            for turn in forced.get("post_intervention_turns", []):
+                raw = str(turn.get("raw_model_output") or "")
+                grounding_present = bool(baseline.parse_grounding(raw)["present"])
+                answer_present = bool(baseline.parse_answer(raw))
+                if grounding_present and not bool(forced.get("force_answer_protocol_violation")):
+                    problems.append(f"{sample_id}/D_force_answer_r6: grounding was not marked protocol violation")
+                if grounding_present and answer_present and bool(forced.get("post_intervention_answer_present")):
+                    problems.append(f"{sample_id}/D_force_answer_r6: grounding+answer was incorrectly accepted")
+
+        prefix_path = OUTPUT_ROOT / "frozen_prefixes" / f"{sample_id}.json"
+        prefix_payload = json.loads(prefix_path.read_text(encoding="utf-8"))
+        forbidden_keys = {"gt_answer", "gt_bbox", "category", "gt_coverage", "iou_with_gt", "coverage"}
+        def find_forbidden(value: Any) -> set[str]:
+            found: set[str] = set()
+            if isinstance(value, dict):
+                found.update(key for key in value if key in forbidden_keys)
+                for child in value.values():
+                    found.update(find_forbidden(child))
+            elif isinstance(value, list):
+                for child in value:
+                    found.update(find_forbidden(child))
+            return found
+        leaked = find_forbidden(prefix_payload)
+        if leaked:
+            problems.append(f"{sample_id}: sanitized GPU prefix contains GT keys {sorted(leaked)}")
+        for arm in arms:
+            plan_path = stage_dir / "inference_plans" / arm / f"{sample_id}.json"
+            plan_payload = json.loads(plan_path.read_text(encoding="utf-8"))
+            leaked = find_forbidden(plan_payload)
+            if leaked:
+                problems.append(f"{sample_id}/{arm}: GPU inference plan contains GT keys {sorted(leaked)}")
+            if set(plan_payload) != set(InterventionPlan.__dataclass_fields__):
+                problems.append(f"{sample_id}/{arm}: inference plan has unexpected fields")
     config = json.loads((stage_dir / "config.json").read_text(encoding="utf-8"))
     for name, expected_hash in config["baseline_fingerprints"].items():
         if sha256_file(BASELINE_DIR / name) != expected_hash:
@@ -1005,9 +1161,11 @@ def merge_stage(stage: str) -> None:
 
     devcheck_rows: List[Dict[str, Any]] = []
     devcheck_pass = True
+    devcheck_summary: Dict[str, Any] = {}
     if stage == "devcheck":
         devcheck_rows, devcheck_pass = reconstruction_devcheck(stage, episodes)
         write_csv(OUTPUT_ROOT / "reconstruction_devcheck.csv", devcheck_rows)
+        devcheck_summary = json.loads((OUTPUT_ROOT / "reconstruction_devcheck_summary.json").read_text(encoding="utf-8"))
         if not devcheck_pass:
             problems.append("A_full reconstruction devcheck did not reproduce all critical suffix fields")
     report = [
@@ -1017,9 +1175,21 @@ def merge_stage(stage: str) -> None:
         "- Prefixes are replayed from frozen baseline crop files; no prefix inference is run.",
         "- GPU workers read sanitized prefixes and index-only plans, with no GT answer/bbox/category/coverage fields.",
         "- B/C/E use one identical observation-eviction placeholder and retain exactly two prefix crop images.",
+        "- Evicted observations are absent from the tool-source registry; retained source IDs are never renumbered.",
+        "- Working-memory capacity is separate from cumulative acquisition budget (7 images at intervention).",
+        "- Post-intervention successful crops begin at `observation_7`.",
+        "- D never executes a post-intervention crop; any grounding tag takes precedence and is a protocol violation.",
         "- Original image and assistant textual history remain present in every arm.",
         "- Baseline files are read-only and fingerprint-checked.", "", "## Problems",
     ]
+    if stage == "devcheck":
+        report[report.index("## Problems"):report.index("## Problems")] = [
+            "## Reconstruction Match Rates", "",
+            f"- Samples: {devcheck_summary.get('num_samples')}",
+            f"- Behavioral gates: `{devcheck_summary.get('behavioral_gates')}`",
+            f"- Observed match rates: `{devcheck_summary.get('match_rates')}`",
+            "- `next_output_exact_match` is diagnostic only and is not a PASS gate.", "",
+        ]
     report.extend(f"- {problem}" for problem in problems)
     if not problems:
         report.append("- None.")

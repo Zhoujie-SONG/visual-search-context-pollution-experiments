@@ -288,12 +288,74 @@ def subgroup_summary_rows(episodes: Sequence[Dict[str, Any]]) -> List[Dict[str, 
     return rows
 
 
+def strong_evidence_rows(episodes: Sequence[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    definitions = (
+        ("primary_prefix_hit_all", lambda episode: episode["cohort"] == "primary_prefix_hit"),
+        ("max_prefix_gt_coverage_ge_0.50", lambda episode: episode["cohort"] == "primary_prefix_hit" and float(episode.get("max_prefix_gt_coverage") or 0) >= 0.50),
+        ("max_prefix_gt_coverage_ge_0.999999", lambda episode: episode["cohort"] == "primary_prefix_hit" and float(episode.get("max_prefix_gt_coverage") or 0) >= 0.999999),
+    )
+    rows = []
+    for label, predicate in definitions:
+        for arm in ARMS:
+            selected = [episode for episode in episodes if predicate(episode) and episode["condition"] == arm]
+            row = summary_row("primary_prefix_hit", arm, selected)
+            row["evidence_subgroup"] = label
+            rows.append(row)
+    return rows
+
+
+def bbox_iou(first: Sequence[float], second: Sequence[float]) -> float:
+    ix1, iy1 = max(first[0], second[0]), max(first[1], second[1])
+    ix2, iy2 = min(first[2], second[2]), min(first[3], second[3])
+    intersection = max(0.0, ix2 - ix1) * max(0.0, iy2 - iy1)
+    first_area = max(0.0, first[2] - first[0]) * max(0.0, first[3] - first[1])
+    second_area = max(0.0, second[2] - second[0]) * max(0.0, second[3] - second[1])
+    union = first_area + second_area - intersection
+    return intersection / union if union else 0.0
+
+
+def oracle_selection_audit_rows(episodes: Sequence[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    oracle_episodes = [episode for episode in episodes if episode["condition"] == "B_oracle_top2"]
+    rows = []
+    for episode in sorted(oracle_episodes, key=lambda item: str(item["sample_id"])):
+        prefix = list(episode.get("prefix_crops") or [])
+        selected = sorted(
+            (int(index) for index in episode["retained_crop_indices"]),
+            key=lambda index: (-float(prefix[index - 1].get("gt_coverage") or 0), index),
+        )
+        if len(selected) != 2:
+            raise RuntimeError(f"Oracle arm did not retain two crops for {episode['sample_id']}")
+        first, second = prefix[selected[0] - 1], prefix[selected[1] - 1]
+        first_area = float(first.get("crop_area") or 0)
+        second_area = float(second.get("crop_area") or 0)
+        gt_area = float(first.get("gt_area") or second.get("gt_area") or 0)
+        first_coverage = float(first.get("gt_coverage") or 0)
+        second_coverage = float(second.get("gt_coverage") or 0)
+        mutual_iou = bbox_iou(first["predicted_bbox_clipped"], second["predicted_bbox_clipped"])
+        rows.append({
+            "sample_id": episode["sample_id"], "cohort": episode["cohort"],
+            "oracle_crop_1_index": selected[0], "oracle_crop_2_index": selected[1],
+            "oracle_crop_1_gt_coverage": first_coverage, "oracle_crop_2_gt_coverage": second_coverage,
+            "oracle_crop_1_area": first_area, "oracle_crop_2_area": second_area, "GT_area": gt_area,
+            "GT_to_crop_area_ratio_1": gt_area / first_area if first_area else None,
+            "GT_to_crop_area_ratio_2": gt_area / second_area if second_area else None,
+            "mutual_iou_between_oracle_crops": mutual_iou,
+            "oracle_crop_1_processed_width": first.get("processed_width"),
+            "oracle_crop_1_processed_height": first.get("processed_height"),
+            "oracle_crop_2_processed_width": second.get("processed_width"),
+            "oracle_crop_2_processed_height": second.get("processed_height"),
+            "both_coverage_100": first_coverage >= 0.999999 and second_coverage >= 0.999999,
+            "highly_redundant_pair": mutual_iou >= 0.70,
+        })
+    return rows
+
+
 def decision_case(summaries: Sequence[Dict[str, Any]], pending: int) -> str:
     if pending:
         return "DEFERRED: official image-aware judge still has pending rows."
     rows = {row["condition"]: row for row in summaries if row["cohort"] == "primary_prefix_hit"}
     if set(ARMS) - set(rows):
-        return "NOT_APPLICABLE: all five arms are required."
+        return "DESCRIPTIVE_NOT_APPLICABLE: all five arms are required."
     accuracy = {arm: float(rows[arm]["final_accuracy"] or 0) for arm in ARMS}
     oracle, recent = accuracy["B_oracle_top2"], accuracy["C_recent_top2"]
     random_accuracy, full = accuracy["E_random_top2"], accuracy["A_full"]
@@ -301,19 +363,26 @@ def decision_case(summaries: Sequence[Dict[str, Any]], pending: int) -> str:
     oracle_earlier = float(rows["B_oracle_top2"]["mean_stop_round"] or 0) < float(rows["A_full"]["mean_stop_round"] or 0)
     close = lambda first, second: abs(first - second) <= APPROXIMATELY_EQUAL_TOLERANCE
     if oracle > recent > full and oracle > force and oracle_earlier:
-        return "BEST_CASE: selective evidence management improves accuracy and earlier natural termination beyond force-answer."
+        return "DESCRIPTIVE_BEST_CASE: selective evidence management improves accuracy and earlier natural termination beyond force-answer."
     if oracle > recent and close(random_accuracy, full):
-        return "CASE_1: evidence selection matters (Oracle > Recent and Random approximately Full)."
+        return "DESCRIPTIVE_CASE_1: evidence selection matters (Oracle > Recent and Random approximately Full)."
     if close(oracle, recent) and recent > full:
-        return "CASE_2: context burden matters; bounded/recent memory may be sufficient."
+        return "DESCRIPTIVE_CASE_2: context burden matters; bounded/recent memory may be sufficient."
     if close(oracle, full) and force > full:
-        return "CASE_3: stopping policy is the more likely bottleneck."
+        return "DESCRIPTIVE_CASE_3: stopping policy is the more likely bottleneck."
     if oracle > full and force >= oracle:
-        return "CASE_4: memory pollution exists, but stopping remains the stronger bottleneck."
-    return "MIXED_OR_INCONCLUSIVE: observed ordering does not match a preregistered case cleanly."
+        return "DESCRIPTIVE_CASE_4: memory pollution exists, but stopping remains the stronger bottleneck."
+    return "DESCRIPTIVE_MIXED_OR_INCONCLUSIVE: observed ordering does not match a preregistered case cleanly."
 
 
-def render_report(stage: str, summaries: Sequence[Dict[str, Any]], pending: int, episodes: Sequence[Dict[str, Any]]) -> str:
+def render_report(
+    stage: str,
+    summaries: Sequence[Dict[str, Any]],
+    strong_summaries: Sequence[Dict[str, Any]],
+    oracle_audit: Sequence[Dict[str, Any]],
+    pending: int,
+    episodes: Sequence[Dict[str, Any]],
+) -> str:
     title = "Smoke Report" if stage == "smoke" else "Formal Report" if stage == "formal" else "Devcheck Report"
     lines = [f"# Round-6 Visual Memory Surgery {title}", ""]
     lines.append(f"- Episodes: {len(episodes)}")
@@ -331,6 +400,30 @@ def render_report(stage: str, summaries: Sequence[Dict[str, Any]], pending: int,
             f"{pct(row['final_accuracy'])} | {pct(row['accuracy_among_answered'])} | "
             f"{pct(row['natural_termination_rate'])} | {float(row['mean_additional_crops'] or 0):.2f} |"
         )
+    lines.extend(["", "## Strong-Evidence Sensitivity", ""])
+    lines.append("GT coverage >=10% is a geometric-hit criterion, not a guarantee of sufficient answer evidence.")
+    lines.extend(["", "| Subgroup | Arm | N | Answer rate | Final accuracy | Accuracy among answered | Natural stop | Mean additional crops |", "|---|---|---:|---:|---:|---:|---:|---:|"])
+    for row in strong_summaries:
+        def strong_pct(value: Any) -> str:
+            return "NA" if value is None else f"{100 * float(value):.2f}%"
+        lines.append(
+            f"| {row['evidence_subgroup']} | {row['condition']} | {row['num_samples']} | "
+            f"{strong_pct(row['answer_rate'])} | {strong_pct(row['final_accuracy'])} | "
+            f"{strong_pct(row['accuracy_among_answered'])} | {strong_pct(row['natural_termination_rate'])} | "
+            f"{float(row['mean_additional_crops'] or 0):.2f} |"
+        )
+    redundant = sum(bool(row["highly_redundant_pair"]) for row in oracle_audit)
+    both_full = sum(bool(row["both_coverage_100"]) for row in oracle_audit)
+    both_full_redundant = sum(bool(row["both_coverage_100"]) and bool(row["highly_redundant_pair"]) for row in oracle_audit)
+    audit_n = len(oracle_audit)
+    lines.extend(["", "## Oracle Selection Audit", ""])
+    lines.append(f"- Highly redundant oracle pairs: {redundant}/{audit_n} ({100 * redundant / audit_n if audit_n else 0:.2f}%)")
+    lines.append(f"- Both retained crops have approximately 100% coverage: {both_full}/{audit_n} ({100 * both_full / audit_n if audit_n else 0:.2f}%)")
+    lines.append(f"- Both 100% coverage and high overlap: {both_full_redundant}/{audit_n} ({100 * both_full_redundant / audit_n if audit_n else 0:.2f}%)")
+    lines.extend(["", "## Intervention Boundary", ""])
+    lines.append("The intervention removes historical visual observation images but intentionally preserves the assistant's textual reasoning trace.")
+    lines.append("B > A supports a causal effect of visual observation memory on continuation behavior.")
+    lines.append("B approximately A does not by itself show that all context pollution is absent, because prior visual information may persist in assistant reasoning text.")
     lines.extend(["", "## Interpretation", ""])
     if pending:
         lines.append("Decision case is deferred until the official image-aware judge has no pending rows.")
@@ -339,6 +432,8 @@ def render_report(stage: str, summaries: Sequence[Dict[str, Any]], pending: int,
     else:
         lines.append(decision_case(summaries, pending))
         lines.append(f"Approximate-equality tolerance used by the descriptive decision rule: {APPROXIMATELY_EQUAL_TOLERANCE:.2f} absolute accuracy.")
+    lines.append("This descriptive label is based on raw point-estimate ordering only. It is not a statistical decision rule.")
+    lines.append("Statistical interpretation must use paired bootstrap confidence intervals and McNemar tests.")
     return "\n".join(lines) + "\n"
 
 
@@ -387,6 +482,17 @@ def main() -> None:
     write_csv(stage_dir / "paired_results.csv", paired_wide_rows(episodes))
     write_csv(stage_dir / "subgroup_prefix_hit.csv", subgroup_rows(episodes))
     write_csv(stage_dir / "subgroup_prefix_hit_summary.csv", subgroup_summary_rows(episodes))
+    strong_summaries = strong_evidence_rows(episodes)
+    write_csv(stage_dir / "strong_evidence_prefix_hit_summary.csv", strong_summaries)
+    oracle_audit = oracle_selection_audit_rows(episodes)
+    write_csv(stage_dir / "oracle_selection_audit.csv", oracle_audit, (
+        "sample_id", "cohort", "oracle_crop_1_index", "oracle_crop_2_index",
+        "oracle_crop_1_gt_coverage", "oracle_crop_2_gt_coverage", "oracle_crop_1_area",
+        "oracle_crop_2_area", "GT_area", "GT_to_crop_area_ratio_1", "GT_to_crop_area_ratio_2",
+        "mutual_iou_between_oracle_crops", "oracle_crop_1_processed_width",
+        "oracle_crop_1_processed_height", "oracle_crop_2_processed_width",
+        "oracle_crop_2_processed_height", "both_coverage_100", "highly_redundant_pair",
+    ))
     bootstrap_rows, mcnemar_rows = paired_analysis(episodes, "primary_prefix_hit")
     secondary_bootstrap, secondary_mcnemar = paired_analysis(episodes, "secondary_prefix_no_hit")
     write_csv(stage_dir / "bootstrap_pairwise.csv", bootstrap_rows + secondary_bootstrap)
@@ -409,7 +515,10 @@ def main() -> None:
     ], ("sample_id", "condition", "error_message"))
     pending = sum(bool(ep.get("official_judge_pending")) for ep in episodes)
     report_name = "smoke_report.md" if args.stage == "smoke" else "round6_memory_surgery_report.md" if args.stage == "formal" else "devcheck_report.md"
-    (stage_dir / report_name).write_text(render_report(args.stage, summaries, pending, episodes), encoding="utf-8")
+    (stage_dir / report_name).write_text(
+        render_report(args.stage, summaries, strong_summaries, oracle_audit, pending, episodes),
+        encoding="utf-8",
+    )
     print(json.dumps({"stage": args.stage, "episodes": len(episodes), "judge_pending": pending}, indent=2))
 
 

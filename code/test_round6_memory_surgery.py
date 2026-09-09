@@ -3,10 +3,12 @@
 
 from __future__ import annotations
 
+import copy
 import unittest
 from dataclasses import asdict
 
 import run_round6_memory_surgery as surgery
+import score_round6_memory_surgery as scoring
 
 
 class Round6MemorySurgeryTests(unittest.TestCase):
@@ -14,6 +16,7 @@ class Round6MemorySurgeryTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.rows, cls.bundles, cls.episodes = surgery.build_cohort()
         cls.sample_id = sorted(cls.bundles)[0]
+        cls.primary_id = next(row["sample_id"] for row in cls.rows if row["cohort"] == "primary_prefix_hit")
 
     def test_cohort_partition(self) -> None:
         self.assertEqual(len(self.rows), 300)
@@ -87,6 +90,79 @@ class Round6MemorySurgeryTests(unittest.TestCase):
             [m["content"] for m in forced_messages if m["role"] == "assistant"],
         )
         self.assertIn(surgery.FORCE_ANSWER_INSTRUCTION, forced_messages[-1]["content"][-1]["text"])
+
+    def test_evicted_source_is_not_tool_accessible(self) -> None:
+        prefix = self.bundles[self.sample_id]
+        plan = surgery.InterventionPlan(
+            self.sample_id, "B_oracle_top2", [2, 5], [1, 3, 4, 6], False,
+            surgery.sha256_json(asdict(prefix)),
+        )
+        _, available_sources, _, _ = surgery.reconstruct_messages(prefix, plan)
+        self.assertIsNotNone(surgery.resolve_available_source("observation_2", available_sources))
+        self.assertIsNotNone(surgery.resolve_available_source("observation_5", available_sources))
+        with self.assertRaisesRegex(surgery.SourceUnavailableError, "unavailable"):
+            surgery.resolve_available_source("observation_3", available_sources)
+
+    def test_retained_source_identity_is_not_renumbered(self) -> None:
+        prefix = self.bundles[self.sample_id]
+        plan = surgery.InterventionPlan(
+            self.sample_id, "B_oracle_top2", [2, 5], [1, 3, 4, 6], False,
+            surgery.sha256_json(asdict(prefix)),
+        )
+        _, available_sources, _, _ = surgery.reconstruct_messages(prefix, plan)
+        self.assertEqual(list(available_sources), ["original_image", "observation_2", "observation_5"])
+        self.assertEqual(available_sources["observation_5"].source_name, "observation_5")
+
+    def test_cumulative_budget_does_not_shrink_after_eviction(self) -> None:
+        prefix = self.bundles[self.sample_id]
+        plan = surgery.InterventionPlan(
+            self.sample_id, "C_recent_top2", [5, 6], [1, 2, 3, 4], False,
+            surgery.sha256_json(asdict(prefix)),
+        )
+        _, available_sources, _, cumulative = surgery.reconstruct_messages(prefix, plan)
+        self.assertEqual(len(available_sources), 3)
+        self.assertEqual(cumulative, 7)
+        self.assertFalse(surgery.image_budget_exhausted(cumulative))
+        self.assertTrue(surgery.image_budget_exhausted(surgery.baseline.MAX_IMAGES))
+
+    def test_next_successful_crop_is_observation_7(self) -> None:
+        prefix = self.bundles[self.sample_id]
+        cumulative = surgery.cumulative_images_at_intervention(prefix)
+        self.assertEqual(surgery.next_observation_index(cumulative), 7)
+
+    def test_force_answer_grounding_precedes_answer(self) -> None:
+        raw = (
+            '<grounding>{"bbox_2d":[0.1,0.1,0.2,0.2],"source":"original_image"}</grounding>'
+            '<answer>candidate</answer>'
+        )
+        parsed = surgery.parse_forced_answer_output(raw)
+        self.assertEqual(parsed["action_type"], "forbidden_tool_call")
+        self.assertEqual(parsed["answer"], "")
+        self.assertTrue(parsed["protocol_violation"])
+
+    def test_oracle_selection_audit_uses_frozen_geometry(self) -> None:
+        episode = copy.deepcopy(self.episodes[self.primary_id])
+        episode.update({
+            "condition": "B_oracle_top2",
+            "cohort": "primary_prefix_hit",
+            "prefix_crops": episode["crops"][:6],
+            "retained_crop_indices": surgery.retained_indices(
+                "B_oracle_top2", self.primary_id, episode
+            ),
+        })
+        rows = scoring.oracle_selection_audit_rows([episode])
+        self.assertEqual(len(rows), 1)
+        self.assertIn("mutual_iou_between_oracle_crops", rows[0])
+        self.assertGreaterEqual(rows[0]["oracle_crop_1_gt_coverage"], rows[0]["oracle_crop_2_gt_coverage"])
+
+    def test_decision_labels_are_explicitly_descriptive(self) -> None:
+        rows = []
+        for arm in surgery.ARMS:
+            rows.append({
+                "cohort": "primary_prefix_hit", "condition": arm,
+                "final_accuracy": 0.1, "mean_stop_round": 10,
+            })
+        self.assertTrue(scoring.decision_case(rows, 0).startswith("DESCRIPTIVE_"))
 
 
 if __name__ == "__main__":
